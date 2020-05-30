@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D02-HashSet", "D02-HashSet\D02-HashSet.csproj", "{6C9A5A9C-17C7-4725-9DD0-DC0C19DDF94A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D02-HashSet", "D02-HashSet\D02-HashSet.csproj", "{6C9A5A9C-17C7-4725-9DD0-DC0C19DDF94A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D01-LinkedList", "D01-LinkedList\D01-LinkedList.csproj", "{F5D072B3-12D2-41BB-8FE0-97DB6DCE6B16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D01-LinkedList", "D01-LinkedList\D01-LinkedList.csproj", "{F5D072B3-12D2-41BB-8FE0-97DB6DCE6B16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D03-Stack", "D03-Stack\D03-Stack.csproj", "{1CFE618C-0FE8-4BF9-8899-0D1D2AB938AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D03-Stack", "D03-Stack\D03-Stack.csproj", "{1CFE618C-0FE8-4BF9-8899-0D1D2AB938AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D03-Queue", "D03-Queue\D03-Queue.csproj", "{FE1D7A81-9695-4EEB-B45B-6D8C7CAD8568}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D03-Queue", "D03-Queue\D03-Queue.csproj", "{FE1D7A81-9695-4EEB-B45B-6D8C7CAD8568}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex02-SpaceshipCrafting", "Ex02-SpaceshipCrafting\Ex02-SpaceshipCrafting.csproj", "{CF40275C-56FF-4BAD-B130-A1C4929C56FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FE1D7A81-9695-4EEB-B45B-6D8C7CAD8568}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE1D7A81-9695-4EEB-B45B-6D8C7CAD8568}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE1D7A81-9695-4EEB-B45B-6D8C7CAD8568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF40275C-56FF-4BAD-B130-A1C4929C56FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF40275C-56FF-4BAD-B130-A1C4929C56FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF40275C-56FF-4BAD-B130-A1C4929C56FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF40275C-56FF-4BAD-B130-A1C4929C56FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
