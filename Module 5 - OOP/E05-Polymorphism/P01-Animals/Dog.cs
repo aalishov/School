@@ -19,5 +19,15 @@ namespace P01_Animals
         {
             throw new NotImplementedException();
         }
+
+        public override string MakeNoise()
+        {
+            return base.MakeNoise()+ "Woof!";
+        }
+
+        public override string MakeTrick()
+        {
+            return base.MakeTrick()+ "Hold my paw, human!";
+        }
     }
 }

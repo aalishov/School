@@ -6,13 +6,14 @@ namespace P01_Animals
     {
         public static void Main(string[] args)
         {
-            Object animal1 = new Cat("Pesho", "Whiskas");
+            Animal animal1 = new Cat("Pesho", "Whiskas");
             Animal animal2 = new Dog("Gosho", "Meat");
 
-            Cat cat = (Cat)animal1;
+            Trainer trainer = new Trainer(animal1);
+            trainer.Make();
+            trainer.Animal = animal2;
+            trainer.Make();
 
-            Console.WriteLine(cat.ExplainMyself()+cat.Name);
-            Console.WriteLine(animal2.ExplainMyself());
         }
     }
 }

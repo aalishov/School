@@ -19,5 +19,15 @@ namespace P01_Animals
         {
             return $"Cat play!";
         }
+
+        public override string MakeNoise()
+        {
+            return base.MakeNoise() + "Meow!.";
+        }
+
+        public override string MakeTrick()
+        {
+            return base.MakeTrick() + "No trick for you! I'm too lazy!";
+        }
     }
 }
