@@ -2,7 +2,7 @@
 
 namespace StorageMaster.Entities.Vehicles
 {
-    using StorageMaster.Entities.Products;
+    using Entities.Products;
     using System;
     using System.Collections.Generic;
     using System.Linq;

@@ -1,6 +1,6 @@
 ﻿namespace StorageMaster.Entities.Storage
 {
-    using StorageMaster.Entities.Vehicles;
+    using Entities.Vehicles;
     using System.Collections.Generic;
 
     public class AutomatedWarehouse : Storage

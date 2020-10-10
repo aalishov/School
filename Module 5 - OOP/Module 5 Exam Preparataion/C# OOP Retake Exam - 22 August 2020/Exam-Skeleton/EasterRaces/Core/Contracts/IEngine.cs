@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StorageMaster
+namespace EasterRaces.Core.Contracts
 {
-    class StorageMaster
+    class IEngine
     {
     }
 }

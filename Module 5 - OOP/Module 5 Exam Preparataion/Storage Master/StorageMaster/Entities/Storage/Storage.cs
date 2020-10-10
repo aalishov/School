@@ -1,14 +1,14 @@
 ﻿namespace StorageMaster.Entities.Storage
 {
-    using StorageMaster.Entities.Products;
-    using StorageMaster.Entities.Vehicles;
+    using Entities.Products;
+    using Entities.Vehicles;
     using System;
     using System.Collections.Generic;
     using System.Linq;
 
     public abstract class Storage
     {
-        private List<Vehicle> vehicles;
+        private Vehicle[] vehicles;
         private List<Product> products;
 
         protected Storage(string name, int capacity, int garageSlots, IEnumerable<Vehicle> vehicles)
@@ -16,7 +16,12 @@
             this.Name = name;
             this.Capacity = capacity;
             this.GarageSlots = garageSlots;
-            this.vehicles = vehicles.ToList();
+            this.products = new List<Product>();
+            this.vehicles = new Vehicle[this.GarageSlots];
+            for (int i = 0; i < vehicles.Count(); i++)
+            {
+                this.vehicles[i] = vehicles.ToArray()[i];
+            }
         }
 
         public string Name { get; set; }
@@ -39,7 +44,7 @@
 
         public IReadOnlyCollection<Vehicle> Garage
         {
-            get => vehicles.AsReadOnly();
+            get => vehicles;
         }
         public IReadOnlyCollection<Product> Products
         {
@@ -48,12 +53,12 @@
 
         public Vehicle GetVehicle(int garageSlot)
         {
-            if (garageSlot < 0 || garageSlot >= Capacity)
+            if (garageSlot < 0 || garageSlot >= this.GarageSlots)
             {
                 throw new InvalidOperationException("Invalid garage slot!");
             }
 
-            if (vehicles[garageSlot] == null)
+            if (garageSlot >= vehicles.Length || vehicles[garageSlot] == null)
             {
                 throw new InvalidOperationException("No vehicle in this garage slot!");
             }
@@ -80,12 +85,8 @@
 
             int unloadProducts = 0;
 
-            for (int i = 0; i < vehicle.Trunk.Count; i++)
+            while (!this.IsFull && !vehicle.IsEmpty)
             {
-                if (IsFull)
-                {
-                    break;
-                }
                 products.Add(vehicle.Unload());
                 unloadProducts++;
             }
@@ -94,7 +95,7 @@
 
         private int FreeGarageSlot()
         {
-            for (int i = 0; i < this.vehicles.Count; i++)
+            for (int i = 0; i < this.vehicles.Length; i++)
             {
                 if (vehicles[i] == null)
                 {
