@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KPM2YIJA5jHiOzOG4Ie6qFLOJJ7/ZHD1skHvZywWx17VsVypbSVVLZ8aJnkRLU7rAfBrX4RH2gmdM6jYh7qEjA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School_2020_2021\\11B\\OOP\\S01-DataTypesDemo\\P08-DemoLinq\\P08-DemoLinq.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\АлишАлишов\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
