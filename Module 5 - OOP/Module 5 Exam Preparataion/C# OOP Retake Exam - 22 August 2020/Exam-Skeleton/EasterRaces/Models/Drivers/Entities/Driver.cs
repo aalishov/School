@@ -2,6 +2,7 @@
 {
     using EasterRaces.Models.Cars.Contracts;
     using EasterRaces.Models.Drivers.Contracts;
+    using EasterRaces.Utilities.Messages;
     using System;
     public class Driver : IDriver
     {
@@ -19,7 +20,8 @@
             {
                 if (string.IsNullOrWhiteSpace(value) || value.Length < 5)
                 {
-                    throw new ArgumentException($"Name {value} cannot be less than 5 symbols.");
+                    //throw new ArgumentException($"Name {value} cannot be less than 5 symbols.");
+                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidName,value,5));
                 }
                 name = value;
             }
@@ -35,7 +37,8 @@
         {
             if (car == null)
             {
-                throw new ArgumentNullException("Car cannot be null.");
+                //throw new ArgumentNullException("Car cannot be null.");
+                throw new ArgumentNullException(ExceptionMessages.CarInvalid);
             }
             this.Car = car;
             this.CanParticipate = true;

@@ -1,6 +1,7 @@
 ﻿namespace EasterRaces.Models.Cars.Entities
 {
     using EasterRaces.Models.Cars.Contracts;
+    using EasterRaces.Utilities.Messages;
     using System;
     public abstract class Car : ICar
     {
@@ -26,7 +27,8 @@
             {
                 if (string.IsNullOrWhiteSpace(value) || value.Length < 4)
                 {
-                    throw new ArgumentException($"Model {value} cannot be less than 4 symbols.");
+                    //throw new ArgumentException($"Model {value} cannot be less than 4 symbols.");
+                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidName,value,4));
                 }
                 model = value;
             }
@@ -39,7 +41,8 @@
             {
                 if (value < minHorsePower || value > maxHorsePower)
                 {
-                    throw new ArgumentException($"Invalid horse power: {value}.");
+                    //throw new ArgumentException($"Invalid horse power: {value}.");
+                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidHorsePower, value));
                 }
                 horsePower = value;
             }

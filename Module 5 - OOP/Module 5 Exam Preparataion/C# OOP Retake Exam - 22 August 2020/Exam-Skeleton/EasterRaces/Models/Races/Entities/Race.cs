@@ -6,11 +6,12 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+
     public class Race : IRace
     {
         private string name;
         private int laps;
-        private List<IDriver> drivers;
+        private readonly List<IDriver> drivers;
 
         public Race(string name, int laps)
         {
@@ -39,13 +40,14 @@
             {
                 if (value < 1)
                 {
-                    throw new ArgumentException("Laps cannot be less than 1.");
+                    //throw new ArgumentException("Laps cannot be less than 1.");
+                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidNumberOfLaps,1));
                 }
-                laps = value;
+                this.laps = value;
             }
         }
 
-        public IReadOnlyCollection<IDriver> Drivers { get { return drivers; } }
+        public IReadOnlyCollection<IDriver> Drivers { get { return drivers.AsReadOnly(); } }
 
         public void AddDriver(IDriver driver)
         {
