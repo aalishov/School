@@ -12,11 +12,11 @@
 
         protected Car(string model, int horsePower, double cubicCentimeters, int minHorsePower, int maxHorsePower)
         {
+            this.minHorsePower = minHorsePower;
+            this.maxHorsePower = maxHorsePower;
             this.Model = model;
             this.HorsePower = horsePower;
             this.CubicCentimeters = cubicCentimeters;
-            this.minHorsePower = minHorsePower;
-            this.maxHorsePower = maxHorsePower;
         }
         //TODO: Check modifier
         public string Model
@@ -28,7 +28,7 @@
                 if (string.IsNullOrWhiteSpace(value) || value.Length < 4)
                 {
                     //throw new ArgumentException($"Model {value} cannot be less than 4 symbols.");
-                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidName,value,4));
+                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidModel,value,4));
                 }
                 model = value;
             }
