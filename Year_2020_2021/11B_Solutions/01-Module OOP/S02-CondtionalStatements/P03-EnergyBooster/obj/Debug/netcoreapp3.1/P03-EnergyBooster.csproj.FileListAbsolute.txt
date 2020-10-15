@@ -1,0 +1,13 @@
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P03-EnergyBooster\bin\Debug\netcoreapp3.1\P03-EnergyBooster.exe
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P03-EnergyBooster\bin\Debug\netcoreapp3.1\P03-EnergyBooster.deps.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P03-EnergyBooster\bin\Debug\netcoreapp3.1\P03-EnergyBooster.runtimeconfig.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P03-EnergyBooster\bin\Debug\netcoreapp3.1\P03-EnergyBooster.runtimeconfig.dev.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P03-EnergyBooster\bin\Debug\netcoreapp3.1\P03-EnergyBooster.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P03-EnergyBooster\bin\Debug\netcoreapp3.1\P03-EnergyBooster.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P03-EnergyBooster\obj\Debug\netcoreapp3.1\P03-EnergyBooster.csprojAssemblyReference.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P03-EnergyBooster\obj\Debug\netcoreapp3.1\P03-EnergyBooster.AssemblyInfoInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P03-EnergyBooster\obj\Debug\netcoreapp3.1\P03-EnergyBooster.AssemblyInfo.cs
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P03-EnergyBooster\obj\Debug\netcoreapp3.1\P03-EnergyBooster.csproj.CoreCompileInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P03-EnergyBooster\obj\Debug\netcoreapp3.1\P03-EnergyBooster.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P03-EnergyBooster\obj\Debug\netcoreapp3.1\P03-EnergyBooster.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P03-EnergyBooster\obj\Debug\netcoreapp3.1\P03-EnergyBooster.genruntimeconfig.cache
