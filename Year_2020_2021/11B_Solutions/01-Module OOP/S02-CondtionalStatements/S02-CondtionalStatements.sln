@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-CatWalking", "P01-CatWalking\P01-CatWalking.csproj", "{542F6469-8136-421B-BCB5-8D0B02DC6D81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-CatWalking", "P01-CatWalking\P01-CatWalking.csproj", "{542F6469-8136-421B-BCB5-8D0B02DC6D81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-CoffeeMachine", "P02-CoffeeMachine\P02-CoffeeMachine.csproj", "{1A8E5927-8065-455A-9521-D51A26BC8BD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-CoffeeMachine", "P02-CoffeeMachine\P02-CoffeeMachine.csproj", "{1A8E5927-8065-455A-9521-D51A26BC8BD1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-EnergyBooster", "P03-EnergyBooster\P03-EnergyBooster.csproj", "{D321BBCB-533B-4A4B-8BFB-8FF18ED0F4C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-SnooketTickets", "P04-SnooketTickets\P04-SnooketTickets.csproj", "{2CF881F1-49C2-48B6-AF01-A92C88AABD97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{1A8E5927-8065-455A-9521-D51A26BC8BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A8E5927-8065-455A-9521-D51A26BC8BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A8E5927-8065-455A-9521-D51A26BC8BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D321BBCB-533B-4A4B-8BFB-8FF18ED0F4C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D321BBCB-533B-4A4B-8BFB-8FF18ED0F4C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D321BBCB-533B-4A4B-8BFB-8FF18ED0F4C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D321BBCB-533B-4A4B-8BFB-8FF18ED0F4C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CF881F1-49C2-48B6-AF01-A92C88AABD97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CF881F1-49C2-48B6-AF01-A92C88AABD97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CF881F1-49C2-48B6-AF01-A92C88AABD97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CF881F1-49C2-48B6-AF01-A92C88AABD97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

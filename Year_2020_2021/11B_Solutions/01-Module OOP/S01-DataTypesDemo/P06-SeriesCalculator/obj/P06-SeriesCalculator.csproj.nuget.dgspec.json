@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School_2020_2021\\11B\\OOP\\S01-DataTypesDemo\\P06-SeriesCalculator\\P06-SeriesCalculator.csproj": {}
+    "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School-Repository\\Year_2020_2021\\11B_Solutions\\01-Module OOP\\S01-DataTypesDemo\\P06-SeriesCalculator\\P06-SeriesCalculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School_2020_2021\\11B\\OOP\\S01-DataTypesDemo\\P06-SeriesCalculator\\P06-SeriesCalculator.csproj": {
+    "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School-Repository\\Year_2020_2021\\11B_Solutions\\01-Module OOP\\S01-DataTypesDemo\\P06-SeriesCalculator\\P06-SeriesCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School_2020_2021\\11B\\OOP\\S01-DataTypesDemo\\P06-SeriesCalculator\\P06-SeriesCalculator.csproj",
+        "projectUniqueName": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School-Repository\\Year_2020_2021\\11B_Solutions\\01-Module OOP\\S01-DataTypesDemo\\P06-SeriesCalculator\\P06-SeriesCalculator.csproj",
         "projectName": "P06-SeriesCalculator",
-        "projectPath": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School_2020_2021\\11B\\OOP\\S01-DataTypesDemo\\P06-SeriesCalculator\\P06-SeriesCalculator.csproj",
+        "projectPath": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School-Repository\\Year_2020_2021\\11B_Solutions\\01-Module OOP\\S01-DataTypesDemo\\P06-SeriesCalculator\\P06-SeriesCalculator.csproj",
         "packagesPath": "C:\\Users\\АлишАлишов\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School_2020_2021\\11B\\OOP\\S01-DataTypesDemo\\P06-SeriesCalculator\\obj\\",
+        "outputPath": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School-Repository\\Year_2020_2021\\11B_Solutions\\01-Module OOP\\S01-DataTypesDemo\\P06-SeriesCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\АлишАлишов\\AppData\\Roaming\\NuGet\\NuGet.Config",

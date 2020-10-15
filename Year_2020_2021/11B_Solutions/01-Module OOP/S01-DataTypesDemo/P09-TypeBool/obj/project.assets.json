@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School_2020_2021\\11B\\OOP\\S01-DataTypesDemo\\P09-TypeBool\\P09-TypeBool.csproj",
+      "projectUniqueName": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School-Repository\\Year_2020_2021\\11B_Solutions\\01-Module OOP\\S01-DataTypesDemo\\P09-TypeBool\\P09-TypeBool.csproj",
       "projectName": "P09-TypeBool",
-      "projectPath": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School_2020_2021\\11B\\OOP\\S01-DataTypesDemo\\P09-TypeBool\\P09-TypeBool.csproj",
+      "projectPath": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School-Repository\\Year_2020_2021\\11B_Solutions\\01-Module OOP\\S01-DataTypesDemo\\P09-TypeBool\\P09-TypeBool.csproj",
       "packagesPath": "C:\\Users\\АлишАлишов\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School_2020_2021\\11B\\OOP\\S01-DataTypesDemo\\P09-TypeBool\\obj\\",
+      "outputPath": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School-Repository\\Year_2020_2021\\11B_Solutions\\01-Module OOP\\S01-DataTypesDemo\\P09-TypeBool\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\АлишАлишов\\AppData\\Roaming\\NuGet\\NuGet.Config",

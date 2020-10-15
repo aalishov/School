@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School_2020_2021\\11B\\OOP\\S01-DataTypesDemo\\P01_v2-DemoOperators\\P01_v2-DemoOperators.csproj",
+      "projectUniqueName": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School-Repository\\Year_2020_2021\\11B_Solutions\\01-Module OOP\\S01-DataTypesDemo\\P01_v2-DemoOperators\\P01_v2-DemoOperators.csproj",
       "projectName": "P01_v2-DemoOperators",
-      "projectPath": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School_2020_2021\\11B\\OOP\\S01-DataTypesDemo\\P01_v2-DemoOperators\\P01_v2-DemoOperators.csproj",
+      "projectPath": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School-Repository\\Year_2020_2021\\11B_Solutions\\01-Module OOP\\S01-DataTypesDemo\\P01_v2-DemoOperators\\P01_v2-DemoOperators.csproj",
       "packagesPath": "C:\\Users\\АлишАлишов\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School_2020_2021\\11B\\OOP\\S01-DataTypesDemo\\P01_v2-DemoOperators\\obj\\",
+      "outputPath": "C:\\Users\\АлишАлишов\\Desktop\\GIT Projects\\School-Repository\\Year_2020_2021\\11B_Solutions\\01-Module OOP\\S01-DataTypesDemo\\P01_v2-DemoOperators\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\АлишАлишов\\AppData\\Roaming\\NuGet\\NuGet.Config",
