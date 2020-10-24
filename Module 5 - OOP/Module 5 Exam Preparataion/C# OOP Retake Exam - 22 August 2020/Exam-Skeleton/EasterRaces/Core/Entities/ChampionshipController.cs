@@ -9,7 +9,6 @@
     using EasterRaces.Models.Races.Entities;
     using EasterRaces.Repositories.Entities;
     using EasterRaces.Utilities.Messages;
-    using Microsoft.VisualBasic.CompilerServices;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -130,6 +129,7 @@
             sb.AppendLine(string.Format(OutputMessages.DriverSecondPosition, second.Name, raceName));
             sb.AppendLine(string.Format(OutputMessages.DriverThirdPosition, third.Name, raceName));
 
+            this.races.Remove(race);
             return sb.ToString().TrimEnd();
         }
     }
