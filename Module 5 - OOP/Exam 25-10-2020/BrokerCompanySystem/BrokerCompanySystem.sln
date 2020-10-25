@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerCompanySystem", "BrokerCompanySystem\BrokerCompanySystem.csproj", "{418A90DE-7590-4233-8B55-6C559BC796F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{418A90DE-7590-4233-8B55-6C559BC796F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418A90DE-7590-4233-8B55-6C559BC796F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418A90DE-7590-4233-8B55-6C559BC796F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418A90DE-7590-4233-8B55-6C559BC796F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B966D90-FB74-4F4E-AB97-E84413EE247A}
+	EndGlobalSection
+EndGlobal
