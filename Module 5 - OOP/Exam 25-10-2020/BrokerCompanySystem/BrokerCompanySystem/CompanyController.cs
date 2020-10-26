@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
@@ -14,150 +13,119 @@ public class CompanyController
 
     public string CreateCompany(List<string> args)
     {
-        try
-        {
-            if (companies.Any(x=>x.Name==args[1]))
-            {
-                return $"Company {args[1]} is already registered!";
-            }
-            companies.Add(new Company(args[1]));
-            return $"Company {args[1]} was successfully registerd in the system!";
-        }
-        catch (Exception ex)
-        {
+        string name = args[0];
 
-            return ex.Message;
+        if (companies.Any(x => x.Name == name))
+        {
+            return $"Company {name} is already registered!";
         }
+        companies.Add(new Company(name));
+        return $"Company {name} was successfully registerd in the system!";
 
     }
     public string RegisterBuilding(List<string> args)
 
     {
-        try
-        {
-            string type = args[1];
-            string name = args[2];
-            string city = args[3];
-            int stars = int.Parse(args[4]);
-            double rentAmount = double.Parse(args[5]);
-            string companyName = args[6];
 
-            Company company = companies.FirstOrDefault(x => x.Name == companyName);
-   
-            if (company != null)
+        string type = args[0];
+        string name = args[1];
+        string city = args[2];
+        int stars = int.Parse(args[3]);
+        double rentAmount = double.Parse(args[4]);
+        string companyName = args[5];
+
+        Company company = companies.FirstOrDefault(x => x.Name == companyName);
+
+        if (company != null)
+        {
+            if (company.GetBuildingByName(name) != null)
             {
-                if (company.GetBuildingByName(name) != null)
-                {
-                    return $"Building {name} is already registered in Deager!";
-                }
-                switch (type)
-                {
-                    case "Hotel":
-                        company.AddBuilding(new Hotel(name, city, stars, rentAmount));
-                        break;
-                    case "Residence":
-                        company.AddBuilding(new Residence(name, city, stars, rentAmount));
-                        break;
-                    case "Business":
-                        company.AddBuilding(new Business(name, city, stars, rentAmount));
-                        break;
-                }
-                return $"Building {name} was successfully registerd in {companyName} catalog!";
+                return $"Building {name} is already registered in {companyName}!";
             }
-            return $"Invalid Company: {companyName}. Cannot find it in system!";
+            switch (type)
+            {
+                case "Hotel":
+                    company.AddBuilding(new Hotel(name, city, stars, rentAmount));
+                    break;
+                case "Residence":
+                    company.AddBuilding(new Residence(name, city, stars, rentAmount));
+                    break;
+                case "Business":
+                    company.AddBuilding(new Business(name, city, stars, rentAmount));
+                    break;
+            }
+            return $"Building {name} was successfully registerd in {companyName} catalog!";
         }
-        catch (Exception ex)
-        {
-
-            return ex.Message;
-        }
+        return $"Invalid Company: {companyName}. Cannot find it in system!";
 
     }
 
     public string RegisterBroker(List<string> args)
-
     {
+        string name = args[0];
+        int age = int.Parse(args[1]);
+        string city = args[2];
+        string companyName = args[3];
 
-        string name = args[1];
-        int age = int.Parse(args[2]);
-        string city = args[3];
-        string companyName = args[4];
-
-        try
+        Company company = companies.FirstOrDefault(x => x.Name == companyName);
+        if (company != null)
         {
-            Company company = companies.FirstOrDefault(x => x.Name == companyName);
-            if (company != null)
+            if (company.GetBrokerByName(name) != null)
             {
-                if (company.GetBrokerByName(name)!=null)
-                {
-                    return $"Broker {name} is already part of Deager!";
-                }
-                company.AddBroker(new Broker(name, age, city));
-                return $"Broker {name} was successfully hired in {company.Name}!";
+                return $"Broker {name} is already part of {companyName}!";
             }
-            return $"Invalid Company: {companyName}. Cannot find it in system!";
+            company.AddBroker(new Broker(name, age, city));
+            return $"Broker {name} was successfully hired in {companyName}!";
         }
-        catch (Exception ex)
-        {
+        return $"Invalid Company: {companyName}. Cannot find it in system!";
 
-            return ex.Message;
-        }
 
     }
 
     public string RentBuilding(List<string> args)
-
-
     {
-        string companyName = args[1];
-        string buildingName = args[2];
-        string brokerName = args[3];
+        string companyName = args[0];
+        string buildingName = args[1];
+        string brokerName = args[2];
 
-        try
+        Company company = companies.FirstOrDefault(x => x.Name == companyName);
+        if (company == null)
         {
-
-            Company company = companies.FirstOrDefault(x => x.Name == companyName);
-            if (company == null)
-            {
-                return $"Invalid Company: {companyName}. Cannot find it in system!";
-            }
-            Building building = company.GetBuildingByName(buildingName);
-            if (building == null)
-            {
-                return $"Invalid Building: {buildingName}. Cannot find it in {companyName} catalog!";
-            }
-            if (!building.IsAvailable)
-            {
-                return $"Building: {buildingName} cannot be rented!";
-            }
-            Broker broker = company.GetBrokerByName(brokerName);
-            if (broker == null)
-            {
-                return $"Invalid Broker: {brokerName}. Cannot find employee in {companyName}!";
-            }
-
-            building.IsAvailable = false;
-            double bonus = broker.ReceiveBonus(building);
-            //Successfully rented Heaven Business!
-            //Broker Sade earned 8000!
-            return $"Successfully rented {building.Name}!\nBroker {broker.Name} earned {bonus}!";
+            return $"Invalid Company: {companyName}. Cannot find it in system!";
         }
-        catch (Exception ex)
+        Building building = company.GetBuildingByName(buildingName);
+        if (building == null)
         {
-            return ex.Message;
+            return $"Invalid Building: {buildingName}. Cannot find it in {companyName} catalog!";
         }
+        if (!building.IsAvailable)
+        {
+            return $"Building: {buildingName} cannot be rented!";
+        }
+        Broker broker = company.GetBrokerByName(brokerName);
+        if (broker == null)
+        {
+            return $"Invalid Broker: {brokerName}. Cannot find employee in {companyName}!";
+        }
+
+        building.IsAvailable = false;
+        double bonus = broker.ReceiveBonus(building);
+        //Successfully rented Heaven Business!
+        //Broker Sade earned 8000!
+        return $"Successfully rented {building.Name}!\nBroker {broker.Name} earned {bonus:f0}!";
 
     }
 
     public string CompanyInfo(List<string> args)
     {
-        Company company = companies.FirstOrDefault(x => x.Name == args[1]);
-        if (company!=null)
+        string name = args[0];
+        Company company = companies.FirstOrDefault(x => x.Name == name);
+        if (company != null)
         {
             return company.ToString();
         }
-        return$"Invalid Company: {args[1]}. Cannot find it in system!";
-        
+        return $"Invalid Company: {name}. Cannot find it in system!";
+
     }
 
 
