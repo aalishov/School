@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-ConcatenateData", "P04-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-ConvertCelsiumToFarnheit", "P05-ConvertCelsiumToFarnheit\P05-ConvertCelsiumToFarnheit.csproj", "{38C05583-5925-4775-A5D1-E7CDA11D4EB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-ConvertRarToDeg", "P06-ConvertRarToDeg\P06-ConvertRarToDeg.csproj", "{075D4E84-3F12-4587-9F2B-299E40853AAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{38C05583-5925-4775-A5D1-E7CDA11D4EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38C05583-5925-4775-A5D1-E7CDA11D4EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38C05583-5925-4775-A5D1-E7CDA11D4EB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{075D4E84-3F12-4587-9F2B-299E40853AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{075D4E84-3F12-4587-9F2B-299E40853AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{075D4E84-3F12-4587-9F2B-299E40853AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{075D4E84-3F12-4587-9F2B-299E40853AAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
