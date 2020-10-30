@@ -1,0 +1,13 @@
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P01-HelloWorld\bin\Debug\netcoreapp3.1\P01-HelloWorld.exe
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P01-HelloWorld\bin\Debug\netcoreapp3.1\P01-HelloWorld.deps.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P01-HelloWorld\bin\Debug\netcoreapp3.1\P01-HelloWorld.runtimeconfig.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P01-HelloWorld\bin\Debug\netcoreapp3.1\P01-HelloWorld.runtimeconfig.dev.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P01-HelloWorld\bin\Debug\netcoreapp3.1\P01-HelloWorld.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P01-HelloWorld\bin\Debug\netcoreapp3.1\P01-HelloWorld.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P01-HelloWorld\obj\Debug\netcoreapp3.1\P01-HelloWorld.csprojAssemblyReference.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P01-HelloWorld\obj\Debug\netcoreapp3.1\P01-HelloWorld.AssemblyInfoInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P01-HelloWorld\obj\Debug\netcoreapp3.1\P01-HelloWorld.AssemblyInfo.cs
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P01-HelloWorld\obj\Debug\netcoreapp3.1\P01-HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P01-HelloWorld\obj\Debug\netcoreapp3.1\P01-HelloWorld.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P01-HelloWorld\obj\Debug\netcoreapp3.1\P01-HelloWorld.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P01-HelloWorld\obj\Debug\netcoreapp3.1\P01-HelloWorld.genruntimeconfig.cache

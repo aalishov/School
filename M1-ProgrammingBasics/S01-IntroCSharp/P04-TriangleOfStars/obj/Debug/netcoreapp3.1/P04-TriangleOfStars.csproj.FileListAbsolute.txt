@@ -1,0 +1,13 @@
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P04-TriangleOfStars\bin\Debug\netcoreapp3.1\P04-TriangleOfStars.exe
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P04-TriangleOfStars\bin\Debug\netcoreapp3.1\P04-TriangleOfStars.deps.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P04-TriangleOfStars\bin\Debug\netcoreapp3.1\P04-TriangleOfStars.runtimeconfig.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P04-TriangleOfStars\bin\Debug\netcoreapp3.1\P04-TriangleOfStars.runtimeconfig.dev.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P04-TriangleOfStars\bin\Debug\netcoreapp3.1\P04-TriangleOfStars.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P04-TriangleOfStars\bin\Debug\netcoreapp3.1\P04-TriangleOfStars.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P04-TriangleOfStars\obj\Debug\netcoreapp3.1\P04-TriangleOfStars.csprojAssemblyReference.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P04-TriangleOfStars\obj\Debug\netcoreapp3.1\P04-TriangleOfStars.AssemblyInfoInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P04-TriangleOfStars\obj\Debug\netcoreapp3.1\P04-TriangleOfStars.AssemblyInfo.cs
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P04-TriangleOfStars\obj\Debug\netcoreapp3.1\P04-TriangleOfStars.csproj.CoreCompileInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P04-TriangleOfStars\obj\Debug\netcoreapp3.1\P04-TriangleOfStars.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P04-TriangleOfStars\obj\Debug\netcoreapp3.1\P04-TriangleOfStars.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\ITCareer-V4\M1-ProgrammingBasics\S01-IntroCSharp\P04-TriangleOfStars\obj\Debug\netcoreapp3.1\P04-TriangleOfStars.genruntimeconfig.cache
