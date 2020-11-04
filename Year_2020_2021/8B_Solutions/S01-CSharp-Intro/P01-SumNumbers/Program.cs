@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Program
+public class Program
 {
     // Ctrl+F5 - Стартира приложението
     // Ctrl+K+D - Форматиране на кода (подравняване)
