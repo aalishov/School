@@ -37,10 +37,10 @@ class Program
         {
             Console.WriteLine($"=>{number*2}");
         }
-        for (int i = 0; i < nums2.Count; i++)
-        {
-            Console.WriteLine($"<={nums2[i]}");
-        }
+        //for (int i = 0; i < nums2.Count; i++)
+        //{
+        //    Console.WriteLine($"<={nums2[i]}");
+        //}
     }
 }
 
