@@ -7,49 +7,54 @@ public class Program
 {
     public static void Main()
     {
-        List<Employee> employees = new List<Employee>();
 
-        int n = int.Parse(Console.ReadLine());
+        Employee employee = new Employee("Ivan", 610m, "Programmer", "Web", "asdas@dasd", 15);
 
-        for (int i = 0; i < n; i++)
-        {
-            string[] line = Console.ReadLine()
-                .Split(' ')
-                .ToArray();
+        Console.WriteLine(employee);
 
-            string name = line[0];
-            decimal salary = decimal.Parse(line[1]);
-            string position = line[2];
-            string department = line[3];
-            string email = "n/a";
-            int age = -1;
+        //List<Employee> employees = new List<Employee>();
 
-            if (line.Length == 6)
-            {
-                email = line[4];
-                int.TryParse(line[5], out age);
-            }
-            else if (line.Length == 5)
-            {
-                if (line[4].Contains("@"))
-                {
-                    email = line[4];
-                }
-                else if (int.TryParse(line[4], out _))
-                {
-                    age = int.Parse(line[4]);
-                }
-            }
+        //int n = int.Parse(Console.ReadLine());
 
-            employees.Add(new Employee(name, salary, position, department, email, age));
-        }
+        //for (int i = 0; i < n; i++)
+        //{
+        //    string[] line = Console.ReadLine()
+        //        .Split(' ')
+        //        .ToArray();
 
-        Console.WriteLine(new string('*', 50));
+        //    string name = line[0];
+        //    decimal salary = decimal.Parse(line[1]);
+        //    string position = line[2];
+        //    string department = line[3];
+        //    string email = "n/a";
+        //    int age = -1;
 
-        foreach (var employee in employees.OrderByDescending(e => e.Salary))
-        {
-            Console.WriteLine(employee);
-        }
+        //    if (line.Length == 6)
+        //    {
+        //        email = line[4];
+        //        int.TryParse(line[5], out age);
+        //    }
+        //    else if (line.Length == 5)
+        //    {
+        //        if (line[4].Contains("@"))
+        //        {
+        //            email = line[4];
+        //        }
+        //        else if (int.TryParse(line[4], out _))
+        //        {
+        //            age = int.Parse(line[4]);
+        //        }
+        //    }
+
+        //    employees.Add(new Employee(name, salary, position, department, email, age));
+        //}
+
+        //Console.WriteLine(new string('*', 50));
+
+        //foreach (var employee in employees.OrderByDescending(e => e.Salary))
+        //{
+        //    Console.WriteLine(employee);
+        //}
     }
 }
 

@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Text;
-
+using System.ComponentModel.DataAnnotations;
 
 public class Employee
 {
+    //Полета
     private string name;
     private decimal salary;
     private string position;
@@ -13,42 +11,80 @@ public class Employee
     private string email;
     private int age;
 
-    public Employee(string name, decimal salary, string position, string department, string email, int age )
+    //Конструктор
+    public Employee(string name, decimal salary, string position, string department, string email, int age)
     {
         this.Name = name;
         this.Salary = salary;
         this.Position = position;
         this.Department = department;
-        this.email = email;
-        this.age = age;
+        this.Email = email;
+        this.Age = age;
     }
 
+    //Свойства
     public string Name
     {
         get { return name; }
-        set { name = value; }
+        set
+        {
+            if (string.IsNullOrWhiteSpace(value))
+            {
+                throw new ArgumentException("Name is invalid!");
+            }
+            name = value;
+        }
     }
 
     public decimal Salary
     {
         get { return salary; }
-        set { salary = value; }
+        set
+        {
+            if (value < 610)
+            {
+                throw new ArgumentException("Salary must be greather then or equal to 610!");
+            }
+            salary = value;
+        }
     }
 
     public string Position
     {
         get { return position; }
-        set { position = value; }
+        set
+        {
+            if (string.IsNullOrWhiteSpace(value))
+            {
+                throw new ArgumentException("Position is invalid!");
+            }
+            position = value;
+        }
     }
     public string Department
     {
         get { return department; }
-        set { department = value; }
+        set
+        {
+            if (string.IsNullOrWhiteSpace(value))
+            {
+                throw new ArgumentException("Department is invalid!");
+            }
+            department = value;
+        }
     }
     public string Email
     {
         get { return email; }
-        set { email = value; }
+        set
+        {
+            //if (!(new EmailAddressAttribute().IsValid(value)))
+            //{
+            //    throw new ArgumentException("Email is invalid!");
+
+            //}
+            email = value;
+        }
     }
     public int Age
     {
@@ -56,6 +92,8 @@ public class Employee
         set { age = value; }
     }
 
+
+    //Метод
     public override string ToString()
     {
         return $"{this.Name} {this.Salary} {this.Email} {this.Age}";

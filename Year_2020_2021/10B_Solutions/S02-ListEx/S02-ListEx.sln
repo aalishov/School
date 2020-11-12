@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-DemoList", "P01-DemoList\P01-DemoList.csproj", "{59BD8504-148B-4121-9B90-D5FA8EB1F638}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-DemoList", "P01-DemoList\P01-DemoList.csproj", "{59BD8504-148B-4121-9B90-D5FA8EB1F638}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-EvenNumbers", "P02-EvenNumbers\P02-EvenNumbers.csproj", "{6407BB8A-C7DA-45FC-A61D-9F5E685157CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-EvenNumbers", "P02-EvenNumbers\P02-EvenNumbers.csproj", "{6407BB8A-C7DA-45FC-A61D-9F5E685157CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-MinMaxElements", "P03-MinMaxElements\P03-MinMaxElements.csproj", "{141AACD0-C254-49DE-90A2-0D69AA2C1FAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-MaxSequanceOfSameElements", "P04-MaxSequanceOfSameElements\P04-MaxSequanceOfSameElements.csproj", "{B2FD2B01-53DC-4A5D-A8F6-B17A611C9E7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{6407BB8A-C7DA-45FC-A61D-9F5E685157CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6407BB8A-C7DA-45FC-A61D-9F5E685157CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6407BB8A-C7DA-45FC-A61D-9F5E685157CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{141AACD0-C254-49DE-90A2-0D69AA2C1FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{141AACD0-C254-49DE-90A2-0D69AA2C1FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{141AACD0-C254-49DE-90A2-0D69AA2C1FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{141AACD0-C254-49DE-90A2-0D69AA2C1FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2FD2B01-53DC-4A5D-A8F6-B17A611C9E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2FD2B01-53DC-4A5D-A8F6-B17A611C9E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2FD2B01-53DC-4A5D-A8F6-B17A611C9E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2FD2B01-53DC-4A5D-A8F6-B17A611C9E7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
