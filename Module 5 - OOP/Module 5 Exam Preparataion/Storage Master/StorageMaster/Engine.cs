@@ -5,11 +5,27 @@
     using System.Globalization;
     using System.Linq;
     using System.Text;
+
+    public interface IReader
+    { }
+    public interface IWriter
+    { }
+    public class ConsoleReader : IReader
+    { }
+    public class ConsoleWriter : IWriter
+    { }
     public class Engine
     {
         private StorageMaster storageMaster = new StorageMaster();
 
+        public Engine(IReader reader, IWriter writer)
+        {
 
+        }
+        public Engine()
+        {
+
+        }
         public void Run()
         {
             while (true)

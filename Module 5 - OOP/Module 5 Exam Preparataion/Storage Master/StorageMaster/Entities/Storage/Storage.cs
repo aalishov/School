@@ -104,5 +104,10 @@
             }
             throw new InvalidOperationException("No room in garage!");
         }
+
+        public override string ToString()
+        {
+            return this.GetType().Name;
+        }
     }
 }

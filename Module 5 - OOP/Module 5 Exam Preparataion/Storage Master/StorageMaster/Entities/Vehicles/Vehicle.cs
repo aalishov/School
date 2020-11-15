@@ -68,5 +68,10 @@ namespace StorageMaster.Entities.Vehicles
             }
             return this.productsInTrunk.Pop();
         }
+
+        public override string ToString()
+        {
+            return this.GetType().Name;
+        }
     }
 }

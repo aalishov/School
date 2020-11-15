@@ -147,8 +147,9 @@
                 //{
                 //    garageInfo.Append("empty");
                 //}
-                garageInfo.Append(g != null ? g.GetType().Name : "empty");
+                garageInfo.Append(g != null ? g.GetType().Name+"|" : "empty"+"|");
             }
+            garageInfo.Remove(garageInfo.Length - 1, 1);
             sb.AppendLine($"Garage: [{garageInfo}]");
 
             return sb.ToString().TrimEnd();
@@ -156,12 +157,13 @@
 
         public string GetSummary()
         {
+           
             StringBuilder sb = new StringBuilder();
 
-            foreach (var storage in storages)
+            foreach (var storage in storages.OrderByDescending(x=>x.Value.Products.Sum(p=>p.Price)))
             {
-                sb.AppendLine(storage.Key);
-                sb.AppendLine($"{storage.Value.Products.Sum(p => p.Price):F2}");
+                sb.AppendLine($"{storage.Key}:");
+                sb.AppendLine($"Storage worth: ${storage.Value.Products.Sum(p => p.Price):F2}");
             }
             return sb.ToString();
         }
