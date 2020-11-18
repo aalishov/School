@@ -3,11 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-ReadAndPrintArray", "P01-ReadAndPrintArray\P01-ReadAndPrintArray.csproj", "{4AA57C96-D891-4E22-B92F-1331474C3E07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-ReadAndPrintArray", "P01-ReadAndPrintArray\P01-ReadAndPrintArray.csproj", "{4AA57C96-D891-4E22-B92F-1331474C3E07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-MultiDimensionalElement", "P02-MultiDimensionalElement\P02-MultiDimensionalElement.csproj", "{0DDFD5F2-6F20-4E6A-8C6B-FAACFB07D937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-MultiDimensionalElement", "P02-MultiDimensionalElement\P02-MultiDimensionalElement.csproj", "{0DDFD5F2-6F20-4E6A-8C6B-FAACFB07D937}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-TwoDimentionalArraySum", "P03-TwoDimentionalArraySum\P03-TwoDimentionalArraySum.csproj", "{0A544BE1-E136-463A-8B3A-026047F35FDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-TwoDimentionalArraySum", "P03-TwoDimentionalArraySum\P03-TwoDimentionalArraySum.csproj", "{0A544BE1-E136-463A-8B3A-026047F35FDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-InputOutputArray", "P04-InputOutputArray\P04-InputOutputArray.csproj", "{F7064377-1E55-49E4-B24F-DDF30632D862}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-AverageByRows", "P05-AverageByRows\P05-AverageByRows.csproj", "{D9B2F38E-0206-4C5A-BA46-EFCD039CE088}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-MinimumElementsByColumns", "P06-MinimumElementsByColumns\P06-MinimumElementsByColumns.csproj", "{447B9967-0979-4EB6-94A6-6DA6F0BB91E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-LotaryTicket", "P07-LotaryTicket\P07-LotaryTicket.csproj", "{BAD6EC6B-1C7D-421C-B97E-DEC3D8F02BCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +35,22 @@ Global
 		{0A544BE1-E136-463A-8B3A-026047F35FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A544BE1-E136-463A-8B3A-026047F35FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A544BE1-E136-463A-8B3A-026047F35FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7064377-1E55-49E4-B24F-DDF30632D862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7064377-1E55-49E4-B24F-DDF30632D862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7064377-1E55-49E4-B24F-DDF30632D862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7064377-1E55-49E4-B24F-DDF30632D862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9B2F38E-0206-4C5A-BA46-EFCD039CE088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B2F38E-0206-4C5A-BA46-EFCD039CE088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B2F38E-0206-4C5A-BA46-EFCD039CE088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B2F38E-0206-4C5A-BA46-EFCD039CE088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{447B9967-0979-4EB6-94A6-6DA6F0BB91E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447B9967-0979-4EB6-94A6-6DA6F0BB91E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447B9967-0979-4EB6-94A6-6DA6F0BB91E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447B9967-0979-4EB6-94A6-6DA6F0BB91E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD6EC6B-1C7D-421C-B97E-DEC3D8F02BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD6EC6B-1C7D-421C-B97E-DEC3D8F02BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD6EC6B-1C7D-421C-B97E-DEC3D8F02BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD6EC6B-1C7D-421C-B97E-DEC3D8F02BCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
