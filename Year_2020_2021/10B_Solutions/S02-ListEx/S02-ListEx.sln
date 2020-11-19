@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-DemoList", "P01-DemoLis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-EvenNumbers", "P02-EvenNumbers\P02-EvenNumbers.csproj", "{6407BB8A-C7DA-45FC-A61D-9F5E685157CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-MinMaxElements", "P03-MinMaxElements\P03-MinMaxElements.csproj", "{141AACD0-C254-49DE-90A2-0D69AA2C1FAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-MinMaxElements", "P03-MinMaxElements\P03-MinMaxElements.csproj", "{141AACD0-C254-49DE-90A2-0D69AA2C1FAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-MaxSequanceOfSameElements", "P04-MaxSequanceOfSameElements\P04-MaxSequanceOfSameElements.csproj", "{B2FD2B01-53DC-4A5D-A8F6-B17A611C9E7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-MaxSequanceOfSameElements", "P04-MaxSequanceOfSameElements\P04-MaxSequanceOfSameElements.csproj", "{B2FD2B01-53DC-4A5D-A8F6-B17A611C9E7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-SumReverseNumbers", "P05-SumReverseNumbers\P05-SumReverseNumbers.csproj", "{A838D046-81E5-4464-A706-BD090822955A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B2FD2B01-53DC-4A5D-A8F6-B17A611C9E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2FD2B01-53DC-4A5D-A8F6-B17A611C9E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2FD2B01-53DC-4A5D-A8F6-B17A611C9E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A838D046-81E5-4464-A706-BD090822955A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A838D046-81E5-4464-A706-BD090822955A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A838D046-81E5-4464-A706-BD090822955A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A838D046-81E5-4464-A706-BD090822955A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
