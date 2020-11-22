@@ -95,6 +95,25 @@ where department_id in (
         where name in('Engineering','Tool Design','Marketing','Information Services'))
 order by salary ;
 
+-- Part II – Заявки към БД Geography
+use geography;
 
+-- Problem 20.	 Най-големи по население страни
+select country_name, population 
+from countries 
+where continent_code=(
+			select continent_code 
+            from continents
+			where continent_name='Europe')
+order by population desc, country_name asc
+limit 30;
 
+-- Problem 21.	 Страни и валута  (Euro / Not Euro)
+select country_name, country_code,
+	CASE 
+		WHEN currency_code='EUR' THEN 'Euro'
+		ELSE 'Not Euro'
+	END as 'currency'
+from countries
+order by country_name asc
 
