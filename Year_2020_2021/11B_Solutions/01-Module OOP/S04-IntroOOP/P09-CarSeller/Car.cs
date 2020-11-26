@@ -75,8 +75,9 @@ public class Car
     public override string ToString()
     {
         StringBuilder sb = new StringBuilder();
+
         sb.AppendLine($"{this.Model}:");
-        sb.AppendLine($"    {this.Engine.ToString()}:");
+        sb.AppendLine($"    {this.Engine}:");
         string weight = this.Weight == 0 ? "n/a" : $"{this.Weight}";
         sb.AppendLine($"    Weight: {weight}");
         string color = this.Color == null ? "n/a" : $"{ this.Color}";

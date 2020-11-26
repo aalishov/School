@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 class Program
-{
+{   // 14-5
     static void Main()
     {
         List<string> numbers = Console.ReadLine()

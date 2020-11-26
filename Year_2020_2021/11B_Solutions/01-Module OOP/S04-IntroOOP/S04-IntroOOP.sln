@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08-FamilyMembers", "P08-Fa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-TravelWithCars", "P05-TravelWithCars\P05-TravelWithCars.csproj", "{61326E16-0838-482C-B01D-DED9CD5ADA60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-CarSeller", "P09-CarSeller\P09-CarSeller.csproj", "{E8C71064-9270-43EE-BEF0-F3C90E840517}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P09-CarSeller", "P09-CarSeller\P09-CarSeller.csproj", "{E8C71064-9270-43EE-BEF0-F3C90E840517}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10-Pokemons", "P10-Pokemons\P10-Pokemons.csproj", "{A66E3B51-BC6B-4709-ADE8-5BFA0D1284A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{E8C71064-9270-43EE-BEF0-F3C90E840517}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8C71064-9270-43EE-BEF0-F3C90E840517}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8C71064-9270-43EE-BEF0-F3C90E840517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A66E3B51-BC6B-4709-ADE8-5BFA0D1284A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A66E3B51-BC6B-4709-ADE8-5BFA0D1284A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A66E3B51-BC6B-4709-ADE8-5BFA0D1284A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A66E3B51-BC6B-4709-ADE8-5BFA0D1284A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
