@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-VegetableStore", "P02-V
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-Tiles", "P03-Tiles\P03-Tiles.csproj", "{92818BE0-DA1C-4984-BD53-B2F150089DA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-Converter", "P04-Converter\P04-Converter.csproj", "{EAF9FDDF-6271-4CF5-B451-8F357F93B051}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-Converter", "P04-Converter\P04-Converter.csproj", "{EAF9FDDF-6271-4CF5-B451-8F357F93B051}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-1000Days", "P05-1000Days\P05-1000Days.csproj", "{8133C27D-9BF7-469F-BAE8-CE201223F672}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EAF9FDDF-6271-4CF5-B451-8F357F93B051}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAF9FDDF-6271-4CF5-B451-8F357F93B051}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAF9FDDF-6271-4CF5-B451-8F357F93B051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8133C27D-9BF7-469F-BAE8-CE201223F672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8133C27D-9BF7-469F-BAE8-CE201223F672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8133C27D-9BF7-469F-BAE8-CE201223F672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8133C27D-9BF7-469F-BAE8-CE201223F672}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

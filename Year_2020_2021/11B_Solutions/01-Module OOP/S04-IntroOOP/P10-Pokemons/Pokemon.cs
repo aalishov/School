@@ -15,12 +15,15 @@ public class Pokemon
         this.Health = health;
     }
     //TODO: Validations
+
+    //Свойства
     public string Name
     {
-        get { return this.name; }
-        set { this.name = value; }
+        get { return this.name; } //Дава достъп за четене
+        set { this.name = value; } //Дава възможност за промяна на стойноста на полето име
     }
 
+    //
     public string Element
     {
         get { return this.element; }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 
@@ -11,8 +12,9 @@ public class Trainer
     private readonly List<Pokemon> pokemons;
 
     //Конструктор
-    public Trainer()
+    public Trainer(string name)
     {
+        this.Name = name;
         this.pokemons = new List<Pokemon>();
     }
 
@@ -35,9 +37,54 @@ public class Trainer
         get { return this.pokemons.AsReadOnly(); }
     }
 
-    public void Add(Pokemon pokemon)
+    public void AddPokemonToTrainer(Pokemon pokemon)
     {
         this.pokemons.Add(pokemon);
+    }
+
+    public bool IsHasPokemonWithThisElement(string element)
+    {
+        foreach (var pokemon in this.Pokemons)
+        {
+            if (pokemon.Element==element)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void AddBadge()
+    {
+        this.BadgeCount++;
+    }
+
+    public void DecreaseHealth()
+    {
+        List<Pokemon> pokemonsForRemove = new List<Pokemon>();
+        foreach (var pokemon in this.pokemons)
+        {
+            if (pokemon.Health>10)
+            {
+                pokemon.Health -= 10;
+            }
+            else
+            {
+                pokemonsForRemove.Add(pokemon);
+            }
+        }
+        if (pokemonsForRemove.Any())
+        {
+            foreach (var pokemon in pokemonsForRemove)
+            {
+                this.pokemons.Remove(pokemon);
+            }
+        }
+    }
+    
+    public override string ToString()
+    {
+        return $"{this.Name} {this.BadgeCount} {this.Pokemons.Count}";
     }
 }
 
