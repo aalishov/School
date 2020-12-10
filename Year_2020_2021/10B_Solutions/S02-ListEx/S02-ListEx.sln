@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-MaxSequanceOfSameElemen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-SumReverseNumbers", "P05-SumReverseNumbers\P05-SumReverseNumbers.csproj", "{A838D046-81E5-4464-A706-BD090822955A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-DemoLinq", "P06-DemoLinq\P06-DemoLinq.csproj", "{B493EE4F-6241-4A7E-8CA4-8CCC0872E516}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-DemoLinq", "P06-DemoLinq\P06-DemoLinq.csproj", "{B493EE4F-6241-4A7E-8CA4-8CCC0872E516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-SplitWordsByCategory", "P07-SplitWordsByCategory\P07-SplitWordsByCategory.csproj", "{87314678-CFD1-4955-87CF-1B6657F40A3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{B493EE4F-6241-4A7E-8CA4-8CCC0872E516}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B493EE4F-6241-4A7E-8CA4-8CCC0872E516}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B493EE4F-6241-4A7E-8CA4-8CCC0872E516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87314678-CFD1-4955-87CF-1B6657F40A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87314678-CFD1-4955-87CF-1B6657F40A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87314678-CFD1-4955-87CF-1B6657F40A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87314678-CFD1-4955-87CF-1B6657F40A3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
