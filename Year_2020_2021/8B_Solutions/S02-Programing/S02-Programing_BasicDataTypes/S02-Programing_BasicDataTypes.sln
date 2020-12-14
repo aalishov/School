@@ -9,15 +9,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-CharType", "P02-CharTyp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-String", "P03-String\P03-String.csproj", "{1EA2A0D8-3991-4142-A5F0-A8F07FDB975C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-StringUperrLower", "P04-StringUperrLower\P04-StringUperrLower.csproj", "{B535F1F1-10A1-4075-94F6-D6ECD3BEDDCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-StringUperrLower", "P04-StringUperrLower\P04-StringUperrLower.csproj", "{B535F1F1-10A1-4075-94F6-D6ECD3BEDDCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-SearchInString", "S05-SearchInString\P05-SearchInString.csproj", "{3FB22A57-0C50-49DE-B316-926B48952BF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-SearchInString", "S05-SearchInString\P05-SearchInString.csproj", "{3FB22A57-0C50-49DE-B316-926B48952BF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-StringSubstring", "P06-StringSubstring\P06-StringSubstring.csproj", "{CCF590EC-F3AC-4EAF-B7C5-34451FE771DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-StringSubstring", "P06-StringSubstring\P06-StringSubstring.csproj", "{CCF590EC-F3AC-4EAF-B7C5-34451FE771DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-StringReplace", "P07-StringReplace\P07-StringReplace.csproj", "{97E62D24-C989-4B0E-A37D-23030E876950}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-StringReplace", "P07-StringReplace\P07-StringReplace.csproj", "{97E62D24-C989-4B0E-A37D-23030E876950}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-FileName", "P08-FileName\P08-FileName.csproj", "{848CE730-FDAC-4203-9934-A0782BF578FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-DemoInteger", "P09-DemoInteger\P09-DemoInteger.csproj", "{9C4CBA67-0E8F-4A11-ADB9-61300772CAE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10-DemoIntParse", "P10-DemoIntParse\P10-DemoIntParse.csproj", "{6D772605-7047-4715-BE2C-329FB20E7E87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11-Square1", "P11-Square1\P11-Square1.csproj", "{743ED29F-2385-4BB6-B6C2-E8717F49A79B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{848CE730-FDAC-4203-9934-A0782BF578FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{848CE730-FDAC-4203-9934-A0782BF578FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{848CE730-FDAC-4203-9934-A0782BF578FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C4CBA67-0E8F-4A11-ADB9-61300772CAE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C4CBA67-0E8F-4A11-ADB9-61300772CAE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C4CBA67-0E8F-4A11-ADB9-61300772CAE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C4CBA67-0E8F-4A11-ADB9-61300772CAE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D772605-7047-4715-BE2C-329FB20E7E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D772605-7047-4715-BE2C-329FB20E7E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D772605-7047-4715-BE2C-329FB20E7E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D772605-7047-4715-BE2C-329FB20E7E87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{743ED29F-2385-4BB6-B6C2-E8717F49A79B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{743ED29F-2385-4BB6-B6C2-E8717F49A79B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{743ED29F-2385-4BB6-B6C2-E8717F49A79B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{743ED29F-2385-4BB6-B6C2-E8717F49A79B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
