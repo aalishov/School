@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,8 +14,6 @@ namespace P07_InheritanceWindowsFormDemo
 {
     public partial class Form1 : Form
     {
-        private List<Child> school = new List<Child>();
-        private StringBuilder sb = new StringBuilder();
         //Конструктор
         public Form1()
         {
@@ -28,19 +27,16 @@ namespace P07_InheritanceWindowsFormDemo
 
         private void buttonAddChild_Click(object sender, EventArgs e)
         {
-            int age = 0;
             bool isNum = int.TryParse(textBoxAge.Text, out _);
             if (isNum)
             {
-                age = int.Parse(textBoxAge.Text);
-                Child child = new Child(textBoxName.Text, age, labelSchoolName.Text, textBoxClass.Text);
-                this.sb.AppendLine(child.ToString());
+                Child child = new Child(textBoxName.Text, int.Parse(textBoxAge.Text), labelSchoolName.Text, textBoxClass.Text);
                 listBoxChildrens.Items.Add(child.ToString());
                 ClearTextBox();
             }
             else
             {
-                textBoxAge.Text = "Въведи години - цяло число!";
+                textBoxAge.Text = "Въведи  цяло число!";
             }
         }
 
@@ -49,6 +45,12 @@ namespace P07_InheritanceWindowsFormDemo
             textBoxName.Text = string.Empty;
             textBoxAge.Text = string.Empty;
             textBoxClass.Text = string.Empty;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBoxChildrens.Items.Add("няма ученик");
+            Thread.Sleep(3000);
         }
     }
 }

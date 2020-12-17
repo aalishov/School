@@ -6,6 +6,7 @@ class Program
     static void Main()
     {
         Dictionary<string, int> resources = new Dictionary<string, int>();
+
         resources.Add("gold", 0);
         resources.Add("silver", 0);
         resources.Add("copper", 1);

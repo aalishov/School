@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-ExPersonInheritance", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-ExInheritanceNeedForSpeed", "P05-ExInheritanceNeedForSpeed\P05-ExInheritanceNeedForSpeed.csproj", "{23C81FCB-FBA9-4054-99FD-2B9A524088ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-ExInheritanceZoo", "P06-ExInheritanceZoo\P06-ExInheritanceZoo.csproj", "{22C40790-7A76-43FA-BDEB-CF8E562A885C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-ExInheritanceZoo", "P06-ExInheritanceZoo\P06-ExInheritanceZoo.csproj", "{22C40790-7A76-43FA-BDEB-CF8E562A885C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-InheritanceWindowsFormDemo", "P07-InheritanceWindowsFormDemo\P07-InheritanceWindowsFormDemo.csproj", "{8C9E9540-E25A-4F6D-B1E8-F581E14D82F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-AbstractionColoredFigure", "P07-AbstractionColoredFigure\P07-AbstractionColoredFigure.csproj", "{6D2BF631-CAF1-4653-AB5B-A47EEC1923DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{8C9E9540-E25A-4F6D-B1E8-F581E14D82F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C9E9540-E25A-4F6D-B1E8-F581E14D82F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C9E9540-E25A-4F6D-B1E8-F581E14D82F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D2BF631-CAF1-4653-AB5B-A47EEC1923DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D2BF631-CAF1-4653-AB5B-A47EEC1923DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D2BF631-CAF1-4653-AB5B-A47EEC1923DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D2BF631-CAF1-4653-AB5B-A47EEC1923DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

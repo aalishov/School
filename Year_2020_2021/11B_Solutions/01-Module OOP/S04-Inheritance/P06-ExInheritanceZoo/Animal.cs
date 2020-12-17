@@ -4,7 +4,9 @@ using System.Text;
 
 namespace P06_ExInheritanceZoo
 {
-    public class Animal
+    //abstract - не може да създаваме обекти от този клас
+    //sealed - класа не може да има наследници
+    public abstract class Animal
     {
         public Animal(string name)
         {

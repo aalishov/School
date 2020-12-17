@@ -4,7 +4,7 @@ using System.Text;
 
 namespace P06_ExInheritanceZoo
 {
-    public class Bear : Gorilla
+    public class Bear : Mammal
     {
         public Bear(string name) : base(name)
         {

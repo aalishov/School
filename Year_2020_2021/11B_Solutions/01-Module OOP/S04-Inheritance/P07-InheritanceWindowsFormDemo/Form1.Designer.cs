@@ -39,11 +39,12 @@ namespace P07_InheritanceWindowsFormDemo
             this.labelClass = new System.Windows.Forms.Label();
             this.textBoxClass = new System.Windows.Forms.TextBox();
             this.listBoxChildrens = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonAddChild
             // 
-            this.buttonAddChild.Location = new System.Drawing.Point(93, 269);
+            this.buttonAddChild.Location = new System.Drawing.Point(96, 265);
             this.buttonAddChild.Name = "buttonAddChild";
             this.buttonAddChild.Size = new System.Drawing.Size(163, 82);
             this.buttonAddChild.TabIndex = 0;
@@ -122,15 +123,26 @@ namespace P07_InheritanceWindowsFormDemo
             this.listBoxChildrens.FormattingEnabled = true;
             this.listBoxChildrens.ItemHeight = 32;
             this.listBoxChildrens.Location = new System.Drawing.Point(397, 116);
-            this.listBoxChildrens.Name = "";
+            this.listBoxChildrens.Name = "listBoxChildrens";
             this.listBoxChildrens.Size = new System.Drawing.Size(291, 260);
             this.listBoxChildrens.TabIndex = 9;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(96, 353);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(163, 53);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(795, 418);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.listBoxChildrens);
             this.Controls.Add(this.textBoxClass);
             this.Controls.Add(this.labelClass);
@@ -163,6 +175,7 @@ namespace P07_InheritanceWindowsFormDemo
         private System.Windows.Forms.Label labelClass;
         private System.Windows.Forms.TextBox textBoxClass;
         private System.Windows.Forms.ListBox listBoxChildrens;
+        private System.Windows.Forms.Button button1;
     }
 }
 

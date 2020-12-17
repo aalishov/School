@@ -7,6 +7,7 @@ namespace P06_ExInheritanceZoo
         static void Main()
         {
             Bear bear = new Bear("Big Bear");
+            Animal animal1 = new Bear("Animal");
         }
     }
 }
