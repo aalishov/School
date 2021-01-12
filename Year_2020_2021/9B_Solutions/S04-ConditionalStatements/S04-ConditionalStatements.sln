@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-BonusPoints", "P01-BonusPoints\P01-BonusPoints.csproj", "{1290B334-7C7F-4FB3-BBB9-781F00E9CE91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-SumSec", "P02-SumSec\P02-SumSec.csproj", "{A2260562-14D0-4E03-B77C-5CA324DDAF53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-SumSec", "P02-SumSec\P02-SumSec.csproj", "{A2260562-14D0-4E03-B77C-5CA324DDAF53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-SpeedInfo", "P03-SpeedInfo\P03-SpeedInfo.csproj", "{72BD7514-5218-4D0F-A82D-D4B00A9C42F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-SpeedInfo", "P03-SpeedInfo\P03-SpeedInfo.csproj", "{72BD7514-5218-4D0F-A82D-D4B00A9C42F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-FiguresAreas", "P04-FiguresAreas\P04-FiguresAreas.csproj", "{0BA52EF3-8F73-4BCF-90A9-B047F1D7EC8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{72BD7514-5218-4D0F-A82D-D4B00A9C42F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72BD7514-5218-4D0F-A82D-D4B00A9C42F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72BD7514-5218-4D0F-A82D-D4B00A9C42F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BA52EF3-8F73-4BCF-90A9-B047F1D7EC8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BA52EF3-8F73-4BCF-90A9-B047F1D7EC8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BA52EF3-8F73-4BCF-90A9-B047F1D7EC8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BA52EF3-8F73-4BCF-90A9-B047F1D7EC8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
