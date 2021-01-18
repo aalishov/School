@@ -19,7 +19,7 @@ public class Trainer
     }
 
     //Свойства
-    //TODO: Validations
+    //TODO: Trainers Validations
     public string Name
     {
         get { return this.name; }
@@ -61,7 +61,7 @@ public class Trainer
 
     public void DecreaseHealth()
     {
-        List<Pokemon> pokemonsForRemove = new List<Pokemon>();
+        List<Pokemon> removePokemon = new List<Pokemon>();
         foreach (var pokemon in this.pokemons)
         {
             if (pokemon.Health>10)
@@ -70,12 +70,12 @@ public class Trainer
             }
             else
             {
-                pokemonsForRemove.Add(pokemon);
+                removePokemon.Add(pokemon);
             }
         }
-        if (pokemonsForRemove.Any())
+        if (removePokemon.Any())
         {
-            foreach (var pokemon in pokemonsForRemove)
+            foreach (var pokemon in removePokemon)
             {
                 this.pokemons.Remove(pokemon);
             }

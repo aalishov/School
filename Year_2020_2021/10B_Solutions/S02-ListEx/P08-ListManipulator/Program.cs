@@ -7,11 +7,21 @@ class Program
     static List<int> nums = new List<int>();
     static void Main()
     {
+        ReadInitialData();
+
+        Action();
+    }
+
+    private static void ReadInitialData()
+    {
         nums = Console.ReadLine()
             .Split(' ')
             .Select(int.Parse)
             .ToList();
+    }
 
+    private static void Action()
+    {
         while (true)
         {
             string[] args = Console.ReadLine()
@@ -26,25 +36,31 @@ class Program
 
             string[] methodArgs = args.Skip(1).ToArray();
 
-            switch (cmd)
-            {
-                case "add":
-                    Add(methodArgs);
-                    break;
-                case "addmany":
-                    AddMany(methodArgs);
-                    break;
-                case "contains":
-                    Contains(methodArgs);
-                    break;
-                case "remove":
-                    Remove(methodArgs);
-                    break;
-                default:
-                    break;
-            }
+            ExecuteCommand(cmd, methodArgs);
         }
     }
+
+    private static void ExecuteCommand(string cmd, string[] methodArgs)
+    {
+        switch (cmd)
+        {
+            case "add":
+                Add(methodArgs);
+                break;
+            case "addmany":
+                AddMany(methodArgs);
+                break;
+            case "contains":
+                Contains(methodArgs);
+                break;
+            case "remove":
+                Remove(methodArgs);
+                break;
+            default:
+                break;
+        }
+    }
+
     public static void Add(string[] args)
     {
         int index = int.Parse(args[0]);

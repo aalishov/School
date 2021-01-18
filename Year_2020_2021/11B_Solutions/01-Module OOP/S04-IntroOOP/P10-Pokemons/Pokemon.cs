@@ -14,7 +14,7 @@ public class Pokemon
         this.Element = element;
         this.Health = health;
     }
-    //TODO: Validations
+    //TODO: Pokemon Validations
 
     //Свойства
     public string Name

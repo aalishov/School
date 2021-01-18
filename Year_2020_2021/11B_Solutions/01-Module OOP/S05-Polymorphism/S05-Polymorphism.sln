@@ -9,13 +9,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-Animals", "P02-Animals\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-Figures", "P03-Figures\P03-Figures.csproj", "{1EC9DC44-ECAF-47AE-B285-A332CA5B4F12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachinesCommon", "MachinesCommon\MachinesCommon.csproj", "{53EE63F3-8DED-41B7-9B58-D46851E3C06B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MachinesCommon", "MachinesCommon\MachinesCommon.csproj", "{53EE63F3-8DED-41B7-9B58-D46851E3C06B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachineConsoleApp", "MachineConsoleApp\MachineConsoleApp.csproj", "{51BD2E5E-E407-43CB-9DB5-ADCD02D0C89E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MachineConsoleApp", "MachineConsoleApp\MachineConsoleApp.csproj", "{51BD2E5E-E407-43CB-9DB5-ADCD02D0C89E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachineWinFormApp", "MachineWinFormApp\MachineWinFormApp.csproj", "{047CE821-A166-4D6B-8549-4067011FD1C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacheneWebApp", "MacheneWebApp\MacheneWebApp.csproj", "{D81CEB89-6450-4B33-BE96-F3A0DC392373}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacheneWebApp", "MacheneWebApp\MacheneWebApp.csproj", "{D81CEB89-6450-4B33-BE96-F3A0DC392373}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-VehicleLibrary", "P04-VehicleLibrary\P04-VehicleLibrary.csproj", "{7EB439EE-B167-4D12-AEDB-8F5CAE25522F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-VehicleConsoleApp", "P04-VehicleConsoleApp\P04-VehicleConsoleApp.csproj", "{F2DFDF08-0142-47F3-B66C-D3BDA9C86139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-VehicleWinFormApp", "P04-VehicleWinFormApp\P04-VehicleWinFormApp.csproj", "{58370839-B7C6-40CE-82BD-A965C91E10AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{D81CEB89-6450-4B33-BE96-F3A0DC392373}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D81CEB89-6450-4B33-BE96-F3A0DC392373}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D81CEB89-6450-4B33-BE96-F3A0DC392373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EB439EE-B167-4D12-AEDB-8F5CAE25522F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EB439EE-B167-4D12-AEDB-8F5CAE25522F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EB439EE-B167-4D12-AEDB-8F5CAE25522F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EB439EE-B167-4D12-AEDB-8F5CAE25522F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2DFDF08-0142-47F3-B66C-D3BDA9C86139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2DFDF08-0142-47F3-B66C-D3BDA9C86139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2DFDF08-0142-47F3-B66C-D3BDA9C86139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2DFDF08-0142-47F3-B66C-D3BDA9C86139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58370839-B7C6-40CE-82BD-A965C91E10AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58370839-B7C6-40CE-82BD-A965C91E10AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58370839-B7C6-40CE-82BD-A965C91E10AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58370839-B7C6-40CE-82BD-A965C91E10AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
