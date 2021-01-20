@@ -35,7 +35,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P15-AutoIncementAutoDecreme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P16-Page72Ex1", "P16-Page72Ex1\P16-Page72Ex1.csproj", "{2AAF509B-994A-4498-A46B-3833F815423C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P17-Math", "P17-Math\P17-Math.csproj", "{887230A0-38FA-4AA6-90F3-4207BC2F4C06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P17-Math", "P17-Math\P17-Math.csproj", "{887230A0-38FA-4AA6-90F3-4207BC2F4C06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P18-ConsoleWrite", "P18-ConsoleWrite\P18-ConsoleWrite.csproj", "{EE287215-9786-43A1-8661-8ECB9BA26312}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P19-ControlSymbols", "P19-ControlSymbols\P19-ControlSymbols.csproj", "{53CA078E-F533-41E7-B3FD-7E3FC5A1BA06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P20-MultiplyDigits", "P20-MultiplyDigits\P20-MultiplyDigits.csproj", "{0D711131-1F46-4301-A687-6C2AB375055F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +117,18 @@ Global
 		{887230A0-38FA-4AA6-90F3-4207BC2F4C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{887230A0-38FA-4AA6-90F3-4207BC2F4C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{887230A0-38FA-4AA6-90F3-4207BC2F4C06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE287215-9786-43A1-8661-8ECB9BA26312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE287215-9786-43A1-8661-8ECB9BA26312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE287215-9786-43A1-8661-8ECB9BA26312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE287215-9786-43A1-8661-8ECB9BA26312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53CA078E-F533-41E7-B3FD-7E3FC5A1BA06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53CA078E-F533-41E7-B3FD-7E3FC5A1BA06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53CA078E-F533-41E7-B3FD-7E3FC5A1BA06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53CA078E-F533-41E7-B3FD-7E3FC5A1BA06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D711131-1F46-4301-A687-6C2AB375055F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D711131-1F46-4301-A687-6C2AB375055F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D711131-1F46-4301-A687-6C2AB375055F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D711131-1F46-4301-A687-6C2AB375055F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
