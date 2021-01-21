@@ -15,28 +15,29 @@ namespace P04_VehicleWinFormApp
     {
         private Car car;
         private Truck truck;
+        private Bus bus;
         public Form1()
         {
             InitializeComponent();
+            EnableDisableFormOperationComponents(false);
         }
 
         private void createVehicle_Click(object sender, EventArgs e)
         {
-            this.car = new Car(carBrandTextBox.Text, carModelTextBox.Text, double.Parse(carConsumptionTextBox.Text), double.Parse(carFuelTextBox.Text));
-            this.truck = new Truck(truckBrandTextBox.Text, truckModelTextBox.Text, double.Parse(truckConsumptionTextBox.Text), double.Parse(truckFuelTextBox.Text));
-            DesableTextBox();
-        }
+            try
+            {
+                this.car = new Car(carBrandTextBox.Text, carModelTextBox.Text, double.Parse(carConsumptionTextBox.Text), double.Parse(carFuelTextBox.Text));
+                this.truck = new Truck(truckBrandTextBox.Text, truckModelTextBox.Text, double.Parse(truckConsumptionTextBox.Text), double.Parse(truckFuelTextBox.Text));
+                this.bus = new Bus(busBrandTextBox.Text, busModelTextBox.Text, double.Parse(busConsumtionTextBox.Text), double.Parse(busFuelTextBox.Text));
+                this.busCurrentPassengersCountLabel.Text = bus.CurrentPassengersCount.ToString();
+                DesableInputTextBox();
+                EnableDisableFormOperationComponents(true);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
-        private void DesableTextBox()
-        {
-            carBrandTextBox.Enabled = false;
-            carModelTextBox.Enabled = false;
-            carFuelTextBox.Enabled = false;
-            carConsumptionTextBox.Enabled = false;
-            truckModelTextBox.Enabled = false;
-            truckBrandTextBox.Enabled = false;
-            truckConsumptionTextBox.Enabled = false;
-            truckFuelTextBox.Enabled = false;
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
@@ -46,45 +47,112 @@ namespace P04_VehicleWinFormApp
 
         private void executeButton_Click(object sender, EventArgs e)
         {
-            double value = double.Parse(valueTextBox.Text);
-
-            if (driveRadioButton.Checked)
+            try
             {
-                if (carRadioButton.Checked)
+                double value = trackBar1.Value;
+
+                if (driveRadioButton.Checked)
                 {
-                    resultLabel.Text = car.Drive(value);
+                    if (carRadioButton.Checked)
+                    {
+                        resultLabel.Text = car.Drive(value);
+                    }
+                    else if (truckRadioButton.Checked)
+                    {
+                        resultLabel.Text = truck.Drive(value);
+                    }
+                    else if (busRadioButton.Checked)
+                    {
+                        resultLabel.Text = bus.Drive(value);
+                    }
+                    else
+                    {
+                        resultLabel.Text = "Invalid vehicle!";
+                    }
                 }
-                else if (truckRadioButton.Checked)
+                else if (refuelRadioButton.Checked)
                 {
-                    resultLabel.Text = truck.Drive(value);
+                    if (carRadioButton.Checked)
+                    {
+                        resultLabel.Text = car.Refuel(value);
+                    }
+                    else if (truckRadioButton.Checked)
+                    {
+                        resultLabel.Text = truck.Refuel(value);
+                    }
+                    else if (busRadioButton.Checked)
+                    {
+                        resultLabel.Text = bus.Refuel(value);
+                    }
+                    else
+                    {
+                        resultLabel.Text = "Invalid vehicle!";
+                    }
                 }
                 else
                 {
-                    resultLabel.Text = "Invalid vehicle!";
+                    resultLabel.Text = "Not suported command!";
                 }
+
+                carFuelTextBox.Text = car.Fuel.ToString();
+                truckFuelTextBox.Text = truck.Fuel.ToString();
+                busFuelTextBox.Text = bus.Fuel.ToString();
+
             }
-            else if (refuelRadioButton.Checked)
+            catch (Exception ex)
             {
-                if (carRadioButton.Checked)
-                {
-                    resultLabel.Text = car.Refuel(value);
-                }
-                else if (truckRadioButton.Checked)
-                {
-                    resultLabel.Text = truck.Refuel(value);
-                }
-                else
-                {
-                    resultLabel.Text = "Invalid vehicle!";
-                }
-            }
-            else
-            {
-                resultLabel.Text = "Not suported command!";
+                MessageBox.Show(ex.Message);
+                throw;
             }
 
-            carFuelTextBox.Text = car.Fuel.ToString();
-            truckFuelTextBox.Text = truck.Fuel.ToString();
+          
+        }
+
+
+        private void EnableDisableFormOperationComponents(bool isEnabled)
+        {
+            carRadioButton.Enabled = isEnabled;
+            truckRadioButton.Enabled = isEnabled;
+            driveRadioButton.Enabled = isEnabled;
+            busRadioButton.Enabled = isEnabled;
+            refuelRadioButton.Enabled = isEnabled;
+            executeButton.Enabled = isEnabled;
+            trackBar1.Enabled = isEnabled;
+            addPassengersButton.Enabled = isEnabled;
+            removePassengersButton.Enabled = isEnabled;
+        }
+
+        private void DesableInputTextBox()
+        {
+            carBrandTextBox.Enabled = false;
+            carModelTextBox.Enabled = false;
+            carFuelTextBox.Enabled = false;
+            carConsumptionTextBox.Enabled = false;
+            truckModelTextBox.Enabled = false;
+            truckBrandTextBox.Enabled = false;
+            truckConsumptionTextBox.Enabled = false;
+            truckFuelTextBox.Enabled = false;
+            busModelTextBox.Enabled = false;
+            busBrandTextBox.Enabled = false;
+            busConsumtionTextBox.Enabled = false;
+            busFuelTextBox.Enabled = false;
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(trackBar1, trackBar1.Value.ToString());
+        }
+
+        private void addPassengersButton_Click(object sender, EventArgs e)
+        {
+            this.bus.AddPassenger();
+            this.busCurrentPassengersCountLabel.Text = bus.CurrentPassengersCount.ToString();
+        }
+
+        private void removePassengersButton_Click(object sender, EventArgs e)
+        {
+            this.bus.RemovePassenger();
+            this.busCurrentPassengersCountLabel.Text = bus.CurrentPassengersCount.ToString();
         }
     }
 }

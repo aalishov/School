@@ -7,6 +7,8 @@ namespace P04_VehicleLibrary
         private double fuelConsumption;
 
         private double fuel;
+        private string brand;
+        private string model;
 
         public Vehicle(string brand, string model, double fuelConsumption, double fuel)
         {
@@ -16,8 +18,38 @@ namespace P04_VehicleLibrary
             this.Fuel = fuel;
         }
 
-        public string Brand { get; set; }
-        public string Model { get; set; }
+        public string Brand
+        {
+            get { return brand; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException($"{this.GetType().Name} brand can't be null or emty!");
+                }
+                if (value.Length < 3)
+                {
+                    throw new ArgumentException($"{this.GetType().Name} brand can't be less then 3 symbol!");
+                }
+                brand = value;
+            }
+        }
+        public string Model
+        {
+            get { return model; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException($"{this.GetType().Name} model can't be null or emty!");
+                }
+                if (value.Length < 3)
+                {
+                    throw new ArgumentException($"{this.GetType().Name} model can't be less then 3 symbol!");
+                }
+                model = value;
+            }
+        }
 
         public double FuelConsumption
         {
@@ -29,7 +61,7 @@ namespace P04_VehicleLibrary
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException("Fuel consumtion can't be zero or negative!");
+                    throw new ArgumentException($"{this.GetType().Name} fuel consumtion can't be zero or negative!");
                 }
                 this.fuelConsumption = value;
             }
@@ -43,7 +75,7 @@ namespace P04_VehicleLibrary
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("Fuel can't be negative!");
+                    throw new ArgumentException($"{this.GetType().Name} fuel can't be negative!");
                 }
                 this.fuel = value;
             }
