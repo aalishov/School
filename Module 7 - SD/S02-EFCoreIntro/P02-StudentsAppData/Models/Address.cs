@@ -16,8 +16,8 @@
 
         public virtual Town Town { get; set; }
 
-        public ICollection<School> Schools { get; set; }
+        public virtual ICollection<School> Schools { get; set; }
 
-        public ICollection<Student>  Students { get; set; }
+        public virtual ICollection<Student>  Students { get; set; }
     }
 }

@@ -7,6 +7,7 @@
     {
         private const string ConnectionString = "Server=.;Database=studentsDb;Trusted_Connection=True;";
 
+
         public DbSet<Address> Addresses { get; set; }
 
         public DbSet<Country> Countries { get; set; }
@@ -23,6 +24,7 @@
             {
                 optionsBuilder.UseSqlServer(ConnectionString);
             }
+            optionsBuilder.UseLazyLoadingProxies();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
