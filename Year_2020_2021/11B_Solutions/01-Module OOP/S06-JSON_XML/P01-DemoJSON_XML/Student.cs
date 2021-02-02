@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace P01_DemoJSON_XML
+﻿namespace P01_DemoJSON_XML
 {
+    using System;
+
     public class Student
     {
         private string firstName;
@@ -11,7 +9,7 @@ namespace P01_DemoJSON_XML
         private int age;
         private School school;
 
-        public Student(string firstName, string lastName, int age, School school,double[] grades)
+        public Student(string firstName, string lastName, int age, School school, double[] grades)
         {
             this.FirstName = firstName;
             this.LastName = lastName;
@@ -22,35 +20,40 @@ namespace P01_DemoJSON_XML
 
         public string FirstName
         {
-            get { return firstName; }
+            get
+            {
+                return this.firstName;
+            }
+
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException("Name can't be null or empty string!");
                 }
-                firstName = value; }
+
+                this.firstName = value;
+            }
         }
 
         public string LastName
         {
-            get { return lastName; }
-            set { lastName = value; }
+            get { return this.lastName; }
+            set { this.lastName = value; }
         }
 
         public int Age
         {
-            get { return age; }
-            set { age = value; }
+            get { return this.age; }
+            set { this.age = value; }
         }
 
         public School School
         {
-            get { return school; }
-            set { school = value; }
+            get { return this.school; }
+            set { this.school = value; }
         }
 
         public double[] Grades { get; set; }
-
     }
 }
