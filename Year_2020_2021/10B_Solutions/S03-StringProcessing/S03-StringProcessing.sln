@@ -9,15 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-CompareAndConcat", "P02
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-StringIndexOfLastIndexOf", "P03-StringIndexOfLastIndexOf\P03-StringIndexOfLastIndexOf.csproj", "{A47FCAAE-E395-4AE4-A107-A292AA858B4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-DemoReplace", "P04-DemoReplace\P04-DemoReplace.csproj", "{05C1FEB9-6687-4763-A384-0315B902E927}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-DemoReplace", "P04-DemoReplace\P04-DemoReplace.csproj", "{05C1FEB9-6687-4763-A384-0315B902E927}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-DemoRemove", "P05-DemoRemove\P05-DemoRemove.csproj", "{DA6F49A1-390D-44A9-BB6C-6749493B0633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-DemoRemove", "P05-DemoRemove\P05-DemoRemove.csproj", "{DA6F49A1-390D-44A9-BB6C-6749493B0633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-DemoLowerUpper", "P06-DemoLowerUpper\P06-DemoLowerUpper.csproj", "{0808AE9A-48E8-4353-9A58-57F598A025AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-DemoLowerUpper", "P06-DemoLowerUpper\P06-DemoLowerUpper.csproj", "{0808AE9A-48E8-4353-9A58-57F598A025AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-DemoTrim", "P07-DemoTrim\P07-DemoTrim.csproj", "{E9A914B0-DF6C-4E49-985D-BA5EAE43C85E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-DemoTrim", "P07-DemoTrim\P07-DemoTrim.csproj", "{E9A914B0-DF6C-4E49-985D-BA5EAE43C85E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-DemoBuilder", "P08-DemoBuilder\P08-DemoBuilder.csproj", "{9C6D7B2F-FC8D-4304-B702-AFE6FD32460C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08-DemoBuilder", "P08-DemoBuilder\P08-DemoBuilder.csproj", "{9C6D7B2F-FC8D-4304-B702-AFE6FD32460C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-StringBuilder", "P09-StringBuilder\P09-StringBuilder.csproj", "{943FB02E-979E-4FC8-8A2A-5FF85070C349}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{9C6D7B2F-FC8D-4304-B702-AFE6FD32460C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C6D7B2F-FC8D-4304-B702-AFE6FD32460C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C6D7B2F-FC8D-4304-B702-AFE6FD32460C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{943FB02E-979E-4FC8-8A2A-5FF85070C349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943FB02E-979E-4FC8-8A2A-5FF85070C349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943FB02E-979E-4FC8-8A2A-5FF85070C349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943FB02E-979E-4FC8-8A2A-5FF85070C349}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

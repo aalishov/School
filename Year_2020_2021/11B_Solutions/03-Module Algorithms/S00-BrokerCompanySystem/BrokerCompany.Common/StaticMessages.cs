@@ -9,10 +9,10 @@
         public const string BuildingRentAmaountInvalidValue = "Rent amount cannot be less or equal to 0!";
 
         //Building ToString() messages
-        public static string buildingNameAndStars = string.Format("****Building: {Name} <{Stars}>");
-        public static string buildingLocation = string.Format("****Location: {City}");
-        public static string buildingRentAmount = string.Format("****RentAmount: {RentAmount:f2}");
-        public static string buildingIsAvailable = string.Format("****Is Available: {IsAvailable}");
+        public const string BuildingNameAndStars = "****Building: {0} <{1}>";
+        public const string BuildingLocation = "****Location: {0}";
+        public const string BuildingRentAmount = "****RentAmount: {0:f2}";
+        public const string BuildingIsAvailable = "****Is Available: {0}";
 
         //Hotel exception messages
         public const string HotelInvalidNameValue = "Name of hotel buildings should end on Hotel!";

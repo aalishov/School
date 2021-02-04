@@ -96,10 +96,10 @@
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(StaticMessages.buildingNameAndStars);
-            sb.AppendLine(StaticMessages.buildingLocation);
-            sb.AppendLine(StaticMessages.buildingRentAmount);
-            sb.AppendLine(StaticMessages.buildingIsAvailable);
+            sb.AppendLine(string.Format(StaticMessages.BuildingNameAndStars,this.Name,this.Stars));
+            sb.AppendLine(StaticMessages.BuildingLocation);
+            sb.AppendLine(StaticMessages.BuildingRentAmount);
+            sb.AppendLine(StaticMessages.BuildingIsAvailable);
             return sb.ToString();
         }
     }
