@@ -2,6 +2,13 @@
 
 class Program
 {
+    const double TaxiStartPrice = 0.70;
+    const double TaxiDayPrice = 0.79;
+    const double TaxiNightPrice = 0.9;
+    const double BusPrice = 0.09;
+    const double TrainPrice = 0.06;
+    const int busMinKm = 20;
+    const int trainMinKm = 100;
     static void Main()
     {
         double km = double.Parse(Console.ReadLine());
@@ -9,29 +16,29 @@ class Program
 
         double totalPrice = 0;
 
-        if (km < 20)
+        if (km < busMinKm)
         {
             //taxi
-            totalPrice += 0.70;
+            totalPrice += TaxiStartPrice;
 
             if (dayOrNight == "day")
             {
-                totalPrice += km * 0.79;
+                totalPrice += km * TaxiDayPrice;
             }
             else if (dayOrNight == "night")
             {
-                totalPrice += km * 0.9;
+                totalPrice += km * TaxiNightPrice;
             }
         }
-        else if (km >= 20 && km < 100)
+        else if (km >= busMinKm && km < trainMinKm)
         {
             //bus
-            totalPrice += km * 0.09;
+            totalPrice += km * BusPrice;
         }
-        else if (km >= 100)
+        else if (km >= trainMinKm)
         {
             //train
-            totalPrice += km * 0.06;
+            totalPrice += km * TrainPrice;
         }
 
         Console.WriteLine($"{totalPrice:f2}");
