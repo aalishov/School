@@ -4,7 +4,7 @@
     using System.Text;
     using BrokerCompany.Common;
 
-    public abstract class Building
+    public abstract class Building : IBuilding
     {
         private string name;
         private string city;
@@ -26,11 +26,11 @@
                 return this.name;
             }
 
-            set
+            protected set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException(StaticMessages.BuildingInvalidNameValue);
+                    throw new ArgumentException(string.Format(StaticMessages.InvalidNameValue, nameof(Building)));
                 }
 
                 this.name = value;
@@ -44,11 +44,11 @@
                 return this.city;
             }
 
-            set
+            private set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException(StaticMessages.BuildingInvalidNameValue);
+                    throw new ArgumentException(StaticMessages.CityInvalidNameValue);
                 }
 
                 this.city = value;
@@ -62,7 +62,7 @@
                 return this.stars;
             }
 
-            set
+            private set
             {
                 if (value < 0 || value > 5)
                 {
@@ -80,7 +80,7 @@
                 return this.rentAmount;
             }
 
-            set
+            private set
             {
                 if (value <= 0)
                 {
@@ -96,10 +96,10 @@
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(string.Format(StaticMessages.BuildingNameAndStars,this.Name,this.Stars));
-            sb.AppendLine(StaticMessages.BuildingLocation);
-            sb.AppendLine(StaticMessages.BuildingRentAmount);
-            sb.AppendLine(StaticMessages.BuildingIsAvailable);
+            sb.AppendLine(string.Format(StaticMessages.BuildingNameAndStars, this.Name, this.Stars));
+            sb.AppendLine(string.Format(StaticMessages.Location, this.City));
+            sb.AppendLine(string.Format(StaticMessages.BuildingRentAmount, this.RentAmount));
+            sb.AppendLine(string.Format(StaticMessages.BuildingIsAvailable, this.IsAvailable));
             return sb.ToString();
         }
     }

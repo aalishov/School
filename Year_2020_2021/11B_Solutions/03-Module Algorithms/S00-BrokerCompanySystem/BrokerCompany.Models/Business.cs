@@ -3,9 +3,9 @@
     using System;
     using BrokerCompany.Common;
 
-    public sealed class Hotel : Building
+    public sealed class Business : Building
     {
-        public Hotel(string name, string city, int stars, double rentAmount)
+        public Business(string name, string city, int stars, double rentAmount)
             : base(name, city, stars, rentAmount)
         {
         }
@@ -20,9 +20,9 @@
             protected set
             {
                 base.Name = value;
-                if (value.Substring(value.Length - nameof(Hotel).Length, nameof(Hotel).Length) == nameof(Hotel))
+                if (value.Substring(value.Length - nameof(Business).Length, nameof(Business).Length) == nameof(Business))
                 {
-                    throw new ArgumentException(string.Format(StaticMessages.HotelInvalidTypeNameValue, nameof(Hotel)));
+                    throw new ArgumentException(string.Format(StaticMessages.HotelInvalidTypeNameValue, nameof(Business)));
                 }
             }
         }
