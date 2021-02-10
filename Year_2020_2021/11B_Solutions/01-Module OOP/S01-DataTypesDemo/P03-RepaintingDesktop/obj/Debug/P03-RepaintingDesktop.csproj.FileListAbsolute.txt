@@ -1,0 +1,10 @@
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P03-RepaintingDesktop\bin\Debug\P03-RepaintingDesktop.exe.config
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P03-RepaintingDesktop\bin\Debug\P03-RepaintingDesktop.exe
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P03-RepaintingDesktop\bin\Debug\P03-RepaintingDesktop.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P03-RepaintingDesktop\obj\Debug\P03-RepaintingDesktop.csprojAssemblyReference.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P03-RepaintingDesktop\obj\Debug\P03_RepaintingDesktop.Form1.resources
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P03-RepaintingDesktop\obj\Debug\P03_RepaintingDesktop.Properties.Resources.resources
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P03-RepaintingDesktop\obj\Debug\P03-RepaintingDesktop.csproj.GenerateResource.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P03-RepaintingDesktop\obj\Debug\P03-RepaintingDesktop.csproj.CoreCompileInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P03-RepaintingDesktop\obj\Debug\P03-RepaintingDesktop.exe
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P03-RepaintingDesktop\obj\Debug\P03-RepaintingDesktop.pdb

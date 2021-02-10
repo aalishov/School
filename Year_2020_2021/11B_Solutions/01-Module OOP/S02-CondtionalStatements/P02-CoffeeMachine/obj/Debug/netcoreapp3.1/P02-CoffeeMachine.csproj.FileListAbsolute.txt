@@ -1,0 +1,13 @@
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S02-CondtionalStatements\P02-CoffeeMachine\bin\Debug\netcoreapp3.1\P02-CoffeeMachine.exe
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S02-CondtionalStatements\P02-CoffeeMachine\bin\Debug\netcoreapp3.1\P02-CoffeeMachine.deps.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S02-CondtionalStatements\P02-CoffeeMachine\bin\Debug\netcoreapp3.1\P02-CoffeeMachine.runtimeconfig.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S02-CondtionalStatements\P02-CoffeeMachine\bin\Debug\netcoreapp3.1\P02-CoffeeMachine.runtimeconfig.dev.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S02-CondtionalStatements\P02-CoffeeMachine\bin\Debug\netcoreapp3.1\P02-CoffeeMachine.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S02-CondtionalStatements\P02-CoffeeMachine\bin\Debug\netcoreapp3.1\P02-CoffeeMachine.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S02-CondtionalStatements\P02-CoffeeMachine\obj\Debug\netcoreapp3.1\P02-CoffeeMachine.csprojAssemblyReference.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S02-CondtionalStatements\P02-CoffeeMachine\obj\Debug\netcoreapp3.1\P02-CoffeeMachine.AssemblyInfoInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S02-CondtionalStatements\P02-CoffeeMachine\obj\Debug\netcoreapp3.1\P02-CoffeeMachine.AssemblyInfo.cs
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S02-CondtionalStatements\P02-CoffeeMachine\obj\Debug\netcoreapp3.1\P02-CoffeeMachine.csproj.CoreCompileInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S02-CondtionalStatements\P02-CoffeeMachine\obj\Debug\netcoreapp3.1\P02-CoffeeMachine.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S02-CondtionalStatements\P02-CoffeeMachine\obj\Debug\netcoreapp3.1\P02-CoffeeMachine.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S02-CondtionalStatements\P02-CoffeeMachine\obj\Debug\netcoreapp3.1\P02-CoffeeMachine.genruntimeconfig.cache

@@ -1,0 +1,15 @@
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\bin\Debug\netcoreapp3.1\P08-DemoLinq.exe
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\bin\Debug\netcoreapp3.1\P08-DemoLinq.deps.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\bin\Debug\netcoreapp3.1\P08-DemoLinq.runtimeconfig.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\bin\Debug\netcoreapp3.1\P08-DemoLinq.runtimeconfig.dev.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\bin\Debug\netcoreapp3.1\P08-DemoLinq.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\bin\Debug\netcoreapp3.1\P08-DemoLinq.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\obj\Debug\netcoreapp3.1\P08-DemoLinq.csprojAssemblyReference.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\obj\Debug\netcoreapp3.1\P08-DemoLinq.AssemblyInfoInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\obj\Debug\netcoreapp3.1\P08-DemoLinq.AssemblyInfo.cs
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\obj\Debug\netcoreapp3.1\P08-DemoLinq.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\obj\Debug\netcoreapp3.1\P08-DemoLinq.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\obj\Debug\netcoreapp3.1\P08-DemoLinq.genruntimeconfig.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\obj\Debug\netcoreapp3.1\P08-DemoLinq.csproj.CoreCompileInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S01-DataTypesDemo\P08-DemoLinq\obj\Debug\netcoreapp3.1\P08-DemoLinq.csproj.CopyComplete
