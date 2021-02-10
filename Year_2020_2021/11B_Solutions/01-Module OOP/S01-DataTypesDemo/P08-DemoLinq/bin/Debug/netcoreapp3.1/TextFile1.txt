@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "Krasi",
+    "Age": 17,
+    "HairColor": "black"
+  },
+  {
+    "Name": "Gosho",
+    "Age": 20,
+    "HairColor": null
+  }
+]

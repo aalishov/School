@@ -1,0 +1,13 @@
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P04-SnooketTickets\bin\Debug\netcoreapp3.1\P04-SnooketTickets.exe
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P04-SnooketTickets\bin\Debug\netcoreapp3.1\P04-SnooketTickets.deps.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P04-SnooketTickets\bin\Debug\netcoreapp3.1\P04-SnooketTickets.runtimeconfig.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P04-SnooketTickets\bin\Debug\netcoreapp3.1\P04-SnooketTickets.runtimeconfig.dev.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P04-SnooketTickets\bin\Debug\netcoreapp3.1\P04-SnooketTickets.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P04-SnooketTickets\bin\Debug\netcoreapp3.1\P04-SnooketTickets.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P04-SnooketTickets\obj\Debug\netcoreapp3.1\P04-SnooketTickets.csprojAssemblyReference.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P04-SnooketTickets\obj\Debug\netcoreapp3.1\P04-SnooketTickets.AssemblyInfoInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P04-SnooketTickets\obj\Debug\netcoreapp3.1\P04-SnooketTickets.AssemblyInfo.cs
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P04-SnooketTickets\obj\Debug\netcoreapp3.1\P04-SnooketTickets.csproj.CoreCompileInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P04-SnooketTickets\obj\Debug\netcoreapp3.1\P04-SnooketTickets.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P04-SnooketTickets\obj\Debug\netcoreapp3.1\P04-SnooketTickets.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\School-Repository\Year_2020_2021\11B_Solutions\01-Module OOP\S02-CondtionalStatements\P04-SnooketTickets\obj\Debug\netcoreapp3.1\P04-SnooketTickets.genruntimeconfig.cache

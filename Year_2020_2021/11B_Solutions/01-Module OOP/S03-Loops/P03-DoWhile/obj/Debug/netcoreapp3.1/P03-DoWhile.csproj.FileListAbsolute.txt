@@ -1,0 +1,13 @@
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S03-Loops\P03-DoWhile\bin\Debug\netcoreapp3.1\P03-DoWhile.exe
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S03-Loops\P03-DoWhile\bin\Debug\netcoreapp3.1\P03-DoWhile.deps.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S03-Loops\P03-DoWhile\bin\Debug\netcoreapp3.1\P03-DoWhile.runtimeconfig.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S03-Loops\P03-DoWhile\bin\Debug\netcoreapp3.1\P03-DoWhile.runtimeconfig.dev.json
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S03-Loops\P03-DoWhile\bin\Debug\netcoreapp3.1\P03-DoWhile.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S03-Loops\P03-DoWhile\bin\Debug\netcoreapp3.1\P03-DoWhile.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S03-Loops\P03-DoWhile\obj\Debug\netcoreapp3.1\P03-DoWhile.csprojAssemblyReference.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S03-Loops\P03-DoWhile\obj\Debug\netcoreapp3.1\P03-DoWhile.AssemblyInfoInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S03-Loops\P03-DoWhile\obj\Debug\netcoreapp3.1\P03-DoWhile.AssemblyInfo.cs
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S03-Loops\P03-DoWhile\obj\Debug\netcoreapp3.1\P03-DoWhile.csproj.CoreCompileInputs.cache
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S03-Loops\P03-DoWhile\obj\Debug\netcoreapp3.1\P03-DoWhile.dll
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S03-Loops\P03-DoWhile\obj\Debug\netcoreapp3.1\P03-DoWhile.pdb
+C:\Users\АлишАлишов\Desktop\GIT Projects\School_2020_2021\11B\OOP\S03-Loops\P03-DoWhile\obj\Debug\netcoreapp3.1\P03-DoWhile.genruntimeconfig.cache

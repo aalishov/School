@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h1>Welcome to Krasi Web Site!</h1>
+    @{
+        List<string> info = new List<string>() { "asdasd", "asdasd", "asdasd", "123123", "123123" };
+
+    }
+    <table class="table table-bordered table-hover">
+        @for (int i = 0; i < info.Count; i++)
+        {
+            <tr >
+                <td>@info[i]</td>
+            </tr>
+        }
+    </table>
+    <button class="btn-danger">OK</button>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
