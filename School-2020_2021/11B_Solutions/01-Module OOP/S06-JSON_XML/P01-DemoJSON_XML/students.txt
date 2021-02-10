@@ -1,0 +1,45 @@
+[
+  {
+    "FirstName": "Ivan",
+    "LastName": "Ivanov",
+    "Age": 17,
+    "School": {
+      "Name": "Vasil Levski",
+      "Address": "Kristal 10",
+      "IsPrimarySchool": true,
+      "StudentsCount": 550
+    },
+    "Grades": [
+      5.0,
+      3.2,
+      4.0
+    ]
+  },
+  {
+    "FirstName": "Ivan",
+    "LastName": "Petrvo",
+    "Age": 13,
+    "School": {
+      "Name": "Vasil Levski",
+      "Address": "Kristal 10",
+      "IsPrimarySchool": true,
+      "StudentsCount": 550
+    },
+    "Grades": [
+      5.0,
+      3.2,
+      4.0
+    ]
+  },
+  {
+    "FirstName": "Nikolay",
+    "LastName": "Petrvo",
+    "Age": 13,
+    "School": null,
+    "Grades": [
+      4.0,
+      5.2,
+      6.0
+    ]
+  }
+]
