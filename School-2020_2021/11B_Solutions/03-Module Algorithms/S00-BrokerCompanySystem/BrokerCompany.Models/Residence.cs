@@ -22,7 +22,7 @@
                 base.Name = value;
                 if (value.Substring(value.Length - nameof(Residence).Length, nameof(Residence).Length) == nameof(Residence))
                 {
-                    throw new ArgumentException(string.Format(StaticMessages.HotelInvalidTypeNameValue, nameof(Residence)));
+                    throw new ArgumentException(string.Format(ModelsSM.HotelInvalidTypeNameValue, nameof(Residence)));
                 }
             }
         }

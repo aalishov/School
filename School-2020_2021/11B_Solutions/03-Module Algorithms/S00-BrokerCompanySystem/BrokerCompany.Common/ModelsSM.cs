@@ -1,6 +1,6 @@
 ﻿namespace BrokerCompany.Common
 {
-    public static class StaticMessages
+    public static class ModelsSM
     {
         //Exception messages
         public const string InvalidNameValue = "{0} name must not be null or empty!";
@@ -27,5 +27,10 @@
         public const string BrokerNameAndAge = "****Broker: {0} <{1}>";
         public const string BrokerBonus = "****Bonus: {0:f2}";
         public const string BrokerBuilding = "****** {0}";
+
+        //Company ToString() messages
+        public const string CompanyName = "Company: {0}";
+        public const string CompanyBrokersCount = "##Brokers: {0}";
+        public const string CompanyBuildingsCount = "##Brokers: {0}";
     }
 }

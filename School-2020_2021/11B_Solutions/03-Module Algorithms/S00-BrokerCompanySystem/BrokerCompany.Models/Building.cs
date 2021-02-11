@@ -30,7 +30,7 @@
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException(string.Format(StaticMessages.InvalidNameValue, nameof(Building)));
+                    throw new ArgumentException(string.Format(ModelsSM.InvalidNameValue, nameof(Building)));
                 }
 
                 this.name = value;
@@ -48,7 +48,7 @@
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException(StaticMessages.CityInvalidNameValue);
+                    throw new ArgumentException(ModelsSM.CityInvalidNameValue);
                 }
 
                 this.city = value;
@@ -66,7 +66,7 @@
             {
                 if (value < 0 || value > 5)
                 {
-                    throw new ArgumentException(StaticMessages.BuildingStarsInvalidValue);
+                    throw new ArgumentException(ModelsSM.BuildingStarsInvalidValue);
                 }
 
                 this.stars = value;
@@ -84,7 +84,7 @@
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException(StaticMessages.BuildingRentAmaountInvalidValue);
+                    throw new ArgumentException(ModelsSM.BuildingRentAmaountInvalidValue);
                 }
 
                 this.rentAmount = value;
@@ -96,10 +96,10 @@
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(string.Format(StaticMessages.BuildingNameAndStars, this.Name, this.Stars));
-            sb.AppendLine(string.Format(StaticMessages.Location, this.City));
-            sb.AppendLine(string.Format(StaticMessages.BuildingRentAmount, this.RentAmount));
-            sb.AppendLine(string.Format(StaticMessages.BuildingIsAvailable, this.IsAvailable));
+            sb.AppendLine(string.Format(ModelsSM.BuildingNameAndStars, this.Name, this.Stars));
+            sb.AppendLine(string.Format(ModelsSM.Location, this.City));
+            sb.AppendLine(string.Format(ModelsSM.BuildingRentAmount, this.RentAmount));
+            sb.AppendLine(string.Format(ModelsSM.BuildingIsAvailable, this.IsAvailable));
             return sb.ToString();
         }
     }

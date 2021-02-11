@@ -5,9 +5,9 @@
     using System.Text;
     using BrokerCompany.Common;
 
-    public class Broker
+    public class Broker : IBroker
     {
-        private ICollection<IBuilding> buildings;
+        private readonly ICollection<IBuilding> buildings;
         private string name;
         private int age;
         private string city;
@@ -32,7 +32,7 @@
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException(string.Format(StaticMessages.InvalidNameValue, nameof(Broker)));
+                    throw new ArgumentException(string.Format(ModelsSM.InvalidNameValue, nameof(Broker)));
                 }
 
                 this.name = value;
@@ -50,7 +50,7 @@
             {
                 if (value < 16 || value > 70)
                 {
-                    throw new ArgumentException(StaticMessages.BrokerInvalidAge);
+                    throw new ArgumentException(ModelsSM.BrokerInvalidAge);
                 }
 
                 this.age = value;
@@ -68,7 +68,7 @@
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException(StaticMessages.CityInvalidNameValue);
+                    throw new ArgumentException(ModelsSM.CityInvalidNameValue);
                 }
 
                 this.city = value;
@@ -88,9 +88,9 @@
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(string.Format(StaticMessages.BrokerNameAndAge, this.Name, this.Age));
-            sb.AppendLine(string.Format(StaticMessages.Location, this.City));
-            sb.AppendLine(string.Format(StaticMessages.BrokerBonus, this.Bonus));
+            sb.AppendLine(string.Format(ModelsSM.BrokerNameAndAge, this.Name, this.Age));
+            sb.AppendLine(string.Format(ModelsSM.Location, this.City));
+            sb.AppendLine(string.Format(ModelsSM.BrokerBonus, this.Bonus));
             foreach (var building in this.buildings)
             {
                 sb.AppendLine(building.Name);
