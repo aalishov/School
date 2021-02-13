@@ -9,4 +9,10 @@
     <ProjectReference Include="..\RealEstates.Services\RealEstates.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="imot.bg-raw-data-2020-07-23.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

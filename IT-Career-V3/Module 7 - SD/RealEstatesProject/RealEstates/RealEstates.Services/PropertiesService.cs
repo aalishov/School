@@ -4,6 +4,7 @@
     using RealEstates.Data.Models;
     using RealEstates.Services.Models;
     using System;
+    using System.Collections.Generic;
     using System.Linq;
 
     public class PropertiesService
@@ -15,6 +16,26 @@
             this.db = db;
         }
 
+        public PropertiesViewModel GetProperties(int pageNumber = 1)
+        {
+            PropertiesViewModel model = new PropertiesViewModel();
+
+            model.ElementsCount = db.Properties.Count();
+            model.PageNumber = pageNumber;
+
+            model.Properties = db.Properties.Select(x => new PropertyViewModel()
+            {
+                District = x.District.Name,
+                Size = x.Size,
+                Price = x.Price,
+                Floor = (x.Floor ?? 0).ToString() + "/" + (x.TotalNumberOfFloors ?? 0)
+
+            }).Skip(model.ItemsPerPage * model.PageNumber - 1)
+            .Take(model.ItemsPerPage)
+            .ToList();
+
+            return model;
+        }
         public void Create(PropertyInputViewModel input)
         {
             if (input.District == null)
@@ -41,7 +62,7 @@
             property.District = district;
 
             PropertyType propertyType = this.db.PropertyTypes.FirstOrDefault(x => x.Name == input.PropertyType);
-            if (propertyType==null)
+            if (propertyType == null)
             {
                 propertyType = new PropertyType() { Name = input.PropertyType };
             }
@@ -49,7 +70,7 @@
             property.PropertyType = propertyType;
 
             BuildingType buildingType = this.db.BuildingTypes.FirstOrDefault(x => x.Name == input.BuildingType);
-            if (buildingType==null)
+            if (buildingType == null)
             {
                 buildingType = new BuildingType() { Name = input.BuildingType };
             }
