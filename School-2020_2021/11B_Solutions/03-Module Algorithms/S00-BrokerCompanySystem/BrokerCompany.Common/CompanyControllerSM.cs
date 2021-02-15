@@ -15,7 +15,7 @@
 
         public const string BuildingNotFound = "Invalid Building: {0}. Cannot find it in {1} catalog!";
         public const string BuildingAlreadeRented = "Building: {0} cannot be rented!";
-        public const string BrokerNotFound = ": Invalid Broker: {0}. Cannot find employee in {1}!";
+        public const string BrokerNotFound = "Invalid Broker: {0}. Cannot find employee in {1}!";
 
     }
 }

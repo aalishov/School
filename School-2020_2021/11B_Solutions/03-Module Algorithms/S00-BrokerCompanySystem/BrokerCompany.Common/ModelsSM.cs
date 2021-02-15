@@ -31,6 +31,6 @@
         //Company ToString() messages
         public const string CompanyName = "Company: {0}";
         public const string CompanyBrokersCount = "##Brokers: {0}";
-        public const string CompanyBuildingsCount = "##Brokers: {0}";
+        public const string CompanyBuildingsCount = "##Buildings: {0}";
     }
 }

@@ -14,7 +14,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrokerCompany.Common", "Bro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrokerCompany.ConsoleApp", "BrokerCompany.ConsoleApp\BrokerCompany.ConsoleApp.csproj", "{8F3D7B17-8231-4D9D-87CC-BAA026CA0059}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerCompany.Services", "BrokerCompany.Services\BrokerCompany.Services.csproj", "{EC19A52D-50B9-4550-8D1C-4A7DE5093C7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrokerCompany.Services", "BrokerCompany.Services\BrokerCompany.Services.csproj", "{EC19A52D-50B9-4550-8D1C-4A7DE5093C7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerCompany.WinFormsApp", "BrokerCompany.WinFormsApp\BrokerCompany.WinFormsApp.csproj", "{5FFFAD86-E7D3-431F-ACDE-AD78A1FB0826}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{EC19A52D-50B9-4550-8D1C-4A7DE5093C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC19A52D-50B9-4550-8D1C-4A7DE5093C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC19A52D-50B9-4550-8D1C-4A7DE5093C7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FFFAD86-E7D3-431F-ACDE-AD78A1FB0826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FFFAD86-E7D3-431F-ACDE-AD78A1FB0826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FFFAD86-E7D3-431F-ACDE-AD78A1FB0826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FFFAD86-E7D3-431F-ACDE-AD78A1FB0826}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

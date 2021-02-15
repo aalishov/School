@@ -17,6 +17,7 @@
             this.City = city;
             this.Stars = stars;
             this.RentAmount = rentAmount;
+            this.IsAvailable = true;
         }
 
         public virtual string Name

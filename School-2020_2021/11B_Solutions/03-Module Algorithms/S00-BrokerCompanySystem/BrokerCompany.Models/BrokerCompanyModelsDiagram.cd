@@ -43,6 +43,7 @@
       <HashCode>EAAAAAAAAAAAAgAEAACAAAQAAAAEAAAIAAAAAIAAAAI=</HashCode>
       <FileName>Company.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Interface Name="BrokerCompany.Models.IBuilding">
     <Position X="0.5" Y="0.5" Width="1.5" />

@@ -7,7 +7,7 @@
         string City { get; }
         string Name { get; }
 
-        double ReceiveBonus(Building building);
+        double ReceiveBonus(IBuilding building);
         string ToString();
     }
 }

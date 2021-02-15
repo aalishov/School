@@ -77,8 +77,9 @@
 
         public double Bonus { get; private set; }
 
-        public double ReceiveBonus(Building building)
+        public double ReceiveBonus(IBuilding building)
         {
+            building.IsAvailable = false;
             this.buildings.Add(building);
             double calculateBonus = building.RentAmount * 2 * building.Stars / 100.0;
             this.Bonus += calculateBonus;

@@ -20,7 +20,7 @@
             protected set
             {
                 base.Name = value;
-                if (value.Substring(value.Length - nameof(Residence).Length, nameof(Residence).Length) == nameof(Residence))
+                if (value.Substring(value.Length - nameof(Residence).Length, nameof(Residence).Length) != nameof(Residence))
                 {
                     throw new ArgumentException(string.Format(ModelsSM.HotelInvalidTypeNameValue, nameof(Residence)));
                 }
