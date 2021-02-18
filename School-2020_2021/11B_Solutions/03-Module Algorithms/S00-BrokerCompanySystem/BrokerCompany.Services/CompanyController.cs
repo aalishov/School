@@ -138,6 +138,10 @@ namespace BrokerCompany.Services
             }
             return company.ToString();
         }
+        public List<string> CompanyList()
+        {
+            return this.companies.Select(x => x.Name).ToList();
+        }
 
         public string Shutdown()
         {

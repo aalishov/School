@@ -9,13 +9,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-Pool", "P02-Pool\P02-Po
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-Tom", "P03-Tom\P03-Tom.csproj", "{55352622-A39A-4494-9BE4-834EE95A9E1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-Harvest", "P04-Harvest\P04-Harvest.csproj", "{D193CB34-8060-43A7-AD81-02B1DDA73E9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-Harvest", "P04-Harvest\P04-Harvest.csproj", "{D193CB34-8060-43A7-AD81-02B1DDA73E9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-HotelRoom", "P05-HotelRoom\P05-HotelRoom.csproj", "{0B0D859E-F9CF-4AD6-BE89-440E492BF388}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-HotelRoom", "P05-HotelRoom\P05-HotelRoom.csproj", "{0B0D859E-F9CF-4AD6-BE89-440E492BF388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-Tickets", "P06-Tickets\P06-Tickets.csproj", "{F6FFEEA6-DC73-4B68-9C6C-25CAD724DD65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-Tickets", "P06-Tickets\P06-Tickets.csproj", "{F6FFEEA6-DC73-4B68-9C6C-25CAD724DD65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-NumbersOperations", "P07-NumbersOperations\P07-NumbersOperations.csproj", "{5FDD4B2E-A7DC-4462-AC5B-4BBE71309FC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-NumbersOperations", "P07-NumbersOperations\P07-NumbersOperations.csproj", "{5FDD4B2E-A7DC-4462-AC5B-4BBE71309FC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-Demo", "P00-Demo\P00-Demo.csproj", "{49361A19-FDA1-4F08-A600-2A4583990AF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-Travel", "P08-Travel\P08-Travel.csproj", "{2AC0C12D-C3F3-479C-9538-D19CFDB6268C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-TravelWinFormApp", "P08-TravelWinFormApp\P08-TravelWinFormApp.csproj", "{13AB6FE0-E7D1-4AD6-A1CE-5BA93E11375A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{5FDD4B2E-A7DC-4462-AC5B-4BBE71309FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FDD4B2E-A7DC-4462-AC5B-4BBE71309FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FDD4B2E-A7DC-4462-AC5B-4BBE71309FC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49361A19-FDA1-4F08-A600-2A4583990AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49361A19-FDA1-4F08-A600-2A4583990AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49361A19-FDA1-4F08-A600-2A4583990AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49361A19-FDA1-4F08-A600-2A4583990AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC0C12D-C3F3-479C-9538-D19CFDB6268C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC0C12D-C3F3-479C-9538-D19CFDB6268C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC0C12D-C3F3-479C-9538-D19CFDB6268C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC0C12D-C3F3-479C-9538-D19CFDB6268C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13AB6FE0-E7D1-4AD6-A1CE-5BA93E11375A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13AB6FE0-E7D1-4AD6-A1CE-5BA93E11375A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13AB6FE0-E7D1-4AD6-A1CE-5BA93E11375A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13AB6FE0-E7D1-4AD6-A1CE-5BA93E11375A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

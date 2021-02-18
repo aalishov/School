@@ -64,7 +64,7 @@ namespace BrokerCompany.WinFormsApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(695, 128);
+            this.ClientSize = new System.Drawing.Size(695, 104);
             this.Controls.Add(this.buttonCreateCompany);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxComoanyName);

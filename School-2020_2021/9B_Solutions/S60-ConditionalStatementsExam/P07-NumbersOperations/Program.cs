@@ -19,7 +19,7 @@ class Program
             break;
             case '-':
                 int diff = n1 - n2;
-                string evenOrOddDiff = ((n1 - n2) % 2) == 0 ? "even" : "odd";
+                var evenOrOddDiff = ((n1 - n2) % 2) == 0 ? "even" : "odd";
                 Console.WriteLine($"{n1} - {n2} = {diff} - {evenOrOddDiff}");
                 break;
             case '*':

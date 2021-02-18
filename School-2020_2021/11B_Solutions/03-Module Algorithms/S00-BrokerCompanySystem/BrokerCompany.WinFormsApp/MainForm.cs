@@ -19,18 +19,21 @@ namespace BrokerCompany.WinFormsApp
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (radioCreateCompany.Checked)
-            {
-                var form = new CreateCompanyForm(companyController);
-                form.Show();
-            }
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form form = new CreateCompanyForm(companyController);
+            form.Show();
+        }
+
+        private void buttonCreateBuilding_Click(object sender, EventArgs e)
+        {
+            RegisterBuildingForm form = new RegisterBuildingForm(companyController);
+            form.Show();
         }
     }
 }
