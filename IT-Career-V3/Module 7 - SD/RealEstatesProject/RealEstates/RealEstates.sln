@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstates.ConsoleApp", "RealEstates.ConsoleApp\RealEstates.ConsoleApp.csproj", "{0353400A-7E6A-42D3-825B-8928E9B81487}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.ConsoleApp", "RealEstates.ConsoleApp\RealEstates.ConsoleApp.csproj", "{0353400A-7E6A-42D3-825B-8928E9B81487}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstates.Data", "RealEstates.Data\RealEstates.Data.csproj", "{4ADDA1E5-9702-40A2-8D49-7E7CAE5A4A3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.Data", "RealEstates.Data\RealEstates.Data.csproj", "{4ADDA1E5-9702-40A2-8D49-7E7CAE5A4A3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstates.Services", "RealEstates.Services\RealEstates.Services.csproj", "{BCD462A1-01A9-4383-A73E-1EB3DDA1D65E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.Services", "RealEstates.Services\RealEstates.Services.csproj", "{BCD462A1-01A9-4383-A73E-1EB3DDA1D65E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstates.Importer", "RealEstates.Importer\RealEstates.Importer.csproj", "{1545EDA8-6A73-4C85-A62A-60CC26D2BBC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.Importer", "RealEstates.Importer\RealEstates.Importer.csproj", "{1545EDA8-6A73-4C85-A62A-60CC26D2BBC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstates.WinFormsApp", "RealEstates.WinFormsApp\RealEstates.WinFormsApp.csproj", "{D55EF4AB-DE6A-4657-A1C9-0205E55153BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1545EDA8-6A73-4C85-A62A-60CC26D2BBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1545EDA8-6A73-4C85-A62A-60CC26D2BBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1545EDA8-6A73-4C85-A62A-60CC26D2BBC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D55EF4AB-DE6A-4657-A1C9-0205E55153BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55EF4AB-DE6A-4657-A1C9-0205E55153BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55EF4AB-DE6A-4657-A1C9-0205E55153BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55EF4AB-DE6A-4657-A1C9-0205E55153BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
