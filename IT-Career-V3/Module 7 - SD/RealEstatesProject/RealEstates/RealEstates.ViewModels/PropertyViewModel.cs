@@ -1,6 +1,10 @@
-﻿namespace RealEstates.Services.Models
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace RealEstates.ViewModels
 {
-    public class PropertyViewModel
+  public  class PropertyViewModel
     {
         public string District { get; set; }
 

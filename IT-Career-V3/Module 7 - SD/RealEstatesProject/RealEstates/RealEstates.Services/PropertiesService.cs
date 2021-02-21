@@ -3,11 +3,12 @@
     using RealEstates.Data;
     using RealEstates.Data.Models;
     using RealEstates.Services.Models;
+    using RealEstates.ViewModels;
     using System;
     using System.Collections.Generic;
     using System.Linq;
 
-    public class PropertiesService
+    public class PropertiesService : IPropertiesService
     {
         private readonly ApplicationDbContext db;
 
@@ -175,6 +176,47 @@
             }
 
             return tag;
+        }
+
+        public TopPropertiesViwModel GetTopExpensivePropeties()
+        {
+            TopPropertiesViwModel model = new TopPropertiesViwModel();
+
+            model.Properties = this.db.Properties
+                .OrderByDescending(x => x.Price)
+                .Take(6)
+                .Select(x => new PropertyViewModel()
+                {
+                    District = x.District.Name,
+                    Size = x.Size,
+                    Price = x.Price,
+                    Floor = (x.Floor ?? 0).ToString() + "/" + (x.TotalNumberOfFloors ?? 0),
+                    PropertyType = x.PropertyType.Name
+                })
+                .ToList();
+
+            return model;
+        }
+
+        public TopPropertiesViwModel GetTopChepestPropeties()
+        {
+            TopPropertiesViwModel model = new TopPropertiesViwModel();
+
+            model.Properties = this.db.Properties
+                .Where(x => x.Price > 0)
+                .OrderBy(x => x.Price)
+                .Take(6)
+                .Select(x => new PropertyViewModel()
+                {
+                    District = x.District.Name,
+                    Size = x.Size,
+                    Price = x.Price,
+                    Floor = (x.Floor ?? 0).ToString() + "/" + (x.TotalNumberOfFloors ?? 0),
+                    PropertyType = x.PropertyType.Name
+                })
+                .ToList();
+
+            return model;
         }
     }
 }

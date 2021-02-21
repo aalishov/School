@@ -1,0 +1,49 @@
+﻿@model RealEstates.ViewModels.HomeIndexViewModel;
+@{
+
+    ViewData["Title"] = "Недвижими имоти.бг";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Добре дошли в "@ViewData["Title"]"</h1>
+    <hr />
+    <div class="jumbotron">
+        <h2 class="display-4">Най-скъпи имоти</h2>
+        <hr />
+        <div class="container">
+            <div class="row mx-auto ">
+                @foreach (var item in Model.TopExpesnive.Properties)
+                {
+                    <div class="card mx-auto my-1" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.District</h5>
+                            <p class="card-text">@item.Price</p>
+                            <p class="card-text">@item.Floor</p>
+                            <p class="card-text">@item.PropertyType</p>
+                            @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <hr />
+        <h2 class="display-4">Най-евтини имоти</h2>
+        <hr />
+        <div class="container">
+            <div class="row mx-auto ">
+                @foreach (var item in Model.TopCheapest.Properties)
+                {
+                    <div class="card mx-auto my-1" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.District</h5>
+                            <p class="card-text">@item.Price</p>
+                            <p class="card-text">@item.Floor</p>
+                            <p class="card-text">@item.PropertyType</p>
+                            @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
