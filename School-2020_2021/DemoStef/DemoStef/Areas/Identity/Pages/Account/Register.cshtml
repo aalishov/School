@@ -27,6 +27,7 @@
                 <input asp-for="Input.ConfirmPassword" class="form-control" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
+            @*Добавяне на новите полета*@
             <div class="form-group">
                 <label asp-for="Input.FirstName"></label>
                 <input asp-for="Input.FirstName" class="form-control" />
@@ -48,6 +49,11 @@
                     <option value="Student">Student</option>
                     <option value="Teacher">Teacher</option>
                 </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.School"></label>
+                <input asp-for="Input.School" class="form-control" />
+                <span asp-validation-for="Input.School" class="text-danger"></span>
             </div>
             <button type="submit" class="btn btn-primary">Register</button>
         </form>

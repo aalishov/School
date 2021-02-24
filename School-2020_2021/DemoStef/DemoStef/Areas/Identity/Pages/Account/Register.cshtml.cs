@@ -86,6 +86,10 @@ namespace DemoStef.Areas.Identity.Pages.Account
             [Required]
             [Display(Name = "Role")]
             public string UserRole { get; set; }
+
+            [Required]
+            [Display(Name = "School name")]
+            public string School { get; set; }
         }
 
         public async Task OnGetAsync(string returnUrl = null)
@@ -107,7 +111,8 @@ namespace DemoStef.Areas.Identity.Pages.Account
                     Email = Input.Email,
                     FirstName = Input.FirstName,
                     LastName = Input.LastName,
-                    DateOfBirth = Input.DateOfBirth
+                    DateOfBirth = Input.DateOfBirth,
+                    School=Input.School
                 };
 
 

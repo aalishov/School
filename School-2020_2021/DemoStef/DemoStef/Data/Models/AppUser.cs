@@ -18,5 +18,7 @@ namespace DemoStef.Data.Models
         public DateTime DateOfBirth { get; set; }
 
         public DateTime CreatedOn { get; set; }
+
+        public string School { get; set; }
     }
 }
