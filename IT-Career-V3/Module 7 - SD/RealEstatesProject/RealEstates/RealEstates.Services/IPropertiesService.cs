@@ -12,5 +12,8 @@ namespace RealEstates.Services
         TopPropertiesViwModel GetTopExpensivePropeties();
 
         TopPropertiesViwModel GetTopChepestPropeties();
+
+        SearchPropertiesViewModel SearchByPrice(int minPrice, int maxPrice, int pageNumber);
+        TopPropertiesViwModel TopNewestProperties();
     }
 }

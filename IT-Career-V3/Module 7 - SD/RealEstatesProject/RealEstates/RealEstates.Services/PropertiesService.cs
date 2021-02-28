@@ -29,14 +29,41 @@
                 District = x.District.Name,
                 Size = x.Size,
                 Price = x.Price,
-                Floor = (x.Floor ?? 0).ToString() + "/" + (x.TotalNumberOfFloors ?? 0)
-
+                Floor = (x.Floor ?? 0).ToString() + "/" + (x.TotalNumberOfFloors ?? 0),
+                Tags = x.Tags.Select(t => t.Tag.Name).ToList()
             }).Skip(model.ItemsPerPage * model.PageNumber - 1)
             .Take(model.ItemsPerPage)
             .ToList();
 
             return model;
         }
+        public SearchPropertiesViewModel SearchByPrice(int minPrice, int maxPrice, int pageNumber = 1)
+        {
+            SearchPropertiesViewModel model = new SearchPropertiesViewModel();
+
+            model.ElementsCount = db.Properties.Count();
+            model.PageNumber = pageNumber;
+            model.MinPrice = minPrice;
+            model.MaxPrice = maxPrice;
+          
+
+            model.Properties = db.Properties
+                .OrderBy(x => x.Price)
+                .Where(x => x.Price >= minPrice && x.Price <= maxPrice)
+                .Select(x => new PropertyViewModel()
+                {
+                    District = x.District.Name,
+                    Size = x.Size,
+                    Price = x.Price,
+                    Floor = (x.Floor ?? 0).ToString() + "/" + (x.TotalNumberOfFloors ?? 0),
+                    Tags = x.Tags.Select(t => t.Tag.Name).ToList()
+                }).Skip(model.ItemsPerPage * model.PageNumber - 1)
+            .Take(model.ItemsPerPage)
+            .ToList();
+
+            return model;
+        }
+
         public void Create(PropertyInputViewModel input)
         {
             if (input.District == null)
@@ -213,6 +240,28 @@
                     Price = x.Price,
                     Floor = (x.Floor ?? 0).ToString() + "/" + (x.TotalNumberOfFloors ?? 0),
                     PropertyType = x.PropertyType.Name
+                })
+                .ToList();
+
+            return model;
+        }
+
+        public TopPropertiesViwModel TopNewestProperties()
+        {
+            TopPropertiesViwModel model = new TopPropertiesViwModel();
+
+            model.Properties = this.db.Properties
+                .Where(x => x.Price > 0 && x.Year <= DateTime.Now.Year)
+                .OrderByDescending(x => x.Year)
+                .Take(6)
+                .Select(x => new PropertyViewModel()
+                {
+                    District = x.District.Name,
+                    Size = x.Size,
+                    Price = x.Price,
+                    Floor = (x.Floor ?? 0).ToString() + "/" + (x.TotalNumberOfFloors ?? 0),
+                    PropertyType = x.PropertyType.Name,
+                    Year = x.Year != null ? (int)x.Year : 0
                 })
                 .ToList();
 

@@ -17,11 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-Tickets", "P06-Tickets\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-NumbersOperations", "P07-NumbersOperations\P07-NumbersOperations.csproj", "{5FDD4B2E-A7DC-4462-AC5B-4BBE71309FC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-Demo", "P00-Demo\P00-Demo.csproj", "{49361A19-FDA1-4F08-A600-2A4583990AF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-Demo", "P00-Demo\P00-Demo.csproj", "{49361A19-FDA1-4F08-A600-2A4583990AF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-Travel", "P08-Travel\P08-Travel.csproj", "{2AC0C12D-C3F3-479C-9538-D19CFDB6268C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08-Travel", "P08-Travel\P08-Travel.csproj", "{2AC0C12D-C3F3-479C-9538-D19CFDB6268C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-TravelWinFormApp", "P08-TravelWinFormApp\P08-TravelWinFormApp.csproj", "{13AB6FE0-E7D1-4AD6-A1CE-5BA93E11375A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08-TravelWinFormApp", "P08-TravelWinFormApp\P08-TravelWinFormApp.csproj", "{13AB6FE0-E7D1-4AD6-A1CE-5BA93E11375A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-DemoWinForm", "P00-DemoWinForm\P00-DemoWinForm.csproj", "{D53F97BC-997D-4747-A03F-FA6CC8015C5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{13AB6FE0-E7D1-4AD6-A1CE-5BA93E11375A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13AB6FE0-E7D1-4AD6-A1CE-5BA93E11375A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13AB6FE0-E7D1-4AD6-A1CE-5BA93E11375A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D53F97BC-997D-4747-A03F-FA6CC8015C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53F97BC-997D-4747-A03F-FA6CC8015C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53F97BC-997D-4747-A03F-FA6CC8015C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53F97BC-997D-4747-A03F-FA6CC8015C5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

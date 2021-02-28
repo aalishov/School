@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RealEstates.ViewModels
 {
-  public  class PropertyViewModel
+    public class PropertyViewModel
     {
         public string District { get; set; }
 
@@ -15,5 +15,9 @@ namespace RealEstates.ViewModels
         public string Floor { get; set; }
 
         public string PropertyType { get; set; }
+
+        public int Year { get; set; }
+
+        public ICollection<string> Tags { get; set; }
     }
 }

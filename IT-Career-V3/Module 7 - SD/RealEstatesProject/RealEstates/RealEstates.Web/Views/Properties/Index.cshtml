@@ -10,6 +10,7 @@
             <th>Площ</th>
             <th>Етажи</th>
             <th>Местоположение</th>
+            <th>Тагове</th>
         </tr>
     </thead>
     <tbody>
@@ -20,6 +21,7 @@
                 <th>@item.Size</th>
                 <th>@item.Floor</th>
                 <th>@item.District</th>
+                <th>@string.Join(", ", item.Tags)</th>
             </tr>
         }
     </tbody>
@@ -36,7 +38,7 @@
         {
             if (i > 0)
             {
-                <li class="page-item"><a class="page-link" asp-action="Index" asp-route-page="@i">@i</a></li>
+                <li class="page-item"><a class="page-link" asp-action="SearchByPrice" asp-route-page="@i">@i</a></li>
             }
         }
         <li class="page-item active" aria-current="page">
@@ -49,7 +51,7 @@
         {
             if (i <= Model.PagesCount)
             {
-                <li class="page-item"><a class="page-link" asp-action="Index" asp-route-page="@i">@i</a></li>
+                <li class="page-item"><a class="page-link" asp-action="SearchByPrice" asp-route-page="@i">@i</a></li>
             }
         }
         <li class="page-item @if (!Model.HasNextPage) { <text>disabled</text> }">
