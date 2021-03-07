@@ -2,7 +2,6 @@
 {
     using RealEstates.Data;
     using RealEstates.Data.Models;
-    using RealEstates.Services.Models;
     using RealEstates.ViewModels;
     using System;
     using System.Collections.Generic;
@@ -52,13 +51,13 @@
             this.db.Properties.Update(property);
             this.db.SaveChanges();
         }
+
         public PropertiesViewModel GetProperties(int pageNumber = 1)
         {
             PropertiesViewModel model = new PropertiesViewModel();
 
             model.ElementsCount = db.Properties.Count();
             model.PageNumber = pageNumber;
-
             model.Properties = db.Properties.Select(x => new PropertyViewModel()
             {
                 Id = x.Id,
@@ -93,7 +92,7 @@
                     Price = x.Price,
                     Floor = (x.Floor ?? 0).ToString() + "/" + (x.TotalNumberOfFloors ?? 0),
                     Tags = x.Tags.Select(t => t.Tag.Name).ToList()
-                }).Skip(model.ItemsPerPage * model.PageNumber - 1)
+                }).Skip(model.ItemsPerPage * (model.PageNumber - 1))
             .Take(model.ItemsPerPage)
             .ToList();
 
@@ -303,6 +302,7 @@
 
             return model;
         }
+       
         public TopPropertiesViwModel GetLastAddedProperties()
         {
             TopPropertiesViwModel model = new TopPropertiesViwModel();

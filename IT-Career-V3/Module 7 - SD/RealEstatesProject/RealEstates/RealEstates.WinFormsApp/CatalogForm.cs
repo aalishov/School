@@ -1,5 +1,4 @@
 ﻿using RealEstates.Services;
-using RealEstates.Services.Models;
 using RealEstates.ViewModels;
 using System;
 using System.Collections.Generic;

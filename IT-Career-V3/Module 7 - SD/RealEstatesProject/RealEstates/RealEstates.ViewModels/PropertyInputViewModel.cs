@@ -1,4 +1,4 @@
-﻿namespace RealEstates.Services.Models
+﻿namespace RealEstates.ViewModels
 {
     public class PropertyInputViewModel
     {

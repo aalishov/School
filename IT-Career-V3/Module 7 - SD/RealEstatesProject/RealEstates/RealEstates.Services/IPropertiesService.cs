@@ -1,5 +1,4 @@
-﻿using RealEstates.Services.Models;
-using RealEstates.ViewModels;
+﻿using RealEstates.ViewModels;
 
 namespace RealEstates.Services
 {
