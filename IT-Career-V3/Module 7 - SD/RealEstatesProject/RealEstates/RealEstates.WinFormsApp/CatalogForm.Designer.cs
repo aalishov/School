@@ -30,6 +30,7 @@ namespace RealEstates.WinFormsApp
         private void InitializeComponent()
         {
             this.dataGridViewProperties = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Size = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Floors = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -37,6 +38,7 @@ namespace RealEstates.WinFormsApp
             this.buttonPrevious = new System.Windows.Forms.Button();
             this.buttonNext = new System.Windows.Forms.Button();
             this.labelPageInfo = new System.Windows.Forms.Label();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProperties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,6 +46,7 @@ namespace RealEstates.WinFormsApp
             // 
             this.dataGridViewProperties.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewProperties.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
             this.Price,
             this.Size,
             this.Floors,
@@ -53,8 +56,16 @@ namespace RealEstates.WinFormsApp
             this.dataGridViewProperties.Name = "dataGridViewProperties";
             this.dataGridViewProperties.RowHeadersWidth = 51;
             this.dataGridViewProperties.RowTemplate.Height = 29;
-            this.dataGridViewProperties.Size = new System.Drawing.Size(560, 183);
+            this.dataGridViewProperties.Size = new System.Drawing.Size(771, 183);
             this.dataGridViewProperties.TabIndex = 0;
+            this.dataGridViewProperties.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProperties_CellEndEdit);
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Номер";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.Width = 125;
             // 
             // Price
             // 
@@ -114,11 +125,22 @@ namespace RealEstates.WinFormsApp
             this.labelPageInfo.TabIndex = 3;
             this.labelPageInfo.Text = "-";
             // 
+            // buttonDelete
+            // 
+            this.buttonDelete.Location = new System.Drawing.Point(645, 427);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(140, 78);
+            this.buttonDelete.TabIndex = 4;
+            this.buttonDelete.Text = "Изтрий маркирания";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
             // CatalogForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(870, 510);
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.labelPageInfo);
             this.Controls.Add(this.buttonNext);
             this.Controls.Add(this.buttonPrevious);
@@ -138,12 +160,14 @@ namespace RealEstates.WinFormsApp
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewProperties;
+        private System.Windows.Forms.Button buttonPrevious;
+        private System.Windows.Forms.Button buttonNext;
+        private System.Windows.Forms.Label labelPageInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Size;
         private System.Windows.Forms.DataGridViewTextBoxColumn Floors;
         private System.Windows.Forms.DataGridViewTextBoxColumn District;
-        private System.Windows.Forms.Button buttonPrevious;
-        private System.Windows.Forms.Button buttonNext;
-        private System.Windows.Forms.Label labelPageInfo;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }

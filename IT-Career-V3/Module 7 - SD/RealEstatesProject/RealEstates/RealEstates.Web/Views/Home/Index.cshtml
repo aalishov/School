@@ -9,6 +9,26 @@
     <h2><i class="fas fa-mobile" style="color:mediumvioletred"></i> 08885555555</h2>
     <hr />
     <div class="jumbotron">
+        <h2 class="display-4">Последно добавени</h2>
+        <hr />
+        <div class="container">
+            <div class="row mx-auto ">
+                @foreach (var item in Model.LastAdded.Properties)
+                {
+                    <div class="card mx-auto my-1" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.District</h5>
+                            <p class="card-text">Цена: @item.Price</p>
+                            <p class="card-text">Етажи: @item.Floor</p>
+                            <p class="card-text">Тип: @item.PropertyType</p>
+                            <img class="img-thumbnail" src="https://i.pik.bg/news/799/660_81027d198f5371dec0a67bcdf0e37b23.jpg" />
+                            @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
         <h2 class="display-4">Най-скъпи имоти</h2>
         <hr />
         <div class="container">

@@ -29,6 +29,7 @@ namespace RealEstates.Web.Controllers
                 TopCheapest = propertiesService.GetTopChepestPropeties(),
                 TopExpesnive = propertiesService.GetTopExpensivePropeties(),
                 TopNewest = propertiesService.TopNewestProperties(),
+                LastAdded=propertiesService.GetLastAddedProperties(),
             };
 
             return View(model);

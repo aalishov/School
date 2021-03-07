@@ -17,6 +17,41 @@
             this.db = db;
         }
 
+        public bool DeleteProperty(int id)
+        {
+            Property property = this.db.Properties.FirstOrDefault(x => x.Id == id);
+            if (property == null)
+            {
+                return false;
+            }
+            this.db.Properties.Remove(property);
+            this.db.SaveChanges();
+            return true;
+        }
+
+        public void UpdateProperties(PropertyViewModel model)
+        {
+            Property property = this.db.Properties.FirstOrDefault(x => x.Id == model.Id);
+            if (property == null)
+            {
+                return;
+            }
+            property.Price = model.Price;
+            property.Size = model.Size;
+            if (int.TryParse(model.Floor.Split('/').First(), out _) && int.TryParse(model.Floor.Split('/').Last(), out _))
+            {
+                property.Floor = int.Parse(model.Floor.Split('/').First());
+                property.TotalNumberOfFloors = int.Parse(model.Floor.Split('/').Last());
+            }
+            else
+            {
+                property.Floor = null;
+                property.TotalNumberOfFloors = null;
+            }
+
+            this.db.Properties.Update(property);
+            this.db.SaveChanges();
+        }
         public PropertiesViewModel GetProperties(int pageNumber = 1)
         {
             PropertiesViewModel model = new PropertiesViewModel();
@@ -26,12 +61,13 @@
 
             model.Properties = db.Properties.Select(x => new PropertyViewModel()
             {
+                Id = x.Id,
                 District = x.District.Name,
                 Size = x.Size,
                 Price = x.Price,
                 Floor = (x.Floor ?? 0).ToString() + "/" + (x.TotalNumberOfFloors ?? 0),
                 Tags = x.Tags.Select(t => t.Tag.Name).ToList()
-            }).Skip(model.ItemsPerPage * model.PageNumber - 1)
+            }).Skip(model.ItemsPerPage * (model.PageNumber - 1))
             .Take(model.ItemsPerPage)
             .ToList();
 
@@ -45,7 +81,7 @@
             model.PageNumber = pageNumber;
             model.MinPrice = minPrice;
             model.MaxPrice = maxPrice;
-          
+
 
             model.Properties = db.Properties
                 .OrderBy(x => x.Price)
@@ -253,6 +289,27 @@
             model.Properties = this.db.Properties
                 .Where(x => x.Price > 0 && x.Year <= DateTime.Now.Year)
                 .OrderByDescending(x => x.Year)
+                .Take(6)
+                .Select(x => new PropertyViewModel()
+                {
+                    District = x.District.Name,
+                    Size = x.Size,
+                    Price = x.Price,
+                    Floor = (x.Floor ?? 0).ToString() + "/" + (x.TotalNumberOfFloors ?? 0),
+                    PropertyType = x.PropertyType.Name,
+                    Year = x.Year != null ? (int)x.Year : 0
+                })
+                .ToList();
+
+            return model;
+        }
+        public TopPropertiesViwModel GetLastAddedProperties()
+        {
+            TopPropertiesViwModel model = new TopPropertiesViwModel();
+
+            model.Properties = this.db.Properties
+                .Where(x => x.Price > 0 && x.Year <= DateTime.Now.Year)
+                .OrderByDescending(x => x.Id)
                 .Take(6)
                 .Select(x => new PropertyViewModel()
                 {

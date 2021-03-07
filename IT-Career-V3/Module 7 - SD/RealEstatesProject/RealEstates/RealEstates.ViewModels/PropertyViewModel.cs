@@ -6,6 +6,7 @@ namespace RealEstates.ViewModels
 {
     public class PropertyViewModel
     {
+        public int Id { get; set; }
         public string District { get; set; }
 
         public int Size { get; set; }
