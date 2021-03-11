@@ -3,23 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-PrintNUmber1To100", "P01-PrintNUmber1To100\P01-PrintNUmber1To100.csproj", "{1042E925-DF0B-4828-A9C1-773676C1624C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-PrintNUmber1To100", "P01-PrintNUmber1To100\P01-PrintNUmber1To100.csproj", "{1042E925-DF0B-4828-A9C1-773676C1624C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-ForDemo", "P02-ForDemo\P02-ForDemo.csproj", "{C3D46B9C-E25A-4C72-B08F-47B0F5E65916}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-ForDemo", "P02-ForDemo\P02-ForDemo.csproj", "{C3D46B9C-E25A-4C72-B08F-47B0F5E65916}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-DemoForr", "P03-DemoForr\P03-DemoForr.csproj", "{8F5AF2CA-40BB-4FD4-BED6-1E1D1DDCBA91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-DemoForr", "P03-DemoForr\P03-DemoForr.csproj", "{8F5AF2CA-40BB-4FD4-BED6-1E1D1DDCBA91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-PrintNumberRange", "P04-PrintNumberRange\P04-PrintNumberRange.csproj", "{CF7C8955-A8E4-4550-98DB-684319C3EC21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-PrintNumberRange", "P04-PrintNumberRange\P04-PrintNumberRange.csproj", "{CF7C8955-A8E4-4550-98DB-684319C3EC21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-PrintSymbols", "P03-PrintSymbols\P03-PrintSymbols.csproj", "{A6781464-68D8-498D-A6BA-A2D974684463}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-PrintSymbols", "P03-PrintSymbols\P03-PrintSymbols.csproj", "{A6781464-68D8-498D-A6BA-A2D974684463}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-SumNumbers", "P05-SumNumbers\P05-SumNumbers.csproj", "{A92D6E19-38C5-489F-9352-8C4A212B61F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-SumNumbers", "P05-SumNumbers\P05-SumNumbers.csproj", "{A92D6E19-38C5-489F-9352-8C4A212B61F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-BiggestNUmber", "P06-BiggestNUmber\P06-BiggestNUmber.csproj", "{54246AC3-9F97-448A-BB52-8A02085D77F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-BiggestNUmber", "P06-BiggestNUmber\P06-BiggestNUmber.csproj", "{54246AC3-9F97-448A-BB52-8A02085D77F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-SumLeftRight", "P07-SumLeftRight\P07-SumLeftRight.csproj", "{663739A3-C218-49A0-B0C7-901AD7628BAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-SumLeftRight", "P07-SumLeftRight\P07-SumLeftRight.csproj", "{663739A3-C218-49A0-B0C7-901AD7628BAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-SumOddEven", "P08-SumOddEven\P08-SumOddEven.csproj", "{87792868-81A7-4FC8-8221-5CAEEF0E4F05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08-SumOddEven", "P08-SumOddEven\P08-SumOddEven.csproj", "{87792868-81A7-4FC8-8221-5CAEEF0E4F05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-PrintRectangle", "P09-PrintRectangle\P09-PrintRectangle.csproj", "{8907617E-25C2-4185-B46B-3F8C34EC8C03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10-PrintRectangleNStars", "P10-PrintRectangleNStars\P10-PrintRectangleNStars.csproj", "{94A2D2C4-8006-4062-9247-C0E8DB2DF612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11-PrintSquare", "P11-PrintSquare\P11-PrintSquare.csproj", "{A695C9FF-85D8-4C71-9535-3EA98C0D2F96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12-Triangle$", "P12-Triangle$\P12-Triangle$.csproj", "{21D8CC53-F33A-471B-A64D-3B1A41943CD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P13-Frame", "P13-Frame\P13-Frame.csproj", "{ACBA13BB-6290-4C32-A35A-A4CB90A7C6FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +73,26 @@ Global
 		{87792868-81A7-4FC8-8221-5CAEEF0E4F05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87792868-81A7-4FC8-8221-5CAEEF0E4F05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87792868-81A7-4FC8-8221-5CAEEF0E4F05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8907617E-25C2-4185-B46B-3F8C34EC8C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8907617E-25C2-4185-B46B-3F8C34EC8C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8907617E-25C2-4185-B46B-3F8C34EC8C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8907617E-25C2-4185-B46B-3F8C34EC8C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94A2D2C4-8006-4062-9247-C0E8DB2DF612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A2D2C4-8006-4062-9247-C0E8DB2DF612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A2D2C4-8006-4062-9247-C0E8DB2DF612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A2D2C4-8006-4062-9247-C0E8DB2DF612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A695C9FF-85D8-4C71-9535-3EA98C0D2F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A695C9FF-85D8-4C71-9535-3EA98C0D2F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A695C9FF-85D8-4C71-9535-3EA98C0D2F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A695C9FF-85D8-4C71-9535-3EA98C0D2F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21D8CC53-F33A-471B-A64D-3B1A41943CD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21D8CC53-F33A-471B-A64D-3B1A41943CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21D8CC53-F33A-471B-A64D-3B1A41943CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21D8CC53-F33A-471B-A64D-3B1A41943CD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACBA13BB-6290-4C32-A35A-A4CB90A7C6FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACBA13BB-6290-4C32-A35A-A4CB90A7C6FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACBA13BB-6290-4C32-A35A-A4CB90A7C6FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACBA13BB-6290-4C32-A35A-A4CB90A7C6FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
