@@ -26,7 +26,7 @@ class Program
         }
         foreach (var word in words)
         {
-            if (word.Value%2==1)
+            if (word.Value % 2 == 1)
             {
                 Console.WriteLine($"{word.Key} => {word.Value}");
             }
