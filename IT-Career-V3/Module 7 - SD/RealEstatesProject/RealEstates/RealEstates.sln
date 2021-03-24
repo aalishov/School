@@ -17,7 +17,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.Web", "RealEsta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.ViewModels", "RealEstates.ViewModels\RealEstates.ViewModels.csproj", "{946691ED-6012-4B41-A717-D323ED15BB0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstates.Tests", "RealEstates.Tests\RealEstates.Tests.csproj", "{00795AA0-C985-497A-8DC2-3C89D1783C3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.Tests", "RealEstates.Tests\RealEstates.Tests.csproj", "{00795AA0-C985-497A-8DC2-3C89D1783C3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E1D3EF9E-BA17-415F-9383-257C819CD80D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

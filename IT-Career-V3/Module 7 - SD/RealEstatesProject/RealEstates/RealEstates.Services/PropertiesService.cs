@@ -1,11 +1,12 @@
-﻿namespace RealEstates.Services
+﻿
+
+namespace RealEstates.Services
 {
+    using System;
+    using System.Linq;
     using RealEstates.Data;
     using RealEstates.Data.Models;
     using RealEstates.ViewModels;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
 
     public class PropertiesService : IPropertiesService
     {
@@ -35,6 +36,7 @@
             {
                 return;
             }
+
             property.Price = model.Price;
             property.Size = model.Size;
             if (int.TryParse(model.Floor.Split('/').First(), out _) && int.TryParse(model.Floor.Split('/').Last(), out _))
@@ -65,13 +67,14 @@
                 Size = x.Size,
                 Price = x.Price,
                 Floor = (x.Floor ?? 0).ToString() + "/" + (x.TotalNumberOfFloors ?? 0),
-                Tags = x.Tags.Select(t => t.Tag.Name).ToList()
+                Tags = x.Tags.Select(t => t.Tag.Name).ToList(),
             }).Skip(model.ItemsPerPage * (model.PageNumber - 1))
             .Take(model.ItemsPerPage)
             .ToList();
 
             return model;
         }
+       
         public SearchPropertiesViewModel SearchByPrice(int minPrice, int maxPrice, int pageNumber = 1)
         {
             SearchPropertiesViewModel model = new SearchPropertiesViewModel();
@@ -91,7 +94,7 @@
                     Size = x.Size,
                     Price = x.Price,
                     Floor = (x.Floor ?? 0).ToString() + "/" + (x.TotalNumberOfFloors ?? 0),
-                    Tags = x.Tags.Select(t => t.Tag.Name).ToList()
+                    Tags = x.Tags.Select(t => t.Tag.Name).ToList(),
                 }).Skip(model.ItemsPerPage * (model.PageNumber - 1))
             .Take(model.ItemsPerPage)
             .ToList();
@@ -302,7 +305,7 @@
 
             return model;
         }
-       
+
         public TopPropertiesViwModel GetLastAddedProperties()
         {
             TopPropertiesViwModel model = new TopPropertiesViwModel();
