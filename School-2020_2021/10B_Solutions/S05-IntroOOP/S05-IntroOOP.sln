@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-DemoClassInCSharp", "P01-DemoClassInCSharp\P01-DemoClassInCSharp.csproj", "{679B2B1E-FBAE-4461-86B0-E66C7BF66863}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-DemoClassInCSharp", "P01-DemoClassInCSharp\P01-DemoClassInCSharp.csproj", "{679B2B1E-FBAE-4461-86B0-E66C7BF66863}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-DemoPerson", "P02-DemoPerson\P02-DemoPerson.csproj", "{DF96F7AB-E0A3-473E-B2D1-84DB42266771}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-DemoPerson", "P02-DemoPerson\P02-DemoPerson.csproj", "{DF96F7AB-E0A3-473E-B2D1-84DB42266771}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-DemoFieldsAndProperties", "P03-DemoFieldsAndProperties\P03-DemoFieldsAndProperties.csproj", "{1FCCA9DE-5B71-47EE-A872-EFA082B1ACA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DF96F7AB-E0A3-473E-B2D1-84DB42266771}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF96F7AB-E0A3-473E-B2D1-84DB42266771}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF96F7AB-E0A3-473E-B2D1-84DB42266771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FCCA9DE-5B71-47EE-A872-EFA082B1ACA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FCCA9DE-5B71-47EE-A872-EFA082B1ACA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FCCA9DE-5B71-47EE-A872-EFA082B1ACA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FCCA9DE-5B71-47EE-A872-EFA082B1ACA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

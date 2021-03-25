@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-Histogram", "P01-Histogram\P01-Histogram.csproj", "{F9551E31-4721-4214-9F13-2BEFFE378711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-DivisionWithoutReminder", "P02-DivisionWithoutReminder\P02-DivisionWithoutReminder.csproj", "{92363B42-9CBA-4CB6-8CA6-1E51F6C6499E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9551E31-4721-4214-9F13-2BEFFE378711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9551E31-4721-4214-9F13-2BEFFE378711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9551E31-4721-4214-9F13-2BEFFE378711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9551E31-4721-4214-9F13-2BEFFE378711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92363B42-9CBA-4CB6-8CA6-1E51F6C6499E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92363B42-9CBA-4CB6-8CA6-1E51F6C6499E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92363B42-9CBA-4CB6-8CA6-1E51F6C6499E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92363B42-9CBA-4CB6-8CA6-1E51F6C6499E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEAA4138-8398-4A09-B9C4-D75AD418332A}
+	EndGlobalSection
+EndGlobal
