@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-Review", "P01-Review\P01-Review.csproj", "{9420C7EC-B2E9-4189-AD23-618A73BDD970}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-Review", "P01-Review\P01-Review.csproj", "{9420C7EC-B2E9-4189-AD23-618A73BDD970}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-DemoStack", "P02-DemoStack\P02-DemoStack.csproj", "{CC9F437B-FD82-48A6-B8AC-ECF7EC9893DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-DemoStack", "P02-DemoStack\P02-DemoStack.csproj", "{CC9F437B-FD82-48A6-B8AC-ECF7EC9893DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-DemoQueue", "P03-DemoQueue\P03-DemoQueue.csproj", "{1DF4FF49-615D-4929-A44D-D44A184B3D8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-DemoQueue", "P03-DemoQueue\P03-DemoQueue.csproj", "{1DF4FF49-615D-4929-A44D-D44A184B3D8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-MyStack", "P04-MyStack\P04-MyStack.csproj", "{A60C9959-9DB8-442F-BA08-ED327AF83287}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-MyStack", "P04-MyStack\P04-MyStack.csproj", "{A60C9959-9DB8-442F-BA08-ED327AF83287}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-MyQueue", "P05-MyQueue\P05-MyQueue.csproj", "{28B8334C-14C0-457F-B75F-A62B3FB9856D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-ReverseString", "P06-ReverseString\P06-ReverseString.csproj", "{52D47CF9-C7CC-49AD-ABBD-39EA0E9DE954}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-StackSum", "P07-StackSum\P07-StackSum.csproj", "{05BF0E72-F01D-4650-84F3-F542468A4930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-MatchingBrackets", "P08-MatchingBrackets\P08-MatchingBrackets.csproj", "{26849730-6F98-461E-87D4-C7DB3929F5F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{A60C9959-9DB8-442F-BA08-ED327AF83287}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A60C9959-9DB8-442F-BA08-ED327AF83287}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A60C9959-9DB8-442F-BA08-ED327AF83287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28B8334C-14C0-457F-B75F-A62B3FB9856D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28B8334C-14C0-457F-B75F-A62B3FB9856D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28B8334C-14C0-457F-B75F-A62B3FB9856D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28B8334C-14C0-457F-B75F-A62B3FB9856D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52D47CF9-C7CC-49AD-ABBD-39EA0E9DE954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52D47CF9-C7CC-49AD-ABBD-39EA0E9DE954}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52D47CF9-C7CC-49AD-ABBD-39EA0E9DE954}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52D47CF9-C7CC-49AD-ABBD-39EA0E9DE954}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05BF0E72-F01D-4650-84F3-F542468A4930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05BF0E72-F01D-4650-84F3-F542468A4930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05BF0E72-F01D-4650-84F3-F542468A4930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05BF0E72-F01D-4650-84F3-F542468A4930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26849730-6F98-461E-87D4-C7DB3929F5F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26849730-6F98-461E-87D4-C7DB3929F5F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26849730-6F98-461E-87D4-C7DB3929F5F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26849730-6F98-461E-87D4-C7DB3929F5F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
