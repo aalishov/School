@@ -3,15 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-Receipt", "P01-Receipt\P01-Receipt.csproj", "{36DFCCC1-6967-4594-8905-FBE1101F2DAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-Receipt", "P01-Receipt\P01-Receipt.csproj", "{36DFCCC1-6967-4594-8905-FBE1101F2DAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-Students", "P02-Students\P02-Students.csproj", "{F8E310D5-4BCC-4463-8943-BC5E1A62EE8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-Students", "P02-Students\P02-Students.csproj", "{F8E310D5-4BCC-4463-8943-BC5E1A62EE8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-CalculateArea", "P03-CalculateArea\P03-CalculateArea.csproj", "{BC92288D-E5F3-49EC-89AE-ABF64BF6EE33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-CalculateArea", "P03-CalculateArea\P03-CalculateArea.csproj", "{BC92288D-E5F3-49EC-89AE-ABF64BF6EE33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-PrintLine", "P04-PrintLine\P04-PrintLine.csproj", "{75EA06D9-A33D-48D6-8F24-A15F8A86C7B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-PrintLine", "P04-PrintLine\P04-PrintLine.csproj", "{75EA06D9-A33D-48D6-8F24-A15F8A86C7B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-SignOfInteger", "P05-SignOfInteger\P05-SignOfInteger.csproj", "{36AFD095-214A-48F1-B666-1DB340BD6F70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-SignOfInteger", "P05-SignOfInteger\P05-SignOfInteger.csproj", "{36AFD095-214A-48F1-B666-1DB340BD6F70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-Grades", "P06-Grades\P06-Grades.csproj", "{46F34825-0633-4219-901D-ED21C10DE5AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-Calculations", "P07-Calculations\P07-Calculations.csproj", "{290E8871-88F1-4ECB-96CF-AFF0665730AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-VowelsCount", "P08-VowelsCount\P08-VowelsCount.csproj", "{C996CE67-97C6-4EA2-97DA-677A5CCBF85B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-CharactersInRange", "P09-CharactersInRange\P09-CharactersInRange.csproj", "{7D1ECB9E-E993-4356-B617-B2E612009616}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +47,22 @@ Global
 		{36AFD095-214A-48F1-B666-1DB340BD6F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36AFD095-214A-48F1-B666-1DB340BD6F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36AFD095-214A-48F1-B666-1DB340BD6F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46F34825-0633-4219-901D-ED21C10DE5AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F34825-0633-4219-901D-ED21C10DE5AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F34825-0633-4219-901D-ED21C10DE5AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F34825-0633-4219-901D-ED21C10DE5AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{290E8871-88F1-4ECB-96CF-AFF0665730AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{290E8871-88F1-4ECB-96CF-AFF0665730AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{290E8871-88F1-4ECB-96CF-AFF0665730AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{290E8871-88F1-4ECB-96CF-AFF0665730AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C996CE67-97C6-4EA2-97DA-677A5CCBF85B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C996CE67-97C6-4EA2-97DA-677A5CCBF85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C996CE67-97C6-4EA2-97DA-677A5CCBF85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C996CE67-97C6-4EA2-97DA-677A5CCBF85B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D1ECB9E-E993-4356-B617-B2E612009616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D1ECB9E-E993-4356-B617-B2E612009616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D1ECB9E-E993-4356-B617-B2E612009616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D1ECB9E-E993-4356-B617-B2E612009616}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

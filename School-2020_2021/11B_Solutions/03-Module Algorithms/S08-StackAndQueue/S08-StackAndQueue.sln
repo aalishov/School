@@ -11,13 +11,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-DemoQueue", "P03-DemoQu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-MyStack", "P04-MyStack\P04-MyStack.csproj", "{A60C9959-9DB8-442F-BA08-ED327AF83287}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-MyQueue", "P05-MyQueue\P05-MyQueue.csproj", "{28B8334C-14C0-457F-B75F-A62B3FB9856D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-MyQueue", "P05-MyQueue\P05-MyQueue.csproj", "{28B8334C-14C0-457F-B75F-A62B3FB9856D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-ReverseString", "P06-ReverseString\P06-ReverseString.csproj", "{52D47CF9-C7CC-49AD-ABBD-39EA0E9DE954}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-ReverseString", "P06-ReverseString\P06-ReverseString.csproj", "{52D47CF9-C7CC-49AD-ABBD-39EA0E9DE954}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-StackSum", "P07-StackSum\P07-StackSum.csproj", "{05BF0E72-F01D-4650-84F3-F542468A4930}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-StackSum", "P07-StackSum\P07-StackSum.csproj", "{05BF0E72-F01D-4650-84F3-F542468A4930}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-MatchingBrackets", "P08-MatchingBrackets\P08-MatchingBrackets.csproj", "{26849730-6F98-461E-87D4-C7DB3929F5F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08-MatchingBrackets", "P08-MatchingBrackets\P08-MatchingBrackets.csproj", "{26849730-6F98-461E-87D4-C7DB3929F5F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P09-PrintEvenNumbers", "P09-PrintEvenNumbers\P09-PrintEvenNumbers.csproj", "{9784E9BB-9666-404F-B449-A1B2D56A5C5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P10-Supermarket", "P10-Supermarket\P10-Supermarket.csproj", "{9F0F4C5E-7B74-4BDD-985B-6A531B022810}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P11-HotPotato", "P11-HotPotato\P11-HotPotato.csproj", "{CAEAFD87-16E9-4789-9337-088167379E0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12-SpaceshipCrafting", "P12-SpaceshipCrafting\P12-SpaceshipCrafting.csproj", "{FAA6C84F-86BC-412D-9A05-BD70D9C58B96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +65,22 @@ Global
 		{26849730-6F98-461E-87D4-C7DB3929F5F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26849730-6F98-461E-87D4-C7DB3929F5F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26849730-6F98-461E-87D4-C7DB3929F5F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9784E9BB-9666-404F-B449-A1B2D56A5C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9784E9BB-9666-404F-B449-A1B2D56A5C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9784E9BB-9666-404F-B449-A1B2D56A5C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9784E9BB-9666-404F-B449-A1B2D56A5C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F0F4C5E-7B74-4BDD-985B-6A531B022810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F0F4C5E-7B74-4BDD-985B-6A531B022810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F0F4C5E-7B74-4BDD-985B-6A531B022810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F0F4C5E-7B74-4BDD-985B-6A531B022810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAEAFD87-16E9-4789-9337-088167379E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAEAFD87-16E9-4789-9337-088167379E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAEAFD87-16E9-4789-9337-088167379E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAEAFD87-16E9-4789-9337-088167379E0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAA6C84F-86BC-412D-9A05-BD70D9C58B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA6C84F-86BC-412D-9A05-BD70D9C58B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA6C84F-86BC-412D-9A05-BD70D9C58B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAA6C84F-86BC-412D-9A05-BD70D9C58B96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
