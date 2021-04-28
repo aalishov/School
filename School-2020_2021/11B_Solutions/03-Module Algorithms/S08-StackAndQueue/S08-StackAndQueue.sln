@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P10-Supermarket", "P10-Supe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P11-HotPotato", "P11-HotPotato\P11-HotPotato.csproj", "{CAEAFD87-16E9-4789-9337-088167379E0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12-SpaceshipCrafting", "P12-SpaceshipCrafting\P12-SpaceshipCrafting.csproj", "{FAA6C84F-86BC-412D-9A05-BD70D9C58B96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P12-SpaceshipCrafting", "P12-SpaceshipCrafting\P12-SpaceshipCrafting.csproj", "{FAA6C84F-86BC-412D-9A05-BD70D9C58B96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P13-DatingApp", "P13-DatingApp\P13-DatingApp.csproj", "{FA9685C0-2BF1-4BDD-A377-2761123CA721}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{FAA6C84F-86BC-412D-9A05-BD70D9C58B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAA6C84F-86BC-412D-9A05-BD70D9C58B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAA6C84F-86BC-412D-9A05-BD70D9C58B96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA9685C0-2BF1-4BDD-A377-2761123CA721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA9685C0-2BF1-4BDD-A377-2761123CA721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA9685C0-2BF1-4BDD-A377-2761123CA721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA9685C0-2BF1-4BDD-A377-2761123CA721}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
