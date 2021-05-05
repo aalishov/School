@@ -5,9 +5,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        double[] numbers = Console.ReadLine()
-             .Split(' ')
-             .Select(double.Parse)
+        double[] numbers = Console.ReadLine() // "7 8 9 10 11"
+             .Split(' ') //"7" "8" "9" "10" "11"
+             .Select(double.Parse) // 7 8 9 10 11
              .ToArray();
 
         for (int i = 0; i < numbers.Length; i++)
