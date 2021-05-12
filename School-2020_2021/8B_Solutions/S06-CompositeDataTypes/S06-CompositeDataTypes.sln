@@ -11,13 +11,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-DemoIntArray", "P02-Dem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-ArrayOperations", "P03-ArrayOperations\P03-ArrayOperations.csproj", "{A555E16D-FCEB-4DAE-9796-1088F5545760}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-ArayStatistics", "P04-ArayStatistics\P04-ArayStatistics.csproj", "{59CD7CFB-F6E9-45CD-82E0-F1D9F59DBD7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-ArayStatistics", "P04-ArayStatistics\P04-ArayStatistics.csproj", "{59CD7CFB-F6E9-45CD-82E0-F1D9F59DBD7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-ArrayStatistics-v2", "P05-ArrayStatistics-v2\P05-ArrayStatistics-v2.csproj", "{DA7771DA-1EA7-456E-A846-C99D4D7EFE9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-ArrayStatistics-v2", "P05-ArrayStatistics-v2\P05-ArrayStatistics-v2.csproj", "{DA7771DA-1EA7-456E-A846-C99D4D7EFE9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-ExamPrep", "P06-ExamPrep\P06-ExamPrep.csproj", "{A98F048F-DD41-4F57-8CB6-32858EF3DB39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-ExamPrep", "P06-ExamPrep\P06-ExamPrep.csproj", "{A98F048F-DD41-4F57-8CB6-32858EF3DB39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-RichTextBoxItems", "P07-RichTextBoxItems\P07-RichTextBoxItems.csproj", "{4A90A224-BB70-4744-BCE6-170E510B64FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-RichTextBoxItems", "P07-RichTextBoxItems\P07-RichTextBoxItems.csproj", "{4A90A224-BB70-4744-BCE6-170E510B64FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-U48_Ex_P126", "P08-U48_Ex_P126\P08-U48_Ex_P126.csproj", "{90C27E7D-121F-4C79-8FAA-A4EF667DD5D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-DrawPolygonDemo", "P09-DrawPolygonDemo\P09-DrawPolygonDemo.csproj", "{4BE6E050-1ABA-42C1-8E40-8ECF2BBA6BFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10-DrawRandomPolygon", "P10-DrawRandomPolygon\P10-DrawRandomPolygon.csproj", "{DBFCCB7A-B693-427D-B2C0-A5BC5D798499}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11-Ex_1_Page_130", "P11-Ex_1_Page_130\P11-Ex_1_Page_130.csproj", "{9B3A3E72-2FB1-4D5C-92CF-57F96BB148F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12-Ex_3_Page_130", "P12-Ex_3_Page_130\P12-Ex_3_Page_130.csproj", "{DEA20ECB-1D83-4E14-8668-ABA9A9BE5C83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +67,26 @@ Global
 		{4A90A224-BB70-4744-BCE6-170E510B64FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A90A224-BB70-4744-BCE6-170E510B64FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A90A224-BB70-4744-BCE6-170E510B64FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90C27E7D-121F-4C79-8FAA-A4EF667DD5D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90C27E7D-121F-4C79-8FAA-A4EF667DD5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90C27E7D-121F-4C79-8FAA-A4EF667DD5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90C27E7D-121F-4C79-8FAA-A4EF667DD5D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BE6E050-1ABA-42C1-8E40-8ECF2BBA6BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BE6E050-1ABA-42C1-8E40-8ECF2BBA6BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BE6E050-1ABA-42C1-8E40-8ECF2BBA6BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BE6E050-1ABA-42C1-8E40-8ECF2BBA6BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBFCCB7A-B693-427D-B2C0-A5BC5D798499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBFCCB7A-B693-427D-B2C0-A5BC5D798499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBFCCB7A-B693-427D-B2C0-A5BC5D798499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBFCCB7A-B693-427D-B2C0-A5BC5D798499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B3A3E72-2FB1-4D5C-92CF-57F96BB148F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B3A3E72-2FB1-4D5C-92CF-57F96BB148F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B3A3E72-2FB1-4D5C-92CF-57F96BB148F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B3A3E72-2FB1-4D5C-92CF-57F96BB148F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEA20ECB-1D83-4E14-8668-ABA9A9BE5C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEA20ECB-1D83-4E14-8668-ABA9A9BE5C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEA20ECB-1D83-4E14-8668-ABA9A9BE5C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEA20ECB-1D83-4E14-8668-ABA9A9BE5C83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
