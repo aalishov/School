@@ -78,7 +78,7 @@
             }
             else
             {
-                sb.AppendLine("N / A");
+                sb.AppendLine("N/A");
             }
 
             return sb.ToString().TrimEnd();
