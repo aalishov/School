@@ -1,83 +1,88 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public class Pharmacy
+﻿namespace Exam_Pharmacy
 {
-    private readonly List<Medicine> medicines;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
 
-    private string name;
-
-    public Pharmacy(string name)
+    public class Pharmacy
     {
-        Name = name;
-        this.medicines = new List<Medicine>();
-    }
+        private readonly List<Medicine> medicines;
 
-    public string Name
-    {
-        get { return name; }
-        private set
+        private string name;
+
+        public Pharmacy(string name)
         {
-            if (value.Length<3)
-            {
-                throw new ArgumentException("Invalid name");
-            } name = value; }
-    }
+            Name = name;
+            this.medicines = new List<Medicine>();
+        }
 
-    public void Order(Medicine medicine)
-    {
-        this.medicines.Add(medicine);
-    }
-
-    public bool Sell(Medicine medicine)
-    {
-        return this.medicines.Remove(medicine);
-    }
-
-    public double CalculateTotalPrice()
-    {
-        return this.medicines.Sum(x => x.Price);
-    }
-
-    public Medicine GetMedicineWithHighestPrice()
-    {
-        return this.medicines.OrderBy(x => x.Price).LastOrDefault();
-    }
-
-    public Medicine GetMedicineWithLowestPrice()
-    {
-        return this.medicines.OrderBy(x => x.Price).FirstOrDefault();
-    }
-
-    public void RenamePharmacy(string newName)
-    {
-        this.Name = newName;
-    }
-
-    public void SellAllMedicines()
-    {
-        this.medicines.Clear();
-    }
-
-    public override string ToString()
-    {
-        StringBuilder sb = new StringBuilder();
-        sb.AppendLine($"Pharmacy {this.Name} has {this.medicines.Count} medicines and they are:");
-        if (this.medicines.Any())
+        public string Name
         {
-            foreach (var m in medicines)
+            get { return name; }
+            private set
             {
-                sb.AppendLine(m.ToString());
+                if (value.Length < 3)
+                {
+                    throw new ArgumentException("Invalid name");
+                }
+                name = value;
             }
         }
-        else
+
+        public void Order(Medicine medicine)
         {
-            sb.AppendLine("N / A");
+            this.medicines.Add(medicine);
         }
 
-        return sb.ToString().TrimEnd();
-    }
-}
+        public bool Sell(Medicine medicine)
+        {
+            return this.medicines.Remove(medicine);
+        }
 
+        public double CalculateTotalPrice()
+        {
+            return this.medicines.Sum(x => x.Price);
+        }
+
+        public Medicine GetMedicineWithHighestPrice()
+        {
+            return this.medicines.OrderBy(x => x.Price).LastOrDefault();
+        }
+
+        public Medicine GetMedicineWithLowestPrice()
+        {
+            return this.medicines.OrderBy(x => x.Price).FirstOrDefault();
+        }
+
+        public void RenamePharmacy(string newName)
+        {
+            this.Name = newName;
+        }
+
+        public void SellAllMedicines()
+        {
+            this.medicines.Clear();
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Pharmacy {this.Name} has {this.medicines.Count} medicines and they are:");
+            if (this.medicines.Any())
+            {
+                foreach (var m in medicines)
+                {
+                    sb.AppendLine(m.ToString());
+                }
+            }
+            else
+            {
+                sb.AppendLine("N / A");
+            }
+
+            return sb.ToString().TrimEnd();
+        }
+    }
+
+}

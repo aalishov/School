@@ -1,40 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-public class Medicine
+﻿namespace Exam_Pharmacy
 {
-    private string name;
-
-    private double price;
-
-    public Medicine(string name, double price)
+    using System;
+    public class Medicine
     {
-        Name = name;
-        Price = price;
-    }
+        private string name;
 
-    public string Name
-    {
-        get { return name; }
-        set { name = value; }
-    }
+        private double price;
 
-    public double Price
-    {
-        get { return price; }
-        set
+        public Medicine(string name, double price)
         {
-            if (value < 0)
+            Name = name;
+            Price = price;
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public double Price
+        {
+            get { return price; }
+            set
             {
-                throw new ArgumentException("Invalid price");
+                if (value < 0)
+                {
+                    throw new ArgumentException("Invalid price");
+                }
+                price = value;
             }
-            price = value;
+        }
+        public override string ToString()
+        {
+            return $"Medicine: {this.Name} with price {this.Price:f2}";
         }
     }
-    public override string ToString()
-    {
-        return $"Medicine: {this.Name} with price {this.Price:f2}";
-    }
-}
 
+}
