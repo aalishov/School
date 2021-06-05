@@ -19,6 +19,7 @@ namespace Pharmacy.Web
             InitializeComponent();
             medicines = new Dictionary<string, Medicine>();
             LoadMedicines();
+            LoadPharmacy();
         }
 
         private void addMedicine_Click(object sender, EventArgs e)
@@ -30,6 +31,7 @@ namespace Pharmacy.Web
         private void buttonLoad_Click(object sender, EventArgs e)
         {
             LoadMedicines();
+            LoadPharmacy();
         }
 
         private void LoadMedicines()
@@ -51,6 +53,30 @@ namespace Pharmacy.Web
             {
                 listBox1.Items.Add(m.Value.ToString());
             }
+        }
+
+        private void LoadPharmacy()
+        {
+            string path = @"D:\GIT\School\School-2020_2021\11B_Solutions\03-Module Algorithms\S03-OOP\Pharmacy.Web\pharmacy.txt";
+
+            listBox2.Items.Clear();
+            using (StreamReader reader= new StreamReader(path))
+            {
+                while (!reader.EndOfStream)
+                {
+                    string result = reader.ReadLine();
+                    if (result[0] == '@')
+                    {
+                        listBox2.Items.Add(result.TrimStart('@'));
+                    }
+                }
+            }
+        }
+
+        private void addPharmacyButton_Click(object sender, EventArgs e)
+        {
+            AddPharmacyForm pharmacy= new AddPharmacyForm();
+            pharmacy.Show();
         }
     }
 }

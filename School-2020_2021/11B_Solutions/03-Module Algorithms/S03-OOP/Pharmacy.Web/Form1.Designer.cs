@@ -32,11 +32,13 @@ namespace Pharmacy.Web
             this.addMedicine = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.buttonLoad = new System.Windows.Forms.Button();
+            this.addPharmacyButton = new System.Windows.Forms.Button();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // addMedicine
             // 
-            this.addMedicine.Location = new System.Drawing.Point(684, 12);
+            this.addMedicine.Location = new System.Drawing.Point(890, 12);
             this.addMedicine.Name = "addMedicine";
             this.addMedicine.Size = new System.Drawing.Size(183, 84);
             this.addMedicine.TabIndex = 0;
@@ -50,24 +52,45 @@ namespace Pharmacy.Web
             this.listBox1.ItemHeight = 31;
             this.listBox1.Location = new System.Drawing.Point(21, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(360, 438);
+            this.listBox1.Size = new System.Drawing.Size(443, 438);
             this.listBox1.TabIndex = 1;
             // 
             // buttonLoad
             // 
-            this.buttonLoad.Location = new System.Drawing.Point(106, 472);
+            this.buttonLoad.Location = new System.Drawing.Point(361, 472);
             this.buttonLoad.Name = "buttonLoad";
-            this.buttonLoad.Size = new System.Drawing.Size(142, 58);
+            this.buttonLoad.Size = new System.Drawing.Size(241, 58);
             this.buttonLoad.TabIndex = 2;
             this.buttonLoad.Text = "Load";
             this.buttonLoad.UseVisualStyleBackColor = true;
             this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
             // 
+            // addPharmacyButton
+            // 
+            this.addPharmacyButton.Location = new System.Drawing.Point(889, 126);
+            this.addPharmacyButton.Name = "addPharmacyButton";
+            this.addPharmacyButton.Size = new System.Drawing.Size(184, 85);
+            this.addPharmacyButton.TabIndex = 3;
+            this.addPharmacyButton.Text = "Add pharmacy";
+            this.addPharmacyButton.UseVisualStyleBackColor = true;
+            this.addPharmacyButton.Click += new System.EventHandler(this.addPharmacyButton_Click);
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 31;
+            this.listBox2.Location = new System.Drawing.Point(495, 9);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(334, 438);
+            this.listBox2.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(879, 542);
+            this.ClientSize = new System.Drawing.Size(1103, 542);
+            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.addPharmacyButton);
             this.Controls.Add(this.buttonLoad);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.addMedicine);
@@ -83,6 +106,8 @@ namespace Pharmacy.Web
         private System.Windows.Forms.Button addMedicine;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button buttonLoad;
+        private System.Windows.Forms.Button addPharmacyButton;
+        private System.Windows.Forms.ListBox listBox2;
     }
 }
 

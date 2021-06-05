@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarStore", "CarStore\CarSto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exam_Pharmacy", "Exam_Pharmacy\Exam_Pharmacy.csproj", "{E7AD792E-2A0D-4E53-9E94-0764F23E2111}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Web", "Pharmacy.Web\Pharmacy.Web.csproj", "{EF908A59-DE45-44BE-9116-DFE298D1D5B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.Web", "Pharmacy.Web\Pharmacy.Web.csproj", "{EF908A59-DE45-44BE-9116-DFE298D1D5B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptText", "CryptText\CryptText.csproj", "{7BAFE220-BEB4-4078-BAED-D6D400226845}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{EF908A59-DE45-44BE-9116-DFE298D1D5B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF908A59-DE45-44BE-9116-DFE298D1D5B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF908A59-DE45-44BE-9116-DFE298D1D5B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BAFE220-BEB4-4078-BAED-D6D400226845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BAFE220-BEB4-4078-BAED-D6D400226845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BAFE220-BEB4-4078-BAED-D6D400226845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BAFE220-BEB4-4078-BAED-D6D400226845}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
