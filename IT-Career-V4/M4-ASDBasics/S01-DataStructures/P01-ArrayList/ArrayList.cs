@@ -46,7 +46,7 @@
             if (this.Count == this.Capacity)
             {
                 this.Capacity *= 2;
-                var temp = this.items;
+                T[] temp = this.items;
                 this.items = new T[this.Capacity];
                 for (int i = 0; i < temp.Count(); i++)
                 {
@@ -76,7 +76,7 @@
         public T RemoveAt(int index)
         {
             OutOfRange(index);
-            var item = this.items[index];
+            T item = this.items[index];
             this.items = items.Take(index).Concat(items.Skip(index + 1)).Concat(new T[1]).ToArray();
             this.Count--;
             // Свиване
