@@ -31,6 +31,7 @@ public class Program
                 items.Push(currentItem += 3);
             }
         }
+
     }
 
     public static int[] ReadInput()
