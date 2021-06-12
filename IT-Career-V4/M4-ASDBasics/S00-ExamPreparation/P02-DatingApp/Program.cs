@@ -10,10 +10,12 @@ class Program
 
     static void Main()
     {
+        //Вход
         Input();
 
         Action();
 
+        //Изход
         Output();
     }
 
