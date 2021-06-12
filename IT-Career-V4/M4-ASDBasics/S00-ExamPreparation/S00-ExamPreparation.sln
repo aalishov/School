@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-SpaceshipCrafting", "P01-SpaceshipCrafting\P01-SpaceshipCrafting.csproj", "{DF6D0C69-97FF-4C15-9117-F19EFA6441E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-SpaceshipCrafting", "P01-SpaceshipCrafting\P01-SpaceshipCrafting.csproj", "{DF6D0C69-97FF-4C15-9117-F19EFA6441E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{3BC355E8-581F-48BE-9AD5-06AC93F712D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-DatingApp", "P02-DatingApp\P02-DatingApp.csproj", "{5FF27E2D-7E34-4600-A3F1-6543284635A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{DF6D0C69-97FF-4C15-9117-F19EFA6441E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF6D0C69-97FF-4C15-9117-F19EFA6441E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF6D0C69-97FF-4C15-9117-F19EFA6441E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BC355E8-581F-48BE-9AD5-06AC93F712D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BC355E8-581F-48BE-9AD5-06AC93F712D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BC355E8-581F-48BE-9AD5-06AC93F712D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BC355E8-581F-48BE-9AD5-06AC93F712D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF27E2D-7E34-4600-A3F1-6543284635A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF27E2D-7E34-4600-A3F1-6543284635A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF27E2D-7E34-4600-A3F1-6543284635A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF27E2D-7E34-4600-A3F1-6543284635A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
