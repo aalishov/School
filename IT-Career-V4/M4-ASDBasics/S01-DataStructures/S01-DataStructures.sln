@@ -3,21 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-ArrayList", "P01-ArrayList\P01-ArrayList.csproj", "{3464CDE4-B08E-4553-A9E0-F225B8FBE162}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-ArrayList", "P01-ArrayList\P01-ArrayList.csproj", "{3464CDE4-B08E-4553-A9E0-F225B8FBE162}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-ArrayStack", "P02-ArrayStack\P02-ArrayStack.csproj", "{7AB6F71E-3DC1-43AF-AE48-916A1A817D25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-ArrayStack", "P02-ArrayStack\P02-ArrayStack.csproj", "{7AB6F71E-3DC1-43AF-AE48-916A1A817D25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-CircularQueue", "P03-CircularQueue\P03-CircularQueue.csproj", "{41DDDB76-3D38-48C5-8594-C9B389BC2510}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-CircularQueue", "P03-CircularQueue\P03-CircularQueue.csproj", "{41DDDB76-3D38-48C5-8594-C9B389BC2510}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-DynamicList", "P04-DynamicList\P04-DynamicList.csproj", "{D82A5307-F56C-4C66-8DD5-AC6F2A35C25C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-DynamicList", "P04-DynamicList\P04-DynamicList.csproj", "{D82A5307-F56C-4C66-8DD5-AC6F2A35C25C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-SendBox", "P00-SendBox\P00-SendBox.csproj", "{8D2A9CD5-FBD5-4995-B26A-C303B8760289}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-SendBox", "P00-SendBox\P00-SendBox.csproj", "{8D2A9CD5-FBD5-4995-B26A-C303B8760289}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-ReversedList", "P05-ReversedList\P05-ReversedList.csproj", "{41094650-4687-4B55-A552-C44F7A30BF5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-ReversedList", "P05-ReversedList\P05-ReversedList.csproj", "{41094650-4687-4B55-A552-C44F7A30BF5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-QueueDemo", "P06-QueueDemo\P06-QueueDemo.csproj", "{DBBAFD6A-DF94-4633-9229-DCEB98107918}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-QueueDemo", "P06-QueueDemo\P06-QueueDemo.csproj", "{DBBAFD6A-DF94-4633-9229-DCEB98107918}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-StackDemo", "P07-StackDemo\P07-StackDemo.csproj", "{29D76122-CCD8-4F06-9B2F-6C70802AB339}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-StackDemo", "P07-StackDemo\P07-StackDemo.csproj", "{29D76122-CCD8-4F06-9B2F-6C70802AB339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-MyStack", "P08-MyStack\P08-MyStack.csproj", "{A646C540-1EB5-4F9E-85B1-CA295185A8B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-MyQueue", "P09-MyQueue\P09-MyQueue.csproj", "{F667FEE4-76EB-46FB-9511-60CE94F8B5CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{29D76122-CCD8-4F06-9B2F-6C70802AB339}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29D76122-CCD8-4F06-9B2F-6C70802AB339}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29D76122-CCD8-4F06-9B2F-6C70802AB339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A646C540-1EB5-4F9E-85B1-CA295185A8B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A646C540-1EB5-4F9E-85B1-CA295185A8B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A646C540-1EB5-4F9E-85B1-CA295185A8B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A646C540-1EB5-4F9E-85B1-CA295185A8B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F667FEE4-76EB-46FB-9511-60CE94F8B5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F667FEE4-76EB-46FB-9511-60CE94F8B5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F667FEE4-76EB-46FB-9511-60CE94F8B5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F667FEE4-76EB-46FB-9511-60CE94F8B5CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

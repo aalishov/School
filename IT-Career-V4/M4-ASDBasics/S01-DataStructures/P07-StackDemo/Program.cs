@@ -10,7 +10,8 @@ class Program
         nums.Push(2);
         nums.Push(3);
         nums.Push(4);
-        Console.WriteLine(nums.Pop());
+        //Console.WriteLine(nums.Pop());
+        Console.WriteLine(string.Join(", ",nums));
     }
 }
 
