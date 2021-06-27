@@ -13,9 +13,14 @@
         public double Weight { get; set; }
         public string Gender { get; set; }
 
-        public override string ToString()
+        private string Info()
         {
             return $"Present { this.Name} ({ this.Weight}) for a { this.Gender}";
+        }
+
+        public override string ToString()
+        {
+            return Info();
         }
     }
 }
