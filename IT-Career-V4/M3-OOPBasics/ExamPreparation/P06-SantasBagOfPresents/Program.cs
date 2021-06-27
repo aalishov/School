@@ -1,8 +1,7 @@
-﻿using System;
-
-namespace P06_SantasBagOfPresents
+﻿namespace P06_SantasBagOfPresents
 {
-  public  class Program
+    using System;
+    public  class Program
     {
         static void Main()
         {
