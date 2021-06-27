@@ -5,11 +5,11 @@ using System.Text;
 
 public class Student
 {
-    private readonly Dictionary<string, List<int>> grades;
+    private readonly SortedDictionary<string, List<int>> grades;
 
     public Student(int number, string name)
     {
-        this.grades = new Dictionary<string, List<int>>();
+        this.grades = new SortedDictionary<string, List<int>>();
         this.Number = number;
         this.Name = name;
     }
@@ -35,7 +35,7 @@ public class Student
         sb.AppendLine($"Student № {Number} - {Name}");
         foreach (var item in grades)
         {
-            sb.AppendLine($"\t{item.Key} -> {string.Join(", ", item.Value)}, Average: {item.Value.Average()}");
+            sb.AppendLine($"\t{item.Key} -> {string.Join(", ", item.Value.OrderBy(x=>x))}, Average: {item.Value.Average()}");
         }
         sb.AppendLine($"\t=>Average: {grades.Select(x => x.Value.Sum()).Average()/grades.Count}");
         return sb.ToString();

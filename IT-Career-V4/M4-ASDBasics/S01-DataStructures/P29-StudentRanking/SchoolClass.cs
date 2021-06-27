@@ -19,5 +19,16 @@ public class SchoolClass
         this.students.Add(student);
     }
 
+
+    public override string ToString()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.AppendLine($"Class: {this.Name}");
+        foreach (var student in students)
+        {
+            sb.AppendLine($"\t{student.ToString()}");
+        }
+        return sb.ToString();
+    }
 }
 
