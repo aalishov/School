@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-DemoBank", "P01-DemoBank\P01-DemoBank.csproj", "{ECEE627E-CEFA-45C5-A150-6A652B5A0C87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-DemoBank.Tests", "P01-DemoBank.Tests\P01-DemoBank.Tests.csproj", "{EDE57728-6106-409E-A350-560BBC79BF63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECEE627E-CEFA-45C5-A150-6A652B5A0C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECEE627E-CEFA-45C5-A150-6A652B5A0C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECEE627E-CEFA-45C5-A150-6A652B5A0C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECEE627E-CEFA-45C5-A150-6A652B5A0C87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDE57728-6106-409E-A350-560BBC79BF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE57728-6106-409E-A350-560BBC79BF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE57728-6106-409E-A350-560BBC79BF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE57728-6106-409E-A350-560BBC79BF63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78FBD38F-F88B-497B-A300-1EBF27DD1C62}
+	EndGlobalSection
+EndGlobal
