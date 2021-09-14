@@ -15,6 +15,10 @@
             {
                 while (a.CanBreath)
                 {
+                    if (!planet.Items.Any())
+                    {
+                        break;
+                    }
                     string item = planet.Items.Last();
 
                     a.Bag.Items.Add(item);

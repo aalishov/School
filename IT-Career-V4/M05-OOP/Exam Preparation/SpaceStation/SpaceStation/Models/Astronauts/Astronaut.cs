@@ -4,6 +4,7 @@
     using SpaceStation.Utilities.Messages;
     using SpaceStation.Models.Astronauts.Contracts;
     using SpaceStation.Models.Bags.Contracts;
+    using SpaceStation.Models.Bags;
 
     public abstract class Astronaut : IAstronaut
     {
@@ -14,6 +15,7 @@
         {
             this.Name = name;
             this.Oxygen = oxygen;
+            this.Bag = new Backpack();
         }
 
         public string Name

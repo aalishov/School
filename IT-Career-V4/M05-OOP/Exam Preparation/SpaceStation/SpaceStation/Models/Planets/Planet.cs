@@ -12,6 +12,7 @@
         public Planet(string name)
         {
             this.Name = name;
+            this.Items = new List<string>();
         }
 
         public ICollection<string> Items { get; private set; }
@@ -28,5 +29,7 @@
                 this.name = value;
             }
         }
+
+
     }
 }
