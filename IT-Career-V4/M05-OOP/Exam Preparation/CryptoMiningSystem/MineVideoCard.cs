@@ -1,10 +1,11 @@
 ﻿namespace CryptoMiningSystem
 {
     using System;
-    public class MineVideoCard:VideoCard
+    public class MineVideoCard : VideoCard
     {
-        public MineVideoCard(string model, decimal price, int generation) : base(model, price, generation)
+        public MineVideoCard(string model, decimal price, int generation, int ram) : base(model, price, generation, ram)
         {
+            this.LifeWorkingHours *= 2;
         }
         public override int Generation
         {
@@ -23,15 +24,9 @@
             get
             {
                 //TODO: Да се провери
-                return base.MinedMoneyPerHour*8;
+                return base.MinedMoneyPerHour * 8;
             }
         }
-        public override int LifeWorkingHours
-        {
-            get
-            {
-                return base.LifeWorkingHours*2;
-            }
-        }
+
     }
 }

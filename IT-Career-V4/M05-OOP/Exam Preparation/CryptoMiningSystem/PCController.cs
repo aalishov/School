@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Text;
 
     public class PCController
     {
@@ -16,7 +17,7 @@
         {
             string name = args[0];
             decimal money = decimal.Parse(args[1]);
-            if (!this.users.Any(x=>x.Name==name))
+            if (!this.users.Any(x => x.Name == name))
             {
                 this.users.Add(new User(name, money));
                 return $"Successfully registered user – {name}!";
@@ -40,19 +41,19 @@
             decimal videoCardPrice = decimal.Parse(args[9]);
 
             IProcessor processor = CreateProcessor(processorType, processorModel, processorGeneration, processorPrice);
-            if (processor==null)
+            if (processor == null)
             {
                 return "Invalid type processor!";
             }
             IVideoCard videoCard = CreateVideoCard(videoCardType, videoCardModel, videoCardGeneration, videoCardRam, videoCardPrice);
-            if (videoCard==null)
+            if (videoCard == null)
             {
                 return "Invalid type video card!";
             }
             IComputer computer = new Computer(processor, videoCard, videoCardRam);
 
             IUser user = this.users.FirstOrDefault(x => x.Name == name);
-            if (user==null)
+            if (user == null)
             {
                 return $"Username: {name} does not exist!";
             }
@@ -61,24 +62,56 @@
         }
         public string Mine()
         {
-            //TODO: Add some logic here …
+            double dailyProfits = 0;
+
+            foreach (var user in this.users)
+            {
+                dailyProfits += user.Computer.MinedAmountPerHour;
+                user.Computer.Processor.LifeWorkingHours -= 24;
+                user.Computer.VideoCard.LifeWorkingHours -= 24;
+                user.Money += (decimal)user.Computer.MinedAmountPerHour;
+            }
+            return $"Daily profits: {dailyProfits}!";
         }
         public string UserInfo(List<string> args)
         {
-            //TODO: Add some logic here …
+            string name = args[0];
+            IUser user = this.users.FirstOrDefault(x => x.Name == name);
+            if (user!=null)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine($"Name: {user.Name} - Stars: {user.Stars}");
+                sb.AppendLine($"Balance: {user.Money:f2}");
+                if (user.Computer!=null)
+                {
+                    sb.AppendLine($"PC Ram: {user.Computer.Ram}");
+                    sb.AppendLine($"- {user.Computer.Processor.GetType().Name} – {user.Computer.Processor.Model} – {user.Computer.Processor.Generation}");
+                    sb.AppendLine($"- {user.Computer.VideoCard.GetType().Name} – {user.Computer.VideoCard.Model} – {user.Computer.VideoCard.Generation}");
+                    sb.AppendLine($"* Video card Ram: {user.Computer.VideoCard.Ram}");
+                }
+
+                return sb.ToString().TrimEnd();
+            }
+            return $"Username: {name} does not exist!";
         }
         public string Shutdown()
         {
-            //TODO: Add some logic here …
+            StringBuilder sb = new StringBuilder();
+            foreach (var user in this.users)
+            {
+                sb.AppendLine(UserInfo(new List<string>() { user.Name }));
+            }
+            sb.AppendLine($"System total profits: {this.users.Sum(x=>x.Money)}!!!");
+            return sb.ToString().TrimEnd();
         }
 
-        private IProcessor CreateProcessor(string type, string model,  int generation, decimal price)
+        private IProcessor CreateProcessor(string type, string model, int generation, decimal price)
         {
-            if (type=="Low")
+            if (type == "Low")
             {
                 return new LowPerformanceProcessor(model, price, generation);
             }
-            else if(type=="High")
+            else if (type == "High")
             {
                 return new HighPerformanceProcessor(model, price, generation);
             }
@@ -89,17 +122,17 @@
         }
         private IVideoCard CreateVideoCard(string type, string model, int generation, int ram, decimal price)
         {
-            if (type=="Game")
+            if (type == "Game")
             {
-                return new GameVideoCard(model, price, generation);
+                return new GameVideoCard(model, price, generation, ram);
             }
-            else if (type=="Mine")
+            else if (type == "Mine")
             {
-                return new MineVideoCard(model, price, generation);
+                return new MineVideoCard(model, price, generation, ram);
             }
             else
             {
-               return null;
+                return null;
             }
         }
     }

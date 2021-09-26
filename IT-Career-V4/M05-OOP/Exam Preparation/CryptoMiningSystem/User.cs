@@ -26,7 +26,7 @@
         public decimal Money
         {
             get { return money; }
-            private set
+            set
             {
                 if (value<0)
                 {

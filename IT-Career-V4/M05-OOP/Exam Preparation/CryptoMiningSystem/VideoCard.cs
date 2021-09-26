@@ -4,8 +4,9 @@
     public abstract class VideoCard : Component, IVideoCard
     {
         private int ram;
-        public VideoCard(string model, decimal price, int generation) : base(model, price, generation)
+        public VideoCard(string model, decimal price, int generation, int ram) : base(model, price, generation, ram * generation * 10)
         {
+            this.Ram = ram;
         }
         public int Ram
         {
@@ -24,13 +25,6 @@
             get
             {
                 return this.Ram * this.Generation / 10;
-            }
-        }
-        public override int LifeWorkingHours
-        {
-            get
-            {
-                return this.Ram * this.Generation * 10;
             }
         }
     }

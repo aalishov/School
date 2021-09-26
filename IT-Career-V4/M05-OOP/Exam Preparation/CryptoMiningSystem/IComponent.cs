@@ -5,6 +5,6 @@
         public string Model { get;  }
         public decimal Price { get;  }
         public int Generation { get; }
-        public int LifeWorkingHours { get;  }
+        public int LifeWorkingHours { get; set; }
     }
 }

@@ -9,12 +9,14 @@ namespace CryptoMiningSystem
         private string model;
         private decimal price;
         private int generation;
+        private int lifeWorkingHours;
 
-        protected Component(string model, decimal price, int generation)
+        protected Component(string model, decimal price, int generation,int lifeWorkingHours)
         {
             Model = model;
             Price = price;
             Generation = generation;
+            this.LifeWorkingHours = lifeWorkingHours;
         }
 
         public string Model
@@ -46,13 +48,20 @@ namespace CryptoMiningSystem
             get { return generation; }
             protected set
             {
-                if (value<=0)
+                if (value <= 0)
                 {
                     throw new ArgumentException("Generation cannot be 0 or negative!");
                 }
                 generation = value;
             }
         }
-        public abstract int LifeWorkingHours { get; }
+        public int LifeWorkingHours
+        {
+            get { return lifeWorkingHours; }
+            set
+            {
+                lifeWorkingHours = value;
+            }
+        }
     }
 }

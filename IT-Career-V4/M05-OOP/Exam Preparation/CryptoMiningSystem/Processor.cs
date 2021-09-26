@@ -3,7 +3,7 @@
     using System;
     public abstract class Processor : Component, IProcessor
     {
-        public Processor(string model, decimal price, int generation, int mineMultiplier) : base(model, price, generation)
+        public Processor(string model, decimal price, int generation, int mineMultiplier) : base(model, price, generation, generation * 100)
         {
             this.MineMultiplier = mineMultiplier;
         }
@@ -20,11 +20,5 @@
                 base.Generation = value;
             }
         }
-
-        public override int LifeWorkingHours
-        {
-            get { return this.Generation * 100; }
-        }
-        
     }
 }

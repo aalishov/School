@@ -6,7 +6,7 @@ namespace CryptoMiningSystem
 {
     public class GameVideoCard : VideoCard
     {
-        public GameVideoCard(string model, decimal price, int generation) : base(model, price, generation)
+        public GameVideoCard(string model, decimal price, int generation, int ram) : base(model, price, generation, ram)
         {
         }
         public override int Generation
@@ -25,7 +25,7 @@ namespace CryptoMiningSystem
         {
             get
             {
-                return base.MinedMoneyPerHour*2;
+                return base.MinedMoneyPerHour * 2;
             }
         }
     }
