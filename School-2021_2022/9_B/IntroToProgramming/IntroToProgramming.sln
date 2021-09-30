@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-FirstConsoleApp", "P01-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-SecondConsoleApp", "P02-SecondConsoleApp\P02-SecondConsoleApp.csproj", "{2E120F90-FE62-432D-BD51-1FA746B2ADEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustSnake", "JustSnake\JustSnake.csproj", "{1B7E4830-7223-4CD7-BE19-EB63E3B29574}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustSnake", "JustSnake\JustSnake.csproj", "{1B7E4830-7223-4CD7-BE19-EB63E3B29574}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-IntroConsole", "P03-IntroConsole\P03-IntroConsole.csproj", "{D89C336A-7328-4296-A5EE-7BDF1C931AA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-SquareArea", "P04-SquareArea\P04-SquareArea.csproj", "{995A9CBA-71DE-448B-8C5C-05D5EC0963A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{1B7E4830-7223-4CD7-BE19-EB63E3B29574}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B7E4830-7223-4CD7-BE19-EB63E3B29574}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B7E4830-7223-4CD7-BE19-EB63E3B29574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D89C336A-7328-4296-A5EE-7BDF1C931AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D89C336A-7328-4296-A5EE-7BDF1C931AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D89C336A-7328-4296-A5EE-7BDF1C931AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D89C336A-7328-4296-A5EE-7BDF1C931AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{995A9CBA-71DE-448B-8C5C-05D5EC0963A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{995A9CBA-71DE-448B-8C5C-05D5EC0963A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{995A9CBA-71DE-448B-8C5C-05D5EC0963A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{995A9CBA-71DE-448B-8C5C-05D5EC0963A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
