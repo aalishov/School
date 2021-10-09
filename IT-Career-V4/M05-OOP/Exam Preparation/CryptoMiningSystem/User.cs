@@ -35,6 +35,7 @@
                 money = value;
             }
         }
+        public decimal Profits { get; set; }
         public IComputer Computer { get;  set; }
     }
 }

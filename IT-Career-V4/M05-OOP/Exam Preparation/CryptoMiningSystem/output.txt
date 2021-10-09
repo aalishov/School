@@ -1,0 +1,21 @@
+Successfully registered user – Gosho!
+Successfully created computer for user: Gosho!
+Successfully registered user – Simo!
+Name: Simo - Stars: 24
+Balance: 2458.54
+Name: Gosho - Stars: 0
+Balance: 3.00
+PC Ram: 8
+- LowPerformanceProcessor – ProcModel – 5
+- GameVideoCard – VideoModel – 3
+* Video card Ram: 8
+Daily profits: 192!
+Name: Gosho - Stars: 1
+Balance: 195.00
+PC Ram: 8
+- LowPerformanceProcessor – ProcModel – 5
+- GameVideoCard – VideoModel – 3
+* Video card Ram: 8
+Name: Simo - Stars: 24
+Balance: 2458.54
+System total profits: 192!!!

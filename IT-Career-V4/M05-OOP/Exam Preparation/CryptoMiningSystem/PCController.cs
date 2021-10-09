@@ -64,12 +64,13 @@
         {
             double dailyProfits = 0;
 
-            foreach (var user in this.users)
+            foreach (var user in this.users.Where(x=>x.Computer!=null))
             {
-                dailyProfits += user.Computer.MinedAmountPerHour;
+                dailyProfits += user.Computer.MinedAmountPerHour*24;
                 user.Computer.Processor.LifeWorkingHours -= 24;
                 user.Computer.VideoCard.LifeWorkingHours -= 24;
-                user.Money += (decimal)user.Computer.MinedAmountPerHour;
+                user.Money += (decimal)user.Computer.MinedAmountPerHour * 24;
+                user.Profits+= (decimal)user.Computer.MinedAmountPerHour * 24;
             }
             return $"Daily profits: {dailyProfits}!";
         }
@@ -101,7 +102,7 @@
             {
                 sb.AppendLine(UserInfo(new List<string>() { user.Name }));
             }
-            sb.AppendLine($"System total profits: {this.users.Sum(x=>x.Money)}!!!");
+            sb.AppendLine($"System total profits: {this.users.Sum(x=>x.Profits)}!!!");
             return sb.ToString().TrimEnd();
         }
 
