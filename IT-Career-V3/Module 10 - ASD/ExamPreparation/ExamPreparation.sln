@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-VideoLibrary", "P01-VideoLibrary\P01-VideoLibrary.csproj", "{8A30C680-9C36-405D-90DF-955C6FAA136F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-VideoLibrary", "P01-VideoLibrary\P01-VideoLibrary.csproj", "{8A30C680-9C36-405D-90DF-955C6FAA136F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-FoodVauchers", "P02-FoodVauchers\P02-FoodVauchers.csproj", "{AA9ABE25-11FE-4C0E-98C3-494BA2420D86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-RecursiveProduct", "P03-RecursiveProduct\P03-RecursiveProduct.csproj", "{BAAF1623-886E-4992-A3C0-4D017BFF70BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{C047196A-6A92-4A08-928A-AE2E324F5E4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-PrimeNumbers", "P04-PrimeNumbers\P04-PrimeNumbers.csproj", "{3495CF7C-7A62-402F-8618-A96C155361F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{8A30C680-9C36-405D-90DF-955C6FAA136F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A30C680-9C36-405D-90DF-955C6FAA136F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A30C680-9C36-405D-90DF-955C6FAA136F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA9ABE25-11FE-4C0E-98C3-494BA2420D86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA9ABE25-11FE-4C0E-98C3-494BA2420D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA9ABE25-11FE-4C0E-98C3-494BA2420D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA9ABE25-11FE-4C0E-98C3-494BA2420D86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAAF1623-886E-4992-A3C0-4D017BFF70BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAAF1623-886E-4992-A3C0-4D017BFF70BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAAF1623-886E-4992-A3C0-4D017BFF70BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAAF1623-886E-4992-A3C0-4D017BFF70BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C047196A-6A92-4A08-928A-AE2E324F5E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C047196A-6A92-4A08-928A-AE2E324F5E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C047196A-6A92-4A08-928A-AE2E324F5E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C047196A-6A92-4A08-928A-AE2E324F5E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3495CF7C-7A62-402F-8618-A96C155361F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3495CF7C-7A62-402F-8618-A96C155361F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3495CF7C-7A62-402F-8618-A96C155361F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3495CF7C-7A62-402F-8618-A96C155361F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
