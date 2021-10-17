@@ -7,7 +7,6 @@ public class Program
     public static void Main()
     {
         SystemManager manager = new SystemManager();
-
         while (true)
         {
             List<string> input = Console.ReadLine()

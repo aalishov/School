@@ -26,7 +26,7 @@ public class Provider
     public override string ToString()
     {
         StringBuilder sb = new StringBuilder();
-        sb.AppendLine($"{this.GetType().Name} Provider - {this.Id}");
+        sb.AppendLine($"{this.GetType().Name.Substring(0,this.GetType().Name.Length-nameof(Provider).Length)} {nameof(Provider)} - {this.Id}");
         sb.AppendLine($"Energy Output: {this.EnergyOutput}");
         return sb.ToString().TrimEnd();
     }
