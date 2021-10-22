@@ -1,0 +1,28 @@
+CREATE DATABASE ManyToMany;
+
+USE ManyToMany;
+
+CREATE TABLE Students
+(
+	Id INT PRIMARY KEY IDENTITY,
+	[Name] NVARCHAR(50) NOT NULL
+);
+CREATE TABLE Exams
+(
+	Id INT PRIMARY KEY IDENTITY(101,1),
+	[Name] NVARCHAR(50) NOT NULL,
+);
+CREATE TABLE StudentsExams
+(
+	StudentId INT  NOT NULL,
+	ExamId INT NOT NULL,
+	CONSTRAINT PK_StudentsExams
+	PRIMARY KEY (StudentId,ExamId),
+	CONSTRAINT Fk_StudentsExams_Students
+	FOREIGN KEY (StudentId)
+	REFERENCES Students(Id),
+	CONSTRAINT Fk_StudentsExams_Exams
+	FOREIGN KEY (ExamId)
+	REFERENCES Exams(Id)
+);
+
