@@ -1,0 +1,82 @@
+CREATE DATABASE TripService;
+
+USE TripService;
+
+CREATE TABLE Cities
+(
+	Id INT PRIMARY KEY IDENTITY,
+	[Name] NVARCHAR(20) NOT NULL,
+	CountryCode VARCHAR(2) NOT NULL,
+	CHECK (DATALENGTH(CountryCode)=2)
+);
+
+CREATE TABLE Hotels
+(
+	Id INT PRIMARY KEY IDENTITY,
+	[Name] NVARCHAR(30) NOT NULL,
+	CityId INT NOT NULL,
+	EmployeeCount INT NOT NULL,
+	BaseRate DECIMAL(12,2),
+	CONSTRAINT Fk_Hotels_Cities
+	FOREIGN KEY (CityId)
+	REFERENCES Cities(Id)
+);
+
+CREATE TABLE Rooms
+(
+	Id INT PRIMARY KEY IDENTITY,
+	Price DECIMAL(12,2) NOT NULL,
+	[Type] NVARCHAR(20) NOT NULL,
+	Beds INT NOT NULL,
+	HotelId INT NOT NULL,
+	CONSTRAINT Fk_Rooms_Hotels
+	FOREIGN KEY (HotelId)
+	REFERENCES Hotels(Id)
+);
+
+CREATE TABLE Trips
+(
+	Id INT PRIMARY KEY IDENTITY,
+	RoomId INT NOT NULL,
+	BookDate DATETIME2 NOT NULL,
+	ArrivalDate DATETIME2 NOT NULL,
+	ReturnDate DATETIME2 NOT NULL,
+	CancelDate DATETIME2,
+	CONSTRAINT Fk_Trips_Rooms
+	FOREIGN KEY(RoomId)
+	REFERENCES Rooms(Id),
+	CHECK (BookDate<ArrivalDate),
+	CHECK (ArrivalDate<ReturnDate)
+);
+
+CREATE TABLE Accounts
+(
+	Id INT PRIMARY KEY IDENTITY,
+	FirstName NVARCHAR(50) NOT NULL,
+	MiddleName NVARCHAR(20),
+	LastName NVARCHAR(50) NOT NULL,
+	CityId INT NOT NULL,
+	BirthDate DATETIME2 NOT NULL,
+	Email VARCHAR(100) UNIQUE NOT NULL,
+	CONSTRAINT Fk_Accounts_Cities
+	FOREIGN KEY(CityId)
+	REFERENCES Cities(Id)
+);
+
+CREATE TABLE AccountsTrips
+(
+	AccountId INT,
+	TripId INT,
+	Luggage INT DEFAULT 0,
+	CONSTRAINT Pk_AccountsTrips
+		PRIMARY KEY(AccountId,TripId),
+	CONSTRAINT Fk_AccountsTrips_Accounts
+		FOREIGN KEY (AccountId)
+		REFERENCES Accounts(Id),
+	CONSTRAINT Fk_AccountsTrips_Trips
+		FOREIGN KEY (TripId)
+		REFERENCES Trips(Id)
+);
+
+SELECT * FROM Cities;
+SELECT * FROM Hotels;
