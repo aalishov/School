@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{B02D9846-8493-4F1C-8593-D23A947319D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{B02D9846-8493-4F1C-8593-D23A947319D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P44-Password", "P44-Password\P44-Password.csproj", "{A51883C8-3D98-477B-B265-1ADE60C814C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P55-SpecialNumbers", "P55-SpecialNumbers\P55-SpecialNumbers.csproj", "{8030831D-31B8-4DE1-B921-A7FB3E1C1B78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{B02D9846-8493-4F1C-8593-D23A947319D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B02D9846-8493-4F1C-8593-D23A947319D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B02D9846-8493-4F1C-8593-D23A947319D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A51883C8-3D98-477B-B265-1ADE60C814C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51883C8-3D98-477B-B265-1ADE60C814C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51883C8-3D98-477B-B265-1ADE60C814C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51883C8-3D98-477B-B265-1ADE60C814C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8030831D-31B8-4DE1-B921-A7FB3E1C1B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8030831D-31B8-4DE1-B921-A7FB3E1C1B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8030831D-31B8-4DE1-B921-A7FB3E1C1B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8030831D-31B8-4DE1-B921-A7FB3E1C1B78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

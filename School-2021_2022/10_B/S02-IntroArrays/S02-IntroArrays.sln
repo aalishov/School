@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-DayOfWeek", "P03-DayOfW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-ArrayStatistcs", "P04-ArrayStatistcs\P04-ArrayStatistcs.csproj", "{F0291F30-C663-45C1-B312-BACD3C81F48A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{1A7EDE65-816B-4708-B720-981B03EA8173}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{1A7EDE65-816B-4708-B720-981B03EA8173}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-MostCommonNumber", "P05-MostCommonNumber\P05-MostCommonNumber.csproj", "{1EB855BF-4976-4DD2-A7DA-66103C9AD2A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-MostCommonNumber", "P05-MostCommonNumber\P05-MostCommonNumber.csproj", "{1EB855BF-4976-4DD2-A7DA-66103C9AD2A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-ExtensionArrays", "P06-ExtensionArrays\P06-ExtensionArrays.csproj", "{B02E79D9-9A57-40C3-847B-1B00315EF0D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{1EB855BF-4976-4DD2-A7DA-66103C9AD2A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EB855BF-4976-4DD2-A7DA-66103C9AD2A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EB855BF-4976-4DD2-A7DA-66103C9AD2A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B02E79D9-9A57-40C3-847B-1B00315EF0D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B02E79D9-9A57-40C3-847B-1B00315EF0D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B02E79D9-9A57-40C3-847B-1B00315EF0D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B02E79D9-9A57-40C3-847B-1B00315EF0D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
