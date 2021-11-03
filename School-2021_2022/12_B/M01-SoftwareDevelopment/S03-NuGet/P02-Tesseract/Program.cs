@@ -7,7 +7,6 @@ public class Program
     public static void Main()
     {
         string fileName = "test2.png";
-
         Console.WriteLine(ReadTextFromImage(fileName));
     }
 
