@@ -6,8 +6,10 @@ public class Program
 {
     public static void Main()
     {
-        string fileName = "test2.png";
+        string fileName = "img3.png";
         Console.WriteLine(ReadTextFromImage(fileName));
+        Console.WriteLine(ReadTextFromImage("img4.png"));
+        Console.WriteLine(ReadTextFromImage("img5.png"));
     }
 
     private static string ReadTextFromImage(string fileName)
