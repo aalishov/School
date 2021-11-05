@@ -126,6 +126,5 @@ namespace Headhunt.Core
             }
             return null;
         }
-
     }
 }
