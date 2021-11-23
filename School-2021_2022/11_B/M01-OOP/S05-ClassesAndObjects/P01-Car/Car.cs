@@ -10,6 +10,13 @@ namespace CarManufacturer
         private string model;
         private int year;
 
+        public Car(string make, string model, int year)
+        {
+            Make = make;
+            Model = model;
+            Year = year;
+        }
+
         public string Make
         {
             get { return this.make; }
