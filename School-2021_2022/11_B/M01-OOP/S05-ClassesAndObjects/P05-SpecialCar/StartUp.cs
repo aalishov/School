@@ -14,6 +14,26 @@ namespace CarManufacturer
             CreateTires();
             CreateEngines();
             CreateCars();
+            foreach (var car in cars)
+            {
+                Console.WriteLine(car.WhoAmI());
+            }
+            foreach (var car in cars)
+            {
+                Console.WriteLine(car.Drive(20));
+            }
+            foreach (var car in cars)
+            {
+                Console.WriteLine(car.Drive(1500));
+            }
+            foreach (var car in cars)
+            {
+                Console.WriteLine(car.Refuel(50));
+            }
+            foreach (var car in cars)
+            {
+                Console.WriteLine(car.WhoAmI());
+            }
         }
         public static void CreateCars()
         {

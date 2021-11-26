@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CarManufacturer
+﻿namespace CarManufacturer
 {
     public class Tire
     {

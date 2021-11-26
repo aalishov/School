@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CarManufacturer
+﻿namespace CarManufacturer
 {
     public class Car
     {
@@ -79,6 +75,29 @@ namespace CarManufacturer
         {
             get { return this.tires; }
             set { this.tires = value; }
+        }
+
+        public string Drive(double distance)
+        {
+            double neededFuel = distance * this.FuelConsumption/100;
+            if (this.FuelQuantity-neededFuel>=0)
+            {
+                this.FuelQuantity -= neededFuel;
+                return $"{this.Make} {this.Model} -> Traveled {distance}, current fuel: {this.FuelQuantity}";
+            }
+            else
+            {
+                return $"{this.Make} {this.Model} -> Not enough fuel to perform this trip!";
+            }
+        }
+        public string Refuel(double fuelQuantity)
+        {
+            this.FuelQuantity += fuelQuantity;
+            return $"{this.Make} {this.Model} refuiling with {fuelQuantity}...-> current fuel: {this.FuelQuantity}";
+        }
+        public string WhoAmI()
+        {
+            return $"Make: {this.Make}\n\tModel: {this.Model}\n\tYear: {this.Year}\n\tHorsePowers: {this.Engine.HorsePower}\n\tFuelQuantity: {this.FuelQuantity}";
         }
     }
 }
