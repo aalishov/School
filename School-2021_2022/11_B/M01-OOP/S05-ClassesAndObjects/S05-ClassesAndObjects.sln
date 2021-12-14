@@ -9,11 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DeffineClasses", "P00-D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-Car", "P01-Car\P01-Car.csproj", "{FF9267DA-E80C-4332-91C1-41C905E6F6F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-Car", "P03-Car\P03-Car.csproj", "{4F6C106E-07E4-406C-9D69-5B8239136DE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-Car", "P03-Car\P03-Car.csproj", "{4F6C106E-07E4-406C-9D69-5B8239136DE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-CarWithEngineAndTires", "P04-CarWithEngineAndTires\P04-CarWithEngineAndTires.csproj", "{0E3DD904-D5D5-4470-96B2-76796F909EC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-CarWithEngineAndTires", "P04-CarWithEngineAndTires\P04-CarWithEngineAndTires.csproj", "{0E3DD904-D5D5-4470-96B2-76796F909EC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-SpecialCar", "P05-SpecialCar\P05-SpecialCar.csproj", "{3B216635-DF9F-40EA-9F70-FA686D8259AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-SpecialCar", "P05-SpecialCar\P05-SpecialCar.csproj", "{3B216635-DF9F-40EA-9F70-FA686D8259AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-Employee", "P06-Employee\P06-Employee.csproj", "{587ED881-4980-40C4-A9EB-F91A453B6940}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-EmployeeConstructor", "P07-EmployeeConstructor\P07-EmployeeConstructor.csproj", "{ABE7D61F-55EF-4D4E-85B1-03011D9D6424}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-OldestEmployee", "P08-OldestEmployee\P08-OldestEmployee.csproj", "{F1846690-6E50-4487-BF2E-DE7ECA82B353}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{3B216635-DF9F-40EA-9F70-FA686D8259AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B216635-DF9F-40EA-9F70-FA686D8259AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B216635-DF9F-40EA-9F70-FA686D8259AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{587ED881-4980-40C4-A9EB-F91A453B6940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{587ED881-4980-40C4-A9EB-F91A453B6940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{587ED881-4980-40C4-A9EB-F91A453B6940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{587ED881-4980-40C4-A9EB-F91A453B6940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABE7D61F-55EF-4D4E-85B1-03011D9D6424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE7D61F-55EF-4D4E-85B1-03011D9D6424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE7D61F-55EF-4D4E-85B1-03011D9D6424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABE7D61F-55EF-4D4E-85B1-03011D9D6424}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1846690-6E50-4487-BF2E-DE7ECA82B353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1846690-6E50-4487-BF2E-DE7ECA82B353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1846690-6E50-4487-BF2E-DE7ECA82B353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1846690-6E50-4487-BF2E-DE7ECA82B353}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
