@@ -10,9 +10,9 @@ namespace P01_SoftUni
         {
             ApplicationDbContext dbContext = new ApplicationDbContext();
 
-            dbContext.Towns.Add(new Town { Name = "Plovdiv" });
+            Town town = new Town() { Name = "Plovdiv" };
 
-            dbContext.SaveChanges();
+            dbContext.Towns.Add(town);
         }
     }
 }

@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-DemoIf", "P00-DemoIf\P00-DemoIf.csproj", "{709BF223-4F11-443C-A34E-69CF987F59C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DemoIf", "P00-DemoIf\P00-DemoIf.csproj", "{709BF223-4F11-443C-A34E-69CF987F59C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-DemoSwitch", "P00-DemoSwitch\P00-DemoSwitch.csproj", "{56EC9251-91B1-4488-8672-9E270D92BF40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DemoSwitch", "P00-DemoSwitch\P00-DemoSwitch.csproj", "{56EC9251-91B1-4488-8672-9E270D92BF40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-DemoSwitch_v2", "P00-DemoSwitch_v2\P00-DemoSwitch_v2.csproj", "{E0D2A2C2-EBDD-49CE-A125-D52027AEAF4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DemoSwitch_v2", "P00-DemoSwitch_v2\P00-DemoSwitch_v2.csproj", "{E0D2A2C2-EBDD-49CE-A125-D52027AEAF4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-And", "P00-And\P00-And.csproj", "{C57DE341-9B43-4D79-B0F0-A2A27BEE9FA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-And", "P00-And\P00-And.csproj", "{C57DE341-9B43-4D79-B0F0-A2A27BEE9FA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-DemoOrAndNot", "P00-DemoOrAndNot\P00-DemoOrAndNot.csproj", "{2D5C82DC-4DC0-44AC-9A3C-DA1F832FD781}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DemoOrAndNot", "P00-DemoOrAndNot\P00-DemoOrAndNot.csproj", "{2D5C82DC-4DC0-44AC-9A3C-DA1F832FD781}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-Words", "P06-Words\P06-Words.csproj", "{6707E854-B130-4CEC-AA61-71CAC9EB891A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-Hours", "P07-Hours\P07-Hours.csproj", "{FFC143F1-56AB-412E-9A94-12B4227604C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-EqualNums", "P08-EqualNums\P08-EqualNums.csproj", "{C151DE21-025A-467D-9AB4-497684DD262E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{2D5C82DC-4DC0-44AC-9A3C-DA1F832FD781}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D5C82DC-4DC0-44AC-9A3C-DA1F832FD781}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D5C82DC-4DC0-44AC-9A3C-DA1F832FD781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6707E854-B130-4CEC-AA61-71CAC9EB891A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6707E854-B130-4CEC-AA61-71CAC9EB891A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6707E854-B130-4CEC-AA61-71CAC9EB891A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6707E854-B130-4CEC-AA61-71CAC9EB891A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFC143F1-56AB-412E-9A94-12B4227604C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC143F1-56AB-412E-9A94-12B4227604C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC143F1-56AB-412E-9A94-12B4227604C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC143F1-56AB-412E-9A94-12B4227604C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C151DE21-025A-467D-9AB4-497684DD262E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C151DE21-025A-467D-9AB4-497684DD262E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C151DE21-025A-467D-9AB4-497684DD262E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C151DE21-025A-467D-9AB4-497684DD262E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
