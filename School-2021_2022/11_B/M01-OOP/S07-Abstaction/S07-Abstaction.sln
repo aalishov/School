@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-Shapes", "P02-Shapes\P0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{B1037293-10C4-45AC-AC42-A1217E2F55C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-SandBoxApp", "P00-SandBoxApp\P00-SandBoxApp.csproj", "{AEAA53C7-25DF-4071-936B-32D035419401}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-SandBoxApp", "P00-SandBoxApp\P00-SandBoxApp.csproj", "{AEAA53C7-25DF-4071-936B-32D035419401}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-Cars", "P03-Cars\P03-Cars.csproj", "{AF277BA9-DCC2-4DFA-B09D-AF43C755536D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-Telephony", "P05-Telephony\P05-Telephony.csproj", "{A32CB162-72E7-4AA3-9F10-1E948EECFEF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{AEAA53C7-25DF-4071-936B-32D035419401}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEAA53C7-25DF-4071-936B-32D035419401}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEAA53C7-25DF-4071-936B-32D035419401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF277BA9-DCC2-4DFA-B09D-AF43C755536D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF277BA9-DCC2-4DFA-B09D-AF43C755536D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF277BA9-DCC2-4DFA-B09D-AF43C755536D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF277BA9-DCC2-4DFA-B09D-AF43C755536D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A32CB162-72E7-4AA3-9F10-1E948EECFEF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A32CB162-72E7-4AA3-9F10-1E948EECFEF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A32CB162-72E7-4AA3-9F10-1E948EECFEF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A32CB162-72E7-4AA3-9F10-1E948EECFEF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

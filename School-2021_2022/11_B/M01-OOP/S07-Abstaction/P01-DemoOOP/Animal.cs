@@ -1,6 +1,8 @@
-﻿namespace P01_DemoOOP
+﻿using System;
+
+namespace P01_DemoOOP
 {
-    public class Animal
+    public abstract class Animal
     {
         private string name;
         private int age;
@@ -27,7 +29,7 @@
         {
             get
             {
-                if (age<=0)
+                if (age <= 0)
                 {
                     return 1;
                 }
@@ -41,6 +43,8 @@
                 age = value;
             }
         }
+
+        public abstract void MakeNoise();
 
         public override string ToString()
         {

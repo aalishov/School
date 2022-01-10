@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace P01_DemoOOP
 {
-    public class Dog : Animal 
+    public class Dog : Animal ,IPlay
     {
         public Dog(string name,string breed) : base(name, 1)
         {
@@ -18,6 +18,16 @@ namespace P01_DemoOOP
         public string Bark()
         {
             return "Barking....";
+        }
+
+        public override void MakeNoise()
+        {
+            Console.WriteLine(Bark());
+        }
+
+        public void Play()
+        {
+            Console.WriteLine($"{GetType().Name} playing with ball...");
         }
 
         public override string ToString()

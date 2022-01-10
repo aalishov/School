@@ -1,20 +1,16 @@
 ﻿
 namespace P01_DemoOOP
 {
+    using System;
     public class Program
     {
         public static void Main()
         {
+            Animal dog = new Dog("Big Dog", "Pincher");
 
-            Animal animal = new Animal("BigDog", -5);
+            Animal cat = new Cat("Tom", 2);
 
-            Dog dog = new Dog("Big Dog","Pincher");
-
-            Cat cat = new Cat("Tom", 2);
-
-            Console.WriteLine(animal);
-            Console.WriteLine(dog);
-            Console.WriteLine(cat);
+            Dog d = (Dog)dog;
         }
     }
 }
