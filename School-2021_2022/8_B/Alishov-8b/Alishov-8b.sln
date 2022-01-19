@@ -41,7 +41,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P18-Square", "P18-Square\P1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P19-Calclulator", "P19-Calclulator\P19-Calclulator.csproj", "{CF9B823C-2FED-4912-8C98-97C81F94F067}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P20-DemoOperations", "P20-DemoOperations\P20-DemoOperations.csproj", "{DC28B605-AB84-48B6-9B0D-B1FB74286C96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P20-DemoOperations", "P20-DemoOperations\P20-DemoOperations.csproj", "{DC28B605-AB84-48B6-9B0D-B1FB74286C96}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P21-Math", "P21-Math\P21-Math.csproj", "{4D015C3A-8BC8-4C26-84EC-A895CC1A7FE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P22-CircleArea", "P22-CircleArea\P22-CircleArea.csproj", "{7452EC80-0416-4BC4-B981-792B209F226A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +133,14 @@ Global
 		{DC28B605-AB84-48B6-9B0D-B1FB74286C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC28B605-AB84-48B6-9B0D-B1FB74286C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC28B605-AB84-48B6-9B0D-B1FB74286C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D015C3A-8BC8-4C26-84EC-A895CC1A7FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D015C3A-8BC8-4C26-84EC-A895CC1A7FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D015C3A-8BC8-4C26-84EC-A895CC1A7FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D015C3A-8BC8-4C26-84EC-A895CC1A7FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7452EC80-0416-4BC4-B981-792B209F226A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7452EC80-0416-4BC4-B981-792B209F226A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7452EC80-0416-4BC4-B981-792B209F226A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7452EC80-0416-4BC4-B981-792B209F226A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
