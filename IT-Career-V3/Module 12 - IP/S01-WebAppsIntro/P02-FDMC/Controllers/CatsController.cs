@@ -1,33 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using P01_MyFirstWebApp.Data;
-using P01_MyFirstWebApp.Data.Models;
-using P01_MyFirstWebApp.Models.Colors;
+using P02_FDMC.Data;
+using P02_FDMC.Data.Models;
 
-namespace P01_MyFirstWebApp.Controllers
+namespace P02_FDMC.Controllers
 {
-    public class ColorsController : Controller
+    public class CatsController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public ColorsController(ApplicationDbContext context)
+        public CatsController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Colors
+        // GET: Cats
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Colors.ToListAsync());
+            return View(await _context.Cats.ToListAsync());
         }
 
-        // GET: Colors/Details/5
+        // GET: Cats/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -35,39 +33,39 @@ namespace P01_MyFirstWebApp.Controllers
                 return NotFound();
             }
 
-            var color = await _context.Colors
+            var cat = await _context.Cats
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (color == null)
+            if (cat == null)
             {
                 return NotFound();
             }
 
-            return View(color);
+            return View(cat);
         }
 
-        // GET: Colors/Create
+        // GET: Cats/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Colors/Create
+        // POST: Cats/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name")] Color color)
+        public async Task<IActionResult> Create([Bind("Id,Name,Age,Breed,ImageUrl")] Cat cat)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(color);
+                _context.Add(cat);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(color);
+            return View(cat);
         }
 
-        // GET: Colors/Edit/5
+        // GET: Cats/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -75,22 +73,22 @@ namespace P01_MyFirstWebApp.Controllers
                 return NotFound();
             }
 
-            var color = await _context.Colors.FindAsync(id);
-            if (color == null)
+            var cat = await _context.Cats.FindAsync(id);
+            if (cat == null)
             {
                 return NotFound();
             }
-            return View(color);
+            return View(cat);
         }
 
-        // POST: Colors/Edit/5
+        // POST: Cats/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] Color color)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Age,Breed,ImageUrl")] Cat cat)
         {
-            if (id != color.Id)
+            if (id != cat.Id)
             {
                 return NotFound();
             }
@@ -99,12 +97,12 @@ namespace P01_MyFirstWebApp.Controllers
             {
                 try
                 {
-                    _context.Update(color);
+                    _context.Update(cat);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ColorExists(color.Id))
+                    if (!CatExists(cat.Id))
                     {
                         return NotFound();
                     }
@@ -115,10 +113,10 @@ namespace P01_MyFirstWebApp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(color);
+            return View(cat);
         }
 
-        // GET: Colors/Delete/5
+        // GET: Cats/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -126,56 +124,30 @@ namespace P01_MyFirstWebApp.Controllers
                 return NotFound();
             }
 
-            var color = await _context.Colors
+            var cat = await _context.Cats
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (color == null)
+            if (cat == null)
             {
                 return NotFound();
             }
 
-            return View(color);
+            return View(cat);
         }
 
-        // POST: Colors/Delete/5
+        // POST: Cats/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var color = await _context.Colors.FindAsync(id);
-            _context.Colors.Remove(color);
+            var cat = await _context.Cats.FindAsync(id);
+            _context.Cats.Remove(cat);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> GetColorsInfo()
+        private bool CatExists(int id)
         {
-            List<JsonColorViewModel> model = await _context.Colors
-                .Select(x => new JsonColorViewModel()
-                {
-                    Id = x.Id,
-                    Name = x.Name,
-                    Items = x.Items.Select(i => new ItemInColorViewModel()
-                    {
-                        Id = i.Id,
-                        Name = i.Name
-                    }).ToList(),
-                    Boxes = x.Boxes.Select(b => new BoxInColorViewModel()
-                    {
-                        Id = b.Id,
-                        Name = b.Name
-                    }).ToList()
-                }).ToListAsync();
-            JsonSerializerOptions options = new JsonSerializerOptions()
-            {
-                WriteIndented = true
-            };
-
-            return Json(model,options);
-        }
-
-        private bool ColorExists(int id)
-        {
-            return _context.Colors.Any(e => e.Id == id);
+            return _context.Cats.Any(e => e.Id == id);
         }
     }
 }

@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using P01_MyFirstWebApp.Data;
 using P01_MyFirstWebApp.Data.Models;
 using P01_MyFirstWebApp.Models.Boxes;
+using P01_MyFirstWebApp.Models.Items;
 
 namespace P01_MyFirstWebApp.Controllers
 {
@@ -163,14 +164,23 @@ namespace P01_MyFirstWebApp.Controllers
                 {
                     Id = x.Id,
                     Name = x.Name,
-                    Color = x.Color.Name
+                    Color = x.Color.Name,
+                    MaxCapacity = x.MaxCapacity,
+                    CurentCapacity = x.Items.Count,
+                    Items = x.Items.Select(i => new JsonItemViewModel()
+                    {
+                        Id = i.Id,
+                        Name=i.Name,
+                        Color = i.Color.Name
+                    }).ToList()
                 })
                 .ToListAsync();
 
-            JsonSerializerOptions options = new JsonSerializerOptions() {
+            JsonSerializerOptions options = new JsonSerializerOptions()
+            {
                 WriteIndented = true
             };
-            
+
             return Json(boxes, options);
         }
 

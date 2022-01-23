@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-MyFirstWebApp", "P01-MyFirstWebApp\P01-MyFirstWebApp.csproj", "{8762FF35-03F2-431B-A41B-A97D7B0BCEDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-MyFirstWebApp", "P01-MyFirstWebApp\P01-MyFirstWebApp.csproj", "{8762FF35-03F2-431B-A41B-A97D7B0BCEDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-FDMC", "P02-FDMC\P02-FDMC.csproj", "{42859BED-0CE0-4ADA-9AE5-864118C582C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8762FF35-03F2-431B-A41B-A97D7B0BCEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8762FF35-03F2-431B-A41B-A97D7B0BCEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8762FF35-03F2-431B-A41B-A97D7B0BCEDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42859BED-0CE0-4ADA-9AE5-864118C582C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42859BED-0CE0-4ADA-9AE5-864118C582C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42859BED-0CE0-4ADA-9AE5-864118C582C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42859BED-0CE0-4ADA-9AE5-864118C582C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
