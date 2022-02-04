@@ -28,8 +28,17 @@ namespace P01_MyFirstWebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                {
+                    if (Environment.MachineName== "DESKTOP-OFMEDPC")
+                    {
+                        options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+                    }
+                    else
+                    {
+                        options.UseSqlServer(Configuration.GetConnectionString("DefaultDevelopmentConnection"));
+                    }
+                    
+                });
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)

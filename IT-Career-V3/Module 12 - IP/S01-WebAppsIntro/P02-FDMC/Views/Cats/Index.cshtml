@@ -1,4 +1,4 @@
-﻿@model IEnumerable<P02_FDMC.Data.Models.Cat>
+﻿@model IEnumerable<Cat>
 
 @{
     ViewData["Title"] = "Index";
@@ -40,7 +40,7 @@
                 @Html.DisplayFor(modelItem => item.Breed)
             </td>
             <td>
-                <img href="@item.ImageUrl" width="250px" height="250px"/>
+                <img src="@item.ImageUrl" width="300px" height="250px"/>
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
