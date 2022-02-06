@@ -1,0 +1,67 @@
+﻿@using P05_Eventures.ViewModels.Events
+@model IndexEventsViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New <i class="fas fa-plus-circle"></i></a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Events.FirstOrDefault().Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Events.FirstOrDefault().Place)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Events.FirstOrDefault().TotalTickets)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Events.FirstOrDefault().PricePerTicket)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Events.FirstOrDefault().Start)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Events.FirstOrDefault().End)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Events) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Place)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalTickets)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PricePerTicket)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Start)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.End)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+    <partial name="_PagingPartial" model="@Model" />
+</table>

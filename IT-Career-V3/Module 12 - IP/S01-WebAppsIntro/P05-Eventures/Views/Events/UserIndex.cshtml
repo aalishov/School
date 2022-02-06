@@ -1,0 +1,56 @@
+﻿@using P05_Eventures.ViewModels.Events
+@model IndexUserEventsViewModel
+
+@{
+    ViewData["Title"] = "User Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Events.FirstOrDefault().Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Events.FirstOrDefault().Place)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Events.FirstOrDefault().Start)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Events.FirstOrDefault().End)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Events)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Place)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Start)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.End)
+                </td>
+                <td>
+                    <form asp-action="Order">
+                        <input type="text" name="count">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        @*                <a asp-action="Order" asp-route-id="@item.Id">Order</a> *@
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+    <partial name="_PagingPartial" model="@Model" />
+</table>
