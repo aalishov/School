@@ -39,5 +39,11 @@ namespace P01_AdvancedCalculator
             int b = int.Parse(textBox2.Text);
             label3.Text = $"Round({a},{b})={Math.Round(a,b)}";
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(textBox1.Text);
+            label3.Text = $"Floor({a})={Math.Floor(a)}";
+        }
     }
 }

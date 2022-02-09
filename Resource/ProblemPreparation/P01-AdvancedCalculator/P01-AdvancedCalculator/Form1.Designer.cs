@@ -162,6 +162,7 @@ namespace P01_AdvancedCalculator
             this.button8.TabIndex = 12;
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
