@@ -51,7 +51,7 @@ namespace P01_AdvancedCalculator
             this.label1.Location = new System.Drawing.Point(27, 19);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 25);
+            this.label1.Size = new System.Drawing.Size(78, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
@@ -60,7 +60,7 @@ namespace P01_AdvancedCalculator
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(27, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 25);
+            this.label2.Size = new System.Drawing.Size(78, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
             // 
@@ -68,14 +68,14 @@ namespace P01_AdvancedCalculator
             // 
             this.textBox1.Location = new System.Drawing.Point(115, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(206, 33);
+            this.textBox1.Size = new System.Drawing.Size(206, 39);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(115, 50);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(206, 33);
+            this.textBox2.Size = new System.Drawing.Size(206, 39);
             this.textBox2.TabIndex = 3;
             // 
             // label3
@@ -84,7 +84,7 @@ namespace P01_AdvancedCalculator
             this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(12, 98);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 25);
+            this.label3.Size = new System.Drawing.Size(78, 32);
             this.label3.TabIndex = 4;
             this.label3.Text = "label3";
             // 
@@ -144,7 +144,8 @@ namespace P01_AdvancedCalculator
             // 
             // button7
             // 
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button7.AutoEllipsis = true;
+            this.button7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button7.Location = new System.Drawing.Point(27, 246);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(94, 46);
@@ -155,7 +156,8 @@ namespace P01_AdvancedCalculator
             // 
             // button8
             // 
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button8.AutoEllipsis = true;
+            this.button8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button8.Location = new System.Drawing.Point(127, 246);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(94, 46);
@@ -165,7 +167,8 @@ namespace P01_AdvancedCalculator
             // 
             // button9
             // 
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button9.AutoEllipsis = true;
+            this.button9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button9.Location = new System.Drawing.Point(227, 246);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(94, 46);
@@ -175,7 +178,7 @@ namespace P01_AdvancedCalculator
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 305);
             this.Controls.Add(this.button9);
