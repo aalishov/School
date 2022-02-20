@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-SumSeconds", "P03-SumSeconds\P03-SumSeconds.csproj", "{1D8449A4-5ED0-4961-9542-777907DF3355}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-SumSeconds", "P03-SumSeconds\P03-SumSeconds.csproj", "{1D8449A4-5ED0-4961-9542-777907DF3355}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-Nums", "P05-Nums\P05-Nums.csproj", "{CB1B6F3E-3057-4264-9684-CB85D3394C22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-Nums", "P05-Nums\P05-Nums.csproj", "{CB1B6F3E-3057-4264-9684-CB85D3394C22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-ShapesArea", "P07-ShapesArea\P07-ShapesArea.csproj", "{E81900C1-B723-4B42-8CA1-945E9646702B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-ShapreArea_v2", "P08-ShapreArea_v2\P08-ShapreArea_v2.csproj", "{AE9561CA-79B5-452D-B77E-5DCEE41B86F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{CB1B6F3E-3057-4264-9684-CB85D3394C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB1B6F3E-3057-4264-9684-CB85D3394C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB1B6F3E-3057-4264-9684-CB85D3394C22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E81900C1-B723-4B42-8CA1-945E9646702B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E81900C1-B723-4B42-8CA1-945E9646702B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E81900C1-B723-4B42-8CA1-945E9646702B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E81900C1-B723-4B42-8CA1-945E9646702B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE9561CA-79B5-452D-B77E-5DCEE41B86F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE9561CA-79B5-452D-B77E-5DCEE41B86F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE9561CA-79B5-452D-B77E-5DCEE41B86F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE9561CA-79B5-452D-B77E-5DCEE41B86F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
