@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31424.327
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-HelloWorld", "P01-HelloWorld\P01-HelloWorld.csproj", "{7B6A4872-C516-469F-8724-C1E05D2A8A58}"
 EndProject
@@ -45,7 +45,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P20-DemoOperations", "P20-D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P21-Math", "P21-Math\P21-Math.csproj", "{4D015C3A-8BC8-4C26-84EC-A895CC1A7FE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P22-CircleArea", "P22-CircleArea\P22-CircleArea.csproj", "{7452EC80-0416-4BC4-B981-792B209F226A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P22-CircleArea", "P22-CircleArea\P22-CircleArea.csproj", "{7452EC80-0416-4BC4-B981-792B209F226A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P23-DemoConsoleWrite", "P23-DemoConsoleWrite\P23-DemoConsoleWrite.csproj", "{B496469E-C8FC-476F-A86B-164FA8DC39B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P24-DemoConsoleWrite_v2", "P24-DemoConsoleWrite_v2\P24-DemoConsoleWrite_v2.csproj", "{7A76AA11-1DC4-4BE1-A598-A598E1F25572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P25-DemoConsoleWrite_v3", "P25-DemoConsoleWrite_v3\P25-DemoConsoleWrite_v3.csproj", "{8B00BCE7-13EC-4787-96AA-BC188C5C7CCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P26-Demp@", "P26-Demp@\P26-Demp@.csproj", "{75535766-EBEF-4FC4-BF34-D7AEF9C1D7A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P27-DemoSystemSymbol", "P27-DemoSystemSymbol\P27-DemoSystemSymbol.csproj", "{49E15448-BE69-4AE0-A8F0-785470380522}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +151,26 @@ Global
 		{7452EC80-0416-4BC4-B981-792B209F226A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7452EC80-0416-4BC4-B981-792B209F226A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7452EC80-0416-4BC4-B981-792B209F226A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B496469E-C8FC-476F-A86B-164FA8DC39B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B496469E-C8FC-476F-A86B-164FA8DC39B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B496469E-C8FC-476F-A86B-164FA8DC39B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B496469E-C8FC-476F-A86B-164FA8DC39B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A76AA11-1DC4-4BE1-A598-A598E1F25572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A76AA11-1DC4-4BE1-A598-A598E1F25572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A76AA11-1DC4-4BE1-A598-A598E1F25572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A76AA11-1DC4-4BE1-A598-A598E1F25572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B00BCE7-13EC-4787-96AA-BC188C5C7CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B00BCE7-13EC-4787-96AA-BC188C5C7CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B00BCE7-13EC-4787-96AA-BC188C5C7CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B00BCE7-13EC-4787-96AA-BC188C5C7CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75535766-EBEF-4FC4-BF34-D7AEF9C1D7A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75535766-EBEF-4FC4-BF34-D7AEF9C1D7A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75535766-EBEF-4FC4-BF34-D7AEF9C1D7A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75535766-EBEF-4FC4-BF34-D7AEF9C1D7A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49E15448-BE69-4AE0-A8F0-785470380522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E15448-BE69-4AE0-A8F0-785470380522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E15448-BE69-4AE0-A8F0-785470380522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E15448-BE69-4AE0-A8F0-785470380522}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
