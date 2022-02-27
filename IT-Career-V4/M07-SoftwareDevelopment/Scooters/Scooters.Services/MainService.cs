@@ -1,19 +1,17 @@
-﻿using Scooters.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Scooters.Services
+﻿namespace Scooters.Services
 {
+    using Scooters.Data;
     public class MainService
     {
         private AppDbContext context = new AppDbContext();
         public MainService()
         {
-            this.UsersService = new UsersService(context);
+            this.Users = new UsersService(context);
+            this.Scooters = new ScootersService(context);
+            this.Rents = new RentsService(context, this.Users, this.Scooters);
         }
-        public UsersService UsersService { get; private set; }
+        public UsersService Users { get; private set; }
+        public ScootersService Scooters { get; private set; }
+        public RentsService Rents { get; private set; }
     }
 }

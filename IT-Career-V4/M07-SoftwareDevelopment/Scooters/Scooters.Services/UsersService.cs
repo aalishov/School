@@ -1,9 +1,8 @@
-﻿
-using Scooters.Models;
-namespace Scooters.Services
+﻿namespace Scooters.Services
 {
     using Data;
     using System;
+    using Scooters.Models;
     using System.Collections.Generic;
     using System.Globalization;
     using System.Linq;
@@ -11,12 +10,40 @@ namespace Scooters.Services
     public class UsersService
     {
         private readonly AppDbContext context;
-
         public UsersService(AppDbContext context)
         {
             this.context = context;
         }
-
+        public int GetUsersCount()
+        {
+            return context.Users.Count();
+        }
+        public int GetUserIdByUsername(string username)
+        {
+            return this.context.Users
+                .FirstOrDefault(x => x.Username == username).Id;
+        }
+        public decimal GetUserBalance(string username)
+        {
+            return this.context.Users.FirstOrDefault(x => x.Username == username).Balance;
+        }
+        public bool Login(string username, string password)
+        {
+            User user = GetUserByUsername(username);
+            if (user==null)
+            {
+                throw new ArgumentException("User not found");
+            }
+            if (user.Password==password)
+            {
+                return true;
+            }
+            return false;
+        }
+        public User GetUserByUsername(string username)
+        {
+            return this.context.Users.FirstOrDefault(x => x.Username == username);
+        }
         public ICollection<User> GetUsers(int page = 1, int itemsPerPage = 10)
         {
             return this.context.Users
@@ -28,7 +55,6 @@ namespace Scooters.Services
         {
             return this.context.Users.Find(id);
         }
-
         public ICollection<User> GetUsersByCity(string cityName)
         {
             return this.context.Users
@@ -41,7 +67,6 @@ namespace Scooters.Services
         {
             return this.context.Users.Where(x => x.Balance == 0).ToList();
         }
-
         public ICollection<User> GetAllUsersRegisteredAfterDate(string date)
         {
             DateTime searchDate=DateTime.Now;
@@ -84,7 +109,6 @@ namespace Scooters.Services
             context.Users.Add(user);
             context.SaveChanges();
         }
-
         public void ChangeName(int id, string firstName, string lastName)
         {
             User user = GetUserById(id);
@@ -102,7 +126,6 @@ namespace Scooters.Services
             context.Users.Update(user);
             context.SaveChanges();
         }
-
         public void DeleteUserById(int id)
         {
             User user = GetUserById(id);
