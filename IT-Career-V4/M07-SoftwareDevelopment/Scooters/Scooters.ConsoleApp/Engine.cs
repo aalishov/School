@@ -3,10 +3,10 @@
     using Scooters.Models;
     using Scooters.Services;
     using System;
-    using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using System.Threading;
 
     public class Engine
     {
@@ -23,20 +23,35 @@
 
         public void Run()
         {
+            Console.Write("App running");
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write(".");
+                Thread.Sleep(500);
+            }
+            Console.Clear();
             while (true)
             {
-                if (appUser == "admin" && isLogged)
+                try
                 {
-                    AdminPage();
+                    if (appUser == "admin" && isLogged)
+                    {
+                        AdminPage();
+                    }
+                    else if (isLogged)
+                    {
+                        UserPage();
+                    }
+                    else
+                    {
+                        LoginOrRegister();
+                    }
                 }
-                else if (isLogged)
+                catch (Exception ex)
                 {
-                    UserPage();
+                    Console.WriteLine(ex.Message);
                 }
-                else
-                {
-                    LoginOrRegister();
-                }
+
             }
         }
         public void AdminPage()
@@ -50,7 +65,7 @@
                         break;
                     }
                     Console.Write("Select U (App users), L (Logout): ");
-                    string option = Console.ReadLine();
+                    string option = Console.ReadLine().ToUpper();
                     switch (option)
                     {
                         case "R":
@@ -84,7 +99,7 @@
                 string users = output.PrintUsers(main.Users.GetUsers(page), $"User list - page {page} / {totalPage} ");
                 Console.WriteLine(users);
                 Console.WriteLine("P (Previous page), N (Next page), B (back)");
-                string option = ReadInput("Select option: ");
+                string option = ReadInput("Select option: ").ToUpper();
                 switch (option)
                 {
                     case "P":
@@ -118,7 +133,7 @@
                         break;
                     }
                     Console.Write("Select R (Rent), P (Pay rent), U (User info), H (Rent history), L (Logout): ");
-                    string option = Console.ReadLine();
+                    string option = Console.ReadLine().ToUpper();
                     switch (option)
                     {
                         case "R":
@@ -208,7 +223,7 @@
                     break;
                 }
                 Console.Write("Select L (Login) or R (Register), E(Exit): ");
-                string option = Console.ReadLine();
+                string option = Console.ReadLine().ToUpper();
                 switch (option)
                 {
                     case "L":

@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-Pharmacy", "P01-Pharmacy\P01-Pharmacy.csproj", "{609798FE-8AAF-41A3-A5DE-CB5ADFFAFF78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-DziCars", "P02-DziCars\P02-DziCars.csproj", "{2C3FE34A-64C5-4A2C-8118-D517BE7EB25F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-DziCars", "P02-DziCars\P02-DziCars.csproj", "{2C3FE34A-64C5-4A2C-8118-D517BE7EB25F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-FishingNet", "P03-FishingNet\P03-FishingNet.csproj", "{81B3BEB9-25D2-4B2F-B39C-0032093C4B5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2C3FE34A-64C5-4A2C-8118-D517BE7EB25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C3FE34A-64C5-4A2C-8118-D517BE7EB25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C3FE34A-64C5-4A2C-8118-D517BE7EB25F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B3BEB9-25D2-4B2F-B39C-0032093C4B5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B3BEB9-25D2-4B2F-B39C-0032093C4B5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B3BEB9-25D2-4B2F-B39C-0032093C4B5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B3BEB9-25D2-4B2F-B39C-0032093C4B5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
