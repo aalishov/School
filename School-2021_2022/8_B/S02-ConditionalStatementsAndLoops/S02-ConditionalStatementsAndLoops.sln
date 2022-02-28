@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-DemoBool", "P00-DemoBool\P00-DemoBool.csproj", "{7EC5AFDC-FE5E-47D2-A1CA-26EB900B7EB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DemoBool", "P00-DemoBool\P00-DemoBool.csproj", "{7EC5AFDC-FE5E-47D2-A1CA-26EB900B7EB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-DemoAnd", "P00-DemoAnd\P00-DemoAnd.csproj", "{AB545330-FC51-4B39-B281-1186BE6CCD6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DemoAnd", "P00-DemoAnd\P00-DemoAnd.csproj", "{AB545330-FC51-4B39-B281-1186BE6CCD6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-DemoOr", "P00-DemoOr\P00-DemoOr.csproj", "{136A80E4-E166-47DC-9D0E-CF4EAF0309E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DemoOr", "P00-DemoOr\P00-DemoOr.csproj", "{136A80E4-E166-47DC-9D0E-CF4EAF0309E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-EvenOrOdd", "P01-EvenOrOdd\P01-EvenOrOdd.csproj", "{FD972723-935E-43D8-8FB3-BAA7F51DBB2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-EvenOrOdd", "P01-EvenOrOdd\P01-EvenOrOdd.csproj", "{FD972723-935E-43D8-8FB3-BAA7F51DBB2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-PositiveNegativeOrZero", "P02-PositiveNegativeOrZero\P02-PositiveNegativeOrZero.csproj", "{5E396E7A-5E87-4485-9616-A24849B07827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-PositiveNegativeOrZero", "P02-PositiveNegativeOrZero\P02-PositiveNegativeOrZero.csproj", "{5E396E7A-5E87-4485-9616-A24849B07827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-Students", "P03-Students\P03-Students.csproj", "{CA96D4DD-2ED2-49A2-96FF-79FD0C6BC8D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5E396E7A-5E87-4485-9616-A24849B07827}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E396E7A-5E87-4485-9616-A24849B07827}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E396E7A-5E87-4485-9616-A24849B07827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA96D4DD-2ED2-49A2-96FF-79FD0C6BC8D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA96D4DD-2ED2-49A2-96FF-79FD0C6BC8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA96D4DD-2ED2-49A2-96FF-79FD0C6BC8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA96D4DD-2ED2-49A2-96FF-79FD0C6BC8D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
