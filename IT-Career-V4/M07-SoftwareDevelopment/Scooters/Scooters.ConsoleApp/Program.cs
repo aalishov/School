@@ -1,14 +1,18 @@
-﻿namespace Scooters.ConsoleApp
+﻿using Scooters.Services;
+
+namespace Scooters.ConsoleApp
 {
-    using Scooters.Models;
-    using Scooters.Services;
-    using System;
-    using System.Collections.Generic;
     public class Program
     {
         public static void Main()
         {
             Engine engine = new Engine();
+
+            //MainService service = new MainService();
+            //OutputService outputService = new OutputService();
+
+            //string result = outputService.PrintUsers(service.Users.GetUsersByCity("Pl"), "Search by city");
+            //System.Console.WriteLine(result);
         }
     }
 }
