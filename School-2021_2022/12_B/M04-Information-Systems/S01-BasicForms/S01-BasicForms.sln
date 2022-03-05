@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-ShapesArea", "P01-ShapesArea\P01-ShapesArea.csproj", "{86B21698-DDE4-4FA9-946C-89173B5805A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-ShapesArea", "P01-ShapesArea\P01-ShapesArea.csproj", "{86B21698-DDE4-4FA9-946C-89173B5805A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-DemoDialogForm", "P02-DemoDialogForm\P02-DemoDialogForm.csproj", "{57B4A025-38F7-4A45-9F5F-891CE825801C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-PhoneBook", "P03-PhoneBook\P03-PhoneBook.csproj", "{BC01E3F1-0BC4-473C-97FB-CC33838BB1DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{86B21698-DDE4-4FA9-946C-89173B5805A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86B21698-DDE4-4FA9-946C-89173B5805A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86B21698-DDE4-4FA9-946C-89173B5805A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57B4A025-38F7-4A45-9F5F-891CE825801C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B4A025-38F7-4A45-9F5F-891CE825801C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B4A025-38F7-4A45-9F5F-891CE825801C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B4A025-38F7-4A45-9F5F-891CE825801C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC01E3F1-0BC4-473C-97FB-CC33838BB1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC01E3F1-0BC4-473C-97FB-CC33838BB1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC01E3F1-0BC4-473C-97FB-CC33838BB1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC01E3F1-0BC4-473C-97FB-CC33838BB1DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
