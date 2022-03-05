@@ -12,13 +12,13 @@
         {
             StringBuilder sb = new StringBuilder();
             AddTableTitle(message, sb);
-            string header=$"|{"Id",5} | {"Name",-25} | {"Balance",-8} | {"City",-18} | {"Register date",-15}|";
+            string header=$"|{"Id",-5} | {"Name",-25} | {"Balance",-8} | {"City",-18} | {"Register date",-15}|";
             sb.AppendLine(header);
             sb.AppendLine(Border(header.Length));
             foreach (var user in users)
             {
                 string name = $"{user.FirstName} {user.LastName}";
-                sb.AppendLine($"|{user.Id,5} | {name,-25} | {Math.Round(user.Balance, 3),-8} | {user.City.Name,-18} | {user.RegisterDate.ToShortDateString(),-15}|");
+                sb.AppendLine($"|{user.Id,-5} | {name,-25} | {Math.Round(user.Balance, 3),-8} | {user.City.Name,-18} | {user.RegisterDate.ToShortDateString(),-15}|");
                 sb.AppendLine(Border(header.Length));
             }
             return sb.ToString().TrimEnd();

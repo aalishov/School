@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scooters.Data", "Scooters.Data\Scooters.Data.csproj", "{D3FC597C-751B-41B4-95AB-A99EB79A75C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scooters.Data", "Scooters.Data\Scooters.Data.csproj", "{D3FC597C-751B-41B4-95AB-A99EB79A75C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scooters.Models", "Scooters.Models\Scooters.Models.csproj", "{26DD3BBD-D786-421C-B9C4-8B24C055B27B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scooters.Models", "Scooters.Models\Scooters.Models.csproj", "{26DD3BBD-D786-421C-B9C4-8B24C055B27B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scooters.Services", "Scooters.Services\Scooters.Services.csproj", "{51383EDB-A174-4662-A442-9EFB57B1458F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scooters.Services", "Scooters.Services\Scooters.Services.csproj", "{51383EDB-A174-4662-A442-9EFB57B1458F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scooters.ConsoleApp", "Scooters.ConsoleApp\Scooters.ConsoleApp.csproj", "{AC354E89-4B27-45C5-857B-C696031A3D94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scooters.ConsoleApp", "Scooters.ConsoleApp\Scooters.ConsoleApp.csproj", "{AC354E89-4B27-45C5-857B-C696031A3D94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scooters.FormApp", "Scooters.FormApp\Scooters.FormApp.csproj", "{9556BFE0-D766-4399-AB7A-2E876E1B0456}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scooters.FormApp", "Scooters.FormApp\Scooters.FormApp.csproj", "{9556BFE0-D766-4399-AB7A-2E876E1B0456}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scootres.WebApp", "Scootres.WebApp\Scootres.WebApp.csproj", "{DDB23DC2-9F29-4ABF-936C-407CFEF72694}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scootres.WebApp", "Scootres.WebApp\Scootres.WebApp.csproj", "{DDB23DC2-9F29-4ABF-936C-407CFEF72694}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scooters.DataProcessor", "Scooters.DataProcessor\Scooters.DataProcessor.csproj", "{3222FDA8-BE9A-4552-B727-2C0799C9FC2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{DDB23DC2-9F29-4ABF-936C-407CFEF72694}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDB23DC2-9F29-4ABF-936C-407CFEF72694}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDB23DC2-9F29-4ABF-936C-407CFEF72694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3222FDA8-BE9A-4552-B727-2C0799C9FC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3222FDA8-BE9A-4552-B727-2C0799C9FC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3222FDA8-BE9A-4552-B727-2C0799C9FC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3222FDA8-BE9A-4552-B727-2C0799C9FC2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

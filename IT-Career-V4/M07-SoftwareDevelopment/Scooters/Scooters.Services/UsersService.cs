@@ -14,6 +14,13 @@
         {
             this.context = context;
         }
+        public ICollection<string> GetAllCitiesName() 
+        {
+            return this.context.Cities
+                .OrderBy(x=>x.Name)
+                .Select(x => x.Name)
+                .ToList();
+        }
         public int GetUsersCount()
         {
             return context.Users.Count();

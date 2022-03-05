@@ -25,7 +25,7 @@
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=.; Database=RealEstadeDb; Integrated Security=true");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-OFMEDPC\\SQLEXPRESS; Database=RealEstadeDb; Integrated Security=true");
             }
         }
 
