@@ -49,6 +49,11 @@
             {
                 throw new ArgumentException("User or scooter not found!");
             }
+            int userRents = user.Rents.Count(x => x.IsComleted == false);
+            if (userRents>=5)
+            {
+                throw new ArgumentException("Too many rented scooters!");
+            }
             if (user.Balance < PricePerDay)
             {
                 throw new ArgumentException("Insufficient balance!");

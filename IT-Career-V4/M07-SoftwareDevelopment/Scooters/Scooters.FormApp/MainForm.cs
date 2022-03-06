@@ -31,6 +31,13 @@ namespace Scooters.FormApp
             {
                 AdminForm form = new AdminForm(mainService);
                 form.Show();
+                this.Hide();
+            }
+            else if (mainService.IsLogged)
+            {
+                UserForm form = new UserForm(mainService);
+                form.Show();
+                this.Hide();
             }
             ClearTextBoxes();
         }

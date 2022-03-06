@@ -19,6 +19,12 @@
         public bool IsAdmin { get; set; }
         public string AppUser { get; private set; }
 
+        public void Logout()
+        {
+            this.IsAdmin = false;
+            this.IsLogged = false;
+            this.AppUser = null;
+        }
         public string Login(string username, string password)
         {
             try

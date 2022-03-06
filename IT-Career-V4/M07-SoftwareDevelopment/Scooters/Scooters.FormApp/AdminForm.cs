@@ -108,10 +108,12 @@ namespace Scooters.FormApp
             if (checkBoxDelete.Checked)
             {
                 groupBox1.Show();
+                buttonClose.Hide();
             }
             else
             {
                 groupBox1.Hide();
+                buttonClose.Show();
             }
         }
 
@@ -133,6 +135,17 @@ namespace Scooters.FormApp
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            service.Logout();
+            MainForm main = Application.OpenForms.OfType<MainForm>().FirstOrDefault();
+            if (main != null)
+            {
+                main.Show();
+            };
+            this.Close();
         }
     }
 }

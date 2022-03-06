@@ -14,16 +14,27 @@
         {
             this.context = context;
         }
-        public ICollection<string> GetAllCitiesName() 
+        public ICollection<string> GetAllCitiesName()
         {
             return this.context.Cities
-                .OrderBy(x=>x.Name)
+                .OrderBy(x => x.Name)
                 .Select(x => x.Name)
                 .ToList();
         }
         public int GetUsersCount()
         {
             return context.Users.Count();
+        }
+        public void Deposit(string username, string value)
+        {
+            User user = GetUserByUsername(username);
+            if (!decimal.TryParse(value, out _) || user == null || decimal.Parse(value) <= 0)
+            {
+                throw new ArgumentException("Invalid operation!");
+            }
+            user.Balance += decimal.Parse(value);
+            context.Users.Update(user);
+            context.SaveChanges();
         }
         public int GetUserIdByUsername(string username)
         {
@@ -37,11 +48,11 @@
         public bool Login(string username, string password)
         {
             User user = GetUserByUsername(username);
-            if (user==null)
+            if (user == null)
             {
                 throw new ArgumentException("User not found");
             }
-            if (user.Password==password)
+            if (user.Password == password)
             {
                 return true;
             }
@@ -76,14 +87,14 @@
         }
         public ICollection<User> GetAllUsersRegisteredAfterDate(string date)
         {
-            DateTime searchDate=DateTime.Now;
-            if (!DateTime.TryParseExact(date,"dd/MM/yyyy",CultureInfo.InvariantCulture,DateTimeStyles.None,out searchDate))
+            DateTime searchDate = DateTime.Now;
+            if (!DateTime.TryParseExact(date, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out searchDate))
             {
                 throw new ArgumentException("Invalid date!");
             }
             return this.context.Users
                 .Where(x => x.RegisterDate >= searchDate)
-                .OrderByDescending(x=>x.RegisterDate)
+                .OrderByDescending(x => x.RegisterDate)
                 .ToList();
         }
         public void CreateUser(string username, string password, string firstName, string lastName, string balance, string city)

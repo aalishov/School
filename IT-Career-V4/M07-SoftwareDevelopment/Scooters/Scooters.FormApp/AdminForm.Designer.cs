@@ -40,6 +40,7 @@ namespace Scooters.FormApp
             this.buttonDelete = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -153,11 +154,23 @@ namespace Scooters.FormApp
             this.label1.TabIndex = 0;
             this.label1.Text = "Id";
             // 
+            // buttonClose
+            // 
+            this.buttonClose.Location = new System.Drawing.Point(638, 617);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(168, 63);
+            this.buttonClose.TabIndex = 7;
+            this.buttonClose.Text = "Close";
+            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 736);
+            this.ControlBox = false;
+            this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.checkBoxDelete);
             this.Controls.Add(this.panel1);
@@ -191,5 +204,6 @@ namespace Scooters.FormApp
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonClose;
     }
 }
