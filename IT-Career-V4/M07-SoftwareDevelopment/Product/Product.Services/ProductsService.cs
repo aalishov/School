@@ -24,17 +24,21 @@
         {
             return context.Products.Find(id);
         }
+        public string[] GetCategoriesName()
+        {
+            return this.context.Categories.Select(x=>x.Name).ToArray();
+        }
         public void AddProduct(string name, string price, string stock, string categoryName, string imageUrl = null)
         {
             if (string.IsNullOrWhiteSpace(name))
             {
                 throw new ArgumentException("Invalid product name!");
             }
-            if (double.TryParse(price, out _))
+            if (!double.TryParse(price, out _))
             {
                 throw new ArgumentException("Invalid product price!");
             }
-            if (int.TryParse(stock, out _))
+            if (!int.TryParse(stock, out _))
             {
                 throw new ArgumentException("Invalid product stock!");
             }
@@ -65,7 +69,7 @@
             {
                 throw new ArgumentException("Invalid product id");
             }
-            if (double.TryParse(price, out _))
+            if (!double.TryParse(price, out _))
             {
                 throw new ArgumentException("Invalid product price");
             }
