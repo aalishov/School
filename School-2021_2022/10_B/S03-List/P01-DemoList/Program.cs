@@ -15,6 +15,7 @@ class Program
             .Select(int.Parse)
             .ToList();
 
+
         // nums.Add(100);
         // nums.Add(-10);
         // nums.Insert(0, -1);

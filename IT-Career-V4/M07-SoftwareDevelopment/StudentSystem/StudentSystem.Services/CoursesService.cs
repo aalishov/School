@@ -1,6 +1,4 @@
-﻿
-
-namespace StudentSystem.Services
+﻿namespace StudentSystem.Services
 {
     using Microsoft.EntityFrameworkCore;
     using StudentSystem.Data;
@@ -8,8 +6,6 @@ namespace StudentSystem.Services
     using System;
     using System.Collections.Generic;
     using System.Globalization;
-    using System.Linq;
-    using System.Text;
     using System.Threading.Tasks;
     public class CoursesService
     {

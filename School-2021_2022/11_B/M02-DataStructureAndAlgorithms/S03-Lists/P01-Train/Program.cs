@@ -20,7 +20,6 @@ public class Program
                 break;
             }
             List<string> info = cmd.Split(' ').ToList();
-            //[30]
             if (info.Contains("Add"))
             {
                 wagons.Add(int.Parse(info[1]));
@@ -28,7 +27,6 @@ public class Program
             else
             {
                 int passengers = int.Parse(info[0]);
-                //32 54 21 12 4 0 23 10 0
                 for (int i = 0; i < wagons.Count; i++)
                 {
                     if (passengers + wagons[i] <= max)

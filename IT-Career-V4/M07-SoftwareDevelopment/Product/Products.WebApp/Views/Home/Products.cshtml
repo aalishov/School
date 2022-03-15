@@ -1,0 +1,22 @@
+﻿@model IndexProductsViewModel;
+
+<h1>My products web page</h1>
+<p>Products count: @Model.ProductsCount</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Product name</th>
+            <th>Category name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in @Model.Products)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Category</td>
+            </tr>
+        }
+    </tbody>
+</table>
