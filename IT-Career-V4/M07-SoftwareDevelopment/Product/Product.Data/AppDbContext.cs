@@ -4,7 +4,7 @@
     using Product.Models;
     public class AppDbContext : DbContext
     {
-        private const string ConnectionString = "Server=.;Database=productsDb;Trusted_Connection=True;";
+        private const string ConnectionString = "Server=DESKTOP-OFMEDPC\\SQLEXPRESS;Database=productsDb;Trusted_Connection=True;";
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

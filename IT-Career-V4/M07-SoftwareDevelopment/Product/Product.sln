@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32126.317
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.Data", "Product.Data\Product.Data.csproj", "{C0F1AA06-9937-426D-A42D-51B8165C09EE}"
 EndProject
@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.ConsoleApp", "Produ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Products.WebApp", "Products.WebApp\Products.WebApp.csproj", "{F6E115D2-6CBE-4AFD-9424-6CC5A68EAE41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.FormApp", "Product.FormApp\Product.FormApp.csproj", "{AFF05A2D-2851-4FC5-9D2D-9CE5CA2E82AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.FormApp", "Product.FormApp\Product.FormApp.csproj", "{AFF05A2D-2851-4FC5-9D2D-9CE5CA2E82AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.DataProcessor", "Product.DataProcessor\Product.DataProcessor.csproj", "{1078E034-BCF7-431C-AA47-D75663F4F8AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{AFF05A2D-2851-4FC5-9D2D-9CE5CA2E82AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFF05A2D-2851-4FC5-9D2D-9CE5CA2E82AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFF05A2D-2851-4FC5-9D2D-9CE5CA2E82AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1078E034-BCF7-431C-AA47-D75663F4F8AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1078E034-BCF7-431C-AA47-D75663F4F8AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1078E034-BCF7-431C-AA47-D75663F4F8AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1078E034-BCF7-431C-AA47-D75663F4F8AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
