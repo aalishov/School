@@ -6,7 +6,7 @@ public class Program
     {
         for (int i = 0; i < 50; i++)
         {
-            Console.WriteLine(i*2+1);
+            Console.WriteLine(i);
         }
     }
 }
