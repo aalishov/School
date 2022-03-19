@@ -14,6 +14,7 @@ namespace Product.DataProcessor
 
         public DataSeeder()
         {
+          
             SeedProducts();
         }
         public void SeedProducts()
