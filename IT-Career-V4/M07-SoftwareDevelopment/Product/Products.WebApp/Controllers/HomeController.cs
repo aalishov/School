@@ -48,5 +48,13 @@ namespace Products.WebApp.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [HttpGet]
+        public ActionResult<string> RunForm()
+        {
+            System.Diagnostics.Process.Start(@"C:\Users\Alishov\Desktop\School\IT-Career-V4\M07-SoftwareDevelopment\Product\Product.FormApp\bin\Debug\net5.0-windows\Product.FormApp.exe");
+ 
+            return "value";
+        }
     }
 }

@@ -42,6 +42,21 @@ namespace Products.WebApp.Controllers
             return View(product);
         }
 
+        [HttpGet]
+        public IActionResult Search()
+        {
+            List<Product> products = new List<Product>();
+            return View(products);
+        }
+        [HttpPost]
+        public IActionResult Search(int minprice,int maxprice)
+        {
+            List<Product> products = _context.Products
+                .Where(x => x.Price >= minprice && x.Price <= maxprice)
+                .ToList();
+            return View(products);
+        }
+
         // GET: Products/Create
         public IActionResult Create()
         {
