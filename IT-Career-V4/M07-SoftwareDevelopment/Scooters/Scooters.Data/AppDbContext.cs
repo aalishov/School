@@ -12,7 +12,8 @@
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString = "Server=DESKTOP-OFMEDPC\\SQLEXPRESS;Database=scootersDb;Trusted_Connection=True;";
+            string connectionString = "Server=DESKTOP-L9E7KFT\\SQLEXPRESS;Database=scootersDb;Trusted_Connection=True;";
+            //string connectionString = "Server=DESKTOP-OFMEDPC\\SQLEXPRESS;Database=scootersDb;Trusted_Connection=True;";
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(connectionString);

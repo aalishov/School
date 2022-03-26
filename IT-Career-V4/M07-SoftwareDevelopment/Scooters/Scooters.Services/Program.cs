@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+using System;
+using System.Security.Cryptography;
 
 namespace Scooters.Services
 {
@@ -6,7 +8,7 @@ namespace Scooters.Services
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           
         }
     }
 }
