@@ -4,14 +4,16 @@ using HotelManager.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HotelManager.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220402071814_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -202,29 +204,6 @@ namespace HotelManager.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "48b19b3f-f34c-45e6-95e9-1140c6298d0f",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "49a7b394-4f6f-40d1-84d1-c5ed25e2661d",
-                            DateOfIssue = new DateTime(2022, 3, 27, 8, 50, 6, 762, DateTimeKind.Utc).AddTicks(2797),
-                            Email = "admin@admin.bg",
-                            EmailConfirmed = true,
-                            FirstName = "Admin",
-                            IsActive = true,
-                            LastName = "Admin",
-                            LockoutEnabled = false,
-                            NationalId = "1234567890",
-                            NormalizedEmail = "ADMIN@ADMIN.BG",
-                            NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEGzNNxqtOdhiFgTsyEXX/EeKlmXeYrAeZO6WCRHbQ7cd72lDcBvNeJMBa73PTInsoA==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "3d56c479-7a6b-4b5f-8618-74eb5ec13e24",
-                            TwoFactorEnabled = false,
-                            UserName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole<string>", b =>
@@ -252,22 +231,6 @@ namespace HotelManager.Data.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "f857b432-7bc2-452d-b406-e33ec0508d91",
-                            ConcurrencyStamp = "b685eaa7-072c-4126-b4dc-bf9b85377e32",
-                            Name = "Admin",
-                            NormalizedName = "ADMIN"
-                        },
-                        new
-                        {
-                            Id = "b204afcc-d36f-41eb-8806-18a842aca7da",
-                            ConcurrencyStamp = "e6bce479-50c8-44df-8609-3b928c51dfd0",
-                            Name = "User",
-                            NormalizedName = "USER"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -355,13 +318,6 @@ namespace HotelManager.Data.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = "48b19b3f-f34c-45e6-95e9-1140c6298d0f",
-                            RoleId = "f857b432-7bc2-452d-b406-e33ec0508d91"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
