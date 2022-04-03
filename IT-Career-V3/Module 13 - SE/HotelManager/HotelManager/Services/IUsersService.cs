@@ -7,6 +7,9 @@ namespace HotelManager.Services
     {
         Task CreateUserAsync(CreateUserViewModel model);
         Task DeleteUserAsync(string id);
-        Task<IndexUsersViewModel> GetUsersAsync(int page, int itemsPerPage = 10);
+        Task EditUserAsync(EditUserViewModel model);
+        Task<IndexUsersViewModel> GetUsersAsync(IndexUsersViewModel model);
+        Task<EditUserViewModel> GetUserToEdit(string id);
+        Task<DetailsUserViewModel> GetUserDetailsAsync(string id);
     }
 }

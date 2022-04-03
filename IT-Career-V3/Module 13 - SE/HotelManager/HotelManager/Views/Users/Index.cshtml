@@ -10,6 +10,17 @@
 <p>
     <a asp-action="Create">Create New <i class="fas fa-plus-circle"></i></a>
 </p>
+<form method="post">
+    <div class="input-group">
+
+        <span class="input-group-text">First name</span>
+        <input type="text" asp-for="Filter.FirstName" class="form-control">
+        <span class="input-group-text">Last name</span>
+        <input type="text" asp-for="Filter.LastName" class="form-control">
+        <button type="submit" class="btn btn-primary" asp-controller="Users" asp-action="Index">Search</button>
+    </div>
+    <hr />
+</form>
 <table class="table">
     <thead>
         <tr>
@@ -40,5 +51,5 @@
             </tr>
         }
     </tbody>
-    <partial name="_PagingPartial" model="@Model" />
 </table>
+<partial name="_PagingPartial" model="@Model" />

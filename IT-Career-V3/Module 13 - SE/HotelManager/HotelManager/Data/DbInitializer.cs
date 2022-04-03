@@ -49,7 +49,24 @@
                 logger.LogInformation("User admin is add...");
                 userManager.AddToRoleAsync(user, "Admin").Wait();
                 logger.LogInformation("User admin is add to role...");
+
+                for (int i = 10; i < 99; i++)
+                {
+                    user = new User()
+                    {
+                        UserName = $"user{i}@user.bg",
+                        Email = $"user{i}@user.bg",
+                        FirstName = $"FName{i}",
+                        LastName = $"LName{i}",
+                        NationalId = $"--------{i}"
+                    };
+                    userManager.CreateAsync(user, "123456").Wait();
+                    logger.LogInformation($"User user{i} is add...");
+                    userManager.AddToRoleAsync(user, "User").Wait();
+                    logger.LogInformation($"User user{i} is add to role...");
+                }
             }
+
         }
     }
 }
