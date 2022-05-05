@@ -1,6 +1,6 @@
 using System;
 
-namespace HotelManager.Models
+namespace HotelManager.ViewModels
 {
     public class ErrorViewModel
     {

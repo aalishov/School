@@ -1,4 +1,4 @@
-﻿using HotelManager.Models;
+﻿using HotelManager.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;

@@ -41,7 +41,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P15-Firma_2", "P15-Firma_2\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P16-Apples", "P16-Apples\P16-Apples.csproj", "{E4CE7BC2-B6EB-4A9D-BE2C-0A28DE693C72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P17-DemoFiles", "P17-DemoFiles\P17-DemoFiles.csproj", "{30675665-55E5-4D8E-87AD-60E5574666AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P17-DemoFiles", "P17-DemoFiles\P17-DemoFiles.csproj", "{30675665-55E5-4D8E-87AD-60E5574666AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P18-Students", "P18-Students\P18-Students.csproj", "{419A1C7E-CE3F-44B7-B35A-731479A58F0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P19-StudentsGrade", "P19-StudentsGrade\P19-StudentsGrade.csproj", "{C807494B-4AA8-4A0F-A0D7-A9C2056EA1C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +133,14 @@ Global
 		{30675665-55E5-4D8E-87AD-60E5574666AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30675665-55E5-4D8E-87AD-60E5574666AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30675665-55E5-4D8E-87AD-60E5574666AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{419A1C7E-CE3F-44B7-B35A-731479A58F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{419A1C7E-CE3F-44B7-B35A-731479A58F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{419A1C7E-CE3F-44B7-B35A-731479A58F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{419A1C7E-CE3F-44B7-B35A-731479A58F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C807494B-4AA8-4A0F-A0D7-A9C2056EA1C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C807494B-4AA8-4A0F-A0D7-A9C2056EA1C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C807494B-4AA8-4A0F-A0D7-A9C2056EA1C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C807494B-4AA8-4A0F-A0D7-A9C2056EA1C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

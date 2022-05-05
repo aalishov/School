@@ -6,6 +6,11 @@
 
     public class User : IdentityUser
     {
+        public User()
+        {
+            EmailConfirmed = true;
+        }
+
         [Required]
         [MaxLength(60)]
         public string FirstName { get; set; }
