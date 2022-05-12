@@ -2,12 +2,13 @@
 {
     public static void Main()
     {
-        Print();
+        int n = int.Parse(Console.ReadLine());
+        Print(n);
     }
 
-    public static void Print()
+    public static void Print(int n)
     {
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < n; i++)
         {
             Console.WriteLine(i);
         }

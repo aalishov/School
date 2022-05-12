@@ -15,17 +15,16 @@ namespace TestConsole
         [Test]
         public void Test1()
         {
-            var greeter = new Program();
-            var name = "Hello, World!";
+            var n = "10";
 
             var stringWriter = new StringWriter();
             Console.SetOut(stringWriter);
 
-            var stringReader = new StringReader(name);
+            var stringReader = new StringReader(n);
             Console.SetIn(stringReader);
 
             //act
-            Program.Print();
+            Program.Main();
 
             string expected = @"0
 1
@@ -42,5 +41,60 @@ namespace TestConsole
             var output = stringWriter.ToString().TrimEnd();
             Assert.AreEqual(expected, output);
         }
+        [Test]
+        public void Test2()
+        {
+            var n = "15";
+
+            var stringWriter = new StringWriter();
+            Console.SetOut(stringWriter);
+
+            var stringReader = new StringReader(n);
+            Console.SetIn(stringReader);
+
+            //act
+            Program.Main();
+
+            string expected = @"0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14";
+
+            //assert
+            var output = stringWriter.ToString().TrimEnd();
+            Assert.AreEqual(expected, output);
+        }
+        [Test]
+        public void Test3()
+        {
+            var n = "0";
+
+            var stringWriter = new StringWriter();
+            Console.SetOut(stringWriter);
+
+            var stringReader = new StringReader(n);
+            Console.SetIn(stringReader);
+
+            //act
+            Program.Main();
+
+            string expected = @"";
+
+            //assert
+            var output = stringWriter.ToString().TrimEnd();
+            Assert.AreEqual(expected, output);
+        }
     }
 }
+
