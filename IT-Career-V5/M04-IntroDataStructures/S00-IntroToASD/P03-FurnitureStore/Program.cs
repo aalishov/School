@@ -51,6 +51,11 @@ public class Program
         //Console.Clear();
         Console.WriteLine(sb.ToString().TrimEnd());
 
+        //string path = @"C:\Users\aalis\Desktop\result.txt";
+        //using (StreamWriter w = new StreamWriter(path))
+        //{
+        //    w.Write(sb);
+        //}
     }
 
     private static void AddFurniture(string type, string color, double price, string name)
