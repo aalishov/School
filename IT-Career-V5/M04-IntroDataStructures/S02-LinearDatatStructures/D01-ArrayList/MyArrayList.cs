@@ -1,4 +1,6 @@
-﻿public class MyArrayList<T>
+﻿using System.Text;
+
+public class MyArrayList<T>
 {
     private const int InitialCapacity = 2;
 
@@ -20,7 +22,10 @@
             this.Capacity *= 2;
             T[] newData = new T[this.Capacity];
             //Копиране на елементите в новия масив
-            Array.Copy(this.data, newData, this.data.Length);
+            for (int i = 0; i < data.Length; i++)
+            {
+                newData[i] = data[i];
+            }
             //Смяна на референцията
             this.data = newData;
         }
@@ -66,13 +71,24 @@
             {
                 newData[i] = this.data[i];
             }
-            for (int i = index; i < this.Count-1; i++)
+            for (int i = index; i < this.Count - 1; i++)
             {
-                newData[i]=this.data[i+1];
+                newData[i] = this.data[i + 1];
             }
         }
         this.Count--;
         data = newData;
+
+        if (this.Count <= this.Capacity / 4)
+        {
+            this.Capacity /= 2;
+            T[] copy = new T[this.Capacity];
+            for (int i = 0; i < this.Count; i++)
+            {
+                copy[i] = this.data[i];
+            }
+            this.data = copy;
+        }
         return item;
     }
 
@@ -83,10 +99,14 @@
             throw new IndexOutOfRangeException();
         }
     }
-
-    public void Print()
+    public override string ToString()
     {
-        Console.WriteLine(String.Join(", ", data));
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < this.Count; i++)
+        {
+            sb.Append($"{data[i]}, ");
+        }
+        return sb.ToString().Remove(sb.Length-2);
     }
 }
 
