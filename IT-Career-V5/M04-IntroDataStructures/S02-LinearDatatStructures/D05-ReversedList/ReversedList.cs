@@ -1,54 +1,53 @@
 ﻿using System.Collections;
-using System.Text;
 
-public class MyArrayList<T> : IEnumerable<T>
+public class ReversedList<T> : IEnumerable<T>
 {
     private const int InitialCapacity = 2;
+    private T[] elements;
 
-    private T[] data;
-
-    public MyArrayList(int capacity = InitialCapacity)
+    public ReversedList(int capacity = InitialCapacity)
     {
-        this.Capacity = capacity;
-        this.data = new T[this.Capacity];
+        this.elements = new T[capacity];
     }
-    public int Capacity { get; private set; }
+    public int Capacity { get { return this.elements.Length; } }
     public int Count { get; private set; }
-
     public void Add(T item)
     {
         if (this.Count == this.Capacity)
         {
             //Увеличаване на капацитета
-            this.Capacity *= 2;
-            T[] newData = new T[this.Capacity];
+            T[] newData = new T[this.Capacity * 2];
             //Копиране на елементите в новия масив
-            for (int i = 0; i < data.Length; i++)
+            for (int i = 0; i < elements.Length; i++)
             {
-                newData[i] = data[i];
+                newData[i] = elements[i];
             }
             //Смяна на референцията
-            this.data = newData;
+            this.elements = newData;
         }
-        data[this.Count++] = item;
+        elements[this.Count++] = item;
     }
-
+    //Достъпване на елементите по индекс
     public T this[int index]
     {
         get
         {
-            ThrowIndexOutOfRangeException(index);
-            return data[index];
+            int reversedIndex = this.Count - 1 - index;
+            ThrowIndexOutOfRangeException(reversedIndex);
+            return elements[reversedIndex];
         }
         set
         {
-            ThrowIndexOutOfRangeException(index);
-            data[index] = value;
+            int reversedIndex = this.Count - 1 - index;
+            ThrowIndexOutOfRangeException(reversedIndex);
+            elements[reversedIndex] = value;
         }
     }
-
+    //Премахване по индекс
     public T RemoveAt(int index)
     {
+        index = this.Count - 1 - index;
+
         T item = this[index];
 
         T[] newData = new T[this.Capacity];
@@ -56,39 +55,38 @@ public class MyArrayList<T> : IEnumerable<T>
         {
             for (int i = 1; i < this.Count; i++)
             {
-                newData[i - 1] = this.data[i];
+                newData[i - 1] = this.elements[i];
             }
         }
         else if (index == this.Count - 1)
         {
             for (int i = 0; i < this.Count - 1; i++)
             {
-                newData[i] = this.data[i];
+                newData[i] = this.elements[i];
             }
         }
         else
         {
             for (int i = 0; i < index; i++)
             {
-                newData[i] = this.data[i];
+                newData[i] = this.elements[i];
             }
             for (int i = index; i < this.Count - 1; i++)
             {
-                newData[i] = this.data[i + 1];
+                newData[i] = this.elements[i + 1];
             }
         }
         this.Count--;
-        data = newData;
+        elements = newData;
 
         if (this.Count <= this.Capacity / 4)
         {
-            this.Capacity /= 2;
-            T[] copy = new T[this.Capacity];
+            T[] copy = new T[this.Capacity / 2];
             for (int i = 0; i < this.Count; i++)
             {
-                copy[i] = this.data[i];
+                copy[i] = this.elements[i];
             }
-            this.data = copy;
+            this.elements = copy;
         }
         return item;
     }
@@ -100,21 +98,12 @@ public class MyArrayList<T> : IEnumerable<T>
             throw new IndexOutOfRangeException();
         }
     }
-    public override string ToString()
-    {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < this.Count; i++)
-        {
-            sb.Append($"{data[i]}, ");
-        }
-        return sb.ToString().Remove(sb.Length - 2);
-    }
 
     public IEnumerator<T> GetEnumerator()
     {
-        for (int i = 0; i < this.Count; i++)
+        for (int i = this.Count-1; i >= 0; i--)
         {
-            yield return data[i];
+            yield return elements[i];
         }
     }
 
@@ -123,5 +112,4 @@ public class MyArrayList<T> : IEnumerable<T>
         return GetEnumerator();
     }
 }
-
 
