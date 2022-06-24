@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-Furniture", "P01-Furniture\P01-Furniture.csproj", "{C70CD59D-3081-403C-BB60-7C7E358928B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-Furniture", "P01-Furniture\P01-Furniture.csproj", "{C70CD59D-3081-403C-BB60-7C7E358928B2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{68B1B836-C2B6-4E18-A477-E1471C0F5427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-Employee", "P02-Employee\P02-Employee.csproj", "{3E1FB10B-A529-4B21-AEC2-31282E4C9530}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{C70CD59D-3081-403C-BB60-7C7E358928B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C70CD59D-3081-403C-BB60-7C7E358928B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C70CD59D-3081-403C-BB60-7C7E358928B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B1B836-C2B6-4E18-A477-E1471C0F5427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B1B836-C2B6-4E18-A477-E1471C0F5427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B1B836-C2B6-4E18-A477-E1471C0F5427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B1B836-C2B6-4E18-A477-E1471C0F5427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E1FB10B-A529-4B21-AEC2-31282E4C9530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E1FB10B-A529-4B21-AEC2-31282E4C9530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E1FB10B-A529-4B21-AEC2-31282E4C9530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E1FB10B-A529-4B21-AEC2-31282E4C9530}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

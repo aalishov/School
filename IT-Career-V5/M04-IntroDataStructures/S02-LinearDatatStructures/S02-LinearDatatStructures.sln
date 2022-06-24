@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D05-ReversedList", "D05-Rev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-Cooking", "P01-Cooking\P01-Cooking.csproj", "{8E311F21-632F-4473-A838-03365D4588B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D00-Snake", "D00-Snake\D00-Snake.csproj", "{33BE765B-3DA1-423B-9C3D-289392CA9BD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D00-Cars", "D00-Cars\D00-Cars.csproj", "{1AA30284-01D1-46B7-841A-F99ED77575C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{8E311F21-632F-4473-A838-03365D4588B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E311F21-632F-4473-A838-03365D4588B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E311F21-632F-4473-A838-03365D4588B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33BE765B-3DA1-423B-9C3D-289392CA9BD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33BE765B-3DA1-423B-9C3D-289392CA9BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33BE765B-3DA1-423B-9C3D-289392CA9BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33BE765B-3DA1-423B-9C3D-289392CA9BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA30284-01D1-46B7-841A-F99ED77575C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA30284-01D1-46B7-841A-F99ED77575C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA30284-01D1-46B7-841A-F99ED77575C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA30284-01D1-46B7-841A-F99ED77575C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
