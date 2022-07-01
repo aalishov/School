@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainsSkeleton", "TrainsSkeleton\TrainsSkeleton.csproj", "{1FA4810B-DC91-46C9-B32C-474D48E7529F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainsSkeleton", "TrainsSkeleton\TrainsSkeleton.csproj", "{1FA4810B-DC91-46C9-B32C-474D48E7529F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoo", "Zoo\Zoo.csproj", "{95A70978-95CA-49CE-B084-14333C9268A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D00-SandBox", "D00-SandBox\D00-SandBox.csproj", "{59C4A611-C6A9-4DCE-9338-CE084AC25718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIbrary", "LIbrary\LIbrary.csproj", "{FC46CD42-8258-4B27-8E5C-31A7B5BF33FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{95A70978-95CA-49CE-B084-14333C9268A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95A70978-95CA-49CE-B084-14333C9268A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95A70978-95CA-49CE-B084-14333C9268A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C4A611-C6A9-4DCE-9338-CE084AC25718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C4A611-C6A9-4DCE-9338-CE084AC25718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C4A611-C6A9-4DCE-9338-CE084AC25718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C4A611-C6A9-4DCE-9338-CE084AC25718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC46CD42-8258-4B27-8E5C-31A7B5BF33FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC46CD42-8258-4B27-8E5C-31A7B5BF33FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC46CD42-8258-4B27-8E5C-31A7B5BF33FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC46CD42-8258-4B27-8E5C-31A7B5BF33FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
