@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-
-public class Book
+﻿public class Book
 {
     public Book(string id)
     {
