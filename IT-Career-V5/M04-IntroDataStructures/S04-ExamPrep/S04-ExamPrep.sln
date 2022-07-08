@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D00-SandBox", "D00-SandBox\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LIbrary", "LIbrary\LIbrary.csproj", "{FC46CD42-8258-4B27-8E5C-31A7B5BF33FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoLibraryExam", "VideoLibraryExam\VideoLibraryExam.csproj", "{6A0005CC-9730-4734-9123-341E667F8C04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoLibraryExam", "VideoLibraryExam\VideoLibraryExam.csproj", "{6A0005CC-9730-4734-9123-341E667F8C04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolExam", "SchoolExam\SchoolExam.csproj", "{E6944E31-1563-4491-AC82-9B7FD5658CD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolExam", "SchoolExam\SchoolExam.csproj", "{E6944E31-1563-4491-AC82-9B7FD5658CD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibraryExam", "BookLibraryExam\BookLibraryExam.csproj", "{9865C162-A23F-42A5-8680-6820A6962D26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{E6944E31-1563-4491-AC82-9B7FD5658CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6944E31-1563-4491-AC82-9B7FD5658CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6944E31-1563-4491-AC82-9B7FD5658CD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9865C162-A23F-42A5-8680-6820A6962D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9865C162-A23F-42A5-8680-6820A6962D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9865C162-A23F-42A5-8680-6820A6962D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9865C162-A23F-42A5-8680-6820A6962D26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
