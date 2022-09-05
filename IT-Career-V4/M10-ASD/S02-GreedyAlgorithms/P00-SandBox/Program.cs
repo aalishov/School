@@ -7,17 +7,42 @@ namespace P00_SandBox
     {
         static void Main(string[] args)
         {
-            int[] arr = { 1, 2, 3, 4, 5 };
-            var subsets = CreateSubsets(arr);
+            string s = "aplaysasdasdplay";
+            Console.WriteLine(s.IndexOf("play"));
+            Console.WriteLine(s.LastIndexOf("play"));  
 
-            foreach (var set in subsets)
+            char[,] arr = new char[3, 6];
+
+            for (int i = 0; i < arr.GetLength(0); i++)
             {
-                foreach (var item in set)
+                char[] row=Console.ReadLine().ToCharArray();
+                for (int j = 0; j < arr.GetLength(1); j++)
                 {
-                    Console.Write(item + " ");
+                    arr[i, j] = row[j];
+                }
+            }
+
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write($"{arr[i,j]} ");
                 }
                 Console.WriteLine();
             }
+
+
+            //int[] arr = { 1, 2, 3, 4, 5 };
+            //var subsets = CreateSubsets(arr);
+
+            //foreach (var set in subsets)
+            //{
+            //    foreach (var item in set)
+            //    {
+            //        Console.Write(item + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
         }
 
         public static List<T[]> CreateSubsets<T>(T[] originalArray)
