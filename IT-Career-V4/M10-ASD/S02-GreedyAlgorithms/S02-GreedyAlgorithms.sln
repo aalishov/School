@@ -21,9 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-CoinsMinCount_Dancho", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-CoinsMinCount_Angel", "P02-CoinsMinCount_Angel\P02-CoinsMinCount_Angel.csproj", "{9599EAEE-FBD9-4CA2-B083-20E4554377D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{E240438B-5576-481B-8206-A9088E9243DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{E240438B-5576-481B-8206-A9088E9243DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-Backpack_v2", "P04-Backpack_v2\P04-Backpack_v2.csproj", "{47AD877C-B65B-4B05-B676-FD3E201EEDF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-Backpack_v2", "P04-Backpack_v2\P04-Backpack_v2.csproj", "{47AD877C-B65B-4B05-B676-FD3E201EEDF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-WordsInMatrix", "P06-WordsInMatrix\P06-WordsInMatrix.csproj", "{0E711147-E49E-40BD-868C-F4D9C90D5800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-WordsInMatrix_v2", "P06-WordsInMatrix_v2\P06-WordsInMatrix_v2.csproj", "{1E7B9911-3465-4712-A009-FDFE1D306650}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,14 @@ Global
 		{47AD877C-B65B-4B05-B676-FD3E201EEDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47AD877C-B65B-4B05-B676-FD3E201EEDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47AD877C-B65B-4B05-B676-FD3E201EEDF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E711147-E49E-40BD-868C-F4D9C90D5800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E711147-E49E-40BD-868C-F4D9C90D5800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E711147-E49E-40BD-868C-F4D9C90D5800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E711147-E49E-40BD-868C-F4D9C90D5800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E7B9911-3465-4712-A009-FDFE1D306650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7B9911-3465-4712-A009-FDFE1D306650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7B9911-3465-4712-A009-FDFE1D306650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7B9911-3465-4712-A009-FDFE1D306650}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
