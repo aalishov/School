@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basketball", "03. Basketbal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Renovators", "03. Renovators_Skeleton\Renovators.csproj", "{F5982D78-8F6B-43B9-8F7A-5D31DC9BC2D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{01287DEF-B3AF-4C77-9F1A-F9ACB417E429}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F5982D78-8F6B-43B9-8F7A-5D31DC9BC2D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5982D78-8F6B-43B9-8F7A-5D31DC9BC2D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5982D78-8F6B-43B9-8F7A-5D31DC9BC2D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01287DEF-B3AF-4C77-9F1A-F9ACB417E429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01287DEF-B3AF-4C77-9F1A-F9ACB417E429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01287DEF-B3AF-4C77-9F1A-F9ACB417E429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01287DEF-B3AF-4C77-9F1A-F9ACB417E429}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
