@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-MathOperations", "P01-MathOperations\P01-MathOperations.csproj", "{BDB1436B-7B14-450F-B223-BCBFF011FA46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-MathOperations", "P01-MathOperations\P01-MathOperations.csproj", "{BDB1436B-7B14-450F-B223-BCBFF011FA46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-Animals", "P02-Animals\P02-Animals.csproj", "{9FD421F9-B5D2-4B83-ACEF-D4D1696334B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-Animals", "P02-Animals\P02-Animals.csproj", "{9FD421F9-B5D2-4B83-ACEF-D4D1696334B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-Vehicles", "P03-Vehicles\P03-Vehicles.csproj", "{0C76E7D2-86BB-4C91-AE44-1E3A27188E3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-Vehicles", "P03-Vehicles\P03-Vehicles.csproj", "{0C76E7D2-86BB-4C91-AE44-1E3A27188E3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-VehiclesExtension", "P04-VehiclesExtension\P04-VehiclesExtension.csproj", "{AD68EBCC-0331-4ED5-AF56-05735BF51DC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-VehiclesExtension", "P04-VehiclesExtension\P04-VehiclesExtension.csproj", "{AD68EBCC-0331-4ED5-AF56-05735BF51DC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-Raiding", "P05-Raiding\P05-Raiding.csproj", "{D2EA8FED-5282-4991-8235-BA90A896B0CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AD68EBCC-0331-4ED5-AF56-05735BF51DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD68EBCC-0331-4ED5-AF56-05735BF51DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD68EBCC-0331-4ED5-AF56-05735BF51DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2EA8FED-5282-4991-8235-BA90A896B0CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2EA8FED-5282-4991-8235-BA90A896B0CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2EA8FED-5282-4991-8235-BA90A896B0CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2EA8FED-5282-4991-8235-BA90A896B0CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
