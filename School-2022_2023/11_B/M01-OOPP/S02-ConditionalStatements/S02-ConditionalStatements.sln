@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-PassordGuess", "P05-PassordGuess\P05-PassordGuess.csproj", "{73262FBC-38F6-45E1-9AE8-1CF33601D935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11-Shop", "P11-Shop\P11-Shop.csproj", "{ECA3A1E4-55FA-4A31-ABE1-EBF3A5CF7285}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73262FBC-38F6-45E1-9AE8-1CF33601D935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73262FBC-38F6-45E1-9AE8-1CF33601D935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73262FBC-38F6-45E1-9AE8-1CF33601D935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73262FBC-38F6-45E1-9AE8-1CF33601D935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECA3A1E4-55FA-4A31-ABE1-EBF3A5CF7285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA3A1E4-55FA-4A31-ABE1-EBF3A5CF7285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA3A1E4-55FA-4A31-ABE1-EBF3A5CF7285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA3A1E4-55FA-4A31-ABE1-EBF3A5CF7285}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19C0475A-8A70-428C-A0CA-4436006817D0}
+	EndGlobalSection
+EndGlobal
