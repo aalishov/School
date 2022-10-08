@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-Village", "P01-Village\P01-Village.csproj", "{10158525-B0EF-4985-A56F-E515DB5866A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-ShoppingSystem", "P02-ShoppingSystem\P02-ShoppingSystem.csproj", "{01B882CA-98EB-4D02-AF07-7EA8D7941F0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-ShoppingSystem", "P02-ShoppingSystem\P02-ShoppingSystem.csproj", "{01B882CA-98EB-4D02-AF07-7EA8D7941F0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-BrokerCompanySystem", "P03-BrokerCompanySystem\P03-BrokerCompanySystem.csproj", "{8BCD9ECE-8F44-488C-9316-0F1836AB8529}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{01B882CA-98EB-4D02-AF07-7EA8D7941F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01B882CA-98EB-4D02-AF07-7EA8D7941F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01B882CA-98EB-4D02-AF07-7EA8D7941F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BCD9ECE-8F44-488C-9316-0F1836AB8529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BCD9ECE-8F44-488C-9316-0F1836AB8529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BCD9ECE-8F44-488C-9316-0F1836AB8529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BCD9ECE-8F44-488C-9316-0F1836AB8529}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
