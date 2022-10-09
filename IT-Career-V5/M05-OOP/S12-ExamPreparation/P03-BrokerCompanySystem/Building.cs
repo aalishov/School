@@ -15,6 +15,7 @@ public abstract class Building
         City = city;
         Stars = stars;
         RentAmount = rentAmount;
+        IsAvailable = true;
     }
 
     public virtual string Name
@@ -65,7 +66,7 @@ public abstract class Building
             rentAmount = value;
         }
     }
-    public bool IsAvailable { get; private set; }
+    public bool IsAvailable { get; set; }
 
     public override string ToString()
     {

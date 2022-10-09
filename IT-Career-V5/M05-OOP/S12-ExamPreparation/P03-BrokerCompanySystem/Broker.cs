@@ -58,6 +58,7 @@ public class Broker
     {
         double bonus = building.RentAmount * 2.0 * building.Stars / 100.0;
         Bonus += bonus;
+        building.IsAvailable = false;
         buildings.Add(building);
         return bonus;
     }

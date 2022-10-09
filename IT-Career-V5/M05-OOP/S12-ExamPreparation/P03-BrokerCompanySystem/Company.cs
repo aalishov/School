@@ -58,7 +58,7 @@ public class Company
         sb.AppendLine($"Company: {Name}");
         sb.AppendLine($"##Brokers: {brokers.Count}");
         brokers.ForEach(b => sb.AppendLine(b.ToString()));
-        sb.AppendLine($"##Buildings – {buildings.Count}");
+        sb.AppendLine($"##Buildings: {buildings.Count}");
         buildings.ForEach(b => sb.AppendLine(b.ToString()));
         return sb.ToString().TrimEnd();
     }

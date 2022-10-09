@@ -2,11 +2,9 @@
 
 public class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        string result = "Sun Hotel";
-        int index = result.Length - ("Hotel").Length ;
-        Console.WriteLine(result.IndexOf("Hotel",index));
+        Engine engine = new Engine();
     }
 }
 
