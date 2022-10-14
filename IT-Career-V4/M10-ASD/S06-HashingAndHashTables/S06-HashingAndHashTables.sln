@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-CointingSymbols", "P01-CointingSymbols\P01-CointingSymbols.csproj", "{447C2357-79B5-4021-84A4-E7ECC5FD5691}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-HashTable", "P02-HashTable\P02-HashTable.csproj", "{9C5FD708-3476-4945-9FB1-65680FF49A30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-PhoneBook", "P03-PhoneBook\P03-PhoneBook.csproj", "{F851D55F-86A6-4CE7-A52B-1586CDC43477}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{447C2357-79B5-4021-84A4-E7ECC5FD5691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447C2357-79B5-4021-84A4-E7ECC5FD5691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447C2357-79B5-4021-84A4-E7ECC5FD5691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447C2357-79B5-4021-84A4-E7ECC5FD5691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C5FD708-3476-4945-9FB1-65680FF49A30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C5FD708-3476-4945-9FB1-65680FF49A30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C5FD708-3476-4945-9FB1-65680FF49A30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C5FD708-3476-4945-9FB1-65680FF49A30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F851D55F-86A6-4CE7-A52B-1586CDC43477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F851D55F-86A6-4CE7-A52B-1586CDC43477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F851D55F-86A6-4CE7-A52B-1586CDC43477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F851D55F-86A6-4CE7-A52B-1586CDC43477}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFF98FB1-6232-496C-BEB2-BCE873D16F1F}
+	EndGlobalSection
+EndGlobal

@@ -88,12 +88,13 @@ namespace Product.FormApp
 
         private void UpdateGrid(int page=1)
         {
+            dataGridView1.VirtualMode = true;
             dataGridView1.DataSource = service.GetProducts(page);
             dataGridView1.ReadOnly = true;
-            dataGridView1.Columns[0].Visible = false;
+            //dataGridView1.Columns[0].Visible = false;
             dataGridView1.Columns[5].Visible = false;
             dataGridView1.Columns[6].Visible = false;
-            dataGridView1.Columns[7].Visible = false;
+            //dataGridView1.Columns[7].Visible = false;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
         private void btnUpdate_Click(object sender, EventArgs e)
