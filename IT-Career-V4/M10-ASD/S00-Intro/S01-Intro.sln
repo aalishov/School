@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-OOP", "P02-OOP\P02-OOP.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-Shop", "P03-Shop\P03-Shop.csproj", "{91892D6D-3186-408C-987D-89D714E58C42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basketball", "Basketball\Basketball.csproj", "{F05C91D6-603D-46DD-9E26-5CFCCE1AD464}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basketball", "Basketball\Basketball.csproj", "{F05C91D6-603D-46DD-9E26-5CFCCE1AD464}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-Trees", "P04-Trees\P04-Trees.csproj", "{B74D02A8-0D20-4A1A-831F-4C8DD49C9CDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F05C91D6-603D-46DD-9E26-5CFCCE1AD464}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F05C91D6-603D-46DD-9E26-5CFCCE1AD464}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F05C91D6-603D-46DD-9E26-5CFCCE1AD464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B74D02A8-0D20-4A1A-831F-4C8DD49C9CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B74D02A8-0D20-4A1A-831F-4C8DD49C9CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B74D02A8-0D20-4A1A-831F-4C8DD49C9CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B74D02A8-0D20-4A1A-831F-4C8DD49C9CDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
