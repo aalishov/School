@@ -91,6 +91,11 @@ internal class Program
                     }
                     break;
                 case "Stop":
+                    foreach (var p in pieces)
+                    {
+                        string[] parts = p.Split('|').ToArray();
+                        Console.WriteLine($"{parts[0]} -> Composer: {parts[1]}, Key: {parts[2]}");
+                    }
                     Environment.Exit(0);
                     break;
                 default:

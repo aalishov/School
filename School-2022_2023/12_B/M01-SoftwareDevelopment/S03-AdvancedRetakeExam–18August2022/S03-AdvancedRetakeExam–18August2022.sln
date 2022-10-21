@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-BaristaContest", "P01-BaristaContest\P01-BaristaContest.csproj", "{283C7CA9-3A8B-4833-840E-FE17A67E6E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-Mole", "P02-Mole\P02-Mole.csproj", "{D909FF48-DE4B-4D29-99F3-F40AAF544FD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{283C7CA9-3A8B-4833-840E-FE17A67E6E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{283C7CA9-3A8B-4833-840E-FE17A67E6E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283C7CA9-3A8B-4833-840E-FE17A67E6E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{283C7CA9-3A8B-4833-840E-FE17A67E6E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D909FF48-DE4B-4D29-99F3-F40AAF544FD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D909FF48-DE4B-4D29-99F3-F40AAF544FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D909FF48-DE4B-4D29-99F3-F40AAF544FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D909FF48-DE4B-4D29-99F3-F40AAF544FD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C702D2C7-DDE8-45FF-9370-594363C170CC}
+	EndGlobalSection
+EndGlobal
