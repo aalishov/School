@@ -57,9 +57,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(25, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 20);
+            this.label1.Size = new System.Drawing.Size(123, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Въведете данни:";
             // 
             // txtInput
             // 
@@ -73,10 +73,10 @@
             this.radioList.AutoSize = true;
             this.radioList.Location = new System.Drawing.Point(25, 105);
             this.radioList.Name = "radioList";
-            this.radioList.Size = new System.Drawing.Size(117, 24);
+            this.radioList.Size = new System.Drawing.Size(139, 24);
             this.radioList.TabIndex = 2;
             this.radioList.TabStop = true;
-            this.radioList.Text = "radioButton1";
+            this.radioList.Text = "Списъчна кутия";
             this.radioList.UseVisualStyleBackColor = true;
             // 
             // radioCombo
@@ -84,10 +84,10 @@
             this.radioCombo.AutoSize = true;
             this.radioCombo.Location = new System.Drawing.Point(25, 154);
             this.radioCombo.Name = "radioCombo";
-            this.radioCombo.Size = new System.Drawing.Size(117, 24);
+            this.radioCombo.Size = new System.Drawing.Size(170, 24);
             this.radioCombo.TabIndex = 3;
             this.radioCombo.TabStop = true;
-            this.radioCombo.Text = "radioButton2";
+            this.radioCombo.Text = "Комбинирана кутия";
             this.radioCombo.UseVisualStyleBackColor = true;
             // 
             // listBox1
@@ -98,6 +98,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(175, 204);
             this.listBox1.TabIndex = 4;
+            this.listBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.listBox1_KeyPress);
             // 
             // comboBox1
             // 
@@ -169,6 +170,7 @@
             this.btnDel.TabIndex = 8;
             this.btnDel.Text = "Изтриване";
             this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnEdit
             // 
@@ -192,7 +194,7 @@
             this.groupBox2.Size = new System.Drawing.Size(365, 122);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Търсене";
             // 
             // btnOk
             // 
@@ -217,9 +219,9 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(16, 89);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(101, 24);
+            this.checkBox2.Size = new System.Drawing.Size(171, 24);
             this.checkBox2.TabIndex = 12;
-            this.checkBox2.Text = "checkBox2";
+            this.checkBox2.Text = "Комбинирана кутия";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox1
@@ -227,9 +229,9 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(16, 59);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(101, 24);
+            this.checkBox1.Size = new System.Drawing.Size(140, 24);
             this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.Text = "Списъчна кутия";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // txtSearch
@@ -247,6 +249,7 @@
             this.btnExit.TabIndex = 15;
             this.btnExit.Text = "Изход";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Form1
             // 

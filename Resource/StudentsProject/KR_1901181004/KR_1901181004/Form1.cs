@@ -48,7 +48,7 @@ namespace KR_1901181004
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (radioList.Checked && btnAdd.Text=="Добавяне")
+            if (radioList.Checked && btnAdd.Text == "Добавяне")
             {
                 bool f = false;
                 for (int i = 0; i < listBox1.Items.Count; i++)
@@ -93,16 +93,75 @@ namespace KR_1901181004
                 txtInput.Text = "";
                 txtInput.Focus();
             }
+            else if (radioList.Checked && btnAdd.Text == "Актуализация")
+            {
+                listBox1.Items[listBox1.SelectedIndex] = txtInput.Text;
+                txtInput.Text = "";
+                listBox1.SelectedIndex = -1;
+                comboBox1.SelectedIndex = -1;
+                btnAdd.Text = "Добавяне";
+                btnAdd.Enabled = false;
+                btnEdit.Enabled = true;
+            }
+            else if (radioCombo.Checked && btnAdd.Text == "Актуализация")
+            {
+                comboBox1.Items[comboBox1.SelectedIndex] = txtInput.Text;
+                txtInput.Text = "";
+                listBox1.SelectedIndex = -1;
+                comboBox1.SelectedIndex = -1;
+                btnAdd.Text = "Добавяне";
+                btnAdd.Enabled = false;
+                btnEdit.Enabled = true;
+            }
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if (radioList.Checked)
+            if (radioList.Checked && listBox1.SelectedIndex >= 0)
             {
                 txtInput.Text = listBox1.Items[listBox1.SelectedIndex].ToString();
                 txtInput.Focus();
-                btnAdd.Text = "Актуализация на запис";
+                btnAdd.Enabled = true;
+                btnAdd.Text = "Актуализация";
+                btnEdit.Enabled = false;
             }
+            else if (radioCombo.Checked && comboBox1.SelectedIndex >= 0)
+            {
+                txtInput.Text = comboBox1.Items[comboBox1.SelectedIndex].ToString();
+                txtInput.Focus();
+                btnAdd.Enabled = true;
+                btnAdd.Text = "Актуализация";
+                btnEdit.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Не е избран запис!");
+            }
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            if (radioList.Checked && listBox1.SelectedIndex >= 0)
+            {
+                listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+            }
+            else if (radioCombo.Checked && comboBox1.SelectedIndex >= 0)
+            {
+                comboBox1.Items.RemoveAt(listBox1.SelectedIndex);
+            }
+        }
+
+        private void listBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (listBox1.SelectedIndex != -1 && e.KeyChar == (char)Keys.Delete)
+            {
+                btnDel_Click(sender, e);
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
