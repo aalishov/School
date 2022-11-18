@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-ReadList", "P01-ReadList\P01-ReadList.csproj", "{65457414-B55F-47DC-B55B-B62DD215D7F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-ReadList", "P01-ReadList\P01-ReadList.csproj", "{65457414-B55F-47DC-B55B-B62DD215D7F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-ReadListFromSingleLine", "P02-ReadListFromSingleLine\P02-ReadListFromSingleLine.csproj", "{AA61A68C-57B7-42C2-AD07-7E758986D0E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-ReadListFromSingleLine", "P02-ReadListFromSingleLine\P02-ReadListFromSingleLine.csproj", "{AA61A68C-57B7-42C2-AD07-7E758986D0E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-ReverseNames", "P04-ReverseNames\P04-ReverseNames.csproj", "{41831463-EEAD-47E2-97F4-E87BC720BC05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-RemoveNumber", "P02-RemoveNumber\P02-RemoveNumber.csproj", "{264F3134-AB0A-4A8E-8CD5-6217897CDC7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{AA61A68C-57B7-42C2-AD07-7E758986D0E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA61A68C-57B7-42C2-AD07-7E758986D0E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA61A68C-57B7-42C2-AD07-7E758986D0E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41831463-EEAD-47E2-97F4-E87BC720BC05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41831463-EEAD-47E2-97F4-E87BC720BC05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41831463-EEAD-47E2-97F4-E87BC720BC05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41831463-EEAD-47E2-97F4-E87BC720BC05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{264F3134-AB0A-4A8E-8CD5-6217897CDC7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{264F3134-AB0A-4A8E-8CD5-6217897CDC7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{264F3134-AB0A-4A8E-8CD5-6217897CDC7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{264F3134-AB0A-4A8E-8CD5-6217897CDC7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
