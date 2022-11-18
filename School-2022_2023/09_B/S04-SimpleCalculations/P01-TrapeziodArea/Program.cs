@@ -9,7 +9,7 @@ public class Program
         double h = double.Parse(Console.ReadLine());
         Console.ForegroundColor = ConsoleColor.Red;
         double area = ((b1 + b2) * h) / 2.0;
-        Console.Clear();
+        //Console.Clear();
         Console.WriteLine($"Trapezoid area = {area}");
 
     }
