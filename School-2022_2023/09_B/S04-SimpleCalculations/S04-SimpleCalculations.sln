@@ -5,7 +5,11 @@ VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-TrapeziodArea", "P01-TrapeziodArea\P01-TrapeziodArea.csproj", "{328A39B5-5830-4032-AB26-4036019278F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-RectangleArea", "P03-RectangleArea\P03-RectangleArea.csproj", "{4FA12333-0D89-4D9E-87AA-688898FF0AA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-RectangleArea", "P03-RectangleArea\P03-RectangleArea.csproj", "{4FA12333-0D89-4D9E-87AA-688898FF0AA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-1000Days", "P06-1000Days\P06-1000Days.csproj", "{43B2C4F7-4093-4052-8C0F-C32289D50BBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-Room", "P07-Room\P07-Room.csproj", "{E65665F0-2F7D-4B97-9D14-F16B7A4884DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{4FA12333-0D89-4D9E-87AA-688898FF0AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FA12333-0D89-4D9E-87AA-688898FF0AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FA12333-0D89-4D9E-87AA-688898FF0AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43B2C4F7-4093-4052-8C0F-C32289D50BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43B2C4F7-4093-4052-8C0F-C32289D50BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43B2C4F7-4093-4052-8C0F-C32289D50BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43B2C4F7-4093-4052-8C0F-C32289D50BBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E65665F0-2F7D-4B97-9D14-F16B7A4884DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E65665F0-2F7D-4B97-9D14-F16B7A4884DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E65665F0-2F7D-4B97-9D14-F16B7A4884DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E65665F0-2F7D-4B97-9D14-F16B7A4884DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
