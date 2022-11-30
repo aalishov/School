@@ -58,6 +58,76 @@ ORDER BY D.DepartmentID ASC
 --0.15 Служители без проекти 
 SELECT TOP(3) e.EmployeeID, e.FirstName
 FROM Employees AS e 
-JOIN EmployeesProjects AS ep ON ep.EmployeeID=e.EmployeeID
-JOIN Projects AS p ON p.ProjectID=ep.ProjectID
-WHERE 
+WHERE e.EmployeeID NOT IN (SELECT DISTINCT EmployeeID FROM EmployeesProjects)
+--0.16 Служители наети след определена дата
+SELECT FirstName, LastName, HireDate, d.Name as 'DeptName' 
+FROM Employees AS e
+JOIN Departments AS d ON e.DepartmentID=d.DepartmentID
+WHERE HireDate>'01.01.1999' AND e.DepartmentID IN 
+	(
+		SELECT DepartmentID FROM Departments 
+		WHERE [Name] IN ('Sales', 'Finance')
+	)
+ORDER BY HireDate
+--0.17 Създайте изглед Highest Peak
+USE Geography;
+CREATE VIEW v_HighestPeak  AS 
+SELECT TOP (1) * FROM Peaks
+ORDER BY Elevation DESC
+--0.18 Ученици и класове 
+CREATE DATABASE School;
+USE School;
+
+CREATE TABLE Student
+(
+	StudentID INT PRIMARY KEY IDENTITY,
+	[Name] VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Class
+(
+	ClassID INT PRIMARY KEY IDENTITY,
+	Course VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE StudentClassRelation
+(
+    StudentID INT NOT NULL,
+	ClassID INT NOT NULL,
+	CONSTRAINT pk_studentclassrelation
+		PRIMARY KEY (StudentID,ClassID),
+	CONSTRAINT fk_studentclassrelation_class
+		FOREIGN KEY (ClassID)
+		REFERENCES Class(ClassID),
+	CONSTRAINT fk_studentclassrelation_Student
+		FOREIGN KEY (StudentID)
+		REFERENCES Student(StudentID)
+);
+
+INSERT INTO Student ([Name])
+VALUES
+	('Olaf Alfonso'),
+	('Clark Davis');
+
+INSERT INTO Class(Course)
+VALUES
+	('Biology'),
+	('Chemistry'),
+	('Physics'),
+	('English'),
+	('Computer Science'),
+	('History');
+INSERT INTO StudentClassRelation(StudentID,ClassID)
+VALUES
+	(1,2),
+	(1,4),
+	(1,6),
+	(2,1),
+	(2,3),
+	(2,6);
+
+SELECT s.[Name], c.Course FROM Student AS s
+JOIN StudentClassRelation AS scr ON s.StudentID=scr.StudentID
+JOIN Class AS c ON c.ClassID=scr.ClassID
+
+--
