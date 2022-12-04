@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-TrapeziodArea", "P01-Tr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-RectangleArea", "P03-RectangleArea\P03-RectangleArea.csproj", "{4FA12333-0D89-4D9E-87AA-688898FF0AA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-1000Days", "P06-1000Days\P06-1000Days.csproj", "{43B2C4F7-4093-4052-8C0F-C32289D50BBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-1000Days", "P06-1000Days\P06-1000Days.csproj", "{43B2C4F7-4093-4052-8C0F-C32289D50BBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-Room", "P07-Room\P07-Room.csproj", "{E65665F0-2F7D-4B97-9D14-F16B7A4884DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-Room", "P07-Room\P07-Room.csproj", "{E65665F0-2F7D-4B97-9D14-F16B7A4884DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-Tails", "P09-Tails\P09-Tails.csproj", "{2F3CB59F-7812-40EC-A126-425D9ADCDEA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E65665F0-2F7D-4B97-9D14-F16B7A4884DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E65665F0-2F7D-4B97-9D14-F16B7A4884DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E65665F0-2F7D-4B97-9D14-F16B7A4884DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F3CB59F-7812-40EC-A126-425D9ADCDEA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F3CB59F-7812-40EC-A126-425D9ADCDEA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F3CB59F-7812-40EC-A126-425D9ADCDEA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F3CB59F-7812-40EC-A126-425D9ADCDEA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
