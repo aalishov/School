@@ -102,6 +102,16 @@ VALUES
     
 SELECT * FROM Students_exams;
 
+-- Self-reference
+CREATE TABLE Teachers
+(
+	teacher_id INT PRIMARY KEY AUTO_INCREMENT,
+    name NVARCHAR(50) NOT NULL,
+    manager_id INT,
+    CONSTRAINT fk_teachers_teachers
+		FOREIGN KEY (manager_id)
+        REFERENCES Teachers(teacher_id)
+) AUTO_INCREMENT = 101;
  
 
     
