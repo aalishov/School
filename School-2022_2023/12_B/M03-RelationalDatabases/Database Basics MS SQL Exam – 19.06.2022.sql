@@ -107,3 +107,21 @@ ORDER BY Name ASC, AnimalId ASC, DepartmentId ASC
 SELECT Name, AT.AnimalType,FORMAT( BirthDate,'dd.MM.yyyy') AS BirthDate FROM Animals AS A
 JOIN AnimalTypes AS AT ON A.AnimalTypeId=AT.Id
 ORDER BY NAME ASC
+--7.	Owners and Their Animals
+SELECT TOP(5) o.Name, COUNT(a.OwnerId) as CountOfAnimals
+FROM Owners as o
+JOIN Animals as a ON a.OwnerId=o.Id
+GROUP BY o.Name, a.OwnerId
+ORDER BY CountOfAnimals DESC, o.Name
+--8.	Owners, Animals and Cages
+SELECT CONCAT(o.Name,'-',a.Name) AS OwnersAnimals, PhoneNumber, CageId
+FROM Owners AS o
+JOIN Animals AS a ON a.OwnerId = o.Id
+JOIN AnimalsCages AS ac ON ac.AnimalId = a.Id
+JOIN Cages AS c ON c.Id=ac.CageId
+WHERE a.AnimalTypeId = (SELECT Id FROM AnimalTypes WHERE AnimalType = 'Mammals')
+ORDER BY o.Name ASC, a.Name DESC
+--9.	Volunteers in Sofia
+SELECT v.Name, v.PhoneNumber, v.Address
+FROM Volunteers AS v
+SELECT CHARINDEX(',',Address) FROM Volunteers
