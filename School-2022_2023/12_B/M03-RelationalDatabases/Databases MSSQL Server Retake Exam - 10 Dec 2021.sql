@@ -104,3 +104,29 @@ JOIN Passengers AS p ON f.PassengerId=P.Id
 JOIN Airports AS a ON A.Id=f.AirportId
 WHERE DATEPART(DAY,START) % 2 = 0
 ORDER BY TicketPrice DESC, AirportName ASC
+--8.Number of Flights for Each Aircraft
+SELECT a.Id as AircraftId, 
+	(SELECT Manufacturer FROM Aircraft AS air WHERE a.Id=air.Id) as Manufacturer,
+	(SELECT FlightHours FROM Aircraft AS air WHERE a.Id=air.Id) as FlightHours,
+	COUNT(f.AircraftId) as FlightDestinationsCount,
+	ROUND(AVG(f.TicketPrice),2) as AvgPrice 
+FROM Aircraft AS a
+JOIN FlightDestinations AS f ON f.AircraftId=a.Id
+GROUP BY a.Id
+HAVING COUNT(f.AircraftId)>=2
+ORDER BY FlightDestinationsCount DESC, a.Id asc
+--9.Regular Passengers
+SELECT FullName,COUNT(a.Id) AS CountOfAircraft, SUM(TicketPrice) AS TotalPayed FROM Passengers AS p
+JOIN FlightDestinations AS f ON f.PassengerId=p.Id
+JOIN Aircraft AS a ON f.AircraftId=a.Id
+WHERE FullName LIKE'_a%'
+GROUP BY FullName
+HAVING COUNT(a.Id)>=2
+ORDER BY FullName
+--10.Full Info for Flight Destinations
+SELECT a.AirportName, Start AS DayTime, TicketPrice, p.FullName, air.Manufacturer, air.Model FROM FlightDestinations AS f
+JOIN Airports AS a ON a.Id=f.AirportId
+JOIN Passengers AS p ON p.Id=f.PassengerId
+JOIN Aircraft AS air ON f.AircraftId=air.Id
+WHERE DATEPART(HOUR,Start) BETWEEN 6 AND 20 AND TicketPrice>2500
+ORDER BY Model ASC
