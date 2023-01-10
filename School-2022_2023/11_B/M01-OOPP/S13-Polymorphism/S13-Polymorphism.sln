@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-Animal", "P02-Animal\P0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03- Shapes", "P03- Shapes\P03- Shapes.csproj", "{EF26D38F-DC26-4F8D-9AAF-E68BA886764F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-Vehicles", "P04-Vehicles\P04-Vehicles.csproj", "{AC33913A-ADC6-4997-B899-983F5E65C123}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-Vehicles", "P04-Vehicles\P04-Vehicles.csproj", "{AC33913A-ADC6-4997-B899-983F5E65C123}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-Raiding", "P06-Raiding\P06-Raiding.csproj", "{4C0FBCC8-B586-4AF5-BAF2-10E894399B86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-Raiding", "P06-Raiding\P06-Raiding.csproj", "{4C0FBCC8-B586-4AF5-BAF2-10E894399B86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-WildFarmm", "P07-WildFarmm\P07-WildFarmm.csproj", "{032D39F6-91E3-43DB-AB7E-0EEE0DCAECB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{4C0FBCC8-B586-4AF5-BAF2-10E894399B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C0FBCC8-B586-4AF5-BAF2-10E894399B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C0FBCC8-B586-4AF5-BAF2-10E894399B86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{032D39F6-91E3-43DB-AB7E-0EEE0DCAECB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{032D39F6-91E3-43DB-AB7E-0EEE0DCAECB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{032D39F6-91E3-43DB-AB7E-0EEE0DCAECB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{032D39F6-91E3-43DB-AB7E-0EEE0DCAECB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
