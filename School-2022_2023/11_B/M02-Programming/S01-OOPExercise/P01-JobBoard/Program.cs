@@ -1,12 +1,57 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 public class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        OnSiteJobOffer job = new OnSiteJobOffer("Mechanic", "Serviz", 2000, "Velingrad");
-        RemoteJobOffer job2 = new RemoteJobOffer("Mechanic", "Serviz", 2000, false);
-        Console.WriteLine(job2);
+        Controller controller = new Controller();
+        bool isRunning = true;
+        while (isRunning)
+        {
+            string[] splittedInput = Console.ReadLine().Split();
+
+            string command = splittedInput[0];
+            List<string> arguments = splittedInput
+                .Skip(0)
+                .ToList();
+
+            string result = "";
+           try
+            {
+                switch (command)
+                {
+                    case "AddCategory":
+                        result = controller.AddCategory(arguments);
+                        break;
+                    case "AddJobOffer":
+                        result = controller.AddJobOffer(arguments);
+                        break;
+                    case "GetAverageSalary":
+                        result = controller.GetAverageSalary(arguments);
+                        break;
+                    case "GetOffersAboveSalary":
+                        result = controller.GetOffersAboveSalary(arguments);
+                        break;
+                    case "GetOffersWithoutSalary":
+                        result = controller.GetOffersWithoutSalary(arguments);
+                        break;
+                    case "End":
+                        isRunning = false;
+                        break;
+                    default:
+                        result = "Invalid command";
+                        break;
+                }
+
+                if (!isRunning) { break; }
+                Console.WriteLine(result);
+           }
+           catch (Exception e)
+           {
+               Console.WriteLine(e.Message);
+           }
+        }
     }
 }
-

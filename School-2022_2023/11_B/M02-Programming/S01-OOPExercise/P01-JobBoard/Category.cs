@@ -33,7 +33,11 @@ public class Category
     }
     public double AverageSalary()
     {
-        return jobOffers.Average(x => x.Salary);
+        if (jobOffers.Any())
+        {
+            return jobOffers.Average(x => x.Salary);
+        }
+        return 0;
     }
     public List<JobOffer> GetOffersAboveSalary(double salary)
     {

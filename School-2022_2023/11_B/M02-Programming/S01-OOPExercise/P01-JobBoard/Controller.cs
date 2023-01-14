@@ -8,12 +8,11 @@ public class Controller
     public string AddCategory(List<string> args)
     {
         string categoryName = args[1];
-        Category category = categories[categoryName];
         if (categories.ContainsKey(categoryName))
         {
             return "This category already exist.";
         }
-        categories.Add(categoryName, category);
+        categories.Add(categoryName, new Category(categoryName));
         return $"Created Category {categoryName}!";
     }
 
@@ -32,7 +31,7 @@ public class Controller
                 jo = new OnSiteJobOffer(jobtitle, company, salary, city);
                 break;
             case "remote":
-                bool fullyRemote = bool.Parse(args[7]);
+                bool fullyRemote = bool.Parse(args[6].ToLower());
                 jo = new RemoteJobOffer(jobtitle, company, salary, fullyRemote);
                 break;
         }
@@ -72,7 +71,16 @@ public class Controller
 
     public string GetOffersWithoutSalary(List<string> args)
     {
-        //TODO: Add some logic here …
+        StringBuilder sb = new StringBuilder();
+        string name = args[1];
+        if (!categories.ContainsKey(name))
+        {
+            return "This category doesn't exist.";
+        }
+        categories[name].GetOffersWithoutSalary().ForEach(x => sb.AppendLine(x.ToString()));
+        return sb.ToString();
+       
+        
     }
 }
 

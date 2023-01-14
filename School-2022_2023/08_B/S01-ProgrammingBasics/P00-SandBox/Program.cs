@@ -9,6 +9,8 @@ internal class Program
 
         Console.WriteLine(8 / 2);
         Console.WriteLine(8 % 2);
+
+        var s = 123.0f;
     }
 }
 
