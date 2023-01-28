@@ -1,0 +1,20 @@
+﻿@model DetailsCarViewModel
+@{
+    ViewData["Title"] = "Car Details Page";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<div class="card" style="width: 18rem;">
+    <img src="@Model.ImageUrl" class="card-img-top" alt="@Model.Model">
+    <div class="card-body">
+        <h5 class="card-title">Brand: @Model.Brand</h5>
+        <h5 class="card-title">Model: @Model.Model</h5>
+        <h5 class="card-title">Date: @Model.ProductionDate</h5>
+        <h5 class="card-title">Available: @Model.IsAvailable</h5>
+        <h5 class="card-title">Color: @Model.Color</h5>
+        <a href="#" class="btn btn-outline-secondary">Edit</a>
+        <a href="#" class="btn btn-danger">Delete</a>
+        <a asp-controller="Cars" asp-action="Index" class="btn btn-dark">Back</a>
+    </div>
+</div>

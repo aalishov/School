@@ -1,0 +1,39 @@
+﻿@model CreateCarViewModel
+@{
+    ViewData["Title"] = "Create Car Page";
+}
+<h1>@ViewData["Title"]</h1>
+<form asp-controller="Cars" asp-action="Create" method="post">
+    <div>
+        <label asp-for="Brand"></label>
+        <input asp-for="Brand" />
+        <span asp-validation-for="Brand" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Model"></label>
+        <input asp-for="Model" />
+        <span asp-validation-for="Model" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Price"></label>
+        <input asp-for="Price" />
+        <span asp-validation-for="Price"class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="ProductionDate"></label>
+        <input asp-for="ProductionDate" />
+        <span asp-validation-for="ProductionDate" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Color"></label>
+        <select asp-for="Color"
+                asp-items="Html.GetEnumSelectList<P01_Cars.Data.Models.Color>()">
+        </select>
+    </div>
+    <div>
+        <label asp-for="ImageUrl"></label>
+        <input asp-for="ImageUrl" />
+        <span asp-validation-for="ImageUrl"></span>
+    </div>
+    <input type="submit" />
+</form>

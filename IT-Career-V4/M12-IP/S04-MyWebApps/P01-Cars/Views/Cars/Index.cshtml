@@ -1,0 +1,29 @@
+﻿@model IndexCarsViewModel
+@{
+    ViewData["Title"] = "Cars Page";
+}
+<h1>@ViewData["Title"]</h1>
+<a class="btn btn-primary" asp-controller="Cars" asp-action="Create">Add car</a>
+<table class="table table-success table-light table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model.Cars)
+        {
+            <tr>
+                <td>@car.Brand</td>
+                <td>@car.Model</td>
+                <td>
+                    <a class="btn btn-outline-primary" asp-controller="Cars" asp-action="Details" asp-route-id="@car.Id">Details</a>
+                    <a class="btn btn-outline-primary" href="">Edit</a>
+                    <a class="btn btn-outline-danger" href="">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
