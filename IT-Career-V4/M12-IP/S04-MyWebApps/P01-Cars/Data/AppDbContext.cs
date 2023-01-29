@@ -6,6 +6,7 @@
     public class AppDbContext : DbContext
     {
         public virtual DbSet<Car> Cars { get; set; }
+        public virtual DbSet<Owner> Owners { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

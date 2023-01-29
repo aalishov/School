@@ -1,0 +1,29 @@
+﻿@model EditCarViewModel
+@{
+    ViewData["Title"] = "Car Edit Page";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form asp-controller="Cars" asp-action="Edit" method="post">
+    <div class="card" >
+        <input type="hidden" asp-for="Id" />
+        <div class="border bg-light">
+            <h5>Brand: <span class="font-weight-light">@Model.Brand</span></h5>      
+        </div>
+        <div class="border bg-light">
+            <h5>Model: <span class="font-weight-light">@Model.Model</span></h5>
+        </div>
+        <div class="border bg-light">
+            <h5>Color: <span class="font-weight-light">@Model.Color</span></h5>
+        </div>
+        <div class="border bg-light">
+            <h5>Price: <input asp-for="Price" /></h5>
+        </div>
+        <div class="border bg-light">
+            <h5>Url: <input asp-for="ImageUrl" /></h5>
+        </div>
+        <input class="btn btn-outline-success" type="submit" />
+        <a asp-controller="Cars" asp-action="Index" class="btn btn-outline-primary">Back</a>
+        <img src="@Model.ImageUrl" class="card-img-top" alt="@Model.Model">
+    </div>
+</form>

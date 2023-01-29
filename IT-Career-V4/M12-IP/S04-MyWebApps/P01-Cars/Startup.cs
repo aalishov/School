@@ -27,6 +27,7 @@ namespace P01_Cars
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>();
             services.AddTransient<ICarsService, CarsService>();
+            services.AddTransient<IOwnersService, OwnersService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,7 +49,6 @@ namespace P01_Cars
             app.UseStaticFiles();
 
             app.UseRouting();
-
 
             app.UseAuthorization();
 

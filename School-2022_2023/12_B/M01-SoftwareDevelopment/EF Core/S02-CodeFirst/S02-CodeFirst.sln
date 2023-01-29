@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-OneToOne", "P01-OneToOne\P01-OneToOne.csproj", "{0FE6206A-6D49-453B-8FF8-CD8838510591}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-OneToOne", "P01-OneToOne\P01-OneToOne.csproj", "{0FE6206A-6D49-453B-8FF8-CD8838510591}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-OneToMany", "P02-OneToMany\P02-OneToMany.csproj", "{60752C61-9FC2-4F05-AE58-9A89EA53A267}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-OneToMany", "P02-OneToMany\P02-OneToMany.csproj", "{60752C61-9FC2-4F05-AE58-9A89EA53A267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-ManyToMany", "P03-ManyToMany\P03-ManyToMany.csproj", "{29CE942A-7AD2-4801-B046-82D6B0858CCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-Airport", "P04-Airport\P04-Airport.csproj", "{07A799B9-1535-4B9F-BB3E-1EC04018A588}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{60752C61-9FC2-4F05-AE58-9A89EA53A267}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60752C61-9FC2-4F05-AE58-9A89EA53A267}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60752C61-9FC2-4F05-AE58-9A89EA53A267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29CE942A-7AD2-4801-B046-82D6B0858CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29CE942A-7AD2-4801-B046-82D6B0858CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29CE942A-7AD2-4801-B046-82D6B0858CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29CE942A-7AD2-4801-B046-82D6B0858CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07A799B9-1535-4B9F-BB3E-1EC04018A588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07A799B9-1535-4B9F-BB3E-1EC04018A588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07A799B9-1535-4B9F-BB3E-1EC04018A588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07A799B9-1535-4B9F-BB3E-1EC04018A588}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

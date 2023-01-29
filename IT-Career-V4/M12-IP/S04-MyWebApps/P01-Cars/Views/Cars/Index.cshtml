@@ -3,6 +3,7 @@
     ViewData["Title"] = "Cars Page";
 }
 <h1>@ViewData["Title"]</h1>
+<p>Total cars: @Model.CarsCount</p>
 <a class="btn btn-primary" asp-controller="Cars" asp-action="Create">Add car</a>
 <table class="table table-success table-light table-bordered table-hover table-striped">
     <thead>
@@ -20,8 +21,8 @@
                 <td>@car.Model</td>
                 <td>
                     <a class="btn btn-outline-primary" asp-controller="Cars" asp-action="Details" asp-route-id="@car.Id">Details</a>
-                    <a class="btn btn-outline-primary" href="">Edit</a>
-                    <a class="btn btn-outline-danger" href="">Delete</a>
+                    <a class="btn btn-outline-primary" asp-controller="Cars" asp-action="Edit" asp-route-id="@car.Id">Edit</a>
+                    <a class="btn btn-outline-danger" asp-controller="Cars" asp-action="Delete" asp-route-id="@car.Id">Delete</a>
                 </td>
             </tr>
         }

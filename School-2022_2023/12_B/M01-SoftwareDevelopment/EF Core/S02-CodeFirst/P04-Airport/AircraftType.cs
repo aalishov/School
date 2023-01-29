@@ -5,16 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Model
+
+public class AircraftType
 {
     public int Id { get; set; }
+    [MaxLength(30)]
+    public string TypeName { get; set; }
 
-    [Required]
-    [MaxLength(50)]
-    public string Name { get; set; }
-
-    public int ManufacturerId { get; set; }
-
-    public virtual Manufacturer Manufacturer { get; set; }
+    public virtual ICollection<Aircraft> Aircrafts { get; set; } = new List<Aircraft>();
 }
 

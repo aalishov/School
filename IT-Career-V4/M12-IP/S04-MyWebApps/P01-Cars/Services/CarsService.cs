@@ -34,7 +34,7 @@ namespace P01_Cars.Services
 
         public async Task<DetailsCarViewModel> GetCarDetailsAsync(int id)
         {
-            Car car = await this.context.Cars.FindAsync(id);
+            Car car = await GetCarByIdAsync(id);
 
             if (car != null)
             {
@@ -43,6 +43,7 @@ namespace P01_Cars.Services
                     Id = car.Id,
                     Brand = car.Brand,
                     Model = car.Model,
+                    Price = $"{car.Price:f2}$",
                     ProductionDate = car.ProductionDate.ToShortDateString(),
                     IsAvailable = car.IsAvailable ? "Available" : "Not available",
                     Color = car.Color.ToString(),
@@ -51,6 +52,25 @@ namespace P01_Cars.Services
             }
             return null;
         }
+
+        public async Task<EditCarViewModel> GetCarToEditAsync(int id)
+        {
+            Car car = await GetCarByIdAsync(id);
+            if (car != null)
+            {
+                return new EditCarViewModel()
+                {
+                    Id = car.Id,
+                    Brand = car.Brand,
+                    Model = car.Model,
+                    Price = car.Price,
+                    Color = car.Color.ToString(),
+                    ImageUrl = car.ImageUrl
+                };
+            }
+            return null;
+        }
+
 
         public async Task CreateCarAsync(CreateCarViewModel inputModel)
         {
@@ -66,6 +86,27 @@ namespace P01_Cars.Services
             };
             await context.Cars.AddAsync(car);
             await context.SaveChangesAsync();
+        }
+
+        public async Task DeleteCarByIdAsync(int id)
+        {
+            var result = this.context.Cars.Remove(await GetCarByIdAsync(id));
+            await this.context.SaveChangesAsync();
+        }
+
+        public async Task UpdateCarDetailsAsync(EditCarViewModel model)
+        {
+            Car car = await GetCarByIdAsync(model.Id);
+            car.Price = model.Price;
+            car.ImageUrl = model.ImageUrl;
+            this.context.Cars.Update(car);
+            await this.context.SaveChangesAsync();
+        }
+
+
+        private async Task<Car> GetCarByIdAsync(int id)
+        {
+            return await this.context.Cars.FindAsync(id);
         }
     }
 }

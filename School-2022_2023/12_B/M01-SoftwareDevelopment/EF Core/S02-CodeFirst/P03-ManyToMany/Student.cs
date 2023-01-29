@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Model
+public class Student
 {
     public int Id { get; set; }
 
@@ -13,8 +13,8 @@ public class Model
     [MaxLength(50)]
     public string Name { get; set; }
 
-    public int ManufacturerId { get; set; }
+    public int Age { get; set; }
 
-    public virtual Manufacturer Manufacturer { get; set; }
+    public virtual ICollection<StudentExam> StudentsExams { get; set; } = new List<StudentExam>();
 }
 
