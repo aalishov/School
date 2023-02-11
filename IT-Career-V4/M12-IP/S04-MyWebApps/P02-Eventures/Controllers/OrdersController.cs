@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using P02_Eventures.Data;
 using P02_Eventures.Data.Models;
+using P02_Eventures.Services;
+using P02_Eventures.ViewModels.Events;
+using P02_Eventures.ViewModels.Orders;
 
 namespace P02_Eventures.Controllers
 {
@@ -15,10 +19,16 @@ namespace P02_Eventures.Controllers
     public class OrdersController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IEventsService eventsService;
+        private readonly UserManager<User> userManager;
+        private readonly IOrdersService ordersService;
 
-        public OrdersController(ApplicationDbContext context)
+        public OrdersController(ApplicationDbContext context, IEventsService eventsService, UserManager<User> userManager, IOrdersService ordersService)
         {
             _context = context;
+            this.eventsService = eventsService;
+            this.userManager = userManager;
+            this.ordersService = ordersService;
         }
 
         // GET: Orders
@@ -48,12 +58,22 @@ namespace P02_Eventures.Controllers
             return View(order);
         }
 
+
         // GET: Orders/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create(string eventId)
         {
-            ViewData["CustomerId"] = new SelectList(_context.Users, "Id", "Id");
-            ViewData["EventId"] = new SelectList(_context.Events, "Id", "Id");
-            return View();
+            DetailsEventViewModel @event=await this.eventsService.GetEventDetailsById(eventId);
+            int availableTickets = await this.eventsService.GetEventFreeTickets(eventId);
+            CreateOrderViewModel model = new CreateOrderViewModel()
+            {
+                EventId = eventId,
+                EventName= @event.Name,
+                EventPlace= @event.Place,
+                CustomerId = this.userManager.GetUserId(User),
+                AvailableTickets =availableTickets.ToString(),
+            };
+
+            return View(model);
         }
 
         // POST: Orders/Create
@@ -61,16 +81,13 @@ namespace P02_Eventures.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,OrderedOn,CustomerId,EventId,TicketsCount")] Order order)
+        public async Task<IActionResult> Create(CreateOrderViewModel order)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(order);
-                await _context.SaveChangesAsync();
+                await this.ordersService.CreateOrderAsync(order);
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CustomerId"] = new SelectList(_context.Users, "Id", "Id", order.CustomerId);
-            ViewData["EventId"] = new SelectList(_context.Events, "Id", "Id", order.EventId);
             return View(order);
         }
 

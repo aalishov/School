@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DemoCharArray", "P00-De
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DemoCompare", "P00-DemoCompare\P00-DemoCompare.csproj", "{B8FA5CB1-D541-4346-9E59-890C43F47492}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-MulSybol", "P05-MulSybol\P05-MulSybol.csproj", "{167B7157-2A80-4819-8C8F-31CE79295F10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-MulSybol", "P05-MulSybol\P05-MulSybol.csproj", "{167B7157-2A80-4819-8C8F-31CE79295F10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-Palindrom", "P06-Palindrom\P06-Palindrom.csproj", "{6D27B8A0-93F9-4D50-83B1-F95A6B280485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-StringBuilderDemo", "P00-StringBuilderDemo\P00-StringBuilderDemo.csproj", "{4F2ACC02-DED5-4F01-8B93-A9210667E70A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{167B7157-2A80-4819-8C8F-31CE79295F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{167B7157-2A80-4819-8C8F-31CE79295F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{167B7157-2A80-4819-8C8F-31CE79295F10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D27B8A0-93F9-4D50-83B1-F95A6B280485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D27B8A0-93F9-4D50-83B1-F95A6B280485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D27B8A0-93F9-4D50-83B1-F95A6B280485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D27B8A0-93F9-4D50-83B1-F95A6B280485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F2ACC02-DED5-4F01-8B93-A9210667E70A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F2ACC02-DED5-4F01-8B93-A9210667E70A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F2ACC02-DED5-4F01-8B93-A9210667E70A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F2ACC02-DED5-4F01-8B93-A9210667E70A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

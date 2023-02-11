@@ -9,11 +9,13 @@ using Microsoft.EntityFrameworkCore;
 using P02_Eventures.Data;
 using P02_Eventures.Data.Models;
 using P02_Eventures.Services;
+using P02_Eventures.ViewModels;
+using P02_Eventures.ViewModels.Events;
 
 namespace P02_Eventures.Controllers
 {
 
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin,Customer")]
     public class EventsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -26,9 +28,10 @@ namespace P02_Eventures.Controllers
         }
 
         // GET: Events
-        public async Task<IActionResult> Index(int page=1)
+        public async Task<IActionResult> Index(int page = 1)
         {
-            return View(await eventsService.GetEventsAsync(page));
+            var model = await eventsService.GetEventsAsync(page);
+            return View(model);
         }
 
         // GET: Events/Details/5
@@ -39,8 +42,8 @@ namespace P02_Eventures.Controllers
                 return NotFound();
             }
 
-            var @event = await _context.Events
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var @event = await eventsService.GetEventDetailsById(id);
+
             if (@event == null)
             {
                 return NotFound();
@@ -56,16 +59,20 @@ namespace P02_Eventures.Controllers
         }
 
         // POST: Events/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Place,Start,End,TotalTickets,PricePerTicket")] Event @event)
+        public async Task<IActionResult> Create(CreateEventViewModel @event)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(@event);
-                await _context.SaveChangesAsync();
+                try
+                {
+                    await this.eventsService.CreateEventAsync(@event);
+                }
+                catch (Exception ex)
+                {
+                    return RedirectToAction("Error", "Home", new ErrorViewModel() { ErrorMessage = ex.Message });
+                }
                 return RedirectToAction(nameof(Index));
             }
             return View(@event);
@@ -79,7 +86,7 @@ namespace P02_Eventures.Controllers
                 return NotFound();
             }
 
-            var @event = await _context.Events.FindAsync(id);
+            var @event = await this.eventsService.GetEventEditViewModelByIdAsync(id);
             if (@event == null)
             {
                 return NotFound();
@@ -92,30 +99,17 @@ namespace P02_Eventures.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("Id,Name,Place,Start,End,TotalTickets,PricePerTicket")] Event @event)
+        public async Task<IActionResult> Edit(EditEventViewModel @event)
         {
-            if (id != @event.Id)
-            {
-                return NotFound();
-            }
-
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(@event);
-                    await _context.SaveChangesAsync();
+                    await this.eventsService.UpdateEventAsync(@event);
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (Exception ex)
                 {
-                    if (!EventExists(@event.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    return RedirectToAction("Error", "Home", new ErrorViewModel() { ErrorMessage = ex.Message });
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -130,8 +124,7 @@ namespace P02_Eventures.Controllers
                 return NotFound();
             }
 
-            var @event = await _context.Events
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var @event = await this.eventsService.GetEventDetailsById(id);
             if (@event == null)
             {
                 return NotFound();
@@ -145,15 +138,15 @@ namespace P02_Eventures.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var @event = await _context.Events.FindAsync(id);
-            _context.Events.Remove(@event);
-            await _context.SaveChangesAsync();
+            try
+            {
+               await this.eventsService.DeleteEventByIdAsync(id);
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("Error", "Home", new ErrorViewModel() { ErrorMessage = ex.Message });
+            };
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool EventExists(string id)
-        {
-            return _context.Events.Any(e => e.Id == id);
         }
     }
 }

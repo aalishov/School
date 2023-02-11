@@ -40,6 +40,7 @@ namespace P02_Eventures
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddTransient<IEventsService, EventsService>();
+            services.AddTransient<IOrdersService, OrdersService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

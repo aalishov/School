@@ -1,4 +1,4 @@
-﻿@model P02_Eventures.Data.Models.Event
+﻿@model DetailsEventViewModel
 
 @{
     ViewData["Title"] = "Delete";
@@ -36,16 +36,16 @@
             @Html.DisplayFor(model => model.End)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TotalTickets)
+            @Html.DisplayNameFor(model => model.Tickets)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TotalTickets)
+            @Html.DisplayFor(model => model.Tickets)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PricePerTicket)
+            @Html.DisplayNameFor(model => model.Price)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PricePerTicket)
+            @Html.DisplayFor(model => model.Price)
         </dd>
     </dl>
     
