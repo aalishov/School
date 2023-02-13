@@ -9,6 +9,13 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<div>
+ <form asp-controller="Events" asp-action="Index" method="post">
+        <label>Place: </label>
+        <input type="text" name="place" value="@Model.PlaceFilter" />
+        <input type="submit" />
+ </form>
+</div>
 <table class="table">
     <thead>
         <tr>

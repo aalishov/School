@@ -1,0 +1,49 @@
+﻿@model UserOrdersViewModel
+
+@{
+    ViewData["Title"] = "My orders";
+}
+
+<h1>My orders</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Orders.FirstOrDefault().EventName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model =>model.Orders.FirstOrDefault().EventPlace)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Orders.FirstOrDefault().OrderPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Orders.FirstOrDefault().TicketsCount)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Orders)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EventName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EventPlace)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TicketsCount)
+                </td>
+                <td>
+                    <a asp-controller="Events" asp-action="Details" asp-route-id="@item.EventId">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

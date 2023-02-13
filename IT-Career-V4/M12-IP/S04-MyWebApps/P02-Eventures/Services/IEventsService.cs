@@ -7,7 +7,7 @@
         Task CreateEventAsync(CreateEventViewModel model);
         Task DeleteEventByIdAsync(string id);
         Task<EditEventViewModel> GetEventEditViewModelByIdAsync(string id);
-        Task<IndexEventsViewModel> GetEventsAsync(int page = 1, int count = 10);
+        Task<IndexEventsViewModel> GetEventsAsync(string place, int page = 1, int count = 10);
         Task<DetailsEventViewModel> GetEventDetailsById(string id);
         Task<int> GetEventFreeTickets(string eventId);
         Task UpdateEventAsync(EditEventViewModel model);

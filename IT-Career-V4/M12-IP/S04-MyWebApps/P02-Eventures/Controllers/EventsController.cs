@@ -28,9 +28,9 @@ namespace P02_Eventures.Controllers
         }
 
         // GET: Events
-        public async Task<IActionResult> Index(int page = 1)
+        public async Task<IActionResult> Index(string place = null, int page = 1)
         {
-            var model = await eventsService.GetEventsAsync(page);
+            var model = await eventsService.GetEventsAsync(place, page);
             return View(model);
         }
 
@@ -140,7 +140,7 @@ namespace P02_Eventures.Controllers
         {
             try
             {
-               await this.eventsService.DeleteEventByIdAsync(id);
+                await this.eventsService.DeleteEventByIdAsync(id);
             }
             catch (Exception ex)
             {

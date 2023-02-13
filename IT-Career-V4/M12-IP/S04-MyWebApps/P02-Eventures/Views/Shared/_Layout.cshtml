@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - P02_Eventures</title>
+    <title>@ViewData["Title"] - Eventures</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <script src="https://kit.fontawesome.com/aeac94fb02.js" crossorigin="anonymous"></script>
@@ -42,8 +42,12 @@
                                 Orders
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" asp-area="" asp-controller="Orders" asp-action="Index">All orders</a>
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <a class="dropdown-item" asp-area="" asp-controller="Orders" asp-action="Index">All orders</a>
+                                }
                                 <a class="dropdown-item" asp-area="" asp-controller="Orders" asp-action="Create">Create</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Orders" asp-action="UserIndex">My orders</a>
                             </div>
                         </li>
                     </ul>

@@ -32,10 +32,18 @@ namespace P02_Eventures.Controllers
         }
 
         // GET: Orders
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.Orders.Include(o => o.Customer).Include(o => o.Event);
             return View(await applicationDbContext.ToListAsync());
+        }
+
+        public async Task<IActionResult> UserIndex(int page=1, int count=10)
+        {
+            string userId = this.userManager.GetUserId(User);
+            UserOrdersViewModel model = await this.ordersService.GetUserOrdersByIdAsync(userId,page,count);
+            return View(model);
         }
 
         // GET: Orders/Details/5
@@ -62,15 +70,15 @@ namespace P02_Eventures.Controllers
         // GET: Orders/Create
         public async Task<IActionResult> Create(string eventId)
         {
-            DetailsEventViewModel @event=await this.eventsService.GetEventDetailsById(eventId);
+            DetailsEventViewModel @event = await this.eventsService.GetEventDetailsById(eventId);
             int availableTickets = await this.eventsService.GetEventFreeTickets(eventId);
             CreateOrderViewModel model = new CreateOrderViewModel()
             {
                 EventId = eventId,
-                EventName= @event.Name,
-                EventPlace= @event.Place,
+                EventName = @event.Name,
+                EventPlace = @event.Place,
                 CustomerId = this.userManager.GetUserId(User),
-                AvailableTickets =availableTickets.ToString(),
+                AvailableTickets = availableTickets.ToString(),
             };
 
             return View(model);
@@ -86,7 +94,7 @@ namespace P02_Eventures.Controllers
             if (ModelState.IsValid)
             {
                 await this.ordersService.CreateOrderAsync(order);
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(UserIndex));
             }
             return View(order);
         }

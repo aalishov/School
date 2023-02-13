@@ -63,17 +63,20 @@
 
         public async Task<int> GetEventFreeTickets(string eventId)
         {
-            Event e =await this.context.Events.FindAsync(eventId);
-            int result =e.TotalTickets-e.Orders.Sum(x=>x.TicketsCount);
+            Event e = await this.context.Events.FindAsync(eventId);
+            int result = e.TotalTickets - e.Orders.Sum(x => x.TicketsCount);
             return result;
         }
 
-        public async Task<IndexEventsViewModel> GetEventsAsync(int page = 1, int count = 10)
+        public async Task<IndexEventsViewModel> GetEventsAsync(string place, int page = 1, int count = 10)
         {
             await SeedEvents();
 
             IndexEventsViewModel model = new IndexEventsViewModel();
+            model.PlaceFilter = place;
             model.Events = await context.Events
+                .Where(e => e.Start > DateTime.Now.AddDays(1) && e.TotalTickets > (e.Orders.Any() ? e.Orders.Sum(x => x.TicketsCount) : 0))
+                .Where(e => place != null ? e.Place == place : e.Place == e.Place)
                 .Skip((page - 1) * count)
                 .Take(count)
                 .Select(x => new IndexEventViewModel()
@@ -87,7 +90,9 @@
                     Tickets = $"{x.Orders.Sum(x => x.TicketsCount)} / {x.TotalTickets}"
                 })
                 .ToListAsync();
-            model.ElementsCount = await context.Events.CountAsync();
+            model.ElementsCount = await context.Events
+                .Where(e => e.Start > DateTime.Now.AddDays(1) && e.TotalTickets > (e.Orders.Any() ? e.Orders.Sum(x => x.TicketsCount) : 0))
+                .Where(e => place != null ? e.Place == place : e.Place == e.Place).CountAsync();
             model.ItemsPerPage = count;
             model.PageNumber = page;
 
@@ -145,7 +150,7 @@
 
         private async Task SeedEvents()
         {
-            if (!await context.Events.AnyAsync())
+            if (await context.Events.CountAsync() < 1000)
             {
                 for (int i = 0; i < 50; i++)
                 {
@@ -153,8 +158,8 @@
                     {
                         Name = $"Event {i}",
                         Place = $"Place {i}",
-                        Start = DateTime.UtcNow,
-                        End = DateTime.UtcNow.AddDays(1),
+                        Start = DateTime.UtcNow.AddDays(i),
+                        End = DateTime.UtcNow.AddDays(i).AddHours(i),
                         PricePerTicket = 10 + i * 2,
                         TotalTickets = 100,
                     });
