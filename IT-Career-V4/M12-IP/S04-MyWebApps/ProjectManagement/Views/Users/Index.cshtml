@@ -1,0 +1,28 @@
+﻿@model ProjectManagement.ViewModels.Users.IndexVM
+@using ProjectManagement.Entities
+@{
+    this.Layout = "/Views/Shared/_Site.cshtml";
+    ViewData["title"] = "USERS";
+}
+<a href="/Users/Create">Create user</a>
+<div class="grid">
+    <div class="row">
+        <div class="col-1">Username</div>
+        <div class="col-2">First Name</div>
+        <div class="col-2">Last Name</div>
+        <div class="col-2"></div>
+    </div>
+@foreach(User item in Model.Items)
+{
+    <div class="row">
+        <div class="col-1">@item.Username</div>
+        <div class="col-2">@item.FirstName</div>
+        <div class="col-2">@item.LastName</div>
+        <div class="col-2">
+            <a href="/Users/Edit?id=@item.Id">edit</a>
+            <a href="/Users/Delete?id=@item.Id"
+               onclick="return confirm('Delete Record?');">delete</a>
+        </div>
+    </div>
+}
+</div>

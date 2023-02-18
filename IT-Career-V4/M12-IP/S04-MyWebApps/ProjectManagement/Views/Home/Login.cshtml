@@ -1,0 +1,43 @@
+﻿@model ProjectManagement.ViewModels.Home.LoginVM 
+@{
+    this.Layout = "/Views/Shared/_Site.cshtml";
+    ViewData["title"] = "LOGIN";
+}
+
+<fieldset>
+    <legend>LOGIN</legend>
+    <form action="/Home/Login" method="post">
+        <div class="grid">
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m => m.Username)</div>
+                <div class="col-2">
+                    @Html.TextBoxFor(m => m.Username)
+                </div>
+                <div class="col-2">
+                    @Html.ValidationMessageFor(m => m.Username)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m => m.Password)</div>
+                <div class="col-2">
+                    @Html.PasswordFor(m => m.Password)
+                </div>
+                <div class="col-2">
+                    @Html.ValidationMessageFor(m => m.Password)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    @Html.ValidationMessage("authError", new { @style = "right" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <input type="submit" class="right" value="Login" />
+                </div>
+            </div>
+        </div>
+    </form>
+</fieldset>

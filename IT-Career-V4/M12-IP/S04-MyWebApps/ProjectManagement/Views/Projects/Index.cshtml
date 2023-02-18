@@ -1,0 +1,25 @@
+﻿@model ProjectManagement.ViewModels.Projects.IndexVM
+@using ProjectManagement.Entities
+@{
+    this.Layout = "/Views/Shared/_Site.cshtml";
+    ViewData["title"] = "PROJECTS";
+}
+
+<a href="/Projects/Create">NEW</a>
+<div class="grid">
+    <div class="row">
+        <div class="col-3">Title</div>
+        <div class="col-2"></div>
+    </div>
+    @foreach (Project item in Model.Items)
+    {
+        <div class="row">
+            <div class="col-3">@item.Title</div>
+            <div class="col-2">
+                <a href="/Projects/Edit?id=@item.Id">edit</a>
+                <a href="/Projects/Delete?id=@item.Id"
+                   onclick="return confirm('Delete Record?');">delete</a>
+            </div>
+        </div>
+    }
+</div>

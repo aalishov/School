@@ -1,0 +1,38 @@
+﻿@using ProjectManagement.Entities;
+@using ProjectManagement.ExtentionMethods;
+@{ 
+    User loggedUser = this.ViewContext.HttpContext.Session.GetObject<User>("loggedUser");
+}
+<html>
+<head>
+    <title>@ViewData["title"]</title>
+    <link href="~/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container header">
+        <h1 class="title">Project Manager</h1>
+        <div class="welcomeMsg">
+            <span>Hello,
+            @(loggedUser == null ? "Annonymous" : loggedUser.Username)</span>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="menu">
+            <li><a href="/Home/Index">HOME</a></li>
+        @if (loggedUser != null)
+        {
+            <li><a href="/Users/Index">USERS</a></li>
+            <li><a href="/Projects/Index">PROJECTS</a></li>
+            <li><a href="/Home/Logout">LOGOUT</a></li>
+        }
+        else
+        {
+            <li><a href="/Home/Login">LOGIN</a></li>
+        }
+        </ul>
+    </div>
+    <div class="container">
+        @RenderBody()
+    </div>
+</body>
+</html>
