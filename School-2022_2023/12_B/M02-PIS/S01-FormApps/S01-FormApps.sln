@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-AnimalsCatalog", "P01-AnimalsCatalog\P01-AnimalsCatalog.csproj", "{20DD0E74-7F6B-487F-A3AF-6338E9C3E1E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-PizzaApp", "P02-PizzaApp\P02-PizzaApp.csproj", "{AE864525-5616-4DED-A684-5038D618AE06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-PizzaApp", "P02-PizzaApp\P02-PizzaApp.csproj", "{AE864525-5616-4DED-A684-5038D618AE06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-Students", "P03-Students\P03-Students.csproj", "{6DDC976E-6038-490A-9198-3F26BF421A5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{AE864525-5616-4DED-A684-5038D618AE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE864525-5616-4DED-A684-5038D618AE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE864525-5616-4DED-A684-5038D618AE06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DDC976E-6038-490A-9198-3F26BF421A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DDC976E-6038-490A-9198-3F26BF421A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DDC976E-6038-490A-9198-3F26BF421A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DDC976E-6038-490A-9198-3F26BF421A5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,6 +15,7 @@
             var json = File.ReadAllText("imot.bg-raw-data-2020-07-23.json");
             var properties = JsonSerializer.Deserialize<IEnumerable<JosnProperty>>(json);
             var db = new ApplicationDbContext();
+            
             PropertiesService service = new PropertiesService(db);
 
             foreach (var property in properties)

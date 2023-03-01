@@ -15,6 +15,7 @@ namespace RealEstates.Services
         public PropertiesService(ApplicationDbContext db)
         {
             this.db = db;
+            db.Database.EnsureCreated();
         }
 
         public bool DeleteProperty(int id)

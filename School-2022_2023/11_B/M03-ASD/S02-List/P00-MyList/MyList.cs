@@ -1,10 +1,84 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 public static class MyList
 {
+    public static List<int> CombinedList(List<int> firstList, List<int> secondList)
+    {
+        List <int> combinedList = new List <int>();
+        combinedList.AddRange(firstList);
+        for (int i = secondList.Count - 1; i >= 0; i--)
+        {
+            combinedList.Add(secondList[i]);
+        }
+        return combinedList;
+
+    }
+    public static int CountBiggerThanAbsolute(List<int> nums)
+    {
+        int sum = 0;
+        int count = 0;
+        for (int i = 0; i < nums.Count; i++)
+        {
+            sum += nums[i];
+        }
+        double average = sum / nums.Count;
+        for (int i = 0; i < nums.Count; i++)
+        {
+            int element = nums[i];
+            if (element < 0)
+            {
+                element *= -1;
+            }
+            if (element > average)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+    public static int SumsDivided(List<int> numbers)
+    {
+        int sum = 0;
+        foreach (int number in numbers)
+        {
+            if (number > 15 && number % 3 == 0)
+            {
+                sum += number;
+            }
+        }
+        return sum;
+    }
+    public static List<int> ReturnListGreaterThan15AndDividedBy3(List<int> numbers)
+    {
+        List<int> result = new List<int>();
+        foreach (int number in numbers)
+        {
+            if (number > 15 && number % 3 == 0)
+            {
+                result.Add(number);
+            }
+        }
+        return result;
+    }
+    public static int GetSumAbsoluteElement(List<int> nums)
+    {
+        int absoluteElement = 0;
+        for (int i = 0; i < nums.Count; i++)
+        {
+            if (nums[i] < 0)
+            {
+                absoluteElement += (nums[i] * -1);
+            }
+            else
+            {
+                absoluteElement += nums[i];
+            }
+
+        }
+        return absoluteElement;
+    }
     public static int GetMinElement(List<int> nums)
     {
         int minNum = int.MaxValue;
@@ -69,13 +143,34 @@ public static class MyList
     public static List<bool> RandomBoolList(int n)
     {
         List<bool> bools = new List<bool>();
-        Random random=new Random();
+        Random random = new Random();
         for (int i = 0; i < n; i++)
         {
             bools.Add(random.Next(0, 2) == 0 ? false : true);
         }
         return bools;
     }
-    
+
+    public static int GetSecondLargest(List<int> nums)
+    {
+        int largest = int.MinValue;
+        int secondLargest = int.MinValue;
+        for (int i = 0; i < nums.Count; i++)
+        {
+            if (nums[i] > largest)
+            {
+                largest = nums[i];
+            }
+        }
+        for (int i = 0; i < nums.Count; i++)
+        {
+            if (nums[i] > secondLargest && nums[i] < largest)
+            {
+                secondLargest = nums[i];
+            }
+        }
+        return secondLargest;
+    }
+
 }
 

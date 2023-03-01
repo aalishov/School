@@ -6,6 +6,7 @@
         private AppDbContext context = new AppDbContext();
         public MainService()
         {
+            context.Database.EnsureCreated();
             this.Users = new UsersService(context);
             this.Scooters = new ScootersService(context);
             this.Rents = new RentsService(context, this.Users, this.Scooters);

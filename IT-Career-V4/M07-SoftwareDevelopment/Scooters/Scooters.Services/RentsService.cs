@@ -17,6 +17,7 @@
             this.context = context;
             this.users = users;
             this.scooters = scooters;
+            context.Database.EnsureCreated();
         }
 
         public void Complete(int rentId, string username)
