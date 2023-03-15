@@ -1,0 +1,22 @@
+body {
+    zoom: 1.3;
+    width: 70%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav>ul>li {
+    list-style: none;
+}
+
+nav>ul>li>a {
+    color: rgb(214, 116, 114);
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+}
+
