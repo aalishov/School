@@ -1,0 +1,13 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+
+tbody{
+    text-align: left;
+}
+
+.number{
+    padding-right: 50px;
+}

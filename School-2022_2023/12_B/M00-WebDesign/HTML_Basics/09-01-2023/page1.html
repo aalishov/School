@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form >
+        <div>
+            <label>First name: </label>
+            <input type="text" name="first-name" value="">
+        </div>
+        <div>
+            <label>Last name: </label>
+            <input type="text" name="last-name" value="">
+        </div>
+        <div>
+            <label>Password: </label>
+            <input type="password" name="password" value="">
+        </div>
+        <div>
+            <label>Comments</label>
+            <textarea name="comments" id="comments" cols="30" rows="3"></textarea>
+        </div>
+        <div>
+            <label for="">Gender</label>
+            <select name="gender" id="">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>Other details</legend>
+            <div>
+                <label >City: </label>
+                <input type="radio" name="city" value="Plovdiv">Plovdiv
+                <input type="radio" name="city" value="Sofia">Sofia
+                <input type="radio" name="city" value="Varna">Varna
+                <input type="radio" name="city" value="Velingrad">Velingrad
+            </div>
+            <div>
+                <label for="">Interests: </label>
+                <input type="checkbox" name="" id="">Art
+                <input type="checkbox" name="" id="">Science
+                <input type="checkbox" name="" id="">Math
+            </div>
+            <div>
+                <label for="">Picture: </label>
+                <input type="file">
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+            <button onclick="addDate()">Click me!</button>
+        </div>
+    </form>
+</body>
+
+</html>
+
+<script>
+    function addDate() {
+        document.getElementById("comments").innerHTML=Date();
+        event.preventDefault();
+      // alert("This is an alert dialog box");
+    }
+</script>

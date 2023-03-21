@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+
+body {
+    zoom: 1.5;
+    margin: auto;
+    width: 80%;
+    background-color: beige;
+}
+header>nav{
+    background-color: #234465;
+}
+
+header>nav>ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 ;
+}
+
+header>nav>ul>li {
+
+    list-style: none;
+    padding: 10px 0px 10px 0px;
+}
+
+header>nav>ul>li>a {
+    font-family: 'Rubik Gemstones', cursive;
+    margin: 0px 15px 0px 15px;
+    padding: 10px;
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+}
+
+header>nav>ul>li>a:hover {
+    font-family: 'Rubik Gemstones', cursive;
+    color:  #234465;
+    background-color: white;
+    font-size: larger;
+    text-decoration: none;
+}

@@ -1,0 +1,36 @@
+    body{
+    font-family:"Lato", sans-serif;
+    zoom: 2;
+    }
+h1{
+    Margin: bottom 0;
+    Padding: 10px;
+    text-align:  center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+img{
+    Width: 200px;
+    border-radius: 50%;
+    Margin: 15px;
+    Border: 5px dotted #8b603d;
+    float: left;
+}
+p{
+    size:  14px;
+    text-align: justify;
+}
+div{
+    text-align: center;
+    width: 600px; 
+    margin: 0 auto;
+    
+}
+section{
+    Width: 550px;
+    border-radius: 15px;
+    Padding: 25px;
+    Background-color: #fafafa;
+    box-shadow: 10px 11px 35px -14px rgba(0,0,0,0.54);
+
+}

@@ -5,9 +5,11 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DemoLoops", "P00-DemoLoops\P00-DemoLoops.csproj", "{1114E62C-10DC-4E8F-B9EB-2C9C811DA3EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-MaxNumber", "P05-MaxNumber\P05-MaxNumber.csproj", "{EBD8F61C-B18A-4BB3-8A2B-1D2B7EE02EA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-MaxNumber", "P05-MaxNumber\P05-MaxNumber.csproj", "{EBD8F61C-B18A-4BB3-8A2B-1D2B7EE02EA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-LeftRightSum", "P07-LeftRightSum\P07-LeftRightSum.csproj", "{44D301DF-8E7C-4FA0-971E-2AD2E9CC889F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-LeftRightSum", "P07-LeftRightSum\P07-LeftRightSum.csproj", "{44D301DF-8E7C-4FA0-971E-2AD2E9CC889F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-EvenOddSum", "P08-EvenOddSum\P08-EvenOddSum.csproj", "{A60A8739-0AD9-4956-9A79-5FBE6D8A0297}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{44D301DF-8E7C-4FA0-971E-2AD2E9CC889F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44D301DF-8E7C-4FA0-971E-2AD2E9CC889F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44D301DF-8E7C-4FA0-971E-2AD2E9CC889F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A60A8739-0AD9-4956-9A79-5FBE6D8A0297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A60A8739-0AD9-4956-9A79-5FBE6D8A0297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A60A8739-0AD9-4956-9A79-5FBE6D8A0297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A60A8739-0AD9-4956-9A79-5FBE6D8A0297}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

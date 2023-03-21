@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Rubik+Gemstones&display=swap');
+body{
+    background-color: bisque;
+    zoom: 2.2;
+}
+h2{
+    font-family: 'Rubik Bubbles', cursive;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: right;
+}

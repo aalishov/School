@@ -1,0 +1,19 @@
+body{
+    zoom: 2;
+    background-color: aquamarine;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: red;
+}
+#p1{
+    padding: 5px 10px 5px 20px;
+    text-decoration: underline;
+    border: 2px solid blue;
+    border-radius: 20px;
+}
+#p2{
+    text-decoration: line-through;
+    border: 3px inset gray;
+}
