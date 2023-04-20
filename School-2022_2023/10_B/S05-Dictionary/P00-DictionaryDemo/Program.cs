@@ -1,12 +1,32 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace P00_DictionaryDemo
+public class Program
 {
-    internal class Program
+    public static void Main()
     {
-        static void Main(string[] args)
+        Dictionary<string, int> arr = new Dictionary<string, int>();
+        arr.Add("Ivan", 3);
+        arr.Add("Denis", 4);
+        arr.Add("Jane", 0);
+        var r = arr.Remove("Denis");
+        Console.WriteLine(r);
+
+        string name = Console.ReadLine();
+        if (arr.ContainsKey(name))
         {
-            Console.WriteLine("Hello World!");
+            arr[name] += 5;
         }
+        else
+        {
+            arr.Add(name, 5);
+        }
+
+
+        Console.WriteLine($"Count: {arr.Count}");
+        Console.WriteLine($"Key: {string.Join(", ", arr.Keys)}");
+        Console.WriteLine($"Value: {string.Join(", ", arr.Values)}");
+
     }
 }
+

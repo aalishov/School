@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-Border", "P05-Border\P0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-RombusFromStars", "P06-RombusFromStars\P06-RombusFromStars.csproj", "{AE5A3643-96C5-4344-B924-417A2F52289E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-Tree", "P07-Tree\P07-Tree.csproj", "{1088A734-6F81-4F4D-A95E-65CBF5A16D29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-House", "P09-House\P09-House.csproj", "{B7DF7653-3867-4401-A0E3-2A4A9CA59390}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{AE5A3643-96C5-4344-B924-417A2F52289E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE5A3643-96C5-4344-B924-417A2F52289E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE5A3643-96C5-4344-B924-417A2F52289E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1088A734-6F81-4F4D-A95E-65CBF5A16D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1088A734-6F81-4F4D-A95E-65CBF5A16D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1088A734-6F81-4F4D-A95E-65CBF5A16D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1088A734-6F81-4F4D-A95E-65CBF5A16D29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7DF7653-3867-4401-A0E3-2A4A9CA59390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7DF7653-3867-4401-A0E3-2A4A9CA59390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7DF7653-3867-4401-A0E3-2A4A9CA59390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7DF7653-3867-4401-A0E3-2A4A9CA59390}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-MaxNumber", "P05-MaxNum
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-LeftRightSum", "P07-LeftRightSum\P07-LeftRightSum.csproj", "{44D301DF-8E7C-4FA0-971E-2AD2E9CC889F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-EvenOddSum", "P08-EvenOddSum\P08-EvenOddSum.csproj", "{A60A8739-0AD9-4956-9A79-5FBE6D8A0297}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08-EvenOddSum", "P08-EvenOddSum\P08-EvenOddSum.csproj", "{A60A8739-0AD9-4956-9A79-5FBE6D8A0297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-NumsSequance", "P05-NumsSequance\P05-NumsSequance.csproj", "{A9C3EEDC-405E-4B85-8A45-E3E2FE8BCAE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A60A8739-0AD9-4956-9A79-5FBE6D8A0297}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A60A8739-0AD9-4956-9A79-5FBE6D8A0297}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A60A8739-0AD9-4956-9A79-5FBE6D8A0297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9C3EEDC-405E-4B85-8A45-E3E2FE8BCAE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C3EEDC-405E-4B85-8A45-E3E2FE8BCAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C3EEDC-405E-4B85-8A45-E3E2FE8BCAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C3EEDC-405E-4B85-8A45-E3E2FE8BCAE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
