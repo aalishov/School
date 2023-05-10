@@ -9,7 +9,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="StationaryPhone">
-    <Position X="6.5" Y="3.5" Width="1.5" />
+    <Position X="6.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StationaryPhone.cs</FileName>
@@ -17,14 +17,14 @@
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="IBrowsing">
-    <Position X="5.75" Y="0.75" Width="1.5" />
+    <Position X="4" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
       <FileName>IBrowsing.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ICalling">
-    <Position X="7.5" Y="0.75" Width="1.5" />
+    <Position X="5.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ICalling.cs</FileName>

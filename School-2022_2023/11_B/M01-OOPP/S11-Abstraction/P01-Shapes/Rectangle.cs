@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 public class Rectangle : IDrawable
 {
+    
     public Rectangle(int width, int height)
     {
         this.Width = width;
