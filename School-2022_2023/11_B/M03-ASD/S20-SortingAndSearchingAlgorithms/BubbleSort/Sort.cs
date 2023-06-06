@@ -56,7 +56,9 @@ namespace BubbleSort
         /// <summary>
         /// Сортиране по метода мехурчето = O(N^2)
         /// </summary>
-          for (int i = 0; i < elements.Length; i++)
+        public static void Bubble<T>(T[] elements) where T : IComparable
+        {
+            for (int i = 0; i < elements.Length; i++)
             {
                 for (int j = 0; j < elements.Length-1; j++)
                 {
@@ -66,5 +68,6 @@ namespace BubbleSort
                     }
                 }
             }
+        }
     }
 }

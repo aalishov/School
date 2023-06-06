@@ -5,38 +5,89 @@ public class Program
 {
     public static void Main()
     {
-        Console.WriteLine(Calculate3(5));
-        Console.WriteLine(Calculate3(-1));
-        Console.WriteLine(Calculate3(2));
+        while (true)
+        {
+            Console.Write("Enter command: ");
+            string cmd = Console.ReadLine();
+            int result = 0;
+            switch (cmd)
+            {
+                case "1":
+                    Console.Write("Enter x: ");
+                    int x = int.Parse(Console.ReadLine());
+                    result= Calculate1(x);
+                    break;
+                case "2":
+                    Console.Write("Enter b: ");
+                    int b = int.Parse(Console.ReadLine());
+                    result= Calculate2(b);
+                    break;
+                case "3":
+                    Console.Write("Enter x: ");
+                     x = int.Parse(Console.ReadLine());
+                    result = Calculate3(x);
+                    break;
+                case "10":
+                    Console.Write("Enter x: ");
+                     x = int.Parse(Console.ReadLine());
+                    Console.Write("Enter q: ");
+                    int q = int.Parse(Console.ReadLine());
+                    Console.Write("Enter l: ");
+                    int l = int.Parse(Console.ReadLine());
+                    Console.Write("Enter z: ");
+                    int z = int.Parse(Console.ReadLine());
+                    result = Calculate10(x,q,l,z);
+                    break;
+                case "end":
+                    Environment.ExitCode = 0;
+                    break;
+            }
+            Console.WriteLine($"Result Calculate{cmd}: {result}");
+        }
+    }
+    public static int Calculate10(int x, int q, int l, int z)
+    {
+        if (x > 4)
+        {
+            return 2 * x + 5 * q;
+        }
+        else if (x <= 0)
+        {
+            return x * x + 2 * z;
+        }
+        else
+        {
+            return 3 * x * x * x + q;
+        }
     }
     public static int Calculate3(int x)
     {
-        if (x>4)
+        if (x > 4)
         {
-            return 2*x + 3;
+            return 2 * x + 3;
         }
-        else if (x<=1)
+        else if (x <= 1)
         {
-            return x * x + 4 * x; 
+            return x * x + 4 * x;
         }
         else { return 3 * x * x; }
     }
     public static string RandomPass()
     {
-        Random random= new Random();
-       int a=  random.Next(9);
-       int b= random.Next(9);
-       int c= random.Next(9);
-       int d= random.Next(9);
+        Random random = new Random();
+        int a = random.Next(9);
+        int b = random.Next(9);
+        int c = random.Next(9);
+        int d = random.Next(9);
         return $"{a}{b}{c}{d}";
     }
-    public static string RepeatString(string s, int n) 
+    public static string RepeatString(string s, int n)
     {
         string result = "";
         for (int i = 0; i < n; i++)
         {
             result += s;
-            
+
 
         }
         return result;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BubbleSort
+namespace SelectionSort
 {
     public static class Help
     {
@@ -54,17 +54,23 @@ namespace BubbleSort
         }
 
         /// <summary>
-        /// Сортиране по метода мехурчето = O(N^2)
+        /// Сортиране по метода на пряката селекция = O(N^2)
         /// </summary>
-          for (int i = 0; i < elements.Length; i++)
+        public static void Selection<T>(T[] elements) where T : IComparable
+        {
+            for (int i = 0; i < elements.Length; i++)
             {
-                for (int j = 0; j < elements.Length-1; j++)
+                int min = i;
+                for (int j = i + 1; j < elements.Length; j++)
                 {
-                    if (Help.IsLess(elements[j], elements[j+1]))
+                    if (Help.IsLess(elements[j], elements[min]))
                     {
-                        Help.Swap(elements, j, j+1);
+                        min = j;
                     }
                 }
+                Help.Swap(elements, min, i);
             }
+        }
+        
     }
 }
