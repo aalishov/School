@@ -11,7 +11,7 @@ namespace BubbleSort
         static void Main(string[] args)
         {
             // Масив
-            var numbers = new int[] { 9, -9, 8, -8, 7, -7, 6, -6, 5, -5, 4, -4, 3, -3, 2, -2, 1, -1, 0 };
+            var numbers = new int[] { 9,  2, -2, 1, -1, 0 };
           
 
             //// Печат
@@ -24,10 +24,10 @@ namespace BubbleSort
             //Console.WriteLine(string.Join(" ", numbers));
 
             //// Сортиране по метода мехурчето = O(N^2)
-            //Sort.Bubble(numbers);
+            Sort.Bubble2(numbers);
 
             //// Печат
-            //Console.WriteLine(string.Join(" ", numbers));
+            Console.WriteLine(string.Join(" ", numbers));
         }
     }
 }

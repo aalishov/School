@@ -52,19 +52,33 @@ namespace BubbleSort
                 Help.Swap(elements, i, r);
             }
         }
-
-        /// <summary>
-        /// Сортиране по метода мехурчето = O(N^2)
-        /// </summary>
         public static void Bubble<T>(T[] elements) where T : IComparable
         {
             for (int i = 0; i < elements.Length; i++)
             {
-                for (int j = 0; j < elements.Length-1; j++)
+                for (int j = 0; j < elements.Length; j++)
                 {
-                    if (Help.IsLess(elements[j], elements[j+1]))
+                    if (Help.IsLess(elements[i], elements[j]))
                     {
-                        Help.Swap(elements, j, j+1);
+                        Help.Swap(elements, i, j);
+                    }
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// Сортиране по метода мехурчето - оптимизиран вариант
+        /// </summary>
+        public static void Bubble2<T>(T[] elements) where T : IComparable
+        {
+            for (int i = 0; i < elements.Length; i++)
+            {
+                for (int j = 0; j < elements.Length-1-i; j++)
+                {
+                    if (Help.IsLess(elements[j+1], elements[j]))
+                    {
+                        Help.Swap(elements, j+1, j);
                     }
                 }
             }
