@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 public class MyList<T> : IEnumerable<T>
 {
@@ -74,6 +75,8 @@ public class MyList<T> : IEnumerable<T>
         items = new T[Capacity];
         Count = 0;
     }
+
+
 
     public IEnumerator<T> GetEnumerator()
     {
