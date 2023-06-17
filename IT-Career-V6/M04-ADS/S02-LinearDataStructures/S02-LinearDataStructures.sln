@@ -9,13 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-MyCustomArray", "P02-My
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-DoublyLinkedList", "P03-DoublyLinkedList\P03-DoublyLinkedList.csproj", "{6C990C08-4C9D-4C96-AE57-81405A49E914}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-Stack", "P04-Stack\P04-Stack.csproj", "{E00BC0A3-AB86-428A-93E8-59D66EB29102}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-Stack", "P04-Stack\P04-Stack.csproj", "{E00BC0A3-AB86-428A-93E8-59D66EB29102}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-Queue", "P05-Queue\P05-Queue.csproj", "{AE78FB11-5CDB-4B15-9873-7A52F5655333}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-Queue", "P05-Queue\P05-Queue.csproj", "{AE78FB11-5CDB-4B15-9873-7A52F5655333}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-ReversedList", "P06-ReversedList\P06-ReversedList.csproj", "{AD37B3E6-224E-4C53-A85B-8AF5862CDF60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-ReversedList", "P06-ReversedList\P06-ReversedList.csproj", "{AD37B3E6-224E-4C53-A85B-8AF5862CDF60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-HashSet", "P07-HashSet\P07-HashSet.csproj", "{F639945D-0E2A-4EDF-A26B-750B2F20B27C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-HashSet", "P07-HashSet\P07-HashSet.csproj", "{F639945D-0E2A-4EDF-A26B-750B2F20B27C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-ApocalypsePreparation", "P00-ApocalypsePreparation\P00-ApocalypsePreparation.csproj", "{1776EE90-4CF6-42D7-A70A-871B7F1C6896}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{F639945D-0E2A-4EDF-A26B-750B2F20B27C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F639945D-0E2A-4EDF-A26B-750B2F20B27C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F639945D-0E2A-4EDF-A26B-750B2F20B27C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1776EE90-4CF6-42D7-A70A-871B7F1C6896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1776EE90-4CF6-42D7-A70A-871B7F1C6896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1776EE90-4CF6-42D7-A70A-871B7F1C6896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1776EE90-4CF6-42D7-A70A-871B7F1C6896}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
