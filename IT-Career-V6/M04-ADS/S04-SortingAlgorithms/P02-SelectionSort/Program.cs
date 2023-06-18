@@ -3,7 +3,7 @@
 
 public class Program
 {
-    public static void Main()
+ public   static void Main()
     {
         int[] nums = { 65, 7, 15, 0, -4, 23, 47, 25, 86, 0, 154, 23, -74, 25, 65, 47 };
 
@@ -11,22 +11,24 @@ public class Program
 
         for (int i = 0; i < nums.Length; i++)
         {
-            for (int j = 0; j < nums.Length - 1 - i; j++)
+            int min = i;
+            for (int j = i; j < nums.Length; j++)
             {
-                if (nums[j] > nums[j + 1])
+                if (nums[min] > nums[j])
                 {
-                    int temp = nums[j + 1];
-                    nums[j + 1] = nums[j];
-                    nums[j] = temp;
+                    min = j;
                     count++;
                 }
                 count++;
             }
+            int temp = nums[i];
+            nums[i] = nums[min];
+            nums[min] = temp;
             count++;
         }
 
         Console.WriteLine($"Iteration: {count}");
-        Console.WriteLine(string.Join(", ", nums));
+        Console.WriteLine(string.Join(", ",nums));
     }
 }
 

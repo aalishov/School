@@ -4,35 +4,87 @@ using System.Linq;
 
 public class Program
 {
+    private static char[][] arr;
+    private static int indexRowM;
+    private static int indexColM;
     public static void Main()
     {
-        byte[] nums =new byte [2_000_000];
+        int[] size = Console.ReadLine().Split(",").Select(int.Parse).ToArray();
+        arr = new char[size[0]][];
 
-        for (int i = 0; i < nums.Length; i++)
+        ReadField();
+        Console.WriteLine($"Mice position: {indexRowM}, {indexColM}");
+        while (true)
         {
-            nums[i] = (byte)new Random().Next(0, 31);
-        }
+            string cmd = Console.ReadLine();
 
-        for (int i = 0; i < nums.Length; i++)
-        {
-            Console.WriteLine(nums[i]);
-        }
-    }
-
-    public int GetSumEven(int[] array) // 9n+3, 2, 4, 6
-    {
-        int sum = 0;
-
-        for (int i = 0; i < array.Length; i++)
-        {
-
-            if (array[i] % 2 == 0)
+            switch (cmd)
             {
-                sum += array[i];
+                case "right":
+                    Right();
+                    break;
+                case "left":
+                    Left();
+                    break;
+                case "end":
+                    Environment.Exit(0);
+                    break;
             }
-
+            Console.WriteLine();
+            PrintField();
         }
-        return sum;
+
+
+    }
+    private static void Right()
+    {
+        arr[indexRowM][indexColM] = '*';
+        if (indexColM + 1 < arr[indexRowM].Length)
+        {
+            indexColM++;
+        }
+        else
+        {
+            indexColM = 0;
+        }
+        arr[indexRowM][indexColM] = 'M';
+    }
+    private static void Left()
+    {
+        arr[indexRowM][indexColM] = '*';
+        if (indexColM - 1 >= 0)
+        {
+            indexColM--;
+        }
+        else
+        {
+            indexColM = arr[indexRowM].Length-1;
+        }
+        arr[indexRowM][indexColM] = 'M';
     }
 
+    private static void PrintField()
+    {
+        for (int i = 0; i < arr.Length; i++)
+        {
+            Console.WriteLine(string.Join(" ", arr[i]));
+        }
+    }
+
+    private static void ReadField()
+    {
+        for (int i = 0; i < arr.Length; i++)
+        {
+            arr[i] = Console.ReadLine().ToCharArray();
+
+            for (int j = 0; j < arr[i].Length; j++)
+            {
+                if (arr[i][j] == 'M')
+                {
+                    indexRowM = i;
+                    indexColM = j;
+                }
+            }
+        }
+    }
 }
