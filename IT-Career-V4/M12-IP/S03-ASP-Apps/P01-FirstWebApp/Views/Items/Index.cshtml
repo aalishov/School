@@ -1,0 +1,32 @@
+﻿@model IndexVM
+@{
+    ViewData["Title"] = "Items index page";
+}
+<h1>@ViewData["Title"]</h1>
+<h2>@Model.Title</h2>
+<table class="table table-bordered table-hover table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Created</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <th>@item.Name</th>
+                <th>@item.Price</th>
+                <th>@item.CreatedOn</th>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total item price: </td>
+            <td colspan="2">@Model.TotalPrice</td>
+        </tr>
+
+    </tfoot>
+</table>
