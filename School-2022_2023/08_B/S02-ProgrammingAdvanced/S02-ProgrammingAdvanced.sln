@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-DemoArray", "P01-DemoAr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-CountNumbers", "P02-CountNumbers\P02-CountNumbers.csproj", "{21773BD2-D5A7-453B-972C-37C2F8E1486C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-RandomNumbers", "P03-RandomNumbers\P03-RandomNumbers.csproj", "{C8D23756-E505-4768-AF07-D245F2D390F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-RandomNumbers", "P03-RandomNumbers\P03-RandomNumbers.csproj", "{C8D23756-E505-4768-AF07-D245F2D390F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-Polygon", "P04-Polygon\P04-Polygon.csproj", "{2F315149-3EEF-46B9-B4FB-E008E62947F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-Polygon", "P04-Polygon\P04-Polygon.csproj", "{2F315149-3EEF-46B9-B4FB-E008E62947F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-Test", "P05-Test\P05-Test.csproj", "{249221B7-3BAE-4B82-A118-0EE31EEE0BD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2F315149-3EEF-46B9-B4FB-E008E62947F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F315149-3EEF-46B9-B4FB-E008E62947F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F315149-3EEF-46B9-B4FB-E008E62947F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{249221B7-3BAE-4B82-A118-0EE31EEE0BD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249221B7-3BAE-4B82-A118-0EE31EEE0BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249221B7-3BAE-4B82-A118-0EE31EEE0BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249221B7-3BAE-4B82-A118-0EE31EEE0BD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

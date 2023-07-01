@@ -8,7 +8,6 @@
             Size = size;
             Type = type;
         }
-
         public string Color { get; private set; }
 
         public int Size { get; private set; }
