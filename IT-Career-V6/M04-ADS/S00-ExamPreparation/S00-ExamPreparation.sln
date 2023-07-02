@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-Cinema", "P03-Cinema\P0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-Train", "P04-Train\P04-Train.csproj", "{E42875EB-A19D-48FA-9A2B-080BEB96F1B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-School", "P05-School\P05-School.csproj", "{0C8BA99F-33D6-4489-AADA-B9CC0DF4BBD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-School", "P05-School\P05-School.csproj", "{0C8BA99F-33D6-4489-AADA-B9CC0DF4BBD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-Supermarket", "P06-Supermarket\P06-Supermarket.csproj", "{3DB54510-EF1C-4583-9606-D384B77FE951}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{0C8BA99F-33D6-4489-AADA-B9CC0DF4BBD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C8BA99F-33D6-4489-AADA-B9CC0DF4BBD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C8BA99F-33D6-4489-AADA-B9CC0DF4BBD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB54510-EF1C-4583-9606-D384B77FE951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB54510-EF1C-4583-9606-D384B77FE951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB54510-EF1C-4583-9606-D384B77FE951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB54510-EF1C-4583-9606-D384B77FE951}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
