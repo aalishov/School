@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NeedForSpeed.StartUp">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>StartUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeedForSpeed.Vehicle">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAEIAAAAAAAAAAAgAAAAwAAAAAAAAA=</HashCode>
+      <FileName>Vehicle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeedForSpeed.Motorcycle">
+    <Position X="7" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Motorcycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeedForSpeed.Car">
+    <Position X="1.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeedForSpeed.RaceMotorcycle">
+    <Position X="6.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>RaceMotorcycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeedForSpeed.CrossMotorcycle">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CrossMotorcycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeedForSpeed.FamilyCar">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FamilyCar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeedForSpeed.SportCar">
+    <Position X="3.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>SportCar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

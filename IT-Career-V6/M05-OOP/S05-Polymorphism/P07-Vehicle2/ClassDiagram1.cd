@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="P07_Vehicle2.Program">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P07_Vehicle2.Vehicle">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAQEAAAAAAAAAAAAgBAIAQAAAAAAAAA=</HashCode>
+      <FileName>Vehicle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P07_Vehicle2.Car">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P07_Vehicle2.Truck">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Truck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P07_Vehicle2.AppConstants">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAoAAAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>AppConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P07_Vehicle2.Bus">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Bus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

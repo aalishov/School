@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="P04_AnimalTrainer.Dog" BaseTypeListCollapsed="true">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAgAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dog.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="P04_AnimalTrainer.Program">
+    <Position X="11.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P04_AnimalTrainer.Trainer">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAIAAAA=</HashCode>
+      <FileName>Trainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P04_AnimalTrainer.Cat">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAgAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cat.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="P04_AnimalTrainer.IAnimal">
+    <Position X="2" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IAnimal.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="P04_AnimalTrainer.IMakeNoise">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMakeNoise.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="P04_AnimalTrainer.IMakeTrick">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMakeTrick.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
