@@ -13,11 +13,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-Machine", "P03-Machine\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-AnimalTrainer", "P04-AnimalTrainer\P04-AnimalTrainer.csproj", "{039E6FF4-5462-40AD-BC63-E02BDFB82D4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-NeedForSpeed", "P05-NeedForSpeed\P05-NeedForSpeed.csproj", "{E9C6A91F-B03D-4CD5-A8FC-BDBFDAFEF72A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-NeedForSpeed", "P05-NeedForSpeed\P05-NeedForSpeed.csproj", "{E9C6A91F-B03D-4CD5-A8FC-BDBFDAFEF72A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-Vehicles", "P06-Vehicles\P06-Vehicles.csproj", "{25A4A362-60FA-48DE-99BB-F26F9E9F7A68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-Vehicles", "P06-Vehicles\P06-Vehicles.csproj", "{25A4A362-60FA-48DE-99BB-F26F9E9F7A68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-Vehicle2", "P07-Vehicle2\P07-Vehicle2.csproj", "{02A71D46-948B-4E64-9005-B55E74E843E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-Vehicle2", "P07-Vehicle2\P07-Vehicle2.csproj", "{02A71D46-948B-4E64-9005-B55E74E843E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-Farm", "P08-Farm\P08-Farm.csproj", "{B503164F-CDA5-4592-B792-6EAB8FBCBB8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B42B8F21-54AE-42B7-B0A5-3C5CEED41408}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +64,10 @@ Global
 		{02A71D46-948B-4E64-9005-B55E74E843E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02A71D46-948B-4E64-9005-B55E74E843E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02A71D46-948B-4E64-9005-B55E74E843E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B503164F-CDA5-4592-B792-6EAB8FBCBB8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B503164F-CDA5-4592-B792-6EAB8FBCBB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B503164F-CDA5-4592-B792-6EAB8FBCBB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B503164F-CDA5-4592-B792-6EAB8FBCBB8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
