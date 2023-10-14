@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-ParkingSystem", "P01-ParkingSystem\P01-ParkingSystem.csproj", "{EEE0980D-E33F-4720-AA0C-A5D716EA3BEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-ParkingSystem", "P01-ParkingSystem\P01-ParkingSystem.csproj", "{EEE0980D-E33F-4720-AA0C-A5D716EA3BEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{C584E1CA-1857-4647-AA9D-D9F93B833AE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{C584E1CA-1857-4647-AA9D-D9F93B833AE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-JobBoard", "P02-JobBoard\P02-JobBoard.csproj", "{5B97DAD5-37B3-4817-8F65-5E4C76499938}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C584E1CA-1857-4647-AA9D-D9F93B833AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C584E1CA-1857-4647-AA9D-D9F93B833AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C584E1CA-1857-4647-AA9D-D9F93B833AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B97DAD5-37B3-4817-8F65-5E4C76499938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B97DAD5-37B3-4817-8F65-5E4C76499938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B97DAD5-37B3-4817-8F65-5E4C76499938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B97DAD5-37B3-4817-8F65-5E4C76499938}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
