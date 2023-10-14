@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 
 public class Program
 {
     public static void Main(string[] args)
     {
+
         ParkingController controller = new ParkingController();
         StringBuilder stringBuilder = new StringBuilder();
         bool isRunning = true;

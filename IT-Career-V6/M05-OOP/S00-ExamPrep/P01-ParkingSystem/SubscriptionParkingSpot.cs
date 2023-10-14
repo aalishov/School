@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 public class SubscriptionParkingSpot : ParkingSpot
 {
-    private const string SpotType = "subscription";
+
     private string registrationPlate;
 
-    public SubscriptionParkingSpot(int id, bool occupied, double price, string registrationPlate) : base(id, occupied, SpotType, price)
+    public SubscriptionParkingSpot(int id, bool occupied, double price, string registrationPlate) : base(id, occupied, AppConstants.SubscriptionSpotType, price)
     {
         this.RegistrationPlate = registrationPlate;
     }
