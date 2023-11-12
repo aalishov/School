@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-Village", "P04-Village\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-BrokerCompanySystem", "P05-BrokerCompanySystem\P05-BrokerCompanySystem.csproj", "{DFDCC02D-F09C-4328-8E35-9ED064546A0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-CryptoMiningSystem", "P06-CryptoMiningSystem\P06-CryptoMiningSystem.csproj", "{A9861A2A-C532-4C3D-90E8-F6876F1334AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{DFDCC02D-F09C-4328-8E35-9ED064546A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFDCC02D-F09C-4328-8E35-9ED064546A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFDCC02D-F09C-4328-8E35-9ED064546A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9861A2A-C532-4C3D-90E8-F6876F1334AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9861A2A-C532-4C3D-90E8-F6876F1334AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9861A2A-C532-4C3D-90E8-F6876F1334AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9861A2A-C532-4C3D-90E8-F6876F1334AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
