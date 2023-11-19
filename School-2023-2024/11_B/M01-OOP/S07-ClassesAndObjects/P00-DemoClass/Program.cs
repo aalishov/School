@@ -2,8 +2,8 @@
 {
     public static void Main(string[] args)
     {
-        Product p1 = new Product("Pen", "other");
-        Product p2 = new Product("Bread","Food",0.400,0.300,0.150);
+        Student s1= new Student();
+        Console.WriteLine($"{s1.Name}, {s1.Age}");
     }
 
     public class MyDateTime

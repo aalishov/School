@@ -5,16 +5,25 @@ public class Student
     private string name;
     private int age;
 
-    public Student() { }
+    public Student() 
+    {
+        Name = "John";
+        Age= 15;
+    }
 
-    public Student (string name) { Name = name; }
-
-    public Student(int  age) { Age = age; }
-
-    public Student(string name, int age)
+    public Student(string name) : this()
     {
         Name = name;
+    }
+
+    public Student(int age) : this()
+    {
         Age = age;
+    }
+
+    public Student(string name, int age) : this(age)
+    {
+        Name = name;
     }
 
     //Свойства
@@ -49,7 +58,7 @@ public class Student
             age = value;
         }
     }
-    public List<int> Grades { get; set; }= new List<int> ();
+    public List<int> Grades { get; set; } = new List<int>();
 
     public double AverageGrade { get { return Grades.Average(); } }
 
