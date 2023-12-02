@@ -22,6 +22,10 @@ namespace CarManufacturer
             get { return horsePower; }
             set
             {
+                if (value<0)
+                {
+                    throw new ArgumentException("Invalid HorsePower!");
+                }
                 horsePower = value;
             }
         }
