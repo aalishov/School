@@ -8,6 +8,7 @@ namespace P11_Restaurant
 {
     public class Product
     {
+        private decimal price;
         protected Product(string name, decimal price)
         {
             Name = name;
