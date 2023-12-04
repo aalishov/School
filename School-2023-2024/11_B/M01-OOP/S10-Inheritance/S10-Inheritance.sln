@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-DogInheritsAnimal", "P0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-Person", "P07-Person\P07-Person.csproj", "{60E77CB7-D2D4-4374-8E1E-102E7BA72495}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-Players and Monsters", "P09-Players and Monsters\P09-Players and Monsters.csproj", "{96914587-6258-4908-8924-0436DB2E25A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P09-Players and Monsters", "P09-Players and Monsters\P09-Players and Monsters.csproj", "{96914587-6258-4908-8924-0436DB2E25A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10-Need for Speed", "P10-Need for Speed\P10-Need for Speed.csproj", "{9B330E12-7B69-47B3-A8E1-9EFE995499BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P10-Need for Speed", "P10-Need for Speed\P10-Need for Speed.csproj", "{9B330E12-7B69-47B3-A8E1-9EFE995499BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11-Restaurant", "P11-Restaurant\P11-Restaurant.csproj", "{5E00B66D-CDF8-480F-B50E-09338C460AD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{9B330E12-7B69-47B3-A8E1-9EFE995499BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B330E12-7B69-47B3-A8E1-9EFE995499BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B330E12-7B69-47B3-A8E1-9EFE995499BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E00B66D-CDF8-480F-B50E-09338C460AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E00B66D-CDF8-480F-B50E-09338C460AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E00B66D-CDF8-480F-B50E-09338C460AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E00B66D-CDF8-480F-B50E-09338C460AD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
