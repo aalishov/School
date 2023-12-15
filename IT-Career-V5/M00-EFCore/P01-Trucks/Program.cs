@@ -6,6 +6,7 @@
     using Microsoft.EntityFrameworkCore;
 
     using Data;
+    using Trucks.Services;
 
     public class StartUp
     {
@@ -13,18 +14,27 @@
         {
             var context = new AppDbContext();
 
-            ResetDatabase(context, shouldDropDatabase: false);
+            ClientsService service = new ClientsService(context);
+            TrucksService truckService=new TrucksService(context);
 
-            var projectDir = GetProjectDirectory();
+            string result = truckService.GetTrucksAndDespatchers().GetAwaiter().GetResult();
 
-            ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
+            Console.WriteLine(result); 
 
-            //ExportEntities(context, projectDir + @"ExportResults/");
 
-            using (var transaction = context.Database.BeginTransaction())
-            {
-                transaction.Rollback();
-            }
+
+            //ResetDatabase(context, shouldDropDatabase: false);
+
+            //var projectDir = GetProjectDirectory();
+
+            //ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
+
+            ////ExportEntities(context, projectDir + @"ExportResults/");
+
+            //using (var transaction = context.Database.BeginTransaction())
+            //{
+            //    transaction.Rollback();
+            //}
         }
 
         private static void ImportEntities(AppDbContext context, string baseDir, string exportDir)
@@ -54,7 +64,7 @@
         //    File.WriteAllText(exportDir + "Actual Result - ExportClientsWithMostTrucks.json", ExportClientsWithMostTrucks);
         //}
 
-        private static void ResetDatabase(AppDbContext   context, bool shouldDropDatabase = false)
+        private static void ResetDatabase(AppDbContext context, bool shouldDropDatabase = false)
         {
             if (shouldDropDatabase)
             {
