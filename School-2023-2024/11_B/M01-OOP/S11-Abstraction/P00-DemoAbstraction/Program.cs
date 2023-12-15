@@ -26,15 +26,33 @@
             //Console.WriteLine(Sum(nums4));
             //Console.WriteLine(Sum(nums5));
 
-            List<Shape> shapes = new List<Shape>();
-            shapes.Add(new Square2("black",3));
-            shapes.Add(new Square2("black", 10));
-            shapes.Add(new Rectangle2("red", 20,9));
-            shapes.Add(new Rectangle2("green", 20, 9));
+            //List<Shape> shapes = new List<Shape>();
+            //shapes.Add(new Square2("black",3));
+            //shapes.Add(new Square2("black", 10));
+            //shapes.Add(new Rectangle2("red", 20,9));
+            //shapes.Add(new Rectangle2("green", 20, 9));
 
-            foreach (var s in shapes)
+            //foreach (var s in shapes)
+            //{
+            //    Console.WriteLine(s);
+            //}
+
+            //object num = 12;
+            //object isNum = true;
+            //object s = new Student("Jane",15);
+            //Console.WriteLine(s);
+
+            List<ICalculatableArea> shapes = new List<ICalculatableArea>();
+
+            ICalculatableArea shape1 = new Rectangle(2, 6);
+            ICalculatableArea shape2 = new Square(5);
+            ICalculatableArea triangle= new Triangle(3.5,6);
+            shapes.Add(shape1);
+            shapes.Add(shape2);
+            shapes.Add(triangle);
+            foreach (var shape in shapes)
             {
-                Console.WriteLine(s);
+                Console.WriteLine(shape.Area()); 
             }
         }
 
