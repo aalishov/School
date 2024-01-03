@@ -123,4 +123,33 @@ WHERE DATEPART(day,r.OpenDate) =DATEPART(day,u.Birthdate) and
 DATEPART(MONTH,r.OpenDate)=Datepart(month,u.Birthdate)
 order by Username asc, c.Name asc
 
+--9.	Users per Employee 
+
+SELECT CONCAT_WS(' ',FirstName,LastName) AS 'FullName',COUNT(u.Id) AS 'UsersCount' FROM Employees AS e
+LEFT JOIN Reports AS r ON r.EmployeeId= e.Id
+LEFT JOIN USERS AS u ON u.Id= r.UserId
+GROUP BY e.Id,e.FirstName,e.LastName
+ORDER BY  UsersCount DESC, FullName;
+
+--10.	Full Info
+
+SELECT
+	CASE 
+		WHEN EMployeeId IS NULL THEN 'None'
+		ELSE CONCAT_WS(' ',e.FirstName,e.LastName)
+		END AS 'Employee',
+	CASE 
+		WHEN EMployeeId IS NULL THEN 'None'
+		ELSE d.Name
+		END AS 'Department',
+	c.Name AS 'Category', r.Description, FORMAT(r.OpenDate,'dd.MM.yyyy') AS 'OpenDate',
+	s.Label AS 'Status', u.Name
+FROM Reports AS r
+LEFT JOIN Employees AS e ON e.Id= r.EmployeeId
+LEFT JOIN Departments AS d ON d.Id= e.DepartmentId
+LEFT JOIN Categories AS c ON c.Id=r.CategoryId
+LEFT JOIN Status AS s ON s.Id = r.StatusId
+LEFT JOIN Users AS u ON u.Id = r.UserId
+ORDER BY e.FirstName DESC ,e.LastName DESC, 'Department' ASC, 'Category'ASC,r.Description,
+	r.OpenDate ASC, s.Label ASC, u.Name ASC;
 
