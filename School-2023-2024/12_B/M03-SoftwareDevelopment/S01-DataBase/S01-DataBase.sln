@@ -16,7 +16,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-OneToOne", "P02-OneToOn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-ManyToMany", "P03-ManyToMany\P03-ManyToMany.csproj", "{EEBDF472-6437-425C-A688-64D2AB215E93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-WashingMachineService", "P04-WashingMachineService\P04-WashingMachineService.csproj", "{C1EB1FE8-5A63-4A41-B16D-12E4F9B3D88E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-WashingMachineService", "P04-WashingMachineService\P04-WashingMachineService.csproj", "{C1EB1FE8-5A63-4A41-B16D-12E4F9B3D88E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-RailwayStation", "P05-RailwayStation\P05-RailwayStation.csproj", "{639E3F73-7D46-4D5C-9892-FE34005A92AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{C1EB1FE8-5A63-4A41-B16D-12E4F9B3D88E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1EB1FE8-5A63-4A41-B16D-12E4F9B3D88E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1EB1FE8-5A63-4A41-B16D-12E4F9B3D88E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{639E3F73-7D46-4D5C-9892-FE34005A92AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{639E3F73-7D46-4D5C-9892-FE34005A92AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{639E3F73-7D46-4D5C-9892-FE34005A92AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{639E3F73-7D46-4D5C-9892-FE34005A92AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
