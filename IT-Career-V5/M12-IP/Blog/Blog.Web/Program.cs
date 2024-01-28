@@ -18,7 +18,7 @@ namespace Blog.Web
             builder.Services
                 .AddDbContext<ApplicationDbContext>(options =>
                            {
-                               options.UseSqlServer(connectionString);
+                               options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
                                options.UseLazyLoadingProxies();
                            }
                    );
