@@ -67,9 +67,9 @@ namespace DemoUser.Services
 
             if (model.IsAdmin && !await userManager.IsInRoleAsync(user, GlobalConstants.AdministratorRole))
             {
-               await userManager.AddToRoleAsync(user, GlobalConstants.AdministratorRole);
+                await userManager.AddToRoleAsync(user, GlobalConstants.AdministratorRole);
             }
-            else if(!model.IsAdmin)
+            else if (!model.IsAdmin)
             {
                 await userManager.RemoveFromRoleAsync(user, GlobalConstants.AdministratorRole);
             }
@@ -78,7 +78,7 @@ namespace DemoUser.Services
             {
                 await userManager.AddToRoleAsync(user, GlobalConstants.UserRole);
             }
-            else if(!model.IsUser)
+            else if (!model.IsUser)
             {
                 await userManager.RemoveFromRoleAsync(user, GlobalConstants.UserRole);
             }
@@ -87,18 +87,46 @@ namespace DemoUser.Services
             return user.Id;
         }
 
-        public async Task<ICollection<IndexUserViewModel>> GetAllUsersAsync()
+        public async Task<IndexUsersViewModel> GetUsersAsync(int page=1,string order="Asc", int itemsPerPage = 5)
         {
-            return await context
-                 .Users
-                 .Select(u => new IndexUserViewModel()
-                 {
-                     Id = u.Id,
-                     FirstName = u.FirstName,
-                     LastName = u.LastName,
-                     Role = string.Join(" ", userManager.GetRolesAsync(u).GetAwaiter().GetResult())
-                 })
-                 .ToListAsync();
+            ICollection<IndexUserViewModel> users =order=="Asc"? await context
+                  .Users
+                  .OrderBy(u => u.FirstName)
+                  .ThenBy(u => u.LastName)
+                  .Skip((page - 1) * itemsPerPage)
+                  .Take(itemsPerPage)
+                  .Select(u => new IndexUserViewModel()
+                  {
+                      Id = u.Id,
+                      FirstName = u.FirstName,
+                      LastName = u.LastName,
+                      Role = string.Join(" ", userManager.GetRolesAsync(u).GetAwaiter().GetResult())
+                  })
+                  .ToListAsync()
+                  :
+                  await context
+                  .Users
+                  .OrderByDescending(u => u.FirstName)
+                  .ThenByDescending(u => u.LastName)
+                  .Skip((page - 1) * itemsPerPage)
+                  .Take(itemsPerPage)
+                  .Select(u => new IndexUserViewModel()
+                  {
+                      Id = u.Id,
+                      FirstName = u.FirstName,
+                      LastName = u.LastName,
+                      Role = string.Join(" ", userManager.GetRolesAsync(u).GetAwaiter().GetResult())
+                  })
+                  .ToListAsync()
+                  ;
+
+            int usersCount = await context.Users.CountAsync();
+
+
+            var model = new IndexUsersViewModel( usersCount,page,order, itemsPerPage);
+            model.Users = users; 
+
+            return model;
         }
 
         public async Task<EditUserViewModel> GetUserToEdit(string id)

@@ -2,6 +2,7 @@
 using DemoUser.ViewModels.Users;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,10 +17,12 @@ namespace DemoUser.Controllers
         {
             this.usersService = usersService;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1, string order = "Asc", int itemsPerPage = 5)
         {
-            return View(await usersService.GetAllUsersAsync());
+            IndexUsersViewModel model = await usersService.GetUsersAsync(page, order, itemsPerPage);
+            return View(model);
         }
+
         [HttpGet]
         public IActionResult Create()
         {

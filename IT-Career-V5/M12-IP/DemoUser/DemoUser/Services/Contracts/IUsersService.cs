@@ -4,7 +4,7 @@ namespace DemoUser.Services.Contracts
 {
     public interface IUsersService
     {
-        public Task<ICollection<IndexUserViewModel>> GetAllUsersAsync();
+        public Task<IndexUsersViewModel> GetUsersAsync(int page, string order = "Asc", int itemsPerPage=5);
 
         public Task<EditUserViewModel> GetUserToEdit(string id);
 
