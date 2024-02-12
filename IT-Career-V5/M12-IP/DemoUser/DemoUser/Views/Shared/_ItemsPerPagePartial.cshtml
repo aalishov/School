@@ -1,0 +1,12 @@
+﻿@model PagingViewModel
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        @Model.ItemsPerPage items per page
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" asp-action="@Model.Action" asp-route-page="1" asp-route-itemsPerPage="5">5</a></li>
+        <li><a class="dropdown-item" asp-action="@Model.Action" asp-route-page="1" asp-route-itemsPerPage="10">10</a></li>
+        <li><a class="dropdown-item" asp-action="@Model.Action" asp-route-page="1" asp-route-itemsPerPage="20">20</a></li>
+  </ul>
+</div>
