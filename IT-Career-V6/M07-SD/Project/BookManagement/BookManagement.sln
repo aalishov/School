@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookManagement.Data", "Book
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookManagement.Services", "BookManagement.Services\BookManagement.Services.csproj", "{87E8C2F8-4409-48DA-8111-E052135A1B83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManagement.FormApp", "BookManagement.FormApp\BookManagement.FormApp.csproj", "{CE813A64-CB1D-45EB-A284-DD4E83BA1C7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookManagement.FormApp", "BookManagement.FormApp\BookManagement.FormApp.csproj", "{CE813A64-CB1D-45EB-A284-DD4E83BA1C7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManagement.Tests", "BookManagement.Tests\BookManagement.Tests.csproj", "{4FC74996-3FD2-45B7-B4FA-740EFF6470D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookManagement.Tests", "BookManagement.Tests\BookManagement.Tests.csproj", "{4FC74996-3FD2-45B7-B4FA-740EFF6470D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManagement.Common", "BookManagement.Common\BookManagement.Common.csproj", "{C23BC9B5-E87B-4D23-B006-4758655E09D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4FC74996-3FD2-45B7-B4FA-740EFF6470D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FC74996-3FD2-45B7-B4FA-740EFF6470D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FC74996-3FD2-45B7-B4FA-740EFF6470D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C23BC9B5-E87B-4D23-B006-4758655E09D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C23BC9B5-E87B-4D23-B006-4758655E09D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C23BC9B5-E87B-4D23-B006-4758655E09D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C23BC9B5-E87B-4D23-B006-4758655E09D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,9 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\BookManagement.Common\BookManagement.Common.csproj" />
-    <ProjectReference Include="..\BookManagement.Data\BookManagement.Data.csproj" />
-  </ItemGroup>
-
 </Project>

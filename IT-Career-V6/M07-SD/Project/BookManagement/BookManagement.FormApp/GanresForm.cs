@@ -1,4 +1,6 @@
-﻿using BookManagement.Services;
+﻿using BookManagement.Common;
+using BookManagement.Data.Models;
+using BookManagement.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,7 +31,14 @@ namespace BookManagement.FormApp
 
         private void GanresForm_Load(object sender, EventArgs e)
         {
+            btnAction.Text = rbAdd.Text;
+            rbAdd.Checked = true;
+            rbDelete.Enabled = false;
+            rbUpdate.Enabled = false;
+
+            //Default asc order
             rdBtnAsc.Checked = true;
+
             comboBox1.SelectedText = itemsPerPage.ToString();
 
             UpdatePagination();
@@ -51,6 +60,8 @@ namespace BookManagement.FormApp
         {
             totalItems = service.GetGenresCount();
             pageCount = (int)Math.Ceiling((double)totalItems / itemsPerPage);
+
+            lblCount.Text = totalItems.ToString();
         }
 
         private void btnPrevious_Click(object sender, EventArgs e)
@@ -94,8 +105,93 @@ namespace BookManagement.FormApp
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             itemsPerPage = int.Parse(comboBox1.Text);
+            currentPage = 1;
             UpdatePagination();
             LoadGanres();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string[] info = listBox1.Text.Split(" - ");
+            txtId.Text = info[0];
+            txtName.Text = info[1];
+
+            rbUpdate.Enabled = true;
+            rbDelete.Enabled = true;
+
+            RadioCheckedFalse();
+
+            btnAction.Enabled = false;
+        }
+
+        private void RadioCheckedFalse()
+        {
+            //Remove radio selection
+            rbAdd.Checked = false;
+            rbDelete.Checked = false;
+            rbUpdate.Checked = false;
+        }
+
+        private void rbAdd_CheckedChanged(object sender, EventArgs e)
+        {
+            btnAction.Enabled = true;
+            btnAction.Text = rbAdd.Text;
+            txtId.Text = string.Empty;
+            txtName.Text = string.Empty;
+
+            rbUpdate.Enabled = false;
+            rbDelete.Enabled = false;
+        }
+
+        private void rbUpdate_CheckedChanged(object sender, EventArgs e)
+        {
+            btnAction.Enabled = true;
+            btnAction.Text = rbUpdate.Text;
+        }
+
+        private void rbDelete_CheckedChanged(object sender, EventArgs e)
+        {
+            btnAction.Enabled = true;
+            btnAction.Text = rbDelete.Text;
+        }
+
+        private void btnAction_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Add ganre
+                if (rbAdd.Checked)
+                {
+                    Ganre ganre = new Ganre() { Name = txtName.Text };
+                    int id = service.Add(ganre);
+                    MessageBox.Show(string.Format(OutputMessages.AddGanre, id, ganre.Name));
+                }
+                // Edit ganre
+                else if (rbUpdate.Checked)
+                {
+                    int id = int.Parse(txtId.Text);
+                    string name = txtName.Text;
+                    service.EditGanre(id, name);
+                    MessageBox.Show(string.Format(OutputMessages.EditGanre, id));
+                }
+                // Delete ganre
+                else if (rbDelete.Checked)
+                {
+                    int id = int.Parse(txtId.Text);
+                    service.DeleteGanre(id);
+                    MessageBox.Show(string.Format(OutputMessages.DeleteGanre, id));
+                }
+                txtId.Text = string.Empty;
+                txtName.Text = string.Empty;
+
+                RadioCheckedFalse();
+                UpdatePagination();
+                LoadGanres();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

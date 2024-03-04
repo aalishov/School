@@ -2,6 +2,8 @@
 {
     using Services;
     using Data.Models;
+    using BookManagement.Common;
+    using System;
 
     public class GanresController
     {
@@ -108,7 +110,7 @@
             Console.Write("Enter id: ");
             int deleteId = int.Parse(Console.ReadLine());
             service.DeleteGanre(deleteId);
-            Console.WriteLine($"Ganre with id {deleteId} is deleted!");
+            Console.WriteLine(string.Format(OutputMessages.DeleteGanre,deleteId));
             Thread.Sleep(2000);
             UpdatePagination();
         }
@@ -120,7 +122,7 @@
             Console.Write("Enter name: ");
             string newName = Console.ReadLine();
             service.EditGanre(editId, newName);
-            Console.WriteLine($"Ganre with id {editId} is updated!");
+            Console.WriteLine(string.Format(OutputMessages.EditGanre,editId));
             Thread.Sleep(2000);
         }
 
@@ -141,7 +143,7 @@
             Console.Write("Enter ganre name: ");
             string name = Console.ReadLine();
             int id = service.Add(new Ganre() { Name = name });
-            Console.WriteLine($"Gnare with id {id} and name {name} is created!");
+            Console.WriteLine(string.Format(OutputMessages.AddGanre, id, name));
             Thread.Sleep(2000);
             UpdatePagination();
         }
