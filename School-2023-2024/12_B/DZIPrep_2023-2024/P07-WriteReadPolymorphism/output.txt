@@ -1,0 +1,22 @@
+﻿Input student names, separated by space
+Select either Add or Remove
+Input a name to add: 
+Successfully added!
+Select either Add or Remove
+Input a name to remove: 
+Successfully removed!
+Select either Add or Remove
+Input student names, separated by space
+Input student names, separated by space
+Select either Add or Remove
+No such command!
+Select either Add or Remove
+Input a name to add: 
+Successfully added!
+Select either Add or Remove
+Input a name to add: 
+Successfully added!
+Select either Add or Remove
+Input a name to remove: 
+Successfully removed!
+Select either Add or Remove
