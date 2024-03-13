@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RestaurantRating.Data;
 using RestaurantRating.Data.Models;
+using RestaurantRating.Services;
+using RestaurantRating.Services.Contracts;
 
 namespace RestaurantRating.Web
 {
@@ -30,6 +32,9 @@ namespace RestaurantRating.Web
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
+
+            //Add my services
+            builder.Services.AddTransient<IUsersService, UsersService>();
 
             var app = builder.Build();
 

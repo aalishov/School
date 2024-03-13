@@ -1,0 +1,30 @@
+﻿@model IndexUsersViewModel
+
+<h2>Users page</h2>
+<table class="table table-bordered table-striped table-hover">
+    <thead >
+        <tr>
+            <th>Full name</th>
+            <th>Roles</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>
+                    @user.Name
+                </td>
+                <td>
+                    @user.Role
+                </td>
+                <td>
+                    <a asp-action="Details" class="btn btn-sm btn-success">Details</a>
+                    <a asp-action="Edit" class="btn btn-sm btn-secondary">Edit</a>
+                    <a asp-action="Delete" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using RestaurantRating.Web.Models;
+using RestaurantRating.ViewModels.Shared;
 using System.Diagnostics;
 
 namespace RestaurantRating.Web.Controllers

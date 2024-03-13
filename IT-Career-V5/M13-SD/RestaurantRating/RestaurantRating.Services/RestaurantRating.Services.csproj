@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RestaurantRating.Common\RestaurantRating.Common.csproj" />
+    <ProjectReference Include="..\RestaurantRating.Data\RestaurantRating.Data.csproj" />
+    <ProjectReference Include="..\RestaurantRating.ViewModels\RestaurantRating.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,4 +1,4 @@
-namespace RestaurantRating.Web.Models
+namespace RestaurantRating.ViewModels.Shared
 {
     public class ErrorViewModel
     {
