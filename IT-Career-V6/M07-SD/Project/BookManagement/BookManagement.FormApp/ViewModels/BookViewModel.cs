@@ -19,5 +19,7 @@ namespace BookManagement.FormApp.ViewModels
         public double Price { get; set; }
 
         public string Ganres { get; set; }
+
+        public string ImageUrl { get; set; }
     }
 }

@@ -7,8 +7,6 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
     public class BooksService
     {
         AppDbContext context = new AppDbContext();
@@ -106,6 +104,14 @@
             return book.Id;
         }
 
+        public string[] GetAuthorsList()
+        {
+            return context.Books
+                .Select(x => x.Author)
+                .Distinct()
+                .ToArray();
+        }
+
         private static void ValidateBook(Book book)
         {
             if (string.IsNullOrWhiteSpace(book.Title))
@@ -125,5 +131,6 @@
                 throw new ArgumentException(ExceptionMessages.InvalidBookPrice);
             }
         }
+
     }
 }
