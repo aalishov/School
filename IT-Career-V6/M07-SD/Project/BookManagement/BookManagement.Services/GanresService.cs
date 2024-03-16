@@ -1,13 +1,9 @@
-﻿using BookManagement.Data;
-using BookManagement.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BookManagement.Services
+﻿namespace BookManagement.Services
 {
+    using Common;
+    using Data;
+    using Data.Models;
+
     public class GanresService
     {
         private AppDbContext context = new AppDbContext();
@@ -16,11 +12,11 @@ namespace BookManagement.Services
         {
             if (string.IsNullOrWhiteSpace(ganre.Name))
             {
-                throw new ArgumentException("Invalid ganre name!");
+                throw new ArgumentException(ExceptionMessages.InvalidGanreName);
             }
             if (context.Ganres.Any(x => x.Name == ganre.Name))
             {
-                throw new ArgumentException("Ganre already exist!");
+                throw new ArgumentException(ExceptionMessages.GanreAlreadyExyst);
             }
 
             this.context.Add(ganre);
@@ -62,11 +58,11 @@ namespace BookManagement.Services
             Ganre? ganre= context.Ganres.Find(id);
             if (ganre==null)
             {
-                throw new ArgumentException("Ganre not found!");
+                throw new ArgumentException(ExceptionMessages.GanreNotFound);
             }
             if (string.IsNullOrWhiteSpace(name))
             {
-                throw new ArgumentException("Invalid name!");
+                throw new ArgumentException(ExceptionMessages.InvalidGanreName);
             }
             ganre.Name = name;
             context.Ganres.Update(ganre);
@@ -79,12 +75,16 @@ namespace BookManagement.Services
             Ganre? ganre = context.Ganres.Find(id);
             if (ganre == null)
             {
-                throw new ArgumentException("Ganre not found!");
+                throw new ArgumentException(ExceptionMessages.GanreNotFound);
             }
             context.Ganres.Remove(ganre);
             context.SaveChanges();
             return id;
         }
 
+        public List<int> GetGanresId()
+        {
+            return this.context.Ganres.Select(x => x.Id).ToList();
+        }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             btnGanres = new Button();
+            btnBooks = new Button();
             SuspendLayout();
             // 
             // btnGanres
@@ -41,11 +42,22 @@
             btnGanres.UseVisualStyleBackColor = true;
             btnGanres.Click += btnGanres_Click;
             // 
+            // btnBooks
+            // 
+            btnBooks.Location = new Point(241, 33);
+            btnBooks.Name = "btnBooks";
+            btnBooks.Size = new Size(190, 127);
+            btnBooks.TabIndex = 1;
+            btnBooks.Text = "Books";
+            btnBooks.UseVisualStyleBackColor = true;
+            btnBooks.Click += btnBooks_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnBooks);
             Controls.Add(btnGanres);
             Name = "MainForm";
             Text = "MainForm";
@@ -55,5 +67,6 @@
         #endregion
 
         private Button btnGanres;
+        private Button btnBooks;
     }
 }

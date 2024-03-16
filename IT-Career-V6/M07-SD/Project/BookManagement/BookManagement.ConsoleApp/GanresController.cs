@@ -39,7 +39,7 @@
                         case "P":
                         case "PREVIOUS":
                             PreviousAction();
-                            return;
+                            break;
                         case "N":
                         case "NEXT":
                             NextAction();
@@ -63,6 +63,9 @@
                         case "SEED":
                             SeedDataEction();
                             break;
+                        case "EX":
+                        case "EXIT":
+                            return;
                         default:
                             throw new InvalidOperationException("Invalid command!");
                     }

@@ -19,7 +19,13 @@ namespace BookManagement.FormApp
 
         private void btnGanres_Click(object sender, EventArgs e)
         {
-            GanresForm form= new GanresForm();
+            GanresForm form = new GanresForm();
+            form.ShowDialog();
+        }
+
+        private void btnBooks_Click(object sender, EventArgs e)
+        {
+            BooksForm form = new BooksForm();
             form.ShowDialog();
         }
     }
