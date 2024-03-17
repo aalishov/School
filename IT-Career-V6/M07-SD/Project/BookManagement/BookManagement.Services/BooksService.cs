@@ -91,6 +91,13 @@
             context.SaveChanges();
             return book.Id;
         }
+        public int EditBookGanres(Book book)
+        {
+            context.Books.Update(book);
+            context.SaveChanges();
+            return book.Id;
+        }
+
 
         public int DeleteBook(int id)
         {

@@ -17,7 +17,7 @@ namespace BookManagement.FormApp
 {
     public partial class BooksForm : Form
     {
-        private BooksService service = new BooksService();
+        private BooksService booksService = new BooksService();
         private GanresService ganresService = new GanresService();
         private int currentBookId = -1;
 
@@ -39,11 +39,15 @@ namespace BookManagement.FormApp
             UpdatePagination();
             LoadBooks();
             pictureBox1.Load(GlobalConstants.DefaultImg);
+
+            cmbOrderBy.Items.AddRange(System.Enum.GetNames<BookSortBy>());
+            cmbOrder.SelectedIndex = 0;
+            cmbOrderBy.SelectedIndex = 0;
         }
 
         private void LoadBooks()
         {
-            dataGridView1.DataSource = service
+            dataGridView1.DataSource = booksService
                 .GetBooks(currentPage, itemsPerPage, ascSort, sortBy)
                 .Select(x => new BookViewModel()
                 {
@@ -101,7 +105,7 @@ namespace BookManagement.FormApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (service.GetBooksCount() < 10)
+            if (booksService.GetBooksCount() < 10)
             {
                 List<int> ganres = ganresService.GetGanresId();
 
@@ -115,14 +119,14 @@ namespace BookManagement.FormApp
                         Price = new Random().Next(10, 70),
                     };
                     book.Ganres.Add(new BookGanre() { GanreId = ganres[new Random().Next(0, ganres.Count)] });
-                    service.Add(book);
+                    booksService.Add(book);
                 }
             }
         }
 
         private void UpdatePagination()
         {
-            totalItems = service.GetBooksCount();
+            totalItems = booksService.GetBooksCount();
             pageCount = (int)Math.Ceiling((double)totalItems / itemsPerPage);
             lblCount.Text = totalItems.ToString();
             lblPages.Text = $"{currentPage}/{pageCount}";
@@ -156,7 +160,7 @@ namespace BookManagement.FormApp
         {
             btnAction.Text = "Add";
             ClearComponents();
-            cmbAuthor.Items.AddRange(service.GetAuthorsList());
+            cmbAuthor.Items.AddRange(booksService.GetAuthorsList());
         }
 
         private void rbUpdate_CheckedChanged(object sender, EventArgs e)
@@ -190,14 +194,14 @@ namespace BookManagement.FormApp
                         Year = dateTimePicker1.Value.Year,
                         Price = double.Parse(txtPrice.Text)
                     };
-                    int id = service.Add(book);
+                    int id = booksService.Add(book);
                     MessageBox.Show(string.Format(OutputMessages.AddBook, id));
                 }
                 else if (rbDelete.Checked)
                 {
                     if (currentBookId != -1)
                     {
-                        int id = service.DeleteBook(currentBookId);
+                        int id = booksService.DeleteBook(currentBookId);
                         MessageBox.Show(string.Format(OutputMessages.DeleteBook, id));
                     }
                     else
@@ -209,12 +213,12 @@ namespace BookManagement.FormApp
                 {
                     if (currentBookId != -1)
                     {
-                        Book book = service.GetBookById(currentBookId);
+                        Book book = booksService.GetBookById(currentBookId);
                         book.Title = txtTitle.Text;
                         book.Price = double.Parse(txtPrice.Text);
                         book.Author = cmbAuthor.Text;
                         book.Year = dateTimePicker1.Value.Year;
-                        int id = service.EditBook(book);
+                        int id = booksService.EditBook(book);
                         MessageBox.Show(string.Format(OutputMessages.EditBook, id));
                     }
                     else
@@ -232,6 +236,24 @@ namespace BookManagement.FormApp
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void cmbOrderBy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            sortBy = Enum.Parse<BookSortBy>(cmbOrderBy.Text);
+            LoadBooks();
+        }
+
+        private void cmbOrder_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _ = cmbOrder.Text == "ASC" ? ascSort = true : ascSort = false;
+            LoadBooks();
+        }
+
+        private void btnGanres_Click(object sender, EventArgs e)
+        {
+            BookGanresForm form = new BookGanresForm(booksService, ganresService, currentBookId);
+            form.ShowDialog();
         }
     }
 }

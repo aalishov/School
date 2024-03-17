@@ -6,7 +6,15 @@
 
     public class GanresService
     {
-        private AppDbContext context = new AppDbContext();
+        private AppDbContext context;
+        public GanresService()
+        {
+            context = new AppDbContext();
+        }
+        public GanresService(AppDbContext context)
+        {
+            this.context = context;
+        }
 
         public int Add(Ganre ganre)
         {
@@ -29,6 +37,11 @@
             return this.context.Ganres.Find(id);
         }
 
+        public Ganre? GetGanreByName(string name)
+        {
+            return this.context.Ganres.FirstOrDefault(x => x.Name == name);
+        }
+
         public List<Ganre> GetGanres(int page = 1, int itemsPerPage = 10, bool ascSort = true)
         {
             IQueryable<Ganre> result = null;
@@ -48,6 +61,11 @@
                   .ToList();
         }
 
+        public string[] GetAllGanres()
+        {
+            return this.context.Ganres.Select(x => x.Name).ToArray();
+        }
+
         public int GetGenresCount()
         {
             return context.Ganres.Count();
@@ -55,8 +73,8 @@
 
         public int EditGanre(int id, string name)
         {
-            Ganre? ganre= context.Ganres.Find(id);
-            if (ganre==null)
+            Ganre? ganre = context.Ganres.Find(id);
+            if (ganre == null)
             {
                 throw new ArgumentException(ExceptionMessages.GanreNotFound);
             }
