@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookManagement.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace BookManagement.FormApp
 {
     public partial class MainForm : Form
     {
+        AppDbContext context = new AppDbContext();
         public MainForm()
         {
             InitializeComponent();
@@ -19,14 +21,19 @@ namespace BookManagement.FormApp
 
         private void btnGanres_Click(object sender, EventArgs e)
         {
-            GanresForm form = new GanresForm();
+            GanresForm form = new GanresForm(context);
             form.ShowDialog();
         }
 
         private void btnBooks_Click(object sender, EventArgs e)
         {
-            BooksForm form = new BooksForm();
+            BooksForm form = new BooksForm(context);
             form.ShowDialog();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

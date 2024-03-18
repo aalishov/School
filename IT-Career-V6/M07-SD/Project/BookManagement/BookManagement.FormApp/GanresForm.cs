@@ -1,4 +1,5 @@
 ﻿using BookManagement.Common;
+using BookManagement.Data;
 using BookManagement.Data.Models;
 using BookManagement.Services;
 using System;
@@ -15,7 +16,7 @@ namespace BookManagement.FormApp
 {
     public partial class GanresForm : Form
     {
-        GanresService service = new GanresService();
+        GanresService service ;
 
         //Pagination variables
         private int currentPage = 1;
@@ -24,9 +25,10 @@ namespace BookManagement.FormApp
         private int totalItems = 0;
         private bool ascSort = true;
 
-        public GanresForm()
+        public GanresForm(AppDbContext context)
         {
             InitializeComponent();
+            service = new GanresService(context);
         }
 
         private void GanresForm_Load(object sender, EventArgs e)

@@ -49,21 +49,15 @@ namespace BookManagement.FormApp
 
         private void btnUpdateGanres_Click(object sender, EventArgs e)
         {
-            try
+            currentBook.Ganres.Clear();
+            booksService.EditBookGanres(currentBook);
+            for (int i = 0; i < checkedListBox1.CheckedItems.Count; i++)
             {
-                currentBook.Ganres.Clear();
-                booksService.EditBookGanres(currentBook);
-                for (int i = 0; i < checkedListBox1.CheckedItems.Count; i++)
-                {
-                    string ganreName = checkedListBox1.CheckedItems[i].ToString();
-                    currentBook.Ganres.Add(new BookGanre() { Ganre = ganresService.GetGanreByName(ganreName) });
-                }
-                booksService.EditBookGanres(currentBook);
+                string ganreName = checkedListBox1.CheckedItems[i].ToString();
+                currentBook.Ganres.Add(new BookGanre() { Ganre = ganresService.GetGanreByName(ganreName) });
             }
-            catch (Exception)
-            {
-
-            }
+            booksService.EditBookGanres(currentBook);
+   
 
             MessageBox.Show("Book is updated!");
         }

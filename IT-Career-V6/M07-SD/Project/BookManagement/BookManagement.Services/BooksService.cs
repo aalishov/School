@@ -9,7 +9,15 @@
     using System.Linq;
     public class BooksService
     {
-        AppDbContext context = new AppDbContext();
+        AppDbContext context;
+        public BooksService()
+        {
+            this.context = new AppDbContext();
+        }
+        public BooksService(AppDbContext context)
+        {
+            this.context = context;
+        }
 
         public int Add(Book book)
         {

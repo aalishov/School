@@ -12,13 +12,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BookManagement.Services.Enums;
 using BookManagement.Common;
+using BookManagement.Data;
 
 namespace BookManagement.FormApp
 {
     public partial class BooksForm : Form
     {
-        private BooksService booksService = new BooksService();
-        private GanresService ganresService = new GanresService();
+        private BooksService booksService ;
+        private GanresService ganresService ;
         private int currentBookId = -1;
 
         //Pagination variables
@@ -29,9 +30,11 @@ namespace BookManagement.FormApp
         private bool ascSort = true;
         private BookSortBy sortBy = BookSortBy.Title;
 
-        public BooksForm()
+        public BooksForm(AppDbContext context)
         {
             InitializeComponent();
+            ganresService = new GanresService(context);
+            booksService = new BooksService(context);
         }
 
         private void BooksForm_Load(object sender, EventArgs e)
