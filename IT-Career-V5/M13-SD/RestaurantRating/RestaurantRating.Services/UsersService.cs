@@ -25,6 +25,19 @@ namespace RestaurantRating.Services
             this.context = context;
         }
 
+        public async Task<string> CreateUserAsync(CreateUserViewModel model)
+        {
+            User user = new User()
+            {
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                Email = model.Email,  
+                UserName=model.Email
+            };
+            var result = await userManager.CreateAsync(user, model.Password);
+            return user.Id;
+        }
+
         public async Task<bool> DeleteUserAsync(string id)
         {
             User? user = await GetUserByIdAsync(id);

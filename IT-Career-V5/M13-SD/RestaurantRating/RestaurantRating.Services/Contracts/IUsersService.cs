@@ -9,6 +9,8 @@ namespace RestaurantRating.Services.Contracts
 {
     public interface IUsersService
     {
+        public Task<string> CreateUserAsync(CreateUserViewModel model);
+
         public Task<bool> DeleteUserAsync(string id);
 
         public Task<IndexUsersViewModel> GetUsersAsync(IndexUsersViewModel users);
