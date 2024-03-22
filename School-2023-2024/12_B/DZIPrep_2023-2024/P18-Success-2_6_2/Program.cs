@@ -4,7 +4,9 @@
     {
         public static void Main()
         {
-            string path = @"C:\Users\aalis\Desktop\Repo\School\School-2023-2024\12_B\DZIPrep_2023-2024\P18-Success-2_6_2\Info.txt";
+            string parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+            string path = $"{parent}/Info.txt";
+            
             //string[] line = File.ReadAllLines(path);
             //Dictionary<string,int>towns = new Dictionary<string,int>();
             //foreach (var item in line)

@@ -11,11 +11,11 @@
         foreach (string line in data)
         {
             string[] infoAoutDay = line.Split(' ').ToArray();
-            
-                if (infoAoutDay[1]!="-")
-                {
-                    countLessons++;
-                }
+
+            if (infoAoutDay[1] != "-")
+            {
+                countLessons++;
+            }
         }
         string dayName = string.Empty;
         if (day == "1") { dayName = "Mon"; }
