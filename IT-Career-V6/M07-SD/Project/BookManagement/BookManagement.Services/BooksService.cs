@@ -127,6 +127,23 @@
                 .ToArray();
         }
 
+        public string[] Search(BookSearchBy searchBy, string text)
+        {
+            IQueryable<Book> result = null;
+            switch (searchBy)
+            {
+                case BookSearchBy.Title:
+                    result = context.Books.Where(x => x.Title.Contains(text)).Take(10);
+                    break;
+                case BookSearchBy.Author:
+                    result = context.Books.Where(x => x.Author.Contains(text)).Take(10);
+                    break;
+                default:
+                    break;
+            }
+          return  result.Select(b => $"{b.Title} - {b.Author} - {b.Year}").ToArray();
+        }
+
         private static void ValidateBook(Book book)
         {
             if (string.IsNullOrWhiteSpace(book.Title))
