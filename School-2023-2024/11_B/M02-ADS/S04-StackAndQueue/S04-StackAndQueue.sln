@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-DemoStack", "P00-DemoStack\P00-DemoStack.csproj", "{36F7F94A-DB72-4472-B935-9CC040E8B5EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DemoStack", "P00-DemoStack\P00-DemoStack.csproj", "{36F7F94A-DB72-4472-B935-9CC040E8B5EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-DemoQueue", "P00-DemoQueue\P00-DemoQueue.csproj", "{6859FC0F-158E-42F7-AA3C-6A84136C470A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DemoQueue", "P00-DemoQueue\P00-DemoQueue.csproj", "{6859FC0F-158E-42F7-AA3C-6A84136C470A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-DemoStackAndQueue", "P00-DemoStackAndQueue\P00-DemoStackAndQueue.csproj", "{0E7A81CF-987F-40DD-9204-2A1832B036FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DemoStackAndQueue", "P00-DemoStackAndQueue\P00-DemoStackAndQueue.csproj", "{0E7A81CF-987F-40DD-9204-2A1832B036FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-QueueOperations", "P01-QueueOperations\P01-QueueOperations.csproj", "{8CCD7F37-37CB-4AA8-9298-9EF473D6ED2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-QueueOperations", "P01-QueueOperations\P01-QueueOperations.csproj", "{8CCD7F37-37CB-4AA8-9298-9EF473D6ED2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-StackMaxMin", "P02-StackMaxMin\P02-StackMaxMin.csproj", "{C0FA79E6-4AA0-4C54-A6A0-21D82606C989}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-StackMaxMin", "P02-StackMaxMin\P02-StackMaxMin.csproj", "{C0FA79E6-4AA0-4C54-A6A0-21D82606C989}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-FashionBoutique", "P03-FashionBoutique\P03-FashionBoutique.csproj", "{1AC03DB8-70D4-4BD2-BE90-6103CA5ADB1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-SongsQueue", "P04-SongsQueue\P04-SongsQueue.csproj", "{D7462606-F6BA-4CCC-9DBB-073C2D1A08B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-6. BalancedParentheses", "P06-6. BalancedParentheses\P06-6. BalancedParentheses.csproj", "{6086FEB7-92C4-464D-AEB7-BBDF056694E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{C0FA79E6-4AA0-4C54-A6A0-21D82606C989}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0FA79E6-4AA0-4C54-A6A0-21D82606C989}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0FA79E6-4AA0-4C54-A6A0-21D82606C989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC03DB8-70D4-4BD2-BE90-6103CA5ADB1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC03DB8-70D4-4BD2-BE90-6103CA5ADB1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC03DB8-70D4-4BD2-BE90-6103CA5ADB1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC03DB8-70D4-4BD2-BE90-6103CA5ADB1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7462606-F6BA-4CCC-9DBB-073C2D1A08B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7462606-F6BA-4CCC-9DBB-073C2D1A08B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7462606-F6BA-4CCC-9DBB-073C2D1A08B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7462606-F6BA-4CCC-9DBB-073C2D1A08B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6086FEB7-92C4-464D-AEB7-BBDF056694E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6086FEB7-92C4-464D-AEB7-BBDF056694E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6086FEB7-92C4-464D-AEB7-BBDF056694E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6086FEB7-92C4-464D-AEB7-BBDF056694E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
