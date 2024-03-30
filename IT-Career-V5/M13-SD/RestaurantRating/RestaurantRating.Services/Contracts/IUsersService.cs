@@ -1,4 +1,5 @@
-﻿using RestaurantRating.ViewModels.Users;
+﻿using Microsoft.AspNetCore.Identity;
+using RestaurantRating.ViewModels.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,11 @@ namespace RestaurantRating.Services.Contracts
 
         public Task<string> UpdateUserAsync(EditUserViewModel user);
 
- 
+        public Task Logout();
+
+        public Task<SignInResult> Login(LoginViewModel model);
+
+
+
     }
 }

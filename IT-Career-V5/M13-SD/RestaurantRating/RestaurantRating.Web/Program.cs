@@ -35,6 +35,7 @@ namespace RestaurantRating.Web
 
             //Add my services
             builder.Services.AddTransient<IUsersService, UsersService>();
+            builder.Services.AddTransient<IRestaurantsService, RestaurantsService>();
 
             var app = builder.Build();
 

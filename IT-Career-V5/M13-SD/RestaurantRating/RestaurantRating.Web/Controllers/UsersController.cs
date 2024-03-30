@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
+using RestaurantRating.Common;
 using RestaurantRating.Services.Contracts;
 using RestaurantRating.ViewModels.Users;
 
@@ -13,7 +17,8 @@ namespace RestaurantRating.Web.Controllers
             this.service = service;
         }
 
-        public async Task<IActionResult> Index([FromBody] IndexUsersViewModel? model)
+        [Authorize(Roles = GlobalConstants.AdminRole)]
+        public async Task<IActionResult> Index(IndexUsersViewModel? model)
         {
 
             model = await service.GetUsersAsync(model);
@@ -26,13 +31,26 @@ namespace RestaurantRating.Web.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public async Task<IActionResult> Create(CreateUserViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                await service.CreateUserAsync(model);
+                return RedirectToAction("Index");
+            }
+            return View(model);
+        }
 
+        [Authorize(Roles = GlobalConstants.AdminRole)]
         [HttpGet]
         public async Task<IActionResult> Edit(string id)
         {
             var model = await service.GetUserToEditAsync(id);
             return View(model);
         }
+
+        [Authorize(Roles = GlobalConstants.AdminRole)]
         [HttpPost]
         public async Task<IActionResult> Edit(EditUserViewModel model)
         {
@@ -44,6 +62,7 @@ namespace RestaurantRating.Web.Controllers
             return View(model);
         }
 
+        [Authorize(Roles = GlobalConstants.AdminRole)]
         [HttpGet]
         public async Task<IActionResult> Seed()
         {
@@ -58,11 +77,63 @@ namespace RestaurantRating.Web.Controllers
                           LastName = $"LastName {i}",
                           Password = Password,
                           ConfirmPassword = Password,
-                          Email=$"user{i}@app.bg"
+                          Email = $"user{i}@app.bg"
                       }
                       );
             }
             return RedirectToAction(nameof(Index));
+        }
+
+        [Authorize(Roles = GlobalConstants.AdminRole)]
+        [HttpGet]
+        public async Task<IActionResult> Delete(string id)
+        {
+            await service.DeleteUserAsync(id);
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            string returnUrl = Url.Content("~/");
+
+
+            if (ModelState.IsValid)
+            {
+                // This doesn't count login failures towards account lockout
+                // To enable password failures to trigger account lockout, set lockoutOnFailure: true
+                var result = await service.Login(model);
+                if (result.Succeeded)
+                {
+                    // _logger.LogInformation("User logged in.");
+                    return LocalRedirect(returnUrl);
+                }
+                if (result.RequiresTwoFactor)
+                {
+                    return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                }
+                if (result.IsLockedOut)
+                {
+                    // _logger.LogWarning("User account locked out.");
+                    return RedirectToPage("./Lockout");
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    return View(model);
+                }
+            }
+
+            // If we got this far, something failed, redisplay form
+            return RedirectToAction(nameof(Index), "Home");
         }
     }
 }

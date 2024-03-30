@@ -11,5 +11,20 @@ namespace RestaurantRating.Data
         {
         }
 
+        public ApplicationDbContext()
+        {
+            
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer();
+            }
+        }
+
+
+        public virtual DbSet<Restaurant> Restaurants { get; set; }
     }
 }

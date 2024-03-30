@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using RestaurantRating.Common;
 using RestaurantRating.Data;
 using RestaurantRating.Data.Models;
 using RestaurantRating.Services.Contracts;
@@ -9,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
 
 namespace RestaurantRating.Services
 {
@@ -17,12 +21,16 @@ namespace RestaurantRating.Services
     {
         private readonly UserManager<User> userManager;
         private readonly ApplicationDbContext context;
+        private readonly RoleManager<IdentityRole> roleManager;
+        private readonly SignInManager<User> signInManager;
         private const int ItemsCount = 0;
 
-        public UsersService(UserManager<User> userManager, ApplicationDbContext context)
+        public UsersService(UserManager<User> userManager, ApplicationDbContext context, RoleManager<IdentityRole> roleManager, SignInManager<User> signInManager)
         {
             this.userManager = userManager;
             this.context = context;
+            this.roleManager = roleManager;
+            this.signInManager = signInManager;
         }
 
         public async Task<string> CreateUserAsync(CreateUserViewModel model)
@@ -31,10 +39,26 @@ namespace RestaurantRating.Services
             {
                 FirstName = model.FirstName,
                 LastName = model.LastName,
-                Email = model.Email,  
-                UserName=model.Email
+                Email = model.Email,
+                UserName = model.Email
             };
+
             var result = await userManager.CreateAsync(user, model.Password);
+            if (result.Succeeded)
+            {
+                if (userManager.Users.Count() <= 1)
+                {
+                    IdentityRole roleUser = new IdentityRole() { Name = GlobalConstants.UserRole };
+                    IdentityRole roleAdmin = new IdentityRole() { Name = GlobalConstants.AdminRole };
+                    await roleManager.CreateAsync(roleUser);
+                    await roleManager.CreateAsync(roleAdmin);
+                    await userManager.AddToRoleAsync(user, GlobalConstants.AdminRole);
+                }
+                else
+                {
+                    await userManager.AddToRoleAsync(user, GlobalConstants.UserRole);
+                }
+            }
             return user.Id;
         }
 
@@ -141,5 +165,15 @@ namespace RestaurantRating.Services
         {
             return await userManager.Users.FirstOrDefaultAsync(u => u.Id == id);
         }
+
+        public async Task Logout()
+        {
+            await signInManager.SignOutAsync();
+        }
+
+        public async Task<SignInResult> Login(LoginViewModel model)
+        {
+            return await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
+        }  
     }
 }

@@ -22,9 +22,13 @@
                 <td>
                     <a asp-action="Details" class="btn btn-sm btn-success">Details</a>
                     <a asp-action="Edit" asp-action="Edit" asp-route-id="@user.Id" class="btn btn-sm btn-secondary">Edit</a>
-                    <a asp-action="Delete" class="btn btn-sm btn-danger">Delete</a>
+                    @if (user.Role!="Admin")
+                    {
+                        <a asp-action="Delete" asp-action="Delete" asp-route-id="@user.Id" class="btn btn-sm btn-danger">Delete</a>
+                    }
                 </td>
             </tr>
         }
     </tbody>
 </table>
+<partial name="_PagingPartial" />
