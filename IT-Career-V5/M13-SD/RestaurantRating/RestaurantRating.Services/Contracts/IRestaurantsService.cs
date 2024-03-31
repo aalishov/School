@@ -15,10 +15,14 @@ namespace RestaurantRating.Services.Contracts
 
         public Task<DetailsRestaurantViewModel> GetRestaurantDetails(string id);
 
-        public  Task<string> CreateRestaurantAsync(CreateRestaurantViewModel model);
+        public Task<string> CreateRestaurantAsync(CreateRestaurantViewModel model);
 
-        public  Task<EditRestaurantViewModel> GetRestaurantToEditAsync(string id);
+        public Task<EditRestaurantViewModel> GetRestaurantToEditAsync(string id);
 
         public Task<bool> EditRestaurantAsync(EditRestaurantViewModel model);
+
+        public Task<int> DeleteRestaurantAsync(string id);
+
+        public Task<int> ReviewAsync(CreateReviewViewMdoel model);
     }
 }

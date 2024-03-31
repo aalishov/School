@@ -16,7 +16,11 @@ namespace RestaurantRating.Web
             // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(connectionString));
+                { 
+                    options.UseSqlServer(connectionString);
+                    options.UseLazyLoadingProxies();
+                
+                });
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
             builder.Services.AddDefaultIdentity<User>(options =>
@@ -36,6 +40,7 @@ namespace RestaurantRating.Web
             //Add my services
             builder.Services.AddTransient<IUsersService, UsersService>();
             builder.Services.AddTransient<IRestaurantsService, RestaurantsService>();
+            builder.Services.AddTransient<IReviewsService, ReviewsService>();
 
             var app = builder.Build();
 

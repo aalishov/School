@@ -28,6 +28,15 @@
         <dd class="col-sm-10">
             <img src="data:image/png;base64,@Html.DisplayFor(modelItem => modelItem.Image)" height="300" width="250">
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviews)
+        </dt>
+        <dd class="col-sm-10">
+            @foreach(var item in Model.Reviews)
+            {
+                <p>@item</p>
+            }
+        </dd>
     </dl>
 </div>
 <div>

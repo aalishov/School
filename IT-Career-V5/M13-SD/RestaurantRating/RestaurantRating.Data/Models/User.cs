@@ -12,5 +12,7 @@ namespace RestaurantRating.Data.Models
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
+
+        public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
     }
 }

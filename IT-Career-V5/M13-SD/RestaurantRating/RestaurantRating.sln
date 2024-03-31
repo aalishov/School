@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantRating.Data", "Re
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantRating.Common", "RestaurantRating.Common\RestaurantRating.Common.csproj", "{4F2BB78A-A931-4690-9A87-8319294FA293}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantRating.Services", "RestaurantRating.Services\RestaurantRating.Services.csproj", "{756FF900-5AB1-4E73-8380-12E31D14409F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantRating.Services", "RestaurantRating.Services\RestaurantRating.Services.csproj", "{756FF900-5AB1-4E73-8380-12E31D14409F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantRating.ViewModels", "RestaurantRating.ViewModels\RestaurantRating.ViewModels.csproj", "{C907675D-30A0-4655-9142-ED54425461D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantRating.ViewModels", "RestaurantRating.ViewModels\RestaurantRating.ViewModels.csproj", "{C907675D-30A0-4655-9142-ED54425461D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿@model DetailsRestaurantViewModel
+﻿@model RestaurantRating.Data.Models.Review
 
 @{
     ViewData["Title"] = "Delete";
@@ -8,14 +8,26 @@
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>Restaurant</h4>
+    <h4>Review</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.User)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
+            @Html.DisplayFor(model => model.User.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Restaurant)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Restaurant.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Date)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Description)
@@ -24,10 +36,10 @@
             @Html.DisplayFor(model => model.Description)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Image)
+            @Html.DisplayNameFor(model => model.Rating)
         </dt>
         <dd class = "col-sm-10">
-            <img src="data:image/png;base64,@Html.DisplayFor(modelItem => modelItem.Image)" height="350px" width="250px">
+            @Html.DisplayFor(model => model.Rating)
         </dd>
     </dl>
     

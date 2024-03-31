@@ -15,5 +15,7 @@ namespace RestaurantRating.ViewModels.Restaurants
         public string? Description { get; set; }
 
         public string? Image { get; set; }
+
+        public List<string> Reviews { get; set; }
     }
 }

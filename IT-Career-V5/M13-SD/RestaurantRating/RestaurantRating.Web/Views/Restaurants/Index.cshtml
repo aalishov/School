@@ -1,4 +1,5 @@
-﻿@model IndexRestaurantsViewModel
+﻿@using RestaurantRating.Common
+@model IndexRestaurantsViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -16,27 +17,35 @@
                 Name
             </th>
             <th>
-              Image
+                Image
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Restaurants) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
+        @foreach (var item in Model.Restaurants)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
                     <img src="data:image/png;base64,@Html.DisplayFor(modelItem => item.Image)" height="100" width="250">
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+                </td>
+                <td>
+                   @if (User.IsInRole(GlobalConstants.UserRole))
+                    {
+                        <a asp-action="Review" asp-route-id="@item.Id" class="btn btn-success"><i class="fa-solid fa-star"></i></a>
+                    }
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><i class="fa-solid fa-circle-info"></i></a> 
+                    @if (User.IsInRole(GlobalConstants.AdminRole))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-light"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                    }
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
 <partial name="_PagingPartial" />

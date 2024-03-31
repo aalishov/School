@@ -5,6 +5,7 @@ using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pag
 using RestaurantRating.Common;
 using RestaurantRating.Services.Contracts;
 using RestaurantRating.ViewModels.Users;
+using System.Security.Claims;
 
 namespace RestaurantRating.Web.Controllers
 {
@@ -66,7 +67,7 @@ namespace RestaurantRating.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> Seed()
         {
-            const string Password = "A123456";
+            const string Password = "123456";
             for (int i = 0; i < 50; i++)
             {
                 string result = await service.CreateUserAsync(
@@ -88,7 +89,11 @@ namespace RestaurantRating.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(string id)
         {
-            await service.DeleteUserAsync(id);
+            var userId = this.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            if (id != userId)
+            {
+                await service.DeleteUserAsync(id);
+            }
 
             return RedirectToAction(nameof(Index));
         }

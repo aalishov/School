@@ -19,5 +19,7 @@ namespace RestaurantRating.Data.Models
         public string? Description { get; set; }
 
         public string? Image { get; set; }
+
+        public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
     }
 }

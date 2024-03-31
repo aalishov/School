@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using RestaurantRating.Common;
 using RestaurantRating.Data;
 using RestaurantRating.Data.Models;
 using RestaurantRating.Services.Contracts;
@@ -62,7 +63,8 @@ namespace RestaurantRating.Services
                 Id = restaurant.Id,
                 Name = restaurant.Name,
                 Description = restaurant.Description,
-                Image = restaurant.Image
+                Image = restaurant.Image,
+                Reviews = restaurant.Reviews.Select(x => $"{x.User.FirstName} {x.User.LastName}: rating {x.Rating}, {x.Description}-,{x.Date.ToString("dd-MM-yyyy, HH:mm")}").ToList()
             };
         }
 
@@ -113,6 +115,10 @@ namespace RestaurantRating.Services
             {
                 restaurant.Image = await ImageToStringAsync(model.File);
             }
+            else
+            {
+                restaurant.Image = GlobalConstants.DefaultImage;
+            }
 
             context.Update(restaurant);
             await context.SaveChangesAsync();
@@ -137,6 +143,30 @@ namespace RestaurantRating.Services
                 }
             }
             return null;
+        }
+
+        public async Task<int> DeleteRestaurantAsync(string id)
+        {
+            var restaurant = await context.Restaurants.FindAsync(id);
+            if (restaurant != null)
+            {
+                context.Restaurants.Remove(restaurant);
+            }
+
+            return await context.SaveChangesAsync();
+        }
+
+        public async Task<int> ReviewAsync(CreateReviewViewMdoel model)
+        {
+            Review review = new Review()
+            {
+                RestaurantId = model.Restaurant.Id,
+                UserId = model.UserId,
+                Rating = model.Rating,
+                Description = model.Description
+            };
+            context.Reviews.Add(review);
+            return await context.SaveChangesAsync();
         }
     }
 }
