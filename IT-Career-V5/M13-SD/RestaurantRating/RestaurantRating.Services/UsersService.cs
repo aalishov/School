@@ -98,18 +98,54 @@ namespace RestaurantRating.Services
             return result;
         }
 
-        public async Task<IndexUsersViewModel> GetUsersAsync(IndexUsersViewModel users)
+        public async Task<IndexUsersViewModel> GetUsersAsync(IndexUsersViewModel model)
         {
-            if (users == null)
+            if (model == null)
             {
-                users = new IndexUsersViewModel(0);
+                model = new IndexUsersViewModel(0);
             }
-            users.ElementsCount = await GetUsersCountAsync();
 
-            users.Users = await userManager
-                .Users
-                .Skip((users.Page - 1) * users.ItemsPerPage)
-                .Take(users.ItemsPerPage)
+            IQueryable<User> dataUsers = userManager.Users;
+
+            if (!string.IsNullOrWhiteSpace(model.FilterByName))
+            {
+                dataUsers = dataUsers.Where(x => x.FirstName.Contains(model.FilterByName) || x.LastName.Contains(model.FilterByName));
+            }
+            //if (!string.IsNullOrWhiteSpace(model.FilterByRole))
+            //{
+            //    dataUsers = dataUsers.Where(x => string.Join("", x.Roles.Select(x=>x.)).Contains(model.FilterByRole));
+            //}
+
+            model.ElementsCount = await dataUsers.CountAsync();
+
+            if (model.IsAsc)
+            {
+                model.IsAsc = false;
+                if (model.SortUsersBy == "Name")
+                {
+                    dataUsers = dataUsers.OrderByDescending(x => x.FirstName).ThenByDescending(x => x.LastName);
+                }
+                else
+                {
+                    //dataUsers = dataUsers.OrderByDescending(x =>x.Roles.FirstOrDefault().RoleId);
+                }
+            }
+            else
+            {
+                model.IsAsc = true;
+                if (model.SortUsersBy == "Name")
+                {
+                    dataUsers = dataUsers.OrderBy(x => x.FirstName).ThenBy(x => x.LastName);
+                }
+                else
+                {
+                    //dataUsers = dataUsers.OrderBy(x => x.Roles.FirstOrDefault().RoleId);
+                }
+            }
+
+            model.Users = await dataUsers
+                .Skip((model.Page - 1) * model.ItemsPerPage)
+                .Take(model.ItemsPerPage)
                 .Select(x => new IndexUserViewModel()
                 {
                     Id = x.Id,
@@ -118,7 +154,7 @@ namespace RestaurantRating.Services
                 })
                 .ToListAsync();
 
-            return users;
+            return model;
         }
 
         public async Task<int> GetUsersCountAsync()
@@ -174,6 +210,6 @@ namespace RestaurantRating.Services
         public async Task<SignInResult> Login(LoginViewModel model)
         {
             return await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
-        }  
+        }
     }
 }

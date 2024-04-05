@@ -19,6 +19,7 @@ namespace RestaurantRating.ViewModels.Restaurants
         {
         }
 
+        public string Filter { get; set; }
         public ICollection<IndexRestaurantViewModel> Restaurants { get; set; } = new List<IndexRestaurantViewModel>();
     }
 }

@@ -2,7 +2,7 @@
 <nav aria-label="..." class="">
     <ul class="pagination  justify-content-center ">
         <li class="page-item @if (!Model.HasPreviousPage) { <text>disabled</text> }">
-            <a class="page-link" asp-action="@Model.Action" asp-route-page="@Model.PreviousPageNumber">
+            <a class="page-link" asp-action="@Model.Action" asp-route-page="@Model.PreviousPageNumber" >
                 <i class="fas fa-step-backward"></i>
 
             </a>
@@ -11,7 +11,7 @@
         {
             if (i > 0)
             {
-                <li class="page-item"><a class="page-link" asp-action="@Model.Action" asp-route-page="@i">@i</a></li>
+                <li class="page-item"><a class="page-link" asp-action="@Model.Action" asp-route-page="@i" >@i</a></li>
             }
         }
         <li class="page-item active" aria-current="page">
@@ -24,7 +24,7 @@
         {
             if (i <= Model.PagesCount)
             {
-                <li class="page-item"><a class="page-link" asp-action="@Model.Action" asp-route-page="@i">@i</a></li>
+                <li class="page-item"><a class="page-link" asp-action="@Model.Action" asp-route-page="@i" >@i</a></li>
             }
         }
         <li class="page-item @if (!Model.HasNextPage) { <text>disabled</text> }">

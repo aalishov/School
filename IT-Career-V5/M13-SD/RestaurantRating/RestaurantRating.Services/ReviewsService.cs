@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using RestaurantRating.Common;
 using RestaurantRating.Data;
 using RestaurantRating.Data.Models;
@@ -16,18 +17,32 @@ namespace RestaurantRating.Services
     public class ReviewsService : IReviewsService
     {
         private readonly ApplicationDbContext context;
+        private readonly UserManager<User> userManager;
 
-        public ReviewsService(ApplicationDbContext context)
+        public ReviewsService(ApplicationDbContext context, UserManager<User> userManager)
         {
             this.context = context;
+            this.userManager = userManager;
         }
         public async Task<IndexReviewsViewModel> GetMyReviewsAsync(IndexReviewsViewModel model)
         {
+            User? user = await userManager.FindByIdAsync(model.UserId);
 
-            model.ElementsCount = await GetMyReviewsCountAsync(model.UserId);
-            model.Reviews = await context
-            .Reviews
-                .Where(x => x.UserId == model.UserId)
+            IQueryable<Review> reviews = null;
+
+            if (await userManager.IsInRoleAsync(user, GlobalConstants.AdminRole))
+            {
+                reviews = context.Reviews;
+                model.ElementsCount = await reviews.CountAsync();
+            }
+            else
+            {
+                reviews = context.Reviews
+                     .Where(x => x.UserId == model.UserId);
+                model.ElementsCount = await GetMyReviewsCountAsync(model.UserId);
+            }
+           
+            model.Reviews = await reviews
                 .Skip((model.Page - 1) * model.ItemsPerPage)
                 .Take(model.ItemsPerPage)
                 .Select(x => new IndexReviewViewModel()
@@ -61,10 +76,10 @@ namespace RestaurantRating.Services
             return new EditReviewViewModel()
             {
                 Id = review.Id,
-                RestaurantName=review.Restaurant.Name,
+                RestaurantName = review.Restaurant.Name,
                 Description = review.Description,
-                Rating=review.Rating,
-                DateTime=review.Date,
+                Rating = review.Rating,
+                DateTime = review.Date,
             };
         }
 
@@ -80,8 +95,8 @@ namespace RestaurantRating.Services
 
             review.Description = model.Description;
             review.Rating = model.Rating;
-            review.Date=model.DateTime;
-            
+            review.Date = model.DateTime;
+
 
             context.Update(review);
             await context.SaveChangesAsync();

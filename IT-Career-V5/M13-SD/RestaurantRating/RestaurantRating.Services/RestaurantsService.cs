@@ -31,9 +31,19 @@ namespace RestaurantRating.Services
             {
                 model = new IndexRestaurantsViewModel();
             }
-            model.ElementsCount = await GetRestaurantsCountAsync();
-            model.Restaurants = await context
-            .Restaurants
+
+            IQueryable<Restaurant> restaurants = null;
+
+            if (!string.IsNullOrWhiteSpace(model.Filter))
+            {
+                restaurants = context.Restaurants.Where(x => x.Name.Contains(model.Filter));
+            }
+            else
+            {
+                restaurants = context.Restaurants;
+            }
+            model.ElementsCount = await restaurants.CountAsync();
+            model.Restaurants = await restaurants
                 .Skip((model.Page - 1) * model.ItemsPerPage)
                 .Take(model.ItemsPerPage)
                 .Select(x => new IndexRestaurantViewModel()

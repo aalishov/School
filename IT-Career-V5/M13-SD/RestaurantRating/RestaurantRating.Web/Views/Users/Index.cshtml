@@ -1,11 +1,40 @@
 ﻿@model IndexUsersViewModel
 
+@{
+    Dictionary<string, string> routs = new Dictionary<string, string>()
+    {
+        {"filterByName", Model.FilterByName },
+        {"filterByRole", Model.FilterByRole },
+        {"sortUsersBy",Model.SortUsersBy},
+        {"isAsc",Model.IsAsc.ToString()}
+    };
+}
+
 <h2>Users page</h2>
+
+<form asp-action="Index" method="get">
+    <div class="input-group mb-3">
+        <button type="submit" class="btn btn-outline-secondary">Search</button>
+        <input asp-for="FilterByName" type="text" class="form-control" placeholder="Name" aria-label="Search" aria-describedby="basic-addon2">
+        <input asp-for="FilterByRole" type="text" class="form-control" placeholder="Role" aria-label="Search" aria-describedby="basic-addon2">
+        <input asp-for="SortUsersBy" type="hidden" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+    </div>
+</form>
 <table class="table table-bordered table-striped table-hover">
-    <thead >
+    <thead>
         <tr>
-            <th>Full name</th>
-            <th>Roles</th>
+            <th>
+                @{
+                    routs["sortUsersBy"] = "Name";
+
+                }
+                <a asp-all-route-data="routs">Full name</a>
+            </th>
+            <th>
+                @{
+                    routs["sortUsersBy"] = "Role";
+                }<a asp-all-route-data="routs">Role</a>
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -22,7 +51,7 @@
                 <td>
                     <a asp-action="Details" class="btn btn-sm btn-success">Details</a>
                     <a asp-action="Edit" asp-action="Edit" asp-route-id="@user.Id" class="btn btn-sm btn-secondary">Edit</a>
-                    @if (user.Role!="Admin")
+                    @if (user.Role != "Admin")
                     {
                         <a asp-action="Delete" asp-action="Delete" asp-route-id="@user.Id" class="btn btn-sm btn-danger">Delete</a>
                     }
@@ -31,4 +60,42 @@
         }
     </tbody>
 </table>
-<partial name="_PagingPartial" />
+
+
+<nav aria-label="..." class="">
+    <ul class="pagination  justify-content-center ">
+        <li class="page-item @if (!Model.HasPreviousPage) {
+        <text>disabled</text>
+ }">
+            <a class="page-link" asp-action="@Model.Action"  asp-all-route-data="routs" asp-route-page="@Model.PreviousPageNumber">
+                <i class="fas fa-step-backward"></i>
+
+            </a>
+        </li>
+        @for (int i = Model.Page - 2; i < Model.Page; i++)
+        {
+            if (i > 0)
+            {
+                <li class="page-item"><a class="page-link" asp-action="@Model.Action" asp-all-route-data="routs" asp-route-page="@i">@i</a></li>
+            }
+        }
+        <li class="page-item active" aria-current="page">
+            <span class="page-link">
+                @Model.Page
+                <span class="sr-only">(current)</span>
+            </span>
+        </li>
+        @for (int i = Model.Page + 1; i <= Model.Page + 2; i++)
+        {
+            if (i <= Model.PagesCount)
+            {
+                <li class="page-item"><a class="page-link" asp-action="@Model.Action" asp-all-route-data="routs" asp-route-page="@i">@i</a></li>
+            }
+        }
+        <li class="page-item @if (!Model.HasNextPage) {
+        <text>disabled</text>
+ }">
+            <a class="page-link" asp-action="@Model.Action" asp-all-route-data="routs" asp-route-page="@Model.NextPageNumber" ><i class="fas fa-step-forward"></i></a>
+        </li>
+    </ul>
+</nav>
