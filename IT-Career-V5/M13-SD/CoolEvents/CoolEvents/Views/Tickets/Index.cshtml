@@ -1,0 +1,51 @@
+﻿@model IndexTicketsViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>
+                Event name
+            </th>
+            <th>
+                Event date
+            </th>
+            @if (User.IsInRole(GlobalConstants.AdminRole))
+            {
+                <th>
+                    User
+                </th>
+            }
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Tickets)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EventName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EventDate)
+                </td>
+                @if (User.IsInRole(GlobalConstants.AdminRole))
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserFullName)
+                    </td>
+                }
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<partial name="_PagingPartial" />

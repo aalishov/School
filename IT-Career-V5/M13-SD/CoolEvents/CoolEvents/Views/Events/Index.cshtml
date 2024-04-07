@@ -1,0 +1,112 @@
+﻿@model IndexEventsViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+@{
+    Dictionary<string, string> routs = new Dictionary<string, string>()
+    {
+        {"filterByName", Model.FilterByName }
+    };
+}
+
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form asp-action="Index" method="get">
+    <div class="input-group mb-3">
+        <button type="submit" class="btn btn-outline-secondary">Search</button>
+        <input asp-for="FilterByName" type="text" class="form-control" placeholder="Event name" aria-label="Search" aria-describedby="basic-addon2">
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Premiere date
+            </th>
+            <th>
+                Image
+            </th>
+            <th>
+                Booked tickets
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Events)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PremiereDate)
+                </td>
+                <td>
+                    <img src="data:image/png;base64,@Html.DisplayFor(modelItem => item.Image)" width="300" height="200">
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BookedTickets)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-controller="Tickets" asp-action="Create" asp-route-eventId="@item.Id">Buy</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<nav aria-label="..." class="">
+    <ul class="pagination  justify-content-center ">
+        <li class="page-item @if (!Model.HasPreviousPage) {
+        <text>disabled</text>
+ }">
+            <a class="page-link" asp-action="@Model.Action"  asp-all-route-data="routs" asp-route-page="@Model.PreviousPageNumber">
+                <i class="fas fa-step-backward"></i>
+
+            </a>
+        </li>
+        @for (int i = Model.Page - 2; i < Model.Page; i++)
+        {
+            if (i > 0)
+            {
+                <li class="page-item"><a class="page-link" asp-action="@Model.Action" asp-all-route-data="routs" asp-route-page="@i">@i</a></li>
+            }
+        }
+        <li class="page-item active" aria-current="page">
+            <span class="page-link">
+                @Model.Page
+                <span class="sr-only">(current)</span>
+            </span>
+        </li>
+        @for (int i = Model.Page + 1; i <= Model.Page + 2; i++)
+        {
+            if (i <= Model.PagesCount)
+            {
+                <li class="page-item"><a class="page-link" asp-action="@Model.Action" asp-all-route-data="routs" asp-route-page="@i">@i</a></li>
+            }
+        }
+        <li class="page-item @if (!Model.HasNextPage) {
+        <text>disabled</text>
+ }">
+            <a class="page-link" asp-action="@Model.Action" asp-all-route-data="routs" asp-route-page="@Model.NextPageNumber" ><i class="fas fa-step-forward"></i></a>
+        </li>
+    </ul>
+</nav>
