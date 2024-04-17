@@ -1,9 +1,12 @@
-﻿public class Program
-{
-    static void Main(string[] args)
+﻿
+public class Example
     {
-
-
+        public static void Main()
+        {
+            
+        }
     }
-}
+
+
+
 
