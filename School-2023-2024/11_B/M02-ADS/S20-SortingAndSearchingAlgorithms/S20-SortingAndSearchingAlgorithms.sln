@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-BinarySearch", "P04-BinarySearch\P04-BinarySearch.csproj", "{2A6E610C-02A6-44BE-9395-255790D4991C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{DDCFF812-8758-4FCF-89C3-4498F75B7A32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2A6E610C-02A6-44BE-9395-255790D4991C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A6E610C-02A6-44BE-9395-255790D4991C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A6E610C-02A6-44BE-9395-255790D4991C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDCFF812-8758-4FCF-89C3-4498F75B7A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDCFF812-8758-4FCF-89C3-4498F75B7A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDCFF812-8758-4FCF-89C3-4498F75B7A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDCFF812-8758-4FCF-89C3-4498F75B7A32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
