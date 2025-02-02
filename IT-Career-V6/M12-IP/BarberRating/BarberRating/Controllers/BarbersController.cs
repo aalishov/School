@@ -9,6 +9,7 @@ using BarberRating.Data;
 using BarberRating.Data.Models;
 using BarberRating.ViewModels.Barbers;
 using BarberRating.Services.Contracts;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BarberRating.Controllers
 {
@@ -49,6 +50,7 @@ namespace BarberRating.Controllers
         }
 
         // GET: Barbers/Create
+        [Authorize(Roles = GlobalConstants.AdminRole)]
         public IActionResult Create()
         {
             return View();
@@ -57,6 +59,7 @@ namespace BarberRating.Controllers
         // POST: Barbers/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = GlobalConstants.AdminRole)]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CreateBarberViewModel barber)
@@ -70,6 +73,7 @@ namespace BarberRating.Controllers
         }
 
         // GET: Barbers/Edit/5
+        [Authorize(Roles = GlobalConstants.AdminRole)]
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -88,6 +92,7 @@ namespace BarberRating.Controllers
         // POST: Barbers/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = GlobalConstants.AdminRole)]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(EditBarberViewModel editBarber)
@@ -102,6 +107,7 @@ namespace BarberRating.Controllers
         }
 
         // GET: Barbers/Delete/5
+        [Authorize(Roles = GlobalConstants.AdminRole)]
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -120,6 +126,7 @@ namespace BarberRating.Controllers
         }
 
         // POST: Barbers/Delete/5
+        [Authorize(Roles = GlobalConstants.AdminRole)]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)

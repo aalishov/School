@@ -10,7 +10,7 @@
 }
 
 <h2>Users page</h2>
-<a asp-action="Create" class="btn btn-primary">Create</a>
+<a asp-action="Create" class="btn btn-secondary">Create</a>
 <hr />
 <form asp-action="Index" method="get">
     <div class="input-group mb-3">
@@ -29,7 +29,9 @@
                 <a asp-all-route-data="routs">Full name</a>
             </th>
             <th>
-                Picture
+                <span style="color:rebeccapurple">
+                    Picture
+                </span>
             </th>
             <th></th>
         </tr>
@@ -45,7 +47,7 @@
                     <img src="data:image/png;base64,@Html.DisplayFor(modelItem => barber.Image)" width="300" height="200">
                 </td>
                 <td>
-                    <a asp-action="Review" asp-route-id="@barber.Id" class="btn btn-sm btn-secondary">Review</a>
+                    <a asp-action="Create" asp-controller="Reviews" asp-route-barberId="@barber.Id" class="btn btn-sm btn-secondary">Review</a>
                     @if (this.User.IsInRole("Admin"))
                     {
                         <a asp-action="Edit" asp-route-id="@barber.Id" class="btn btn-sm btn-secondary">Edit</a>

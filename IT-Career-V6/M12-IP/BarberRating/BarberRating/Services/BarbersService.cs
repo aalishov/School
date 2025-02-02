@@ -73,12 +73,12 @@ namespace BarberRating.Services
             if (model.IsAsc)
             {
                 model.IsAsc = false;
-                dataBarbers.OrderByDescending(x => x.Name);
+                dataBarbers = dataBarbers.OrderByDescending(x => x.Name);
             }
             else
             {
                 model.IsAsc = true;
-                dataBarbers.OrderBy(x => x.Name);
+                dataBarbers = dataBarbers.OrderBy(x => x.Name);
             }
 
             model.ElementsCount = await dataBarbers.CountAsync();

@@ -16,10 +16,13 @@ namespace BarberRating
             // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(connectionString));
+                {
+                    options.UseSqlServer(connectionString);
+                    options.UseLazyLoadingProxies();
+                });
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            builder.Services.AddDefaultIdentity<User>(options => 
+            builder.Services.AddDefaultIdentity<User>(options =>
             {
                 options.SignIn.RequireConfirmedAccount = false;
                 options.Password.RequireNonAlphanumeric = false;
@@ -34,7 +37,8 @@ namespace BarberRating
 
             //Register services
             builder.Services.AddTransient<IUsersService, UsersService>();
-            builder.Services.AddTransient<IBarbersService , BarbersService>();
+            builder.Services.AddTransient<IBarbersService, BarbersService>();
+            builder.Services.AddTransient<IReviewsService, ReviewsService>();
 
             var app = builder.Build();
 

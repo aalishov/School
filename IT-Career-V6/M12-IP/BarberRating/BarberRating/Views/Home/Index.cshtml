@@ -1,8 +1,62 @@
-﻿@{
+﻿@model IndexHomeViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Добре дошли</h1>
+    <hr />
 </div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Потребители</h2>
+        <div id="users-chart"></div>
+        <p>Общо потребители: @Model.UsersCount</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Бръснари</h2>
+        <div id="barbers-chart"></div>
+        <p>Общо бръснари: @Model.BarbersCount</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Прегледи</h2>
+        <div id="reviews-chart"></div>
+        <p>Общо прегледи: @Model.ReviewsCount</p>
+    </div>
+</div>
+<div class="banner">
+    <img src="~/images/banner.jpg" alt="Банер за бръснарски услуги" class="img-fluid">
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        function createChart(canvasId, data, label, color) {
+            const ctx = document.getElementById(canvasId).getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    datasets: [{
+                        data: [data, 100 - data],
+                        backgroundColor: [color, '#eee'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+
+        createChart('users-chart', @Model.UsersCount, 'Потребители', '#36a2eb');
+        createChart('barbers-chart', @Model.BarbersCount, 'Бръснари', '#ff6384');
+        createChart('reviews-chart', @Model.ReviewsCount, 'Прегледи', '#ff9f40');
+    </script>
+}
