@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace VacationManagerWebApp.ViewModels.Users
         [MinLength(1)]
         [MaxLength(100)]
 
-        [Display(Name ="First name")]
+        [Display(Name = "First name")]
         public string FirstName { get; set; }
 
         [Required]
@@ -24,5 +25,9 @@ namespace VacationManagerWebApp.ViewModels.Users
 
         [Display(Name = "Last name")]
         public string LastName { get; set; }
+
+        public string RoleName { get; set; }
+
+        public SelectList? Roles { get; set; }
     }
 }

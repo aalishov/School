@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace VacationManagerWebApp.Services.Contracts
 {
@@ -29,5 +30,7 @@ namespace VacationManagerWebApp.Services.Contracts
         public Task<SignInResult> Login(LoginViewModel model);
 
         public Task SeedUsersAsync();
+
+        public SelectList GetRolesList();
     }
 }

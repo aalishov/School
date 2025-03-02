@@ -9,10 +9,10 @@ using VacationManagerWebApp.Data;
 
 #nullable disable
 
-namespace VacationManagerWebApp.Migrations
+namespace VacationManagerWebApp.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250301103942_Initial")]
+    [Migration("20250302074234_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -232,7 +232,6 @@ namespace VacationManagerWebApp.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LeadOnTeamId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<bool>("LockoutEnabled")
@@ -274,7 +273,8 @@ namespace VacationManagerWebApp.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("LeadOnTeamId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[LeadOnTeamId] IS NOT NULL");
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
@@ -327,7 +327,7 @@ namespace VacationManagerWebApp.Migrations
                     b.HasOne("VacationManagerWebApp.Data.Models.User", null)
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
 
@@ -354,8 +354,7 @@ namespace VacationManagerWebApp.Migrations
                     b.HasOne("VacationManagerWebApp.Data.Models.Team", "LeadOnTeam")
                         .WithOne("TeamLead")
                         .HasForeignKey("VacationManagerWebApp.Data.Models.User", "LeadOnTeamId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("VacationManagerWebApp.Data.Models.Team", "Team")
                         .WithMany("Developers")

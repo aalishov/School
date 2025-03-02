@@ -12,6 +12,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace VacationManagerWebApp.Services
 {
@@ -180,12 +182,12 @@ namespace VacationManagerWebApp.Services
                     Id = user.Id,
                     FirstName = user.FirstName,
                     LastName = user.LastName,
+                    RoleName = (await userManager.GetRolesAsync(user)).FirstOrDefault()
                 };
             }
+            result.Roles = new SelectList(context.Roles.Where(x=>x.Name!=GlobalConstants.AdminRole), "Name", "Name");
 
             return result;
-
-
         }
 
         public async Task<string> UpdateUserAsync(EditUserViewModel user)
@@ -197,9 +199,18 @@ namespace VacationManagerWebApp.Services
                 oldUser.FirstName = user.FirstName;
                 oldUser.LastName = user.LastName;
                 await userManager.UpdateAsync(oldUser);
+                if (!await userManager.IsInRoleAsync(oldUser, user.RoleName))
+                {
+                    await userManager.RemoveFromRolesAsync(oldUser, await userManager.GetRolesAsync(oldUser));
+                    await userManager.AddToRoleAsync(oldUser, user.RoleName);
+                }
             }
-
             return user.Id;
+        }
+
+        public SelectList GetRolesList()
+        {
+            return new SelectList(context.Roles.Where(x => x.Name != GlobalConstants.AdminRole), "Name", "Name");
         }
 
         private async Task<User?> GetUserByIdAsync(string id)
@@ -247,7 +258,7 @@ namespace VacationManagerWebApp.Services
             };
 
             await userManager.CreateAsync(ceo, GlobalConstants.Password);
-            await userManager.AddToRoleAsync(ceo,GlobalConstants.AdminRole);
+            await userManager.AddToRoleAsync(ceo, GlobalConstants.AdminRole);
 
             //Create users
             await SeedUsersInRole(GlobalConstants.DeveloperRole.ToLower(), GlobalConstants.DeveloperRole);
@@ -269,7 +280,7 @@ namespace VacationManagerWebApp.Services
                 };
 
                 await userManager.CreateAsync(user, GlobalConstants.Password);
-                await userManager.AddToRoleAsync(user,role);
+                await userManager.AddToRoleAsync(user, role);
             }
         }
     }

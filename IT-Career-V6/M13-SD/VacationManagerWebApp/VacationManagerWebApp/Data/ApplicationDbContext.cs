@@ -37,7 +37,6 @@ namespace VacationManagerWebApp.Data
                 .HasOne(e => e.TeamLead)
                 .WithOne(x=>x.LeadOnTeam)
                 .HasForeignKey<User>(x=>x.LeadOnTeamId)
-                .IsRequired()
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }

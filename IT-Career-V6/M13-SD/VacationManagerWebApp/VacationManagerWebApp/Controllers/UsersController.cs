@@ -58,10 +58,11 @@ namespace VacationManagerWebApp.Web.Controllers
                 await service.UpdateUserAsync(model);
                 return this.RedirectToAction(nameof(Index));
             }
+            model.Roles = service.GetRolesList();
             return View(model);
         }
 
-        [Authorize(Roles = GlobalConstants.AdminRole)]
+
         [HttpGet]
         public async Task<IActionResult> Seed()
         {

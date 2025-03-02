@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace VacationManagerWebApp.Migrations
+namespace VacationManagerWebApp.Data.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration
@@ -86,7 +86,7 @@ namespace VacationManagerWebApp.Migrations
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TeamId = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    LeadOnTeamId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    LeadOnTeamId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -110,7 +110,7 @@ namespace VacationManagerWebApp.Migrations
                         column: x => x.LeadOnTeamId,
                         principalTable: "Teams",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_AspNetUsers_Teams_TeamId",
                         column: x => x.TeamId,
@@ -180,7 +180,7 @@ namespace VacationManagerWebApp.Migrations
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -239,7 +239,8 @@ namespace VacationManagerWebApp.Migrations
                 name: "IX_AspNetUsers_LeadOnTeamId",
                 table: "AspNetUsers",
                 column: "LeadOnTeamId",
-                unique: true);
+                unique: true,
+                filter: "[LeadOnTeamId] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetUsers_TeamId",

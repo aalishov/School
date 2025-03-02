@@ -16,7 +16,10 @@ namespace VacationManagerWebApp
             // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(connectionString));
+                {
+                    options.UseSqlServer(connectionString);
+                    options.UseLazyLoadingProxies();
+                });
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
             // Important !!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -37,6 +40,8 @@ namespace VacationManagerWebApp
 
             //Register services
             builder.Services.AddTransient<IUsersService, UsersService>();
+            builder.Services.AddTransient<IProjectsService, ProjectsService>();
+            builder.Services.AddTransient<ITeamsService, TeamsService>();
 
 
             var app = builder.Build();

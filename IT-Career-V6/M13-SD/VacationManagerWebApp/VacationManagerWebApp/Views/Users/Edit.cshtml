@@ -19,7 +19,11 @@
                 <label asp-for="LastName">Last name</label>
                 <span asp-validation-for="LastName" class="text-danger"></span>
             </div>
-
+            <div class="form-group">
+                <label asp-for="RoleName"></label>
+                <select asp-for="RoleName" class="form-control" asp-items="Model.Roles"></select>
+                <span asp-validation-for="RoleName" class="text-danger"></span>
+            </div>
 
             <button type="submit" class="w-100 btn btn-lg btn-primary">Update</button>
         </form>
