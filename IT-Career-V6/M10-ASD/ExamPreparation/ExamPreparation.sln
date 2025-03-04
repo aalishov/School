@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-Permutations", "P01-Permutations\P01-Permutations.csproj", "{E1C164E0-4B86-4A25-B02E-A6CF18F85FE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-Permutations", "P01-Permutations\P01-Permutations.csproj", "{E1C164E0-4B86-4A25-B02E-A6CF18F85FE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-Permutations", "P02-Permutations\P02-Permutations.csproj", "{0FE82B6C-7B84-4107-9626-8E4E89DDE9C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-Permutations", "P02-Permutations\P02-Permutations.csproj", "{0FE82B6C-7B84-4107-9626-8E4E89DDE9C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-Permutations", "P03-Permutations\P03-Permutations.csproj", "{90D695BA-1C89-441B-A2BE-AB562AA5D75A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-Combinations", "P04-Combinations\P04-Combinations.csproj", "{88D55C58-BC5C-4B87-A284-1657BD20DA5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{0FE82B6C-7B84-4107-9626-8E4E89DDE9C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FE82B6C-7B84-4107-9626-8E4E89DDE9C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FE82B6C-7B84-4107-9626-8E4E89DDE9C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90D695BA-1C89-441B-A2BE-AB562AA5D75A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D695BA-1C89-441B-A2BE-AB562AA5D75A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D695BA-1C89-441B-A2BE-AB562AA5D75A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D695BA-1C89-441B-A2BE-AB562AA5D75A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88D55C58-BC5C-4B87-A284-1657BD20DA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88D55C58-BC5C-4B87-A284-1657BD20DA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88D55C58-BC5C-4B87-A284-1657BD20DA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88D55C58-BC5C-4B87-A284-1657BD20DA5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

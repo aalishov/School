@@ -6,7 +6,7 @@ public class Program
     {
         // Структура данни
         var data1 = new string[] { "A", "B","C","D" };
-        var data2 = new int[] { 1, 2, 3 };
+        var data2 = new int[] { 1, 2 };
 
         // Permutation = Пермутации = O(N!)
         Console.WriteLine("1. Permutation without repetion ...");
@@ -21,7 +21,7 @@ public class Program
         // Variation = Вариации = O(N! / (N - K)!)
         Console.WriteLine("3. Variation ...");
         Algo.Variations(data1, 2); // k = 2
-        Algo.Variations(data2, 2);
+        Algo.Variations(data2, 3);
 
         // Combination = Комбинации = O(N! / K!(N - K)!)
         Console.WriteLine("4. Combination ...");

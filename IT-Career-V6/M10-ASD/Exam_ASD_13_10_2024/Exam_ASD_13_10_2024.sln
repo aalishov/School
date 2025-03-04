@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-MorseCode", "P01-MorseCode\P01-MorseCode.csproj", "{C58C7D75-A3EE-4333-A43F-75AD9961F5F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-Reals", "P02-Reals\P02-Reals.csproj", "{960DA9A4-0674-41ED-B538-4C902809C40D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C58C7D75-A3EE-4333-A43F-75AD9961F5F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C58C7D75-A3EE-4333-A43F-75AD9961F5F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C58C7D75-A3EE-4333-A43F-75AD9961F5F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C58C7D75-A3EE-4333-A43F-75AD9961F5F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{960DA9A4-0674-41ED-B538-4C902809C40D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{960DA9A4-0674-41ED-B538-4C902809C40D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{960DA9A4-0674-41ED-B538-4C902809C40D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{960DA9A4-0674-41ED-B538-4C902809C40D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9B85604-40D3-499A-A4BF-698F49F75EED}
+	EndGlobalSection
+EndGlobal
