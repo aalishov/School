@@ -4,11 +4,25 @@
     {
         public static void Main()
         {
-            int[] nums2 = ReadArrayFromSingleLine();
+            int[] nums = { 1, 2, 3, 4,5 };
+            int[] nums2 = new int[nums.Length * 2];
 
-            //PrintArray(nums2);
+            Console.WriteLine($"L1={nums.Length}");
+            Console.WriteLine($"L2={nums2.Length}");
 
-            Console.WriteLine(string.Join(", ",nums2));
+            for (int i = 0; i < nums.Length; i++)
+            {
+                nums2[i] = nums[i];
+            }
+
+            nums = nums2;
+
+            nums[0] = 10;
+            nums2[0] = 20;
+            nums[2] = 4;
+
+            Console.WriteLine(string.Join(", ",nums));
+            Console.WriteLine(string.Join(", ", nums2));
         }
 
         public static int[] ReadArrayFromSingleLine()
