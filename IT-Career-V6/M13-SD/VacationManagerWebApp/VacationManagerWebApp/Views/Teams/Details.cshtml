@@ -6,9 +6,9 @@
 
 <h1>Details</h1>
 <div>
-    <a asp-action="AddTeamLead" asp-route-id="@Model.Id">Add team lead</a>
-    <a asp-action="AddProject" asp-route-id="@Model?.Id">Add project</a>
-    <a asp-action="AddDeveloper" asp-route-id="@Model?.Id">Add developer</a>
+    <a asp-action="AddTeamLead" asp-route-id="@Model.Id" class="btn btn-outline-primary">Add team lead</a>
+    <a asp-action="AddProject" asp-route-id="@Model?.Id" class="btn btn-outline-secondary">Add project</a>
+    <a asp-action="AddDeveloper" asp-route-id="@Model?.Id" class="btn btn-outline-info">Add developer</a>
 </div>
 <div>
     <h4>Team</h4>
@@ -33,6 +33,26 @@
             @Html.DisplayFor(model => model.Project)
         </dd>
     </dl>
+    <h5>Team developers</h5>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Developers)
+            {
+                <tr>
+                    <td>@item.FirstName @item.LastName</td>
+                    <td>@item.Email</td>
+                    <td><a asp-action="Remove" asp-route-id="@Model?.Id">Remove</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |

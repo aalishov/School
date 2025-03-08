@@ -77,6 +77,65 @@ namespace VacationManagerWebApp.Controllers
             return View(team);
         }
 
+        // GET: Teams/AddProject
+        public async Task<IActionResult> AddProject(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var team = await service.GetTeamToAddProject(id);
+            if (team == null)
+            {
+                return NotFound();
+            }
+
+            return View(team);
+        }
+
+        // POST: Teams/AddProject
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddProject(AddProjectViewModel team)
+        {
+            if (ModelState.IsValid)
+            {
+                await service.AddProjectAsync(team);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(team);
+        }
+        // GET: Teams/AddDeveloper
+        public async Task<IActionResult> AddDeveloper(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var team = await service.GetTeamToAddDeveloperAsync(id);
+            if (team == null)
+            {
+                return NotFound();
+            }
+
+            return View(team);
+        }
+
+        // POST: Teams/AddDeveloper
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddDeveloper(AddDeveloperViewModel team)
+        {
+            if (ModelState.IsValid)
+            {
+                await service.AddDeveloperAsync(team);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(team);
+        }
+
 
         // GET: Teams/Create
         public IActionResult Create()

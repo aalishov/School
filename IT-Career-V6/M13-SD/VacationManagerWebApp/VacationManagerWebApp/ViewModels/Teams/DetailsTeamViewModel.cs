@@ -1,4 +1,6 @@
-﻿namespace VacationManagerWebApp.ViewModels.Teams
+﻿using VacationManagerWebApp.Data.Models;
+
+namespace VacationManagerWebApp.ViewModels.Teams
 {
     public class DetailsTeamViewModel
     {
@@ -9,5 +11,7 @@
         public string TeamLead { get; set; }
 
         public string Project { get; set; }
+
+        public ICollection<User> Developers { get; set; } = new List<User>();
     }
 }

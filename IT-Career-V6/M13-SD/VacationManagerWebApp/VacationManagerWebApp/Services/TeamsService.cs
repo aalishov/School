@@ -17,11 +17,80 @@ namespace VacationManagerWebApp.Services
         {
             this.context = context;
         }
+        public async Task<string> AddDeveloperAsync(AddDeveloperViewModel viewModel)
+        {
+            Team team = context.Teams.Find(viewModel.TeamId);
+            if (team == null) { return null; }
+
+
+            team.Developers.Add(await context.Users.FindAsync(viewModel.DeveloperId));
+            context.Teams.Update(team);
+            await context.SaveChangesAsync();
+            return team.Id;
+        }
+
+        public async Task<AddDeveloperViewModel> GetTeamToAddDeveloperAsync(string teamId)
+        {
+            Team team = context.Teams.Find(teamId);
+            if (team == null) { return null; }
+
+            string developerRoleId = context.Roles.FirstOrDefault(x => x.Name == GlobalConstants.DeveloperRole).Id;
+
+            return new AddDeveloperViewModel()
+            {
+                TeamId = teamId,
+                TeamName = team.Name,
+                Developers = new SelectList(context.Users
+                .Where(x => x.Roles.Any(x => x.RoleId == developerRoleId) && !context.Teams.Any(t=>t.Developers.Any(d=>d.Id==x.Id)))
+                .Select(u => new
+                {
+                    u.Id,
+                    FullName = $"{u.FirstName} {u.LastName}"
+                }), "Id", "FullName")
+            };
+        }
+
+
+
+        public async Task<string> AddProjectAsync(AddProjectViewModel viewModel)
+        {
+            Team team = context.Teams.Find(viewModel.TeamId);
+            if (team == null) { return null; }
+
+            if (team.Project != null)
+            {
+                team.Project = null;
+            }
+
+            team.Project = context.Projects.Find(viewModel.ProjectId);
+            context.Teams.Update(team);
+            await context.SaveChangesAsync();
+            return team.Id;
+        }
+
+        public async Task<AddProjectViewModel> GetTeamToAddProject(string teamId)
+        {
+            Team team = context.Teams.Find(teamId);
+            if (team == null) { return null; }
+
+
+            return new AddProjectViewModel()
+            {
+                TeamId = teamId,
+                TeamName = team.Name,
+                Projects = new SelectList(context.Projects, "Id", "Name")
+            };
+        }
 
         public async Task<string> AddTeamLeadAsync(AddTeamLeadViewModel viewModel)
         {
             Team team = context.Teams.Find(viewModel.TeamId);
             if (team == null) { return null; }
+
+            if (team.TeamLead != null)
+            {
+                team.TeamLead = null;
+            }
 
             team.TeamLead = context.Users.Find(viewModel.TeamLeadId);
             context.Teams.Update(team);
@@ -62,6 +131,7 @@ namespace VacationManagerWebApp.Services
                 Name = team.Name,
                 TeamLead = team.TeamLead != null ? $"{team.TeamLead.FirstName} {team.TeamLead.LastName}" : "n/a",
                 Project = team.Project != null ? team.Project.Name : "n/a",
+                Developers=team.Developers
             };
         }
 

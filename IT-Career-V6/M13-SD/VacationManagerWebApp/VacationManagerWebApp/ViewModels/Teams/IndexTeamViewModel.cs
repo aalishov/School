@@ -1,4 +1,6 @@
-﻿namespace VacationManagerWebApp.ViewModels.Teams
+﻿using VacationManagerWebApp.Data.Models;
+
+namespace VacationManagerWebApp.ViewModels.Teams
 {
     public class IndexTeamViewModel
     {

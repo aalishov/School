@@ -7,16 +7,20 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using VacationManagerWebApp.Data;
 using VacationManagerWebApp.Data.Models;
+using VacationManagerWebApp.Services.Contracts;
+using VacationManagerWebApp.ViewModels.Projects;
 
 namespace VacationManagerWebApp.Controllers
 {
     public class ProjectsController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IProjectsService service;
 
-        public ProjectsController(ApplicationDbContext context)
+        public ProjectsController(ApplicationDbContext context, IProjectsService service)
         {
             _context = context;
+            this.service = service;
         }
 
         // GET: Projects
@@ -50,16 +54,13 @@ namespace VacationManagerWebApp.Controllers
         }
 
         // POST: Projects/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description")] Project project)
+        public async Task<IActionResult> Create(CreateProjectViewModel project)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(project);
-                await _context.SaveChangesAsync();
+                await service.CreateProjectAsync(project);
                 return RedirectToAction(nameof(Index));
             }
             return View(project);
