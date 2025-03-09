@@ -18,6 +18,8 @@ namespace VacationManagerWebApp.Data
 
         public virtual DbSet<Team> Teams { get; set; }
 
+        public virtual DbSet<Leave> Leaves { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

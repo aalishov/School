@@ -17,6 +17,21 @@ namespace VacationManagerWebApp.Services
         {
             this.context = context;
         }
+
+        public async Task<string> RemoveDeveloper(string userId)
+        {
+            User user = await context.Users.FindAsync(userId);
+            
+            if (user == null) { return null; }
+
+            string teamId = user.TeamId;
+            user.TeamId = null;
+
+            context.Users.Update(user);
+            await context.SaveChangesAsync();
+
+            return teamId;
+        }
         public async Task<string> AddDeveloperAsync(AddDeveloperViewModel viewModel)
         {
             Team team = context.Teams.Find(viewModel.TeamId);
@@ -41,7 +56,7 @@ namespace VacationManagerWebApp.Services
                 TeamId = teamId,
                 TeamName = team.Name,
                 Developers = new SelectList(context.Users
-                .Where(x => x.Roles.Any(x => x.RoleId == developerRoleId) && !context.Teams.Any(t=>t.Developers.Any(d=>d.Id==x.Id)))
+                .Where(x => x.Roles.Any(x => x.RoleId == developerRoleId) && !context.Teams.Any(t => t.Developers.Any(d => d.Id == x.Id)))
                 .Select(u => new
                 {
                     u.Id,
@@ -131,7 +146,7 @@ namespace VacationManagerWebApp.Services
                 Name = team.Name,
                 TeamLead = team.TeamLead != null ? $"{team.TeamLead.FirstName} {team.TeamLead.LastName}" : "n/a",
                 Project = team.Project != null ? team.Project.Name : "n/a",
-                Developers=team.Developers
+                Developers = team.Developers
             };
         }
 

@@ -11,6 +11,7 @@ namespace VacationManagerWebApp.Data.Models
 
         public virtual ICollection<IdentityUserRole<string>> Roles { get; set; } = new HashSet<IdentityUserRole<string>>();
 
+        public virtual ICollection<Leave> Leaves { get; set; } = new HashSet<Leave>();
 
         public string? TeamId { get; set; }
 

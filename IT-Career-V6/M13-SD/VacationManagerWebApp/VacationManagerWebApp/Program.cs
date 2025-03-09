@@ -42,6 +42,7 @@ namespace VacationManagerWebApp
             builder.Services.AddTransient<IUsersService, UsersService>();
             builder.Services.AddTransient<IProjectsService, ProjectsService>();
             builder.Services.AddTransient<ITeamsService, TeamsService>();
+            builder.Services.AddTransient<ILeavesService, LeavesService>();
 
 
             var app = builder.Build();

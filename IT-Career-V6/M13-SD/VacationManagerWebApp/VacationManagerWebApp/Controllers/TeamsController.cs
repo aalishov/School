@@ -130,8 +130,8 @@ namespace VacationManagerWebApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                await service.AddDeveloperAsync(team);
-                return RedirectToAction(nameof(Index));
+                string teamId = await service.AddDeveloperAsync(team);
+                return RedirectToAction(nameof(Details), new RouteValueDictionary() { { "id", teamId } });
             }
             return View(team);
         }
@@ -246,6 +246,17 @@ namespace VacationManagerWebApp.Controllers
         private bool TeamExists(string id)
         {
             return _context.Teams.Any(e => e.Id == id);
+        }
+
+        public async Task<IActionResult> RemoveDeveloper(string id)
+        {
+            string teamId = await service.RemoveDeveloper(id);
+
+            if (teamId == null)
+            {
+                return NotFound();
+            }
+            return RedirectToAction(nameof(Details), new RouteValueDictionary() { { "id", teamId } });
         }
     }
 }

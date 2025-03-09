@@ -4,6 +4,7 @@ namespace VacationManagerWebApp.Services.Contracts
 {
     public interface ITeamsService
     {
+        public Task<string> RemoveDeveloper(string userId);
         public Task<string> AddDeveloperAsync(AddDeveloperViewModel viewModel);
         public Task<AddDeveloperViewModel> GetTeamToAddDeveloperAsync(string teamId);
         public Task<string> AddProjectAsync(AddProjectViewModel viewModel);

@@ -14,45 +14,48 @@
     <h4>Team</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Name)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Name)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.TeamLead)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.TeamLead)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Project)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Project)
         </dd>
     </dl>
-    <h5>Team developers</h5>
-    <table class="table table-bordered table-hover">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Developers)
-            {
+    @if (Model.Developers.Any())
+    {
+        <h5>Team developers</h5>
+        <table class="table table-bordered table-hover">
+            <thead>
                 <tr>
-                    <td>@item.FirstName @item.LastName</td>
-                    <td>@item.Email</td>
-                    <td><a asp-action="Remove" asp-route-id="@Model?.Id">Remove</a></td>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th></th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Developers)
+                {
+                    <tr>
+                        <td>@item.FirstName @item.LastName</td>
+                        <td>@item.Email</td>
+                        <td><a asp-action="RemoveDeveloper" asp-route-id="@item.Id">Remove</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
