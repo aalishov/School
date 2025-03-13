@@ -1,9 +1,8 @@
-﻿using System.Runtime.Intrinsics.Arm;
-
-public class Program
+﻿public class Program
 {
     public static void Main()
     {
+
         int n = int.Parse(Console.ReadLine());
 
         ItemList items = new ItemList();

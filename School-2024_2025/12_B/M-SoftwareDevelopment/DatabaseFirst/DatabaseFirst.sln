@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35431.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-SoftUni", "P01-SoftUni\P01-SoftUni.csproj", "{3174FB16-0AE9-4D80-A0DD-26DDAD4841BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-Geography", "P02-Geography\P02-Geography.csproj", "{F1576018-87F4-40B5-86FA-5C9557854688}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3174FB16-0AE9-4D80-A0DD-26DDAD4841BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3174FB16-0AE9-4D80-A0DD-26DDAD4841BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3174FB16-0AE9-4D80-A0DD-26DDAD4841BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3174FB16-0AE9-4D80-A0DD-26DDAD4841BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1576018-87F4-40B5-86FA-5C9557854688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1576018-87F4-40B5-86FA-5C9557854688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1576018-87F4-40B5-86FA-5C9557854688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1576018-87F4-40B5-86FA-5C9557854688}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98B133D6-074D-48E2-8ACB-A7EC6E25AA67}
+	EndGlobalSection
+EndGlobal

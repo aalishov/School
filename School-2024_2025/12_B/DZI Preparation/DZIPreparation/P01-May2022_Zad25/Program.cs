@@ -21,7 +21,6 @@
                     dic.Add(num, 1);
                 }
             }
-
             foreach (var kvp in dic)
             {
                 Console.WriteLine($"число: {kvp.Key}, брой: {kvp.Value}");

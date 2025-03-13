@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_BallGame", "P01_BallGame\P01_BallGame.csproj", "{29A7F11C-A217-417D-AE64-1431618959C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreaturesOfTheCode", "CreaturesOfTheCode\CreaturesOfTheCode.csproj", "{3B764151-5DFC-4839-A9D0-57E30C647C97}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-P!rates", "P03-P!rates\P03-P!rates.csproj", "{B7974F79-C36A-4CE5-8B61-8E727EBE247B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-TilesMaster", "P04-TilesMaster\P04-TilesMaster.csproj", "{6F792789-D8FB-4CF7-925D-481DFF4E69CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-Acc", "P00-Acc\P00-Acc.csproj", "{7D84C495-45DF-4337-99D1-66548AA30405}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-WallDestroyer", "P05-WallDestroyer\P05-WallDestroyer.csproj", "{45D35B6A-43FE-4598-9266-A87822CFF0B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29A7F11C-A217-417D-AE64-1431618959C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A7F11C-A217-417D-AE64-1431618959C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A7F11C-A217-417D-AE64-1431618959C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A7F11C-A217-417D-AE64-1431618959C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B764151-5DFC-4839-A9D0-57E30C647C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B764151-5DFC-4839-A9D0-57E30C647C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B764151-5DFC-4839-A9D0-57E30C647C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B764151-5DFC-4839-A9D0-57E30C647C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7974F79-C36A-4CE5-8B61-8E727EBE247B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7974F79-C36A-4CE5-8B61-8E727EBE247B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7974F79-C36A-4CE5-8B61-8E727EBE247B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7974F79-C36A-4CE5-8B61-8E727EBE247B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F792789-D8FB-4CF7-925D-481DFF4E69CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F792789-D8FB-4CF7-925D-481DFF4E69CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F792789-D8FB-4CF7-925D-481DFF4E69CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F792789-D8FB-4CF7-925D-481DFF4E69CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D84C495-45DF-4337-99D1-66548AA30405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D84C495-45DF-4337-99D1-66548AA30405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D84C495-45DF-4337-99D1-66548AA30405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D84C495-45DF-4337-99D1-66548AA30405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45D35B6A-43FE-4598-9266-A87822CFF0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D35B6A-43FE-4598-9266-A87822CFF0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D35B6A-43FE-4598-9266-A87822CFF0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D35B6A-43FE-4598-9266-A87822CFF0B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3B0E129-C031-4D0A-AC9A-74061B4CBC85}
+	EndGlobalSection
+EndGlobal
