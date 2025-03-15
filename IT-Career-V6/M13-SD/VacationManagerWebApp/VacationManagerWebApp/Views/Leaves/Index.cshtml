@@ -1,89 +1,174 @@
-﻿@model IEnumerable<VacationManagerWebApp.Data.Models.Leave>
+﻿@model IndexLeavesViewModel
 
 @{
-    ViewData["Title"] = "Index";
+    Dictionary<string, string> routs = new Dictionary<string, string>()
+    {
+        {"filterByName", Model.FilterByName },
+       // {"sortUsersBy",Model.SortUsersBy},
+        {"isAsc",Model.IsAsc.ToString()},
+        {"itemsPerPage",Model.ItemsPerPage.ToString()}
+    };
 }
-
-<h1>Index</h1>
-
-<p>
+<h2>Leaves page</h2>
+<div>
     <a asp-action="CreatePaid" class="btn btn-primary">Create paid</a>
     <a asp-action="CreateUnpaid" class="btn btn-secondary">Create unpaid</a>
     <a asp-action="CreateSick" class="btn btn-info">Create sick</a>
-</p>
-<table class="table">
+</div>
+
+<hr />
+<form asp-action="Index" method="get">
+    <div class="mb-3">
+        <label for="filterByName" class="form-label">Filter by name</label>
+        <input asp-for="FilterByName" type="text" class="form-control" id="filterByName" placeholder="Name">
+    </div>
+    <div class="form-check mb-3">
+        <input asp-for="HideApproved" class="form-check-input" type="checkbox" id="hideApprovedCheck">
+        <label class="form-check-label" for="hideApprovedCheck">
+            Hide Approved
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Apply filters</button>
+</form>
+<table class="table table-bordered table-striped table-hover">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Type)
+                @{
+                    routs["sortUsersBy"] = "Name";
+
+                }
+                <a asp-all-route-data="routs">Full name</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.StartDate)
+                Type
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.EndDate)
+                Start date
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CreateDate)
+                End date
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.HalfDay)
+                Created on
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Approved)
+                Approved
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.User)
+                Half day
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.File)
+                Attached file
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var item in Model.Leaves)
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Type)
+                    @item.UserFullName
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.StartDate)
+                    @item.Type
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.EndDate)
+                    @item.StartDate
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.CreateDate)
-                </td>
-                @if (item.HalfDay)
-                {
-                    <td class="table-danger">
-                        @Html.DisplayFor(modelItem => item.HalfDay)
-                    </td>
-                }
-                else
-                {
-                    <td>
-                        @Html.DisplayFor(modelItem => item.HalfDay)
-                    </td>
-                }
-                <td>
-                    @Html.DisplayFor(modelItem => item.Approved)
+                    @item.EndDate
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.User.Id)
+                    @item.CreateDate
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.File)
+                    @item.Approved
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    @item.HalfDay
+                </td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.FileBase64))
+                    {
+                        <form method="post" asp-action="DownloadPdf">
+                            <input type="hidden" name="base64String" value="@item.FileBase64" />
+                            <button class="btn btn-warning" type="submit">Download PDF</button>
+                        </form>
+                    }
+                </td>
+                <td>
+                    @if (item.Approved == false && (this.User.IsInRole(GlobalConstants.AdminRole) || this.User.IsInRole(GlobalConstants.TeamLeadRole)))
+                    {
+                        <a asp-action="Approve" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Approve</a>
+                    }
+                    <a asp-action="Details" asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-secondary">Details</a>
+                    @if (this.User.IsInRole(GlobalConstants.AdminRole))
+                    {
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Delete</a>
+                    }
                 </td>
             </tr>
         }
     </tbody>
 </table>
+
+<nav aria-label="..." class="">
+    <ul class="pagination  justify-content-center">
+        <li style="margin-right:5px">
+            <form asp-action="@Model.Action" method="post" id="pageSizeForm">
+
+                <select asp-for="ItemsPerPage" class="form-control border-dark" onchange="changeItemsPerPage();">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                </select>
+
+                <input type="submit" id="loginSubmit" style="visibility:hidden" />
+            </form>
+        </li>
+        <li class="page-item @if (!Model.HasPreviousPage) {
+        <text>disabled</text>
+ }">
+            <a class="page-link" asp-action="@Model.Action"  asp-all-route-data="routs" asp-route-page="@Model.PreviousPageNumber">
+                <i class="fas fa-step-backward"></i>
+
+            </a>
+        </li>
+        @for (int i = Model.Page - 2; i < Model.Page; i++)
+        {
+            if (i > 0)
+            {
+                <li class="page-item"><a class="page-link" asp-action="@Model.Action" asp-all-route-data="routs" asp-route-page="@i">@i</a></li>
+            }
+        }
+        <li class="page-item active" aria-current="page">
+            <span class="page-link">
+                @Model.Page
+                <span class="sr-only">(current)</span>
+            </span>
+        </li>
+        @for (int i = Model.Page + 1; i <= Model.Page + 2; i++)
+        {
+            if (i <= Model.PagesCount)
+            {
+                <li class="page-item"><a class="page-link" asp-action="@Model.Action" asp-all-route-data="routs" asp-route-page="@i">@i</a></li>
+            }
+        }
+        <li class="page-item @if (!Model.HasNextPage) {
+        <text>disabled</text>
+ }">
+            <a class="page-link" asp-action="@Model.Action" asp-all-route-data="routs" asp-route-page="@Model.NextPageNumber" ><i class="fas fa-step-forward"></i></a>
+        </li>
+    </ul>
+</nav>
+
+<script type="text/javascript">
+
+    function changeItemsPerPage() {
+
+        document.getElementById('pageSizeForm').submit();
+    }
+</script>

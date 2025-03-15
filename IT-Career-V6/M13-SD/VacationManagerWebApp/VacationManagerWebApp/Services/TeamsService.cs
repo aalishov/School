@@ -106,9 +106,11 @@ namespace VacationManagerWebApp.Services
             {
                 team.TeamLead = null;
             }
-
-            team.TeamLead = context.Users.Find(viewModel.TeamLeadId);
+            User user =await context.Users.FindAsync(viewModel.TeamLeadId);
+            team.TeamLead = user;
+            user.Team = team;
             context.Teams.Update(team);
+            context.Users.Update(user);
             await context.SaveChangesAsync();
             return team.Id;
         }

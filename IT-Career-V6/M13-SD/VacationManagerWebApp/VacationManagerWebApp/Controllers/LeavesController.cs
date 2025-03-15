@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,9 +11,11 @@ using VacationManagerWebApp.Data;
 using VacationManagerWebApp.Data.Models;
 using VacationManagerWebApp.Services.Contracts;
 using VacationManagerWebApp.ViewModels.Leaves;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace VacationManagerWebApp.Controllers
 {
+    [Authorize]
     public class LeavesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -25,10 +28,36 @@ namespace VacationManagerWebApp.Controllers
         }
 
         // GET: Leaves
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(IndexLeavesViewModel viewModel)
         {
-            var applicationDbContext = _context.Leaves.Include(l => l.User);
-            return View(await applicationDbContext.ToListAsync());
+            viewModel.LoggedUserId = this.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+           
+            IndexLeavesViewModel model = await service.GetLeavesAsync(viewModel);
+         
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DownloadPdf(string base64String)
+        {
+            try
+            {
+                return File(await service.StringToStream(base64String), "application/pdf", "document.pdf");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = "Invalid Base64 string", error = ex.Message });
+            }
+        }
+
+        public async Task<IActionResult> Approve(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            await service.ApproveLeaveAsync(id);
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Leaves/Details/5
