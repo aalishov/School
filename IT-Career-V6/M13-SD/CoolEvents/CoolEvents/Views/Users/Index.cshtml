@@ -1,0 +1,120 @@
+﻿@model IndexUsersViewModel
+
+@{
+    Dictionary<string, string> routs = new Dictionary<string, string>()
+    {
+        {"filterByName", Model.FilterByName },
+        {"sortUsersBy",Model.SortUsersBy},
+        {"isAsc",Model.IsAsc.ToString()},
+        {"itemsPerPage",Model.ItemsPerPage.ToString()}
+    };
+}
+
+<h2>Users page</h2>
+<a asp-action="Create" class="btn btn-primary">Create</a>
+<hr />
+<form asp-action="Index" method="get">
+    <div class="input-group mb-3">
+        <button type="submit" class="btn btn-outline-secondary">Search</button>
+        <input asp-for="FilterByName" type="text" class="form-control" placeholder="Name" aria-label="Search" aria-describedby="basic-addon2">
+        <input asp-for="SortUsersBy" type="hidden" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+    </div>
+</form>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th>
+                @{
+                    routs["sortUsersBy"] = "Name";
+
+                }
+                <a asp-all-route-data="routs">Full name</a>
+            </th>
+            <th>
+                @{
+                    routs["sortUsersBy"] = "Role";
+                }<a asp-all-route-data="routs">Role</a>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>
+                    @user.Name
+                </td>
+                <td>
+                    @user.Role
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-action="Edit" asp-route-id="@user.Id" class="btn btn-sm btn-secondary">Edit</a>
+                    @if (user.Role != "Admin")
+                    {
+                        <a  asp-action="Delete" asp-route-id="@user.Id" class="btn btn-sm btn-danger">Delete</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<nav aria-label="..." class="">
+    <ul class="pagination  justify-content-center">
+        <li style="margin-right:5px">
+            <form asp-action="@Model.Action" method="post" id="pageSizeForm">
+
+                <select asp-for="ItemsPerPage" class="form-control border-dark" onchange="changeItemsPerPage();">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                </select>
+
+                <input type="submit" id="loginSubmit" style="visibility:hidden" />
+            </form>
+        </li>
+        <li class="page-item @if (!Model.HasPreviousPage) {
+        <text>disabled</text>
+ }">
+            <a class="page-link" asp-action="@Model.Action"  asp-all-route-data="routs" asp-route-page="@Model.PreviousPageNumber">
+                <i class="fas fa-step-backward"></i>
+
+            </a>
+        </li>
+        @for (int i = Model.Page - 2; i < Model.Page; i++)
+        {
+            if (i > 0)
+            {
+                <li class="page-item"><a class="page-link" asp-action="@Model.Action" asp-all-route-data="routs" asp-route-page="@i">@i</a></li>
+            }
+        }
+        <li class="page-item active" aria-current="page">
+            <span class="page-link">
+                @Model.Page
+                <span class="sr-only">(current)</span>
+            </span>
+        </li>
+        @for (int i = Model.Page + 1; i <= Model.Page + 2; i++)
+        {
+            if (i <= Model.PagesCount)
+            {
+                <li class="page-item"><a class="page-link" asp-action="@Model.Action" asp-all-route-data="routs" asp-route-page="@i">@i</a></li>
+            }
+        }
+        <li class="page-item @if (!Model.HasNextPage) {
+        <text>disabled</text>
+ }">
+            <a class="page-link" asp-action="@Model.Action" asp-all-route-data="routs" asp-route-page="@Model.NextPageNumber" ><i class="fas fa-step-forward"></i></a>
+        </li>
+    </ul>
+</nav>
+
+<script type="text/javascript">
+
+    function changeItemsPerPage() {
+
+        document.getElementById('pageSizeForm').submit();
+    }
+</script>
