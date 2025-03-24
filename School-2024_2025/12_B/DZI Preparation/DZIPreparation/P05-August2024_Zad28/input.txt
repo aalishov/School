@@ -1,0 +1,11 @@
+FootballPlayer Petar Petrov 18 9000 forward 3 10 3 0
+FootballPlayer Ivan Ivanov 22 10000 forward 4 50 25 10
+FootballPlayer Ivan Ivanov 22 10000 forwirird 4 50 25 10
+FootballPlayer Kaloyan Kaloyanov 24 6000 defender 3 80 5 2
+FootballPlayer Georgi Georgiev 27 11000 midfielder 5 100 19 33
+FootballPlayer Dimitar Dimitrov 35 7500 goalkeeper 4 300 0 0
+Coach Plamen Kirov 41 3000 assistant 2
+Director Biser Biserov 48 18000 sports
+Coach Gari Plamenov 51 4000 head 3
+Director Daniel Danielov 55 25000 executive
+Director Grigor Grigorov 61 20000 technical
