@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35728.132 d17.12
+VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-IntroMultidimensionalArrays", "P01-IntroMultidimensionalArrays\P01-IntroMultidimensionalArrays.csproj", "{E38CCA3E-CF72-448B-AC24-0FFBB857F09D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-JaggedArrays", "P02-JaggedArrays\P02-JaggedArrays.csproj", "{CB9AD784-4BE0-4EC1-92EC-72190CE1A3C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-MatrixMove", "P03-MatrixMove\P03-MatrixMove.csproj", "{2A1EB919-D9E7-4E5E-B0D1-E07391F9B322}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{E38CCA3E-CF72-448B-AC24-0FFBB857F09D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E38CCA3E-CF72-448B-AC24-0FFBB857F09D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E38CCA3E-CF72-448B-AC24-0FFBB857F09D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB9AD784-4BE0-4EC1-92EC-72190CE1A3C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB9AD784-4BE0-4EC1-92EC-72190CE1A3C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB9AD784-4BE0-4EC1-92EC-72190CE1A3C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB9AD784-4BE0-4EC1-92EC-72190CE1A3C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A1EB919-D9E7-4E5E-B0D1-E07391F9B322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1EB919-D9E7-4E5E-B0D1-E07391F9B322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1EB919-D9E7-4E5E-B0D1-E07391F9B322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1EB919-D9E7-4E5E-B0D1-E07391F9B322}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
