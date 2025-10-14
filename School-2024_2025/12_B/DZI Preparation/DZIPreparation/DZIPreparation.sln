@@ -61,6 +61,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P27-ThePianist", "P27-ThePi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P28-SoftuniReception", "P28-SoftuniReception\P28-SoftuniReception.csproj", "{89D47406-8D09-4D70-B63E-945A69F4146F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailClient", "MailClient\MailClient.csproj", "{26134B6F-4104-BAB6-2CDA-C1AA328865E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P29-FishingCompetition", "P29-FishingCompetition\P29-FishingCompetition.csproj", "{564FEEDB-3AD0-4E48-A63F-14FCB8EF05F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +187,14 @@ Global
 		{89D47406-8D09-4D70-B63E-945A69F4146F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89D47406-8D09-4D70-B63E-945A69F4146F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89D47406-8D09-4D70-B63E-945A69F4146F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26134B6F-4104-BAB6-2CDA-C1AA328865E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26134B6F-4104-BAB6-2CDA-C1AA328865E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26134B6F-4104-BAB6-2CDA-C1AA328865E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26134B6F-4104-BAB6-2CDA-C1AA328865E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{564FEEDB-3AD0-4E48-A63F-14FCB8EF05F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564FEEDB-3AD0-4E48-A63F-14FCB8EF05F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564FEEDB-3AD0-4E48-A63F-14FCB8EF05F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564FEEDB-3AD0-4E48-A63F-14FCB8EF05F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
