@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-ShowHide", "P02-ShowHid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-Calculator", "P03-Calculator\P03-Calculator.csproj", "{81AD6E5B-D7D0-4707-9BB4-5C7EAC5DC6E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-Toto", "P04-Toto\P04-Toto.csproj", "{2935CC24-660F-45EE-9BCA-C5835F7D1FEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-SandBox", "P00-SandBox\P00-SandBox.csproj", "{55225F75-3D5E-48CF-B6ED-34B3D2962294}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{81AD6E5B-D7D0-4707-9BB4-5C7EAC5DC6E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81AD6E5B-D7D0-4707-9BB4-5C7EAC5DC6E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81AD6E5B-D7D0-4707-9BB4-5C7EAC5DC6E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2935CC24-660F-45EE-9BCA-C5835F7D1FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2935CC24-660F-45EE-9BCA-C5835F7D1FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2935CC24-660F-45EE-9BCA-C5835F7D1FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2935CC24-660F-45EE-9BCA-C5835F7D1FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55225F75-3D5E-48CF-B6ED-34B3D2962294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55225F75-3D5E-48CF-B6ED-34B3D2962294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55225F75-3D5E-48CF-B6ED-34B3D2962294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55225F75-3D5E-48CF-B6ED-34B3D2962294}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
