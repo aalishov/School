@@ -5,7 +5,7 @@
         string text = "C# is cool!";
 
         char firstLetter = text[0];
-        char lastLetter= text[text.Length-1];
+        char lastLetter = text[text.Length - 1];
 
         Console.WriteLine($"Length: {text.Length}");
         Console.WriteLine($"First letter: {firstLetter}");
@@ -15,11 +15,14 @@
         Console.WriteLine(text.ToUpper());
 
         Console.WriteLine(text.IndexOf("cool"));
-        Console.WriteLine(text.IndexOf("o")) ;
+        Console.WriteLine(text.IndexOf("o"));
         Console.WriteLine(text.LastIndexOf("o"));
 
+        //"C# is cool!"
         Console.WriteLine(text.Substring(6));
-        Console.WriteLine(text.Substring(6,4));
+        Console.WriteLine(text.Substring(6, 4));
+        Console.WriteLine(text.Replace(" ","_"));
+
     }
 }
 
