@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36705.20 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11505.172 d18.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-ArrayIntro", "P01-ArrayIntro\P01-ArrayIntro.csproj", "{3A1A73C8-CB2F-4D02-996B-5ED272798566}"
 EndProject
@@ -26,6 +26,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-ArrayManipulation", "P08-ArrayManipulation\P08-ArrayManipulation.csproj", "{712E8735-9A13-4AEC-B093-02E4E3CF3F81}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-Warehouse", "P09-Warehouse\P09-Warehouse.csproj", "{DBBADC88-7005-48C7-A3AF-597D7BFFD046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10-InsertElementIntoSortedArray", "P10-InsertElementIntoSortedArray\P10-InsertElementIntoSortedArray.csproj", "{2147FD0C-0467-415F-8802-ED4B8A7199BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10-InsertElementsIntoSotredArray_v2", "P10-InsertElementsIntoSotredArray_v2\P10-InsertElementsIntoSotredArray_v2.csproj", "{277E3166-6427-4A8D-A590-A23B45085812}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11-FindElement", "P11-FindElement\P11-FindElement.csproj", "{26B86362-45E9-435D-9A2E-608482DD24FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11-FindElement_v2", "P11-FindElement_v2\P11-FindElement_v2.csproj", "{8099A7FB-A88E-4D88-B46B-269340C71F6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12-JoinArrays", "P12-JoinArrays\P12-JoinArrays.csproj", "{3FECF47E-ADBC-44E6-9671-5CDBF95BC7F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +91,26 @@ Global
 		{DBBADC88-7005-48C7-A3AF-597D7BFFD046}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBBADC88-7005-48C7-A3AF-597D7BFFD046}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBBADC88-7005-48C7-A3AF-597D7BFFD046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2147FD0C-0467-415F-8802-ED4B8A7199BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2147FD0C-0467-415F-8802-ED4B8A7199BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2147FD0C-0467-415F-8802-ED4B8A7199BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2147FD0C-0467-415F-8802-ED4B8A7199BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{277E3166-6427-4A8D-A590-A23B45085812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277E3166-6427-4A8D-A590-A23B45085812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277E3166-6427-4A8D-A590-A23B45085812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277E3166-6427-4A8D-A590-A23B45085812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B86362-45E9-435D-9A2E-608482DD24FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B86362-45E9-435D-9A2E-608482DD24FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26B86362-45E9-435D-9A2E-608482DD24FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26B86362-45E9-435D-9A2E-608482DD24FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8099A7FB-A88E-4D88-B46B-269340C71F6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8099A7FB-A88E-4D88-B46B-269340C71F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8099A7FB-A88E-4D88-B46B-269340C71F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8099A7FB-A88E-4D88-B46B-269340C71F6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FECF47E-ADBC-44E6-9671-5CDBF95BC7F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FECF47E-ADBC-44E6-9671-5CDBF95BC7F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FECF47E-ADBC-44E6-9671-5CDBF95BC7F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FECF47E-ADBC-44E6-9671-5CDBF95BC7F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
