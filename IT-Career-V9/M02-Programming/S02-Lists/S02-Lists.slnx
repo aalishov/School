@@ -1,3 +1,15 @@
 <Solution>
   <Project Path="P01-ListIntro/P01-ListIntro.csproj" />
+  <Project Path="P02-ListInputOutputLine/P02-ListInputOutputLine.csproj" Id="e460e724-1fd5-4439-9b41-1c4b8142c509" />
+  <Project Path="P03-ListOfNames/P03-ListOfNames.csproj" Id="534389ac-4790-4e01-8a37-5308f3f518dd" />
+  <Project Path="P04-ListOfFullNames/P04-ListOfFullNames.csproj" Id="baacdfa2-d367-471f-a1de-c0be4588cece" />
+  <Project Path="P05-ListEvenNumbers/P05-ListEvenNumbers.csproj" Id="323eff2e-e1ad-4620-b8d8-2efa77dc58d7" />
+  <Project Path="P06-ListMinMax/P06-ListMinMax.csproj" Id="051e2a8a-1313-44ce-9e20-fd91b4696341" />
+  <Project Path="P07-SequenseSameElements/P07-SequenseSameElements.csproj" Id="ccfbab04-30a1-4874-b210-a1ea00e9cca9" />
+  <Project Path="P08-SumReversedNumber/P08-SumReversedNumber.csproj" Id="fdb017d7-8fd4-4656-a006-315d3440ec26" />
+  <Project Path="P09-ListSort/P09-ListSort.csproj" Id="342275ea-5ac3-4a8f-a3c7-26c1c54c84f5" />
+  <Project Path="P10-NumbersSquare/P10-NumbersSquare.csproj" Id="fc4ed3ad-976c-4a76-ad94-eab4e13ce9ff" />
+  <Project Path="P11-CountNums/P11-CountNums.csproj" Id="3d6968bd-e5b0-4bdb-99f5-1fd941b3f6fc" />
+  <Project Path="P12-Words/P12-Words.csproj" Id="bcd3bb5c-5f62-46c1-ae50-4c0cd42d9da2" />
+  <Project Path="P13-VariableList/P13-VariableList.csproj" Id="72752a6e-f3ab-4c99-bf4f-054bfd543261" />
 </Solution>
