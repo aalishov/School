@@ -12,4 +12,5 @@
   <Project Path="P11-CountNums/P11-CountNums.csproj" Id="3d6968bd-e5b0-4bdb-99f5-1fd941b3f6fc" />
   <Project Path="P12-Words/P12-Words.csproj" Id="bcd3bb5c-5f62-46c1-ae50-4c0cd42d9da2" />
   <Project Path="P13-VariableList/P13-VariableList.csproj" Id="72752a6e-f3ab-4c99-bf4f-054bfd543261" />
+  <Project Path="P14-ListManipulator/P14-ListManipulator.csproj" Id="9598d1b2-a3d0-4ac8-861a-d85b97c8befc" />
 </Solution>

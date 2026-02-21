@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="P01-StringIntro/P01-StringIntro.csproj" />
+  <Project Path="P02-StringMethods/P02-StringMethods.csproj" />
+  <Project Path="P03-CharMethods/P03-CharMethods.csproj" />
+  <Project Path="P04-StringBuilder/P04-StringBuilder.csproj" />
+  <Project Path="P05-RegEx/P05-RegEx.csproj" />
+  <Project Path="P06-Censora/P06-Censora.csproj" />
+  <Project Path="P07-StringBuilder/P07-StringBuilder.csproj" />
+</Solution>

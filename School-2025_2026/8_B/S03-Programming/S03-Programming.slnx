@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="P01-DemoForLoops/P01-DemoForLoops.csproj" />
+  <Project Path="P02-DemoWhileLoops/P02-DemoWhileLoops.csproj" />
+  <Project Path="P03-DemoDoWhile/P03-DemoDoWhile.csproj" />
+</Solution>
