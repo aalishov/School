@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="P01-IntroMultidimensionalArrays/P01-IntroMultidimensionalArrays.csproj" />
+  <Project Path="P02-MatrixIntro/P02-MatrixIntro.csproj" />
+  <Project Path="P03-EscapeTheMaze/P03-EscapeTheMaze.csproj" />
+</Solution>
