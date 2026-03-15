@@ -1,0 +1,28 @@
+<Solution>
+  <Project Path="P01-Statistics/P01-Statistics.csproj" />
+  <Project Path="P02-First3Max/P02-First3Max.csproj" />
+  <Project Path="P03-ShortWords/P03-ShortWords.csproj" />
+  <Project Path="P04-VetClinic/P04-VetClinic.csproj" Id="bd0bba4a-610f-4d23-9be2-edeb597fd287" />
+  <Project Path="P05-VetClinicVisitors/P05-VetClinicVisitors.csproj" Id="8e89d901-84ec-48ba-b605-b4ab484ee11b" />
+  <Project Path="P06-DigitsLetersOthers/P06-DigitsLetersOthers.csproj" Id="7c2c15c7-bfad-4692-af05-38e131d6d3d3" />
+  <Project Path="P07-CountSymbols/P07-CountSymbols.csproj" Id="bf294101-f77d-483a-9410-b71740fd7367" />
+  <Project Path="P08-ComputerShop/P08-ComputerShop.csproj" Id="e59a9200-d141-4202-8cb1-684a1df26561" />
+  <Project Path="P09-Lift/P09-Lift.csproj" Id="b9ca75ea-5717-4fbb-9bc3-8e23e5743895" />
+  <Project Path="P10-SecretMessage/P10-SecretMessage.csproj" Id="e5fc8da9-5090-46c7-83c2-c82b78a7013a" />
+  <Project Path="P11-Orders/P11-Orders.csproj" Id="33b396ba-be12-418a-b5cb-dd592520ff90" />
+  <Project Path="P12-ITEvent/P12-ITEvent.csproj" Id="1a810e32-6799-48d7-a24d-41124687b137" />
+  <Project Path="P13-RestaurantMenu/P13-RestaurantMenu.csproj" Id="325f0185-c55a-4608-827a-9da322762651" />
+  <Project Path="P14-NumbersAndLetters/P14-NumbersAndLetters.csproj" Id="bf8963ac-9e20-4dff-8883-35e57fff8f08" />
+  <Project Path="P15-Propaganda/P15-Propaganda.csproj" Id="dccba825-fa0f-4dea-9901-5dffe11b1556" />
+  <Project Path="P16-FitnessEquipment/P16-FitnessEquipment.csproj" Id="7ff53047-c862-4f67-b2c7-939827cc0cb2" />
+  <Project Path="P18-FitnessVisitors/P18-FitnessVisitors.csproj" Id="f36a9a2b-d673-4f76-a846-93ac7e4b433f" />
+  <Project Path="P19-WordGame/P19-WordGame.csproj" Id="b2c6a836-96c5-41ca-811a-2811e4c2ce0d" />
+  <Project Path="P20-FootbalSeason/P20-FootbalSeason.csproj" Id="f7c688d0-8261-4667-babe-f5aa6c6c10ce" />
+  <Project Path="P21-MissionExpensis/P21-MissionExpensis.csproj" Id="ae76903a-393b-4ef8-9c35-fab102ec53d2" />
+  <Project Path="P22-Playllist/P22-Playllist.csproj" Id="20ffcca7-9882-4f5e-ab0f-6976a64f2a4d" />
+  <Project Path="P23-DigtisLettersOthers/P23-DigtisLettersOthers.csproj" Id="72319838-79b6-4b9f-a120-9ddca740a127" />
+  <Project Path="P24-Cesar/P24-Cesar.csproj" Id="bcf713f5-25dc-45c4-a1e1-b894b7863839" />
+  <Project Path="P25-PhoneShop/P25-PhoneShop.csproj" Id="d4d3ef1c-2371-4d97-8be3-fdbcce96287b" />
+  <Project Path="P26-ValidateUsernames/P26-ValidateUsernames.csproj" Id="29e704fd-956a-4698-b3a8-987bb6192893" />
+  <Project Path="P27-Courses/P27-Courses.csproj" Id="fd8271ea-b010-4a33-98e7-45033e35567b" />
+</Solution>

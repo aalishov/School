@@ -3,4 +3,6 @@
   <Project Path="P02-WordsCount/P02-WordsCount.csproj" />
   <Project Path="P03-PhoneBook/P03-PhoneBook.csproj" />
   <Project Path="P04-Miners/P04-Miners.csproj" />
+  <Project Path="P05-Supermarket/P05-Supermarket.csproj" />
+  <Project Path="P06-CountRealNumbers/P06-CountRealNumbers.csproj" />
 </Solution>
