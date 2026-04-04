@@ -2,4 +2,11 @@
   <Project Path="P01-DemoForLoops/P01-DemoForLoops.csproj" />
   <Project Path="P02-DemoWhileLoops/P02-DemoWhileLoops.csproj" />
   <Project Path="P03-DemoDoWhile/P03-DemoDoWhile.csproj" />
+  <Project Path="P04-Year/P04-Year.csproj" Id="791265f7-379d-4099-8149-194bfa0e5a13" />
+  <Project Path="P05-Sqr/P05-Sqr.csproj" Id="4f741ae0-0322-4feb-b693-7b65ad6316fb" />
+  <Project Path="P06-NOD/P06-NOD.csproj" Id="7247a52d-1e45-4ae9-bcce-91f199099b07" />
+  <Project Path="P07-ReadFile/P07-ReadFile.csproj" Id="82b1e1a2-352c-48b1-9dcf-c9ef209ef8ba" />
+  <Project Path="P08-ReadFile/P08-ReadFile.csproj" Id="5ac4d061-e121-4b99-a4dd-94879d1726f5" />
+  <Project Path="P09-AverageFormApp/P09-AverageFormApp.csproj" Id="1c50bf37-35b4-41e6-8ad3-eb0b48a96656" />
+  <Project Path="P10-Ranking/P10-Ranking.csproj" Id="3419de98-e5f2-4537-8aa3-89d189084244" />
 </Solution>

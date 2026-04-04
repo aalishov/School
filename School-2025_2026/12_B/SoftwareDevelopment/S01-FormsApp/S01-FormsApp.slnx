@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="P01-StudentsFormApp/P01-StudentsFormApp.csproj" />
+  <Project Path="P02-CarsCatalogFormApp/P02-CarsCatalogFormApp.csproj" Id="be9b7e33-53da-45e6-a4fd-a6c03f7561a4" />
+</Solution>
