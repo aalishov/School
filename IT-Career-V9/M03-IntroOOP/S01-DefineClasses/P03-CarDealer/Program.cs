@@ -1,7 +1,7 @@
 ﻿public class Program
 {
-    private static Dictionary<string, Engine> engines = new Dictionary<string, Engine>();
-    private static Dictionary<string, Car> cars = new Dictionary<string, Car>();
+    private readonly static Dictionary<string, Engine> engines = new Dictionary<string, Engine>();
+    private readonly static Dictionary<string, Car> cars = new Dictionary<string, Car>();
     public static void Main()
     {
         int n = int.Parse(Console.ReadLine()!);

@@ -2,4 +2,6 @@
   <Project Path="P01-Person/P01-Person.csproj" />
   <Project Path="P02-Cars/P02-Cars.csproj" />
   <Project Path="P03-CarDealer/P03-CarDealer.csproj" />
+  <Project Path="P04-Team/P04-Team.csproj" Id="dfb4427c-a6d8-4075-bb8e-2b5261e1c5e8" />
+  <Project Path="P05-FootballTeam/P05-FootballTeam.csproj" Id="d61740ef-bea2-4500-830c-5fb747a5f81b" />
 </Solution>
