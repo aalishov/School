@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="P01-ArrayList/P01-ArrayList.csproj" />
+  <Project Path="P02-CustomArrayList/P02-CustomArrayList.csproj" />
+  <Project Path="P03-DynamicList/P03-DynamicList.csproj" Id="5f17252b-b0d7-45c0-a63f-07f6b2cd44b1" />
+</Solution>
