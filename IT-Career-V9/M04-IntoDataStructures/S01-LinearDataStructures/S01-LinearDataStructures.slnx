@@ -1,5 +1,8 @@
 <Solution>
+  <Project Path="P00-SandBox/P00-SandBox.csproj" Id="4c67b1a7-bbfa-46d8-bd5e-aab9a493a975" />
   <Project Path="P01-ArrayList/P01-ArrayList.csproj" />
   <Project Path="P02-CustomArrayList/P02-CustomArrayList.csproj" />
   <Project Path="P03-DynamicList/P03-DynamicList.csproj" Id="5f17252b-b0d7-45c0-a63f-07f6b2cd44b1" />
+  <Project Path="P04-LinkedQueue/P04-LinkedQueue.csproj" Id="92663bad-3f04-4223-a43a-ea7f7a16eeb8" />
+  <Project Path="P05-CircularQueue/P05-CircularQueue.csproj" Id="d65047bc-b000-4e68-9c91-3d5142a61b79" />
 </Solution>
