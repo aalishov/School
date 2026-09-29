@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="P01-BookLibrary/P01-BookLibrary.csproj" />
+  <Project Path="P02-Supermarket/P02-Supermarket.csproj" Id="faae9fdb-288e-494a-b55b-2901db01b44a" />
+  <Project Path="P03-Skateboard/P03-Skateboard.csproj" Id="7c3da505-df72-4e73-aa7a-d05a3625b5ea" />
+  <Project Path="P04-DataCenter/P04-DataCenter.csproj" Id="2cbf7274-36aa-40dd-be67-3dc33c5c54d3" />
+  <Project Path="P05-VendingSystem/P05-VendingSystem.csproj" Id="25645a84-1f00-4836-a9d3-3546e25e942b" />
+  <Project Path="P06-School/P06-School.csproj" Id="be36fd39-8f8c-4234-bcf9-78fd965bee2c" />
+  <Project Path="P07-ClothingMagazine/P07-ClothingMagazine.csproj" Id="87a778f8-e596-43e6-831e-9c93779d52a9" />
+  <Project Path="P08-CoffeeShop/P08-CoffeeShop.csproj" Id="740e9567-d455-405f-b730-200a72622948" />
+</Solution>

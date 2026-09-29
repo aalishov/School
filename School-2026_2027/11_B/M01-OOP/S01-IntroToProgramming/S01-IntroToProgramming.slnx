@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="P01-DemoDataTypes/P01-DemoDataTypes.csproj" />
+  <Project Path="P02-Nums1_10/P02-Nums1_10.csproj" />
+  <Project Path="P03-ArchitectureETA/P03-ArchitectureETA.csproj" />
+  <Project Path="P04-PetShop/P04-PetShop.csproj" Id="b3a59b8e-d103-410d-8380-c07849504657" />
+  <Project Path="P05-YardGreening/P05-YardGreening.csproj" Id="a9289e8c-bbbc-4752-976f-1195976b3846" />
+  <Project Path="P06-DepositCalculator/P06-DepositCalculator.csproj" Id="ede25592-970b-495a-bc47-02c99bfdf3e5" />
+</Solution>
