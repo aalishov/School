@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="DayOfWeek/DayOfWeek.csproj" />
+  <Project Path="P01-DemoConditionalStatements/P01-DemoConditionalStatements.csproj" />
+  <Project Path="P02-EvenOrOdd/P02-EvenOrOdd.csproj" />
+  <Project Path="P03-Number100_200/P03-Number100_200.csproj" />
+  <Project Path="P04-SpeedInfo/P04-SpeedInfo.csproj" />
+  <Project Path="P05-PasswordGuess/P05-PasswordGuess.csproj" />
+</Solution>

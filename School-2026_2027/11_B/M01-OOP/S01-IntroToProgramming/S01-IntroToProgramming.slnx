@@ -5,4 +5,7 @@
   <Project Path="P04-PetShop/P04-PetShop.csproj" Id="b3a59b8e-d103-410d-8380-c07849504657" />
   <Project Path="P05-YardGreening/P05-YardGreening.csproj" Id="a9289e8c-bbbc-4752-976f-1195976b3846" />
   <Project Path="P06-DepositCalculator/P06-DepositCalculator.csproj" Id="ede25592-970b-495a-bc47-02c99bfdf3e5" />
+  <Project Path="P07-VacationBooksList/P07-VacationBooksList.csproj" Id="d0314215-0a30-471e-9970-4abe1f903440" />
+  <Project Path="P08-Charity/P08-Charity.csproj" Id="3dfb81f6-2fab-4491-bacd-8d85c9b8667e" />
+  <Project Path="P09-FruitMarket/P09-FruitMarket.csproj" Id="5926a59e-1a9c-4077-a78a-bbc9f0abb04c" />
 </Solution>
