@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="P01-DemoVisualStudio/P01-DemoVisualStudio.csproj" />
+  <Project Path="P02-Area/P02-Area.csproj" Id="4681e2d6-c35c-45a3-a3a7-78d7e1f17bc3" />
+  <Project Path="P03-Stars/P03-Stars.csproj" Id="a9f44357-6ed0-4ed6-9621-4a6beb18fe33" />
 </Solution>

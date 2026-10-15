@@ -1,8 +1,20 @@
 <Solution>
-  <Project Path="DayOfWeek/DayOfWeek.csproj" />
   <Project Path="P01-DemoConditionalStatements/P01-DemoConditionalStatements.csproj" />
   <Project Path="P02-EvenOrOdd/P02-EvenOrOdd.csproj" />
   <Project Path="P03-Number100_200/P03-Number100_200.csproj" />
   <Project Path="P04-SpeedInfo/P04-SpeedInfo.csproj" />
   <Project Path="P05-PasswordGuess/P05-PasswordGuess.csproj" />
+  <Project Path="P06-DayOfWeek/P06-DayOfWeek.csproj" />
+  <Project Path="P07-WorkDayOrWeekend/P07-WorkDayOrWeekend.csproj" Id="1e2b8190-5b82-4d0f-ba1e-84cead9baf84" />
+  <Project Path="P08- FruitorVegetable/P08- FruitorVegetable.csproj" Id="8a10fd43-b41d-4e6d-8b30-d0714512143b" />
+  <Project Path="P09-Converter/P09-Converter.csproj" Id="73ade42d-2c17-44c5-83e6-aafe9b8f08e9" />
+  <Project Path="P10-ConverterFormApp/P10-ConverterFormApp.csproj" Id="99580674-627b-448d-a4b0-ad8764ba5825" />
+  <Project Path="P11-CinemaTicket/P11-CinemaTicket.csproj" Id="2ff85744-500a-4169-b2ca-3a915af6f7b9" />
+  <Project Path="P12-InvalidNumber/P12-InvalidNumber.csproj" Id="c3334fdd-034b-4e6b-bf3a-f0c656b2c2fa" />
+  <Project Path="P13-SmallShop/P13-SmallShop.csproj" Id="e8b298e8-759e-4ff6-9ad0-82459d36a114" />
+  <Project Path="P14-SmallShopFormApp/P14-SmallShopFormApp.csproj" Id="1934828b-d784-4162-b6bf-06a6c98f86d0" />
+  <Project Path="P15-FruitShop/P15-FruitShop.csproj" Id="34105bee-5292-4177-ab97-ea29f1381822" />
+  <Project Path="P16- SumSeconds/P16- SumSeconds.csproj" Id="b872af5d-4a78-4767-b12f-d07eb17b89fd" />
+  <Project Path="P17-BonusScore/P17-BonusScore.csproj" Id="e453430b-42e9-4417-9aec-4c4f0d771b4f" />
+  <Project Path="P18-TradeCommissions/P18-TradeCommissions.csproj" Id="a3b4e868-1a9b-404e-875e-8d477dc71070" />
 </Solution>

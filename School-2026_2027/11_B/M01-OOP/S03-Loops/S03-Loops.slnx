@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="P01-DemoLoops/P01-DemoLoops.csproj" />
+  <Project Path="P02-SummingNumbers/P02-SummingNumbers.csproj" />
+  <Project Path="P03-ReadWords/P03-ReadWords.csproj" />
+  <Project Path="P04-MultiplesOf10/P04-MultiplesOf10.csproj" />
+  <Project Path="P05-VowelsSum/P05-VowelsSum.csproj" />
+  <Project Path="P06-NumSum/P06-NumSum.csproj" />
+  <Project Path="P07-Password/P07-Password.csproj" />
+  <Project Path="P08-MaxNumber/P08-MaxNumber.csproj" />
+</Solution>
